@@ -102,13 +102,13 @@ input[type=checkbox]{width:19px;height:19px;accent-color:var(--gold);cursor:poin
 .shop-panel > :not(summary){margin-left:14px;margin-right:14px}
 .shop-panel > :last-child{margin-bottom:14px}
 .shop-note{margin-top:0;margin-bottom:10px;max-width:760px;font-size:14px}
-.shop li b{color:var(--gold)}
+.shop ul li b{color:var(--gold)}
 .shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;align-items:start}
 .shop{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px}
 .shop h3{margin:0 0 10px;font-size:14px}
 .shop ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.shop li{display:flex;align-items:center;gap:8px}
-.shop li b{min-width:28px}
+.shop ul li{display:flex;align-items:center;gap:8px}
+.shop ul li b{min-width:28px}
 .shop img{border-radius:6px;background:#0d0b08}
 
 /* Con un bioma filtrado: solo su lista, en horizontal y apilándose en filas */
@@ -116,6 +116,13 @@ input[type=checkbox]{width:19px;height:19px;accent-color:var(--gold);cursor:poin
 .shop-panel.filtered .shop-grid{display:block}
 .shop-panel.filtered .shop{background:none;border:0;padding:0}
 .shop-panel.filtered .shop ul{display:flex;flex-wrap:wrap;gap:6px}
-.shop-panel.filtered .shop li{background:var(--card2);border:1px solid var(--line);border-radius:99px;padding:3px 12px;font-size:14px}
-.shop-panel.filtered .shop li b{min-width:0}
+.shop-panel.filtered .shop ul li{background:var(--card2);border:1px solid var(--line);border-radius:99px;padding:3px 12px;font-size:14px}
+.shop-panel.filtered .shop ul li b{min-width:0}
 .shop-panel.filtered .shop img{width:22px;height:22px}
+
+/* Pasos (solo con un bioma filtrado) */
+.shop .steps-h,.shop .steps{display:none}
+.shop-panel.filtered .steps-h{display:block;margin:14px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.shop-panel.filtered .steps{display:grid;gap:6px;margin:0;padding-left:22px}
+.steps b{color:var(--gold)}
+.steps em{color:var(--muted)}

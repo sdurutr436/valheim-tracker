@@ -39,6 +39,14 @@ title: Valheim · Tracker de logros
           </li>
           {%- endfor %}
         </ul>
+        <h4 class="steps-h">Pasos</h4>
+        <ol class="steps">
+          {%- for s in b.steps %}
+          <li><b>{% if s.kind == 'eat' %}Come{% else %}{{ s.verb }}{% endif %}</b>
+            {%- for i in s.items %}{% if loop.last and not loop.first %} y{% elif not loop.first %},{% endif %} {% if i.qty %}{{ i.qty }}× {% endif %}<span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% endfor %}.
+            {%- if s.kind == 'eat' %} <em>Vomita.</em>{% endif %}</li>
+          {%- endfor %}
+        </ol>
       </section>
       {%- endfor %}
     </div>

@@ -25,25 +25,57 @@ const depthOf = k => {
   return depth.get(k);
 };
 
-function totalsFor(biome) {
-  const demand = new Map();
+const chefIndex = new Map(chef.map((c, i) => [key(c.name), i]));
+const label = o => ({ name: o.name, nameEs: o.nameEs ?? null });
+
+// Plan de un bioma: ingredientes base + pasos en orden. En el juego solo caben 3 comidas a la vez,
+// así que se come en tandas de 3 y se vomita después de cada una. Se avanza por "niveles" de receta:
+// primero lo que se come tal cual, luego lo que se cocina con ingredientes base (carnes…), se come eso,
+// luego los platos que gastan esos cocinados, se comen, y así hasta el final.
+function plan(biome) {
+  const targets = chef.filter(c => c.biome === biome && !(c.intermediate && !c.eat));
+  const demand = new Map(), made = [];
   const add = (k, q) => demand.set(k, (demand.get(k) ?? 0) + q);
-  chef.filter(c => c.biome === biome && !(c.intermediate && !c.eat)).forEach(c => add(key(c.name), 1));
+  targets.forEach(c => add(key(c.name), 1));
   // Se expande primero lo más "alto" (platos) y al final lo más básico, para redondear tandas una sola vez
   for (;;) {
     const k = [...demand.keys()].filter(k => recipes.has(k)).sort((a, b) => depthOf(b) - depthOf(a))[0];
     if (!k) break;
     const r = recipes.get(k), crafts = Math.ceil(demand.get(k) / (r.yield ?? 1));
+    made.push({ k, crafts, depth: depthOf(k) });
     demand.delete(k);
     r.ingredients.forEach(i => add(key(i.name), i.qty * crafts));
   }
-  return [...demand].map(([k, qty]) => ({ ...info.get(k), qty }))
+  const items = [...demand].map(([k, qty]) => ({ ...info.get(k), qty }))
     .map(({ name, nameEs, image, qty }) => ({ name, nameEs: nameEs ?? null, image: image ?? null, qty }))
     .sort((a, b) => b.qty - a.qty || a.name.localeCompare(b.name));
+
+  const steps = [];
+  const maxDepth = Math.max(0, ...made.map(m => m.depth));
+  for (let d = 0; d <= maxDepth; d++) {
+    const group = made.filter(m => m.depth === d).sort((a, b) => (chefIndex.get(a.k) ?? 999) - (chefIndex.get(b.k) ?? 999));
+    if (group.length) {
+      const tables = group.filter(m => recipes.get(m.k).station === 'Food Preparation Table').length;
+      steps.push({
+        kind: 'make',
+        verb: tables === 0 ? 'Cocina' : tables === group.length ? 'Prepara' : 'Cocina o prepara',
+        items: group.map(m => {
+          const r = recipes.get(m.k);
+          // Cocinar un ingrediente suelto (carne cruda…): se nombra lo que se cocina, con su cantidad
+          if (r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
+            return { ...label(info.get(key(r.ingredients[0].name))), qty: m.crafts };
+          return { ...label(info.get(m.k)), qty: m.crafts > 1 ? m.crafts : null };
+        }),
+      });
+    }
+    const eat = targets.filter(t => depthOf(key(t.name)) === d);
+    for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', items: eat.slice(i, i + 3).map(label) });
+  }
+  return { items, steps };
 }
 
 const perBiome = biomes.filter(b => b.en !== 'Console')
-  .map(b => ({ ...b, items: totalsFor(b.en) }))
+  .map(b => ({ ...b, ...plan(b.en) }))
   .filter(b => b.items.length);
 
 export default perBiome;
