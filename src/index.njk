@@ -23,6 +23,7 @@ title: Valheim · Tracker de logros
     </select>
     <span class="count" id="count"></span>
   </div>
+  <div class="chips" id="chips"></div>
   <details class="shop-panel" id="shopping" hidden>
     <summary>Ingredientes que necesito <small class="muted" id="shop-biome"></small></summary>
     <p class="muted shop-note">Ingredientes base para cocinar y comer todo una sola vez. Cada plato cuenta con todos sus ingredientes (la carne cocinada que gasta un cocido es aparte de la que comes). Los intermedios, como masas o "sin cocinar", se gastan en el plato final y no cuentan aparte.</p>
@@ -42,7 +43,6 @@ title: Valheim · Tracker de logros
       {%- endfor %}
     </div>
   </details>
-  <div class="chips" id="chips"></div>
   <div id="table"></div>
   <div class="food-grid" id="food-grid" hidden>
     {%- for item in chef %}
