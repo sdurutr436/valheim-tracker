@@ -62,9 +62,9 @@ function plan(biome) {
         items: group.map(m => {
           const r = recipes.get(m.k);
           // Cocinar un ingrediente suelto (carne cruda…): se nombra lo que se cocina, con su cantidad
-          if (r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
+          if (r.station !== 'Food Preparation Table' && r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
             return { ...label(info.get(key(r.ingredients[0].name))), qty: m.crafts };
-          return { ...label(info.get(m.k)), qty: m.crafts > 1 ? m.crafts : null };
+          return { ...label(info.get(m.k)), qty: m.crafts > 1 ? m.crafts : null, hint: r.hint ?? null };
         }),
       });
     }

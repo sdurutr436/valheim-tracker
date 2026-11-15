@@ -321,7 +321,20 @@
   "intermediate": true,
   "note": "",
   "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
-  "recipe": null,
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Any Fish",
+     "qty": 1,
+     "image": null,
+     "nameEs": "Cualquier pez"
+    }
+   ],
+   "yield": 1,
+   "hint": "con cualquier pez"
+  },
   "nameEs": "Pescado crudo"
  },
  {
