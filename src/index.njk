@@ -1,0 +1,52 @@
+---
+layout: base.njk
+title: Valheim · Tracker de logros
+---
+<header>
+  <div class="head-row">
+    <h1><small>ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ</small>Valheim · Tracker de logros</h1>
+    <div class="lang" role="group" aria-label="Idioma de los nombres">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+  </div>
+  <div class="total"><b id="total"></b><div class="bar"><i id="totalbar"></i></div></div>
+</header>
+<div class="cards" id="cards"></div>
+<main>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Buscar…" aria-label="Buscar">
+    <select id="status" aria-label="Estado">
+      <option value="all">Todos</option><option value="todo">Pendientes</option><option value="done">Completados</option>
+    </select>
+    <select id="order" aria-label="Ordenar" hidden>
+      <option value="biome">Ordenar por bioma</option><option value="name">Ordenar por nombre</option><option value="status">Ordenar por estado</option>
+    </select>
+    <span class="count" id="count"></span>
+  </div>
+  <details class="shop-panel" id="shopping" hidden>
+    <summary>Ingredientes que necesito <small class="muted" id="shop-biome"></small></summary>
+    <p class="muted shop-note">Ingredientes base para cocinar y comer todo una sola vez. Cada plato cuenta con todos sus ingredientes (la carne cocinada que gasta un cocido es aparte de la que comes). Los intermedios, como masas o "sin cocinar", se gastan en el plato final y no cuentan aparte.</p>
+    <div class="shop-grid">
+      {%- for b in shopping %}
+      <section class="shop" data-biome="{{ b.en }}">
+        <h3><span class="badge b-{{ b.en | slugify }}" data-biome="{{ b.en }}">{{ b.en }}</span></h3>
+        <ul>
+          {%- for i in b.items %}
+          <li>
+            {% if i.image %}<img src="{{ i.image }}" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
+            <b>{{ i.qty }}×</b> <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>
+          </li>
+          {%- endfor %}
+        </ul>
+      </section>
+      {%- endfor %}
+    </div>
+  </details>
+  <div class="chips" id="chips"></div>
+  <div id="table"></div>
+  <div class="food-grid" id="food-grid" hidden>
+    {%- for item in chef %}
+    {% include "food-card.njk" %}
+    {%- endfor %}
+  </div>
+</main>

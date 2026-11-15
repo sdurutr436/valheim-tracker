@@ -1,0 +1,62 @@
+[
+ {
+  "name": "Perch",
+  "biome": "Meadows, Black Forest",
+  "bait": "Fishing Bait"
+ },
+ {
+  "name": "Pike",
+  "biome": "Meadows, Black Forest",
+  "bait": "Fishing Bait"
+ },
+ {
+  "name": "Trollfish",
+  "biome": "Black Forest",
+  "bait": "Mossy Fishing Bait"
+ },
+ {
+  "name": "Giant Herring",
+  "biome": "Swamp",
+  "bait": "Sticky Fishing Bait"
+ },
+ {
+  "name": "Tetra",
+  "biome": "Mountain (Frost Caves)",
+  "bait": "Cold Fishing Bait"
+ },
+ {
+  "name": "Grouper",
+  "biome": "Plains",
+  "bait": "Stingy Fishing Bait"
+ },
+ {
+  "name": "Tuna",
+  "biome": "Ocean",
+  "bait": "Heavy Fishing Bait"
+ },
+ {
+  "name": "Coral Cod",
+  "biome": "Ocean",
+  "bait": "Heavy Fishing Bait"
+ },
+ {
+  "name": "Pufferfish",
+  "biome": "Ocean, Mistlands",
+  "bait": "Misty Fishing Bait"
+ },
+ {
+  "name": "Anglerfish",
+  "biome": "Mistlands",
+  "bait": "Misty Fishing Bait"
+ },
+ {
+  "name": "Northern Salmon",
+  "biome": "Deep North",
+  "bait": "Frosty Fishing Bait"
+ },
+ {
+  "name": "Magmafish",
+  "biome": "Ashlands",
+  "bait": "Hot Fishing Bait"
+ }
+]

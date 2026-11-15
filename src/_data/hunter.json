@@ -1,0 +1,434 @@
+[
+ {
+  "name": "Abomination",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Asksvin",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Asksvin Hatchling",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Aspect of the Writhing Dead",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Aspect of the Lightning Stag",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Aspect of the Living Forest",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Aspect of the Emerald Flame",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Aspect of the Dragon Mother",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Aspect of the Crawling Matriarch",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Root",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Aspect of the Twisted Soul",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Barka",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Bat",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Bear",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Spiritcaller Bjorn",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Blob",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Oozer",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Frost Blob",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Lava Blob",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Shapeless Pulp",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Tiny Pulp",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Growth",
+  "biome": "Plains"
+ },
+ {
+  "name": "Boar",
+  "biome": "Meadows"
+ },
+ {
+  "name": "Piggy",
+  "biome": "Meadows"
+ },
+ {
+  "name": "Spiritcaller Boar",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Kvastur",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Bonemass",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Bonemaw",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Charred Marksman",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Summoned Charred Warrior",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Charred Warlock",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Charred Warrior",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Lord Reto",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Charred Twitcher",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Summoned Twitcher",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Chicken",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Deathsquito",
+  "biome": "Plains"
+ },
+ {
+  "name": "Deer",
+  "biome": "Meadows"
+ },
+ {
+  "name": "Moder",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Draugr",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Draugr Elite",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Dvergr Rogue",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Imprisoned Dvergr",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Dvergr Mage",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Eikthyr",
+  "biome": "Meadows"
+ },
+ {
+  "name": "Elaking",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Eyeless One",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Fader",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Fallen Valkyrie",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Fallen Warrior",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Fenring",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Cultist",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Geirrhafa",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Kall Fimbulbringer (Phase 1)",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Kall Fimbulbringer (Phase 3)",
+  "biome": "Deep North"
+ },
+ {
+  "name": "The Elder",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Ghost",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Gjall",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Fuling",
+  "biome": "Plains"
+ },
+ {
+  "name": "Fuling Berserker",
+  "biome": "Plains"
+ },
+ {
+  "name": "Zil & Thungr",
+  "biome": "Plains"
+ },
+ {
+  "name": "Captive Fuling",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Yagluth",
+  "biome": "Plains"
+ },
+ {
+  "name": "Fuling Shaman",
+  "biome": "Plains"
+ },
+ {
+  "name": "Zil",
+  "biome": "Plains"
+ },
+ {
+  "name": "Greydwarf",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Greydwarf Brute",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Greydwarf Shaman",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Greyling",
+  "biome": "Meadows"
+ },
+ {
+  "name": "Hare",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Drake",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Hen",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Krigen",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Hexen",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Leech",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Lox",
+  "biome": "Plains"
+ },
+ {
+  "name": "Lox Calf",
+  "biome": "Plains"
+ },
+ {
+  "name": "Moose",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Moose Calf",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Spiritcaller Moose",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Morgen",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Neck",
+  "biome": "Meadows"
+ },
+ {
+  "name": "T.W.I.G.",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Seal",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Baby Seal",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Seeker",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Seeker Brood",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Seeker Soldier",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "The Queen",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Serpent",
+  "biome": "Ocean"
+ },
+ {
+  "name": "Skeleton",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Skelett",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Brenna",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Rancid Remains",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Stone Golem",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Surtling",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Tick",
+  "biome": "Mistlands"
+ },
+ {
+  "name": "Troll",
+  "biome": "Black Forest"
+ },
+ {
+  "name": "Summoned Troll",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Gammeltroll",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Ulv",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Vile",
+  "biome": "Plains"
+ },
+ {
+  "name": "Volture",
+  "biome": "Ashlands"
+ },
+ {
+  "name": "Wolf",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Wolf Cub",
+  "biome": "Mountain"
+ },
+ {
+  "name": "Spiritcaller Wolf",
+  "biome": "Deep North"
+ },
+ {
+  "name": "Wraith",
+  "biome": "Swamp"
+ },
+ {
+  "name": "Writhan",
+  "biome": "Swamp"
+ }
+]

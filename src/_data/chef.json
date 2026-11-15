@@ -1,0 +1,2999 @@
+[
+ {
+  "name": "Unbaked Poteitr",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Seal Blubber",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Kale",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    },
+    {
+     "name": "Poteitr",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+     "nameEs": null
+    },
+    {
+     "name": "Oat Flour",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Black Soup",
+  "biome": "Swamp",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/1/1e/Black_Soup.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Bloodbag",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/3d/Bloodbag.png",
+     "nameEs": "Bolsa de sangre"
+    },
+    {
+     "name": "Honey",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    },
+    {
+     "name": "Turnip",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b7/Turnip.png",
+     "nameEs": "Nabo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Sopa negra"
+ },
+ {
+  "name": "Blood Pudding",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Blood_Pudding.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 4,
+   "ingredients": [
+    {
+     "name": "Thistle",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/1a/Thistle.png",
+     "nameEs": "Cardo"
+    },
+    {
+     "name": "Bloodbag",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/3d/Bloodbag.png",
+     "nameEs": "Bolsa de sangre"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Flan de sangre"
+ },
+ {
+  "name": "Boar Jerky",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/fc/Boar_Jerky.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Boar Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Boar_Meat.png",
+     "nameEs": "Carne de jabalí"
+    },
+    {
+     "name": "Honey",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    }
+   ],
+   "yield": 2
+  },
+  "nameEs": "Cecina de jabalí"
+ },
+ {
+  "name": "Bread Dough",
+  "biome": "Plains",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b2/Bread_dough.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Barley Flour",
+     "qty": 10,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 2
+  },
+  "nameEs": "Masa de pan"
+ },
+ {
+  "name": "Carrot Soup",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c9/Carrot_Soup.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Mushroom",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8c/Mushroom.png",
+     "nameEs": "Seta"
+    },
+    {
+     "name": "Carrot",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Sopa de zanahoria"
+ },
+ {
+  "name": "Cooked Egg",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/ae/Cooked_egg.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Egg",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/2/26/Egg.png",
+     "nameEs": "Huevo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Huevo cocinado"
+ },
+ {
+  "name": "Deer Stew",
+  "biome": "Meadows",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/0e/Deer_Stew.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Cooked Deer Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/bc/Cooked_deer_meat.png",
+     "nameEs": "Carne de ciervo cocinada"
+    },
+    {
+     "name": "Blueberries",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+     "nameEs": "Arándanos"
+    },
+    {
+     "name": "Carrot",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cocido de ciervo"
+ },
+ {
+  "name": "Eyescream",
+  "biome": "Mountain",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/90/Eyescream.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 3,
+   "ingredients": [
+    {
+     "name": "Greydwarf Eye",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8e/Greydwarf_Eye.png",
+     "nameEs": "Ojo de grisucio"
+    },
+    {
+     "name": "Freeze Gland",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e8/Freeze_Gland.png",
+     "nameEs": "Glándula congelada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Heladojo"
+ },
+ {
+  "name": "Fiery Svinstew",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/89/Fiery_Svinstew.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Asksvin Tail",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/0d/Asksvin_Tail.png",
+     "nameEs": "Cola de cenicerdo"
+    },
+    {
+     "name": "Vineberry Cluster",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Smoke Puff",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Smoke_Puff.png",
+     "nameEs": "Soplahumo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Guiso porcino ardiente"
+ },
+ {
+  "name": "Raw Fish",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
+  "recipe": null,
+  "nameEs": "Pescado crudo"
+ },
+ {
+  "name": "Uncooked Fish 'n' Bread",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/3/3c/Uncooked_Fish_%27n%27_Bread.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Anglerfish",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/6/64/Anglerfish.png",
+     "nameEs": "Rape"
+    },
+    {
+     "name": "Bread Dough",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b2/Bread_dough.png",
+     "nameEs": "Masa de pan"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pan de pescado sin cocinar"
+ },
+ {
+  "name": "Fish Soup",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Raw Fish",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
+     "nameEs": "Pescado crudo"
+    },
+    {
+     "name": "Kale",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    },
+    {
+     "name": "Ice",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Ice.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Fish Wraps",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f1/Fish_Wraps.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 4,
+   "ingredients": [
+    {
+     "name": "Cooked Fish",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f6/Cooked_Fish.png",
+     "nameEs": "Pescado cocinado"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Rollitos de pescado"
+ },
+ {
+  "name": "Uncooked Honey Glazed Chicken",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/d/df/Uncooked_Honey_Glazed_Chicken.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Chicken Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/ad/Chicken_Meat.png",
+     "nameEs": "Carne de pollo"
+    },
+    {
+     "name": "Honey",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    },
+    {
+     "name": "Jotun Puffs",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+     "nameEs": "Soplo de Jotun"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pollo glaseado en miel sin cocinar"
+ },
+ {
+  "name": "Raw Kale Chips",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Kale",
+     "qty": 12,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Lingonberry Juice",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/86/Lingonberry_Juice.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Lingonberries",
+     "qty": 5,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Ice",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Ice.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Unbaked Lox Pie",
+  "biome": "Plains",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/6/69/Unbaked_Lox_Pie.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cloudberries",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Cloudberries.png",
+     "nameEs": "Mora de los pantanos"
+    },
+    {
+     "name": "Lox Meat",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d8/Lox_Meat.png",
+     "nameEs": "Carne de luey"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel de luey sin hornear"
+ },
+ {
+  "name": "Uncooked Stuffed Mushroom",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b3/Uncooked_Stuffed_Mushroom.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Magecap",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d4/Magecap.png",
+     "nameEs": "Oronja de los magos"
+    },
+    {
+     "name": "Blood Clot",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f5/Blood_Clot.png",
+     "nameEs": "Coágulo de sangre"
+    },
+    {
+     "name": "Turnip",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b7/Turnip.png",
+     "nameEs": "Nabo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Hongos rellenos sin cocinar"
+ },
+ {
+  "name": "Marinated Greens",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Marinated_Greens.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 6,
+   "ingredients": [
+    {
+     "name": "Sap",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/73/Sap.png",
+     "nameEs": "Savia"
+    },
+    {
+     "name": "Magecap",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d4/Magecap.png",
+     "nameEs": "Oronja de los magos"
+    },
+    {
+     "name": "Fiddlehead",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+     "nameEs": "Cabeza de violín"
+    },
+    {
+     "name": "Smoke Puff",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Smoke_Puff.png",
+     "nameEs": "Soplahumo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Verduras marinadas"
+ },
+ {
+  "name": "Mashed Meat",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/7a/Mashed_Meat.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 6,
+   "ingredients": [
+    {
+     "name": "Asksvin Tail",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/0d/Asksvin_Tail.png",
+     "nameEs": "Cola de cenicerdo"
+    },
+    {
+     "name": "Volture Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Volture_Meat.png",
+     "nameEs": "Carne de buicán"
+    },
+    {
+     "name": "Fiddlehead",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+     "nameEs": "Cabeza de violín"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Puré de carne"
+ },
+ {
+  "name": "Meatballs and Poteitr",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c7/Meatballs_and_Poteitr.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Moose Meat",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Lingonberries",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Poteitr",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Uncooked Meat Platter",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/94/Uncooked_Meat_Platter.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Seeker Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d3/Seeker_Meat.png",
+     "nameEs": "Carne de buscador"
+    },
+    {
+     "name": "Lox Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d8/Lox_Meat.png",
+     "nameEs": "Carne de luey"
+    },
+    {
+     "name": "Hare Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8b/Hare_Meat.png",
+     "nameEs": "Carne de liebre"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Plato de carne sin cocinar"
+ },
+ {
+  "name": "Minced Meat Sauce",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/d/d3/Minced_Meat_Sauce.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Boar Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Boar_Meat.png",
+     "nameEs": "Carne de jabalí"
+    },
+    {
+     "name": "Neck Tail",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/37/Neck_Tail.png",
+     "nameEs": "Cola de nixe"
+    },
+    {
+     "name": "Carrot",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Salsa de carne picada"
+ },
+ {
+  "name": "Uncooked Misthare Supreme",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/ff/Uncooked_Misthare_Supreme.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Hare Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8b/Hare_Meat.png",
+     "nameEs": "Carne de liebre"
+    },
+    {
+     "name": "Jotun Puffs",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+     "nameEs": "Soplo de Jotun"
+    },
+    {
+     "name": "Carrot",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Supremacía de la liebre neblinosa sin cocinar"
+ },
+ {
+  "name": "Meat In Bread",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Moose Meat",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Kale",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    },
+    {
+     "name": "Oat Flour",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Lingonberries",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Mushroom Omelette",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b7/Mushroom_Omelette.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Egg",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/2/26/Egg.png",
+     "nameEs": "Huevo"
+    },
+    {
+     "name": "Jotun Puffs",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+     "nameEs": "Soplo de Jotun"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Tortilla de hongos"
+ },
+ {
+  "name": "Oatmeal",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/92/Oatmeal.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Oats",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/34/Oats.png",
+     "nameEs": null
+    },
+    {
+     "name": "Lingonberries",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Oat Milk",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Oat Milk",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Mead Ketill",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Oats",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/34/Oats.png",
+     "nameEs": null
+    },
+    {
+     "name": "Ice",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Ice.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Onion Soup",
+  "biome": "Mountain",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/05/Onion_Soup.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Onion",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/51/Onion.png",
+     "nameEs": "Cebolla"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Sopa de cebolla"
+ },
+ {
+  "name": "Oven Pancake Batter",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": null,
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Moose Meat",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Poteitr",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+     "nameEs": null
+    },
+    {
+     "name": "Lingonberries",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Oat Flour",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Pancakes",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/6/6b/Pancakes.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Oat Milk",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Oat Flour",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Egg",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/2/26/Egg.png",
+     "nameEs": "Huevo"
+    },
+    {
+     "name": "Blueberries",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+     "nameEs": "Arándanos"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Uncooked Piquant Pie",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/1/14/Uncooked_Piquant_Pie.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Vineberry Cluster",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Asksvin Tail",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/0d/Asksvin_Tail.png",
+     "nameEs": "Cola de cenicerdo"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel picante crudo"
+ },
+ {
+  "name": "Pulled Bear",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e5/Pulled_Bear.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Cooked Bear Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Cooked_bear_meat.png",
+     "nameEs": "Carne de Bjorn cocinada"
+    },
+    {
+     "name": "Blueberries",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+     "nameEs": "Arándanos"
+    },
+    {
+     "name": "Carrot",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Queen's Jam",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/01/Queen%27s_Jam.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Raspberries",
+     "qty": 8,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/7e/Raspberries.png",
+     "nameEs": "Frambuesas"
+    },
+    {
+     "name": "Blueberries",
+     "qty": 6,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+     "nameEs": "Arándanos"
+    }
+   ],
+   "yield": 4
+  },
+  "nameEs": "Mermelada de la reina"
+ },
+ {
+  "name": "Uncooked Roasted Crust Pie",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Uncooked_Roasted_Crust_Pie.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Vineberry Cluster",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Volture Egg",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/4/4a/Volture_egg.png",
+     "nameEs": "Huevo de buicán"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel de masa asada crudo"
+ },
+ {
+  "name": "Salad",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/7e/Salad.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Jotun Puffs",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+     "nameEs": "Soplo de Jotun"
+    },
+    {
+     "name": "Onion",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/51/Onion.png",
+     "nameEs": "Cebolla"
+    },
+    {
+     "name": "Cloudberries",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Cloudberries.png",
+     "nameEs": "Mora de los pantanos"
+    }
+   ],
+   "yield": 3
+  },
+  "nameEs": "Ensalada"
+ },
+ {
+  "name": "Sausages",
+  "biome": "Swamp",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/a0/Sausages.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Entrails",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a8/Entrails.png",
+     "nameEs": "Vísceras"
+    },
+    {
+     "name": "Boar Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Boar_Meat.png",
+     "nameEs": "Carne de jabalí"
+    },
+    {
+     "name": "Thistle",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/1a/Thistle.png",
+     "nameEs": "Cardo"
+    }
+   ],
+   "yield": 4
+  },
+  "nameEs": "Salchichas"
+ },
+ {
+  "name": "Scorching Medley",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f4/Scorching_Medley.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 6,
+   "ingredients": [
+    {
+     "name": "Jotun Puffs",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+     "nameEs": "Soplo de Jotun"
+    },
+    {
+     "name": "Onion",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/51/Onion.png",
+     "nameEs": "Cebolla"
+    },
+    {
+     "name": "Fiddlehead",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+     "nameEs": "Cabeza de violín"
+    }
+   ],
+   "yield": 3
+  },
+  "nameEs": "Mezcla abrasadora"
+ },
+ {
+  "name": "Seal Meat Soup",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f6/Seal_Meat_Soup.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Seal Blubber",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Kale",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    },
+    {
+     "name": "Ice",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Ice.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Seeker Aspic",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b2/Seeker_Aspic.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Seeker Meat",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d3/Seeker_Meat.png",
+     "nameEs": "Carne de buscador"
+    },
+    {
+     "name": "Magecap",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d4/Magecap.png",
+     "nameEs": "Oronja de los magos"
+    },
+    {
+     "name": "Royal Jelly",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9f/Royal_Jelly.png",
+     "nameEs": "Jalea real"
+    }
+   ],
+   "yield": 2
+  },
+  "nameEs": "Espliego de buscador"
+ },
+ {
+  "name": "Serpent Stew",
+  "biome": "Ocean",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/2/22/Serpent_Stew.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Mushroom",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8c/Mushroom.png",
+     "nameEs": "Seta"
+    },
+    {
+     "name": "Cooked Serpent Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c1/Cooked_serpent_meat.png",
+     "nameEs": "Carne de serpiente preparada"
+    },
+    {
+     "name": "Honey",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cocido de serpiente"
+ },
+ {
+  "name": "Muckshake",
+  "biome": "Swamp",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/6/67/Muckshake.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Ooze",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/50/Ooze.png",
+     "nameEs": "Lodo"
+    },
+    {
+     "name": "Raspberries",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/7e/Raspberries.png",
+     "nameEs": "Frambuesas"
+    },
+    {
+     "name": "Blueberries",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+     "nameEs": "Arándanos"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Batilodo"
+ },
+ {
+  "name": "Sizzling Berry Broth",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Sizzling_Berry_Broth.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Sap",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/73/Sap.png",
+     "nameEs": "Savia"
+    },
+    {
+     "name": "Fiddlehead",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+     "nameEs": "Cabeza de violín"
+    },
+    {
+     "name": "Vineberry Cluster",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Caldo de bayas chisporroteantes"
+ },
+ {
+  "name": "Smoked Fish",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/4c/Smoked_Fish.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Raw Fish",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
+     "nameEs": "Pescado crudo"
+    },
+    {
+     "name": "Kale",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    },
+    {
+     "name": "Poteitr",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Smoked Moose Meat",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/a6/Smoked_Moose_Meat.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Moose Meat",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Kale",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Sparkling Shroomshake",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/04/Sparkling_Shroomshake.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 6,
+   "ingredients": [
+    {
+     "name": "Sap",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/73/Sap.png",
+     "nameEs": "Savia"
+    },
+    {
+     "name": "Vineberry Cluster",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Smoke Puff",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Smoke_Puff.png",
+     "nameEs": "Soplahumo"
+    },
+    {
+     "name": "Magecap",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d4/Magecap.png",
+     "nameEs": "Oronja de los magos"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Batido de setas espumoso"
+ },
+ {
+  "name": "Spicy Marmalade",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e8/Spicy_Marmalade.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Vineberry Cluster",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Honey",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    },
+    {
+     "name": "Fiddlehead",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+     "nameEs": "Cabeza de violín"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Mermelada picante"
+ },
+ {
+  "name": "Turnip Stew",
+  "biome": "Swamp",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/80/Turnip_Stew.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 2,
+   "ingredients": [
+    {
+     "name": "Boar Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Boar_Meat.png",
+     "nameEs": "Carne de jabalí"
+    },
+    {
+     "name": "Turnip",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b7/Turnip.png",
+     "nameEs": "Nabo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cocido de nabos"
+ },
+ {
+  "name": "Unbaked Sweetbread",
+  "biome": "Plains",
+  "cook": true,
+  "eat": false,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e3/Unbaked_sweetbread.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cloudberries",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Cloudberries.png",
+     "nameEs": "Mora de los pantanos"
+    },
+    {
+     "name": "Egg",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/2/26/Egg.png",
+     "nameEs": "Huevo"
+    },
+    {
+     "name": "Barley Flour",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Barley_Flour.png",
+     "nameEs": "Harina de cebada"
+    },
+    {
+     "name": "Honey",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    }
+   ],
+   "yield": 2
+  },
+  "nameEs": "Pan dulce sin hornear"
+ },
+ {
+  "name": "Wolf Jerky",
+  "biome": "Mountain",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/6/6a/Wolf_Jerky.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 3,
+   "ingredients": [
+    {
+     "name": "Wolf Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/ee/Wolf_Meat.png",
+     "nameEs": "Carne de lobo"
+    },
+    {
+     "name": "Honey",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+     "nameEs": "Miel"
+    }
+   ],
+   "yield": 2
+  },
+  "nameEs": "Cecina de lobo"
+ },
+ {
+  "name": "Wolf Skewer",
+  "biome": "Mountain",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/cf/Wolf_Skewer.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 3,
+   "ingredients": [
+    {
+     "name": "Wolf Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/ee/Wolf_Meat.png",
+     "nameEs": "Carne de lobo"
+    },
+    {
+     "name": "Mushroom",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8c/Mushroom.png",
+     "nameEs": "Seta"
+    },
+    {
+     "name": "Onion",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/51/Onion.png",
+     "nameEs": "Cebolla"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pincho de lobo"
+ },
+ {
+  "name": "Yggdrasil Porridge",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/04/Yggdrasil_Porridge.png",
+  "recipe": {
+   "station": "Cauldron",
+   "level": 5,
+   "ingredients": [
+    {
+     "name": "Sap",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/73/Sap.png",
+     "nameEs": "Savia"
+    },
+    {
+     "name": "Barley",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/df/Barley.png",
+     "nameEs": "Cebada"
+    },
+    {
+     "name": "Royal Jelly",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9f/Royal_Jelly.png",
+     "nameEs": "Jalea real"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Papilla de Yggdrasil"
+ },
+ {
+  "name": "Cooked Boar Meat",
+  "biome": "Meadows",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/01/Cooked_boar_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Boar Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Boar_Meat.png",
+     "nameEs": "Carne de jabalí"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de jabalí cocinada"
+ },
+ {
+  "name": "Grilled Neck Tail",
+  "biome": "Meadows",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/06/Grilled_neck_tail.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Neck Tail",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/37/Neck_Tail.png",
+     "nameEs": "Cola de nixe"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cola de nixe asada"
+ },
+ {
+  "name": "Cooked Fish",
+  "biome": "Black Forest",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f6/Cooked_Fish.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Raw Fish",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
+     "nameEs": "Pescado crudo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pescado cocinado"
+ },
+ {
+  "name": "Cooked Deer Meat",
+  "biome": "Meadows",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/bc/Cooked_deer_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Deer Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/02/Deer_Meat.png",
+     "nameEs": "Carne de ciervo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de ciervo cocinada"
+ },
+ {
+  "name": "Cooked Wolf Meat",
+  "biome": "Mountain",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/d/dc/Cooked_wolf_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wolf Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/ee/Wolf_Meat.png",
+     "nameEs": "Carne de lobo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de lobo cocinada"
+ },
+ {
+  "name": "Cooked Chicken Meat",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/4a/Cooked_chicken_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Chicken Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/ad/Chicken_Meat.png",
+     "nameEs": "Carne de pollo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de pollo cocinada"
+ },
+ {
+  "name": "Cooked Hare Meat",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/2/2b/Cooked_hare_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Hare Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/8b/Hare_Meat.png",
+     "nameEs": "Carne de liebre"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de liebre cocinada"
+ },
+ {
+  "name": "Cooked Bear Meat",
+  "biome": "Black Forest",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Cooked_bear_meat.png",
+  "recipe": {
+   "station": "Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Bear Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/5c/Bear_Meat.png",
+     "nameEs": "Carne de Bjorn"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de Bjorn cocinada"
+ },
+ {
+  "name": "Cooked Serpent Meat",
+  "biome": "Ocean",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c1/Cooked_serpent_meat.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Serpent Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/3d/Serpent_Meat.png",
+     "nameEs": "Carne de serpiente"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de serpiente preparada"
+ },
+ {
+  "name": "Cooked Lox Meat",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/40/Cooked_lox_meat.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Lox Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d8/Lox_Meat.png",
+     "nameEs": "Carne de luey"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de luey preparada"
+ },
+ {
+  "name": "Cooked Seeker Meat",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/5/5c/Cooked_seeker_meat.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Seeker Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/d3/Seeker_Meat.png",
+     "nameEs": "Carne de buscador"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de buscador cocinada"
+ },
+ {
+  "name": "Cooked Volture Meat",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/3/30/Cooked_volture_meat.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Volture Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b8/Volture_Meat.png",
+     "nameEs": "Carne de buicán"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de buicán cocinada"
+ },
+ {
+  "name": "Cooked Asksvin Tail",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/ce/Cooked_asksvin_tail.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Asksvin Tail",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/0d/Asksvin_Tail.png",
+     "nameEs": "Cola de cenicerdo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cola de cenicerdo cocida"
+ },
+ {
+  "name": "Cooked Bonemaw Meat",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b6/Cooked_bonemaw_meat.png",
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Bonemaw Meat",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/ab/Bonemaw_Meat.png",
+     "nameEs": "Carne de faucesoseas"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Carne de faucesoseas cocida"
+ },
+ {
+  "name": "Cooked Moose Meat",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/5/5a/Cooked_Moose_Meat.png",
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Lox Meat Pie",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/1/1f/Lox_Meat_Pie.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Unbaked Lox Pie",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/6/69/Unbaked_Lox_Pie.png",
+     "nameEs": "Pastel de luey sin hornear"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel de luey"
+ },
+ {
+  "name": "Bread",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e1/Bread.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Bread Dough",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b2/Bread_dough.png",
+     "nameEs": "Masa de pan"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pan"
+ },
+ {
+  "name": "Fish 'n' Bread",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/5/55/Fish_%27n%27_Bread.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Fish N' Bread",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/3c/Uncooked_Fish_%27n%27_Bread.png",
+     "nameEs": "Pan de pescado sin cocinar"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pan de pescado"
+ },
+ {
+  "name": "Meat Platter",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f5/Meat_Platter.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Meat Platter",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/94/Uncooked_Meat_Platter.png",
+     "nameEs": "Plato de carne sin cocinar"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Plato de carne"
+ },
+ {
+  "name": "Honey Glazed Chicken",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/99/Honey_Glazed_Chicken.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Honey Glazed Chicken",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/d/df/Uncooked_Honey_Glazed_Chicken.png",
+     "nameEs": "Pollo glaseado en miel sin cocinar"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pollo glaseado en miel"
+ },
+ {
+  "name": "Misthare Supreme",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/02/Misthare_Supreme.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Misthare Supreme",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/ff/Uncooked_Misthare_Supreme.png",
+     "nameEs": "Supremacía de la liebre neblinosa sin cocinar"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Supremacía de la liebre neblinosa"
+ },
+ {
+  "name": "Stuffed Mushroom",
+  "biome": "Mistlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b7/Stuffed_Mushroom.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Stuffed Mushroom",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b3/Uncooked_Stuffed_Mushroom.png",
+     "nameEs": "Hongos rellenos sin cocinar"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Hongos rellenos"
+ },
+ {
+  "name": "Roasted Crust Pie",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/05/Roasted_Crust_Pie.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Roasted Crust Pie",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Uncooked_Roasted_Crust_Pie.png",
+     "nameEs": "Pastel de masa asada crudo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel de masa asada"
+ },
+ {
+  "name": "Piquant Pie",
+  "biome": "Ashlands",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/07/Piquant_Pie.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Uncooked Piquant Pie",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/14/Uncooked_Piquant_Pie.png",
+     "nameEs": "Pastel picante crudo"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pastel picante"
+ },
+ {
+  "name": "Frosted Sweetbread",
+  "biome": "Plains",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/6/6f/Frosted_Sweetbread.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Unbaked Sweetbread",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e3/Unbaked_sweetbread.png",
+     "nameEs": "Pan dulce sin hornear"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pan dulce escarchado"
+ },
+ {
+  "name": "Cooked Seal Blubber",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/2/23/Cooked_Seal_Blubber.png",
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Oven Pancake",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/b/b5/Oven_Pancake.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Oven Pancake Batter",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Kale Chips",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/3/35/Kale_Chips.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Raw Kale Chips",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Baked Poteitr",
+  "biome": "Deep North",
+  "cook": true,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/80/Baked_Poteitr.png",
+  "recipe": {
+   "station": "Stone Oven",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Unbaked Poteitr",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Blueberries",
+  "biome": "Black Forest",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/af/Blueberries.png",
+  "recipe": null,
+  "nameEs": "Arándanos"
+ },
+ {
+  "name": "Carrot",
+  "biome": "Black Forest",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+  "recipe": null,
+  "nameEs": "Zanahoria"
+ },
+ {
+  "name": "Cloudberries",
+  "biome": "Plains",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Cloudberries.png",
+  "recipe": null,
+  "nameEs": "Mora de los pantanos"
+ },
+ {
+  "name": "Ashlands Gourmet Bowl",
+  "biome": "Ashlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f7/Ashlands_Gourmet_Bowl.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cooked Asksvin Tail",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/ce/Cooked_asksvin_tail.png",
+     "nameEs": "Cola de cenicerdo cocida"
+    },
+    {
+     "name": "Vineberry Cluster",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+     "nameEs": "Racimo de parrabaya"
+    },
+    {
+     "name": "Scorching Medley",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f4/Scorching_Medley.png",
+     "nameEs": "Mezcla abrasadora"
+    },
+    {
+     "name": "Fiery Spice Powder",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a9/Fiery_Spice_Powder.png",
+     "nameEs": "Polvo de especias picantes"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Cuenco gourmet de las Tierras de Ceniza"
+ },
+ {
+  "name": "Black Forest Buffet Platter",
+  "biome": "Black Forest",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/0b/Black_Forest_Buffet_Platter.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Deer Stew",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/0e/Deer_Stew.png",
+     "nameEs": "Cocido de ciervo"
+    },
+    {
+     "name": "Thistle",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/1a/Thistle.png",
+     "nameEs": "Cardo"
+    },
+    {
+     "name": "Queen's Jam",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/01/Queen%27s_Jam.png",
+     "nameEs": "Mermelada de la reina"
+    },
+    {
+     "name": "Woodland Herb Blend",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e3/Woodland_Herb_Blend.png",
+     "nameEs": "Mezcla de hierbas de los bosques"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Bandeja de bufé del Bosque negro"
+ },
+ {
+  "name": "Northern Morning Fare",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f2/Northern_Morning_Fare.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cooked Moose Meat",
+     "qty": 3,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Poteitr",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+     "nameEs": null
+    },
+    {
+     "name": "Oat Flour",
+     "qty": 2,
+     "image": null,
+     "nameEs": null
+    },
+    {
+     "name": "Seasoning of the Gourd",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Whole Roasted Meadow Boar",
+  "biome": "Meadows",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/4b/Whole_Roasted_Meadow_Boar.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cooked Deer Meat",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/bc/Cooked_deer_meat.png",
+     "nameEs": "Carne de ciervo cocinada"
+    },
+    {
+     "name": "Cooked Boar Meat",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/01/Cooked_boar_meat.png",
+     "nameEs": "Carne de jabalí cocinada"
+    },
+    {
+     "name": "Dandelion",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/b/b1/Dandelion.png",
+     "nameEs": "Diente de león"
+    },
+    {
+     "name": "Woodland Herb Blend",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e3/Woodland_Herb_Blend.png",
+     "nameEs": "Mezcla de hierbas de los bosques"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Jabalí de pradera entero asado"
+ },
+ {
+  "name": "Mushrooms Galore á la Mistlands",
+  "biome": "Mistlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/76/Mushrooms_Galore_%C3%A1_la_Mistlands.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Misthare Supreme",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/02/Misthare_Supreme.png",
+     "nameEs": "Supremacía de la liebre neblinosa"
+    },
+    {
+     "name": "Cooked Seeker Meat",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/5c/Cooked_seeker_meat.png",
+     "nameEs": "Carne de buscador cocinada"
+    },
+    {
+     "name": "Yggdrasil Porridge",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/04/Yggdrasil_Porridge.png",
+     "nameEs": "Papilla de Yggdrasil"
+    },
+    {
+     "name": "Herbs of the Hidden Hills",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Herbs_of_the_Hidden_Hills.png",
+     "nameEs": "Hierbas de las colinas ocultas"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Festín de setas al estilo de las Tierras Nubladas"
+ },
+ {
+  "name": "Hearty Mountain Logger's Stew",
+  "biome": "Mountain",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/e/e0/Hearty_Mountain_Logger%27s_Stew.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wolf Skewer",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/cf/Wolf_Skewer.png",
+     "nameEs": "Pincho de lobo"
+    },
+    {
+     "name": "Onion Soup",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/0/05/Onion_Soup.png",
+     "nameEs": "Sopa de cebolla"
+    },
+    {
+     "name": "Carrot",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c3/Carrot.png",
+     "nameEs": "Zanahoria"
+    },
+    {
+     "name": "Mountain Peak Pepper Powder",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f3/Mountain_Peak_Pepper_Powder.png",
+     "nameEs": "Pimienta en polvo del pico"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Guiso vigoroso del leñador de montaña"
+ },
+ {
+  "name": "Sailor's Bounty",
+  "biome": "Ocean",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/76/Sailor%27s_Bounty.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Cooked Fish",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/f/f6/Cooked_Fish.png",
+     "nameEs": "Pescado cocinado"
+    },
+    {
+     "name": "Thistle",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/1a/Thistle.png",
+     "nameEs": "Cardo"
+    },
+    {
+     "name": "Cooked Serpent Meat",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c1/Cooked_serpent_meat.png",
+     "nameEs": "Carne de serpiente preparada"
+    },
+    {
+     "name": "Seafarer's Herbs",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/ed/Seafarer%27s_Herbs.png",
+     "nameEs": "Hierbas de marinero"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Manjar de marinero"
+ },
+ {
+  "name": "Plains Pie Picnic",
+  "biome": "Plains",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f7/Plains_Pie_Picnic.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Bread",
+     "qty": 3,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e1/Bread.png",
+     "nameEs": "Pan"
+    },
+    {
+     "name": "Lox Meat Pie",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/1/1f/Lox_Meat_Pie.png",
+     "nameEs": "Pastel de luey"
+    },
+    {
+     "name": "Cloudberries",
+     "qty": 5,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e4/Cloudberries.png",
+     "nameEs": "Mora de los pantanos"
+    },
+    {
+     "name": "Grasslands Herbalist Harvest",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Grasslands_Herbalist_Harvest.png",
+     "nameEs": "Cosecha de herbolario de pastizales"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Pícnic de pastel de las llanuras"
+ },
+ {
+  "name": "Swamp Dweller's Delight",
+  "biome": "Swamp",
+  "cook": false,
+  "eat": true,
+  "intermediate": true,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/8e/Swamp_Dweller%27s_Delight.png",
+  "recipe": {
+   "station": "Food Preparation Table",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Sausages",
+     "qty": 8,
+     "image": "https://static.wikia.nocookie.net/valheim/images/a/a0/Sausages.png",
+     "nameEs": "Salchichas"
+    },
+    {
+     "name": "Bloodbag",
+     "qty": 4,
+     "image": "https://static.wikia.nocookie.net/valheim/images/3/3d/Bloodbag.png",
+     "nameEs": "Bolsa de sangre"
+    },
+    {
+     "name": "Turnip Stew",
+     "qty": 2,
+     "image": "https://static.wikia.nocookie.net/valheim/images/8/80/Turnip_Stew.png",
+     "nameEs": "Cocido de nabos"
+    },
+    {
+     "name": "Woodland Herb Blend",
+     "qty": 1,
+     "image": "https://static.wikia.nocookie.net/valheim/images/e/e3/Woodland_Herb_Blend.png",
+     "nameEs": "Mezcla de hierbas de los bosques"
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": "Delicias del habitante del pantano"
+ },
+ {
+  "name": "Fiddlehead",
+  "biome": "Ashlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/75/Fiddlehead.png",
+  "recipe": null,
+  "nameEs": "Cabeza de violín"
+ },
+ {
+  "name": "Luminous Larva",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": null,
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Honey",
+  "biome": "Meadows",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c6/Honey.png",
+  "recipe": null,
+  "nameEs": "Miel"
+ },
+ {
+  "name": "Kale",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/d/d1/Kale.png",
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Lingonberries",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": null,
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Mushroom",
+  "biome": "Meadows",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/8/8c/Mushroom.png",
+  "recipe": null,
+  "nameEs": "Seta"
+ },
+ {
+  "name": "Blue Mushroom",
+  "biome": "Console",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "This item can only be spawned via console command, this has already been reported to developers.",
+  "image": "https://static.wikia.nocookie.net/valheim/images/0/03/Mushroomblue.png",
+  "recipe": null,
+  "nameEs": "Seta azul"
+ },
+ {
+  "name": "Jotun Puffs",
+  "biome": "Mistlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/f/f9/Jotun_Puffs.png",
+  "recipe": null,
+  "nameEs": "Soplo de Jotun"
+ },
+ {
+  "name": "Magecap",
+  "biome": "Mistlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/d/d4/Magecap.png",
+  "recipe": null,
+  "nameEs": "Oronja de los magos"
+ },
+ {
+  "name": "Smoke Puff",
+  "biome": "Ashlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/4/45/Smoke_Puff.png",
+  "recipe": null,
+  "nameEs": "Soplahumo"
+ },
+ {
+  "name": "Yellow Mushroom",
+  "biome": "Swamp",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/c/c2/Yellow_Mushroom.png",
+  "recipe": null,
+  "nameEs": "Seta amarilla"
+ },
+ {
+  "name": "Oats",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/3/34/Oats.png",
+  "recipe": {
+   "station": "Oat Seeds",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Oat Seeds",
+     "qty": 1,
+     "image": null,
+     "nameEs": null
+    }
+   ],
+   "yield": 1
+  },
+  "nameEs": null
+ },
+ {
+  "name": "Onion",
+  "biome": "Mountain",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/5/51/Onion.png",
+  "recipe": null,
+  "nameEs": "Cebolla"
+ },
+ {
+  "name": "Poteitr",
+  "biome": "Deep North",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/9b/Poteitr.png",
+  "recipe": null,
+  "nameEs": null
+ },
+ {
+  "name": "Raspberries",
+  "biome": "Meadows",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/7/7e/Raspberries.png",
+  "recipe": null,
+  "nameEs": "Frambuesas"
+ },
+ {
+  "name": "Royal Jelly",
+  "biome": "Mistlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/9/9f/Royal_Jelly.png",
+  "recipe": null,
+  "nameEs": "Jalea real"
+ },
+ {
+  "name": "Vineberry Cluster",
+  "biome": "Ashlands",
+  "cook": false,
+  "eat": true,
+  "intermediate": false,
+  "note": "",
+  "image": "https://static.wikia.nocookie.net/valheim/images/a/a2/Vineberry_Cluster.png",
+  "recipe": null,
+  "nameEs": "Racimo de parrabaya"
+ }
+]
