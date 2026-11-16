@@ -6,7 +6,7 @@
   "eat": false,
   "intermediate": true,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/unbaked-poteitr.png",
   "recipe": {
    "station": "Food Preparation Table",
    "level": null,
@@ -14,7 +14,7 @@
     {
      "name": "Seal Blubber",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/seal-blubber.png",
      "nameEs": null
     },
     {
@@ -32,7 +32,7 @@
     {
      "name": "Oat Flour",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/oat-flour.png",
      "nameEs": null
     }
    ],
@@ -328,7 +328,7 @@
     {
      "name": "Any Fish",
      "qty": 1,
-     "image": null,
+     "image": "https://static.wikia.nocookie.net/valheim/images/7/77/Raw_Fish.png",
      "nameEs": "Cualquier pez"
     }
    ],
@@ -373,7 +373,7 @@
   "eat": true,
   "intermediate": false,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/fish-soup.png",
   "recipe": {
    "station": "Cauldron",
    "level": null,
@@ -472,7 +472,7 @@
   "eat": false,
   "intermediate": true,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/raw-kale-chips.png",
   "recipe": {
    "station": "Food Preparation Table",
    "level": null,
@@ -503,7 +503,7 @@
     {
      "name": "Lingonberries",
      "qty": 5,
-     "image": null,
+     "image": "assets/img/items/lingonberries.png",
      "nameEs": null
     },
     {
@@ -678,13 +678,13 @@
     {
      "name": "Moose Meat",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/moose-meat.png",
      "nameEs": null
     },
     {
      "name": "Lingonberries",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/lingonberries.png",
      "nameEs": null
     },
     {
@@ -810,7 +810,7 @@
   "eat": true,
   "intermediate": false,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/meat-in-bread.png",
   "recipe": {
    "station": "Cauldron",
    "level": null,
@@ -818,7 +818,7 @@
     {
      "name": "Moose Meat",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/moose-meat.png",
      "nameEs": null
     },
     {
@@ -830,13 +830,13 @@
     {
      "name": "Oat Flour",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/oat-flour.png",
      "nameEs": null
     },
     {
      "name": "Lingonberries",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/lingonberries.png",
      "nameEs": null
     }
    ],
@@ -894,13 +894,13 @@
     {
      "name": "Lingonberries",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/lingonberries.png",
      "nameEs": null
     },
     {
      "name": "Oat Milk",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/oat-milk.png",
      "nameEs": null
     }
    ],
@@ -915,7 +915,7 @@
   "eat": true,
   "intermediate": false,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/oat-milk.png",
   "recipe": {
    "station": "Mead Ketill",
    "level": null,
@@ -967,7 +967,7 @@
   "eat": false,
   "intermediate": true,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/oven-pancake-batter.png",
   "recipe": {
    "station": "Food Preparation Table",
    "level": null,
@@ -975,7 +975,7 @@
     {
      "name": "Moose Meat",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/moose-meat.png",
      "nameEs": null
     },
     {
@@ -987,13 +987,13 @@
     {
      "name": "Lingonberries",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/lingonberries.png",
      "nameEs": null
     },
     {
      "name": "Oat Flour",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/oat-flour.png",
      "nameEs": null
     }
    ],
@@ -1016,13 +1016,13 @@
     {
      "name": "Oat Milk",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/oat-milk.png",
      "nameEs": null
     },
     {
      "name": "Oat Flour",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/oat-flour.png",
      "nameEs": null
     },
     {
@@ -1296,7 +1296,7 @@
     {
      "name": "Seal Blubber",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/seal-blubber.png",
      "nameEs": null
     },
     {
@@ -1506,7 +1506,7 @@
     {
      "name": "Moose Meat",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/moose-meat.png",
      "nameEs": null
     },
     {
@@ -2354,7 +2354,7 @@
     {
      "name": "Oven Pancake Batter",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/oven-pancake-batter.png",
      "nameEs": null
     }
    ],
@@ -2377,7 +2377,7 @@
     {
      "name": "Raw Kale Chips",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/raw-kale-chips.png",
      "nameEs": null
     }
    ],
@@ -2400,7 +2400,7 @@
     {
      "name": "Unbaked Poteitr",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/unbaked-poteitr.png",
      "nameEs": null
     }
    ],
@@ -2538,7 +2538,7 @@
     {
      "name": "Cooked Moose Meat",
      "qty": 3,
-     "image": null,
+     "image": "https://static.wikia.nocookie.net/valheim/images/5/5a/Cooked_Moose_Meat.png",
      "nameEs": null
     },
     {
@@ -2550,13 +2550,13 @@
     {
      "name": "Oat Flour",
      "qty": 2,
-     "image": null,
+     "image": "assets/img/items/oat-flour.png",
      "nameEs": null
     },
     {
      "name": "Seasoning of the Gourd",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/seasoning-of-the-gourd.png",
      "nameEs": null
     }
    ],
@@ -2828,7 +2828,7 @@
   "eat": true,
   "intermediate": false,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/luminous-larva.png",
   "recipe": null,
   "nameEs": null
  },
@@ -2861,7 +2861,7 @@
   "eat": true,
   "intermediate": false,
   "note": "",
-  "image": null,
+  "image": "assets/img/items/lingonberries.png",
   "recipe": null,
   "nameEs": null
  },
@@ -2946,7 +2946,7 @@
     {
      "name": "Oat Seeds",
      "qty": 1,
-     "image": null,
+     "image": "assets/img/items/oat-seeds.png",
      "nameEs": null
     }
    ],
