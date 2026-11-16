@@ -28,6 +28,30 @@ const depthOf = k => {
 const chefIndex = new Map(chef.map((c, i) => [key(c.name), i]));
 const label = o => ({ name: o.name, nameEs: o.nameEs ?? null });
 
+// Un paso de fabricación con todo lo que se hace en ese nivel (group = [{ k, crafts }])
+function makeStep(group, baking) {
+  const tables = group.filter(m => recipes.get(m.k).station === 'Food Preparation Table').length;
+  const step = {
+    kind: 'make',
+    verb: baking ? 'Hornea' : tables === 0 ? 'Cocina' : tables === group.length ? 'Prepara' : 'Cocina o prepara',
+    items: group.map(m => {
+      const r = recipes.get(m.k);
+      // Cocinar un ingrediente suelto (carne cruda, masa…): se nombra lo que se mete, con su cantidad
+      if (r.station !== 'Food Preparation Table' && r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
+        return { ...label(info.get(key(r.ingredients[0].name))), qty: m.crafts };
+      // Si la receta rinde varias unidades (ej. 4 salchichas por tanda) se indican las tandas, no las unidades
+      const batches = (r.yield ?? 1) > 1;
+      return {
+        ...label(info.get(m.k)),
+        qty: !batches && m.crafts > 1 ? m.crafts : null,
+        hint: batches ? `${m.crafts} ${m.crafts > 1 ? 'tandas' : 'tanda'} de ${r.yield}` : r.hint ?? null,
+      };
+    }),
+  };
+  if (baking) step.result = group.map(m => label(info.get(m.k)));
+  return step;
+}
+
 // Plan de un bioma: ingredientes base + pasos en orden. En el juego solo caben 3 comidas a la vez,
 // así que se come en tandas de 3 y se vomita después de cada una. Se avanza por "niveles" de receta:
 // primero lo que se come tal cual, luego lo que se cocina con ingredientes base (carnes…), se come eso,
@@ -54,26 +78,9 @@ function plan(biome) {
   const maxDepth = Math.max(0, ...made.map(m => m.depth));
   for (let d = 0; d <= maxDepth; d++) {
     const group = made.filter(m => m.depth === d).sort((a, b) => (chefIndex.get(a.k) ?? 999) - (chefIndex.get(b.k) ?? 999));
-    if (group.length) {
-      const tables = group.filter(m => recipes.get(m.k).station === 'Food Preparation Table').length;
-      steps.push({
-        kind: 'make',
-        verb: tables === 0 ? 'Cocina' : tables === group.length ? 'Prepara' : 'Cocina o prepara',
-        items: group.map(m => {
-          const r = recipes.get(m.k);
-          // Cocinar un ingrediente suelto (carne cruda…): se nombra lo que se cocina, con su cantidad
-          if (r.station !== 'Food Preparation Table' && r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
-            return { ...label(info.get(key(r.ingredients[0].name))), qty: m.crafts };
-          // Si la receta rinde varias unidades (ej. 4 salchichas por tanda) se indican las tandas, no las unidades
-          const batches = (r.yield ?? 1) > 1;
-          return {
-            ...label(info.get(m.k)),
-            qty: !batches && m.crafts > 1 ? m.crafts : null,
-            hint: batches ? `${m.crafts} ${m.crafts > 1 ? 'tandas' : 'tanda'} de ${r.yield}` : r.hint ?? null,
-          };
-        }),
-      });
-    }
+    // Lo que va al horno se separa en su propio paso ("Hornea") y dice qué se obtiene al hornearlo
+    const oven = group.filter(m => recipes.get(m.k).station === 'Stone Oven');
+    [group.filter(m => !oven.includes(m)), oven].filter(g => g.length).forEach(g => steps.push(makeStep(g, g === oven)));
     const eat = targets.filter(t => depthOf(key(t.name)) === d);
     for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', items: eat.slice(i, i + 3).map(label) });
   }
@@ -82,7 +89,7 @@ function plan(biome) {
 
 // Las listas de ingredientes están validadas en todos los biomas; los pasos solo en estos.
 // Los demás se añaden aquí conforme se revisen.
-const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain'];
+const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains'];
 
 const perBiome = biomes.filter(b => b.en !== 'Console')
   .map(b => { const p = plan(b.en); return { ...b, items: p.items, steps: STEPS_REVIEWED.includes(b.en) ? p.steps : [] }; })
