@@ -64,7 +64,13 @@ function plan(biome) {
           // Cocinar un ingrediente suelto (carne cruda…): se nombra lo que se cocina, con su cantidad
           if (r.station !== 'Food Preparation Table' && r.ingredients.length === 1 && r.ingredients[0].qty === 1 && (r.yield ?? 1) === 1)
             return { ...label(info.get(key(r.ingredients[0].name))), qty: m.crafts };
-          return { ...label(info.get(m.k)), qty: m.crafts > 1 ? m.crafts : null, hint: r.hint ?? null };
+          // Si la receta rinde varias unidades (ej. 4 salchichas por tanda) se indican las tandas, no las unidades
+          const batches = (r.yield ?? 1) > 1;
+          return {
+            ...label(info.get(m.k)),
+            qty: !batches && m.crafts > 1 ? m.crafts : null,
+            hint: batches ? `${m.crafts} ${m.crafts > 1 ? 'tandas' : 'tanda'} de ${r.yield}` : r.hint ?? null,
+          };
         }),
       });
     }
@@ -76,7 +82,7 @@ function plan(biome) {
 
 // Las listas de ingredientes están validadas en todos los biomas; los pasos solo en estos.
 // Los demás se añaden aquí conforme se revisen.
-const STEPS_REVIEWED = ['Meadows', 'Black Forest'];
+const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp'];
 
 const perBiome = biomes.filter(b => b.en !== 'Console')
   .map(b => { const p = plan(b.en); return { ...b, items: p.items, steps: STEPS_REVIEWED.includes(b.en) ? p.steps : [] }; })
