@@ -82,7 +82,7 @@ function plan(biome) {
 
 // Las listas de ingredientes están validadas en todos los biomas; los pasos solo en estos.
 // Los demás se añaden aquí conforme se revisen.
-const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp'];
+const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain'];
 
 const perBiome = biomes.filter(b => b.en !== 'Console')
   .map(b => { const p = plan(b.en); return { ...b, items: p.items, steps: STEPS_REVIEWED.includes(b.en) ? p.steps : [] }; })
