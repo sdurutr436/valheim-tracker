@@ -25,6 +25,8 @@ const depthOf = k => {
   return depth.get(k);
 };
 
+// Ingredientes base que se consiguen pescando
+const FISHED = new Set(['anglerfish']);
 const chefIndex = new Map(chef.map((c, i) => [key(c.name), i]));
 const label = o => ({ name: o.name, nameEs: o.nameEs ?? null });
 
@@ -84,12 +86,15 @@ function plan(biome) {
     const eat = targets.filter(t => depthOf(key(t.name)) === d);
     for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', items: eat.slice(i, i + 3).map(label) });
   }
+  // Lo que no se recolecta sino que se pesca va al principio de la guía
+  const fished = items.filter(i => FISHED.has(key(i.name)));
+  if (fished.length) steps.unshift({ kind: 'fish', verb: 'Pesca', items: fished.map(i => ({ ...label(i), qty: i.qty })) });
   return { items, steps };
 }
 
 // Las listas de ingredientes están validadas en todos los biomas; los pasos solo en estos.
 // Los demás se añaden aquí conforme se revisen.
-const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains'];
+const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands'];
 
 const perBiome = biomes.filter(b => b.en !== 'Console')
   .map(b => { const p = plan(b.en); return { ...b, items: p.items, steps: STEPS_REVIEWED.includes(b.en) ? p.steps : [] }; })
