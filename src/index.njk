@@ -39,6 +39,7 @@ title: Valheim · Tracker de logros
           </li>
           {%- endfor %}
         </ul>
+        {%- if b.steps.length %}
         <h4 class="steps-h">Pasos</h4>
         <ol class="steps">
           {%- for s in b.steps %}
@@ -47,6 +48,7 @@ title: Valheim · Tracker de logros
             {%- if s.kind == 'eat' %} <em>Vomita.</em>{% endif %}</li>
           {%- endfor %}
         </ol>
+        {%- endif %}
       </section>
       {%- endfor %}
     </div>
