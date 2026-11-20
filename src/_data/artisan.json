@@ -9126,7 +9126,7 @@
  },
  {
   "name": "Uncooked Piquant Pie",
-  "nameEs": " Pastel picante crudo",
+  "nameEs": "Pastel picante crudo",
   "biome": "Ashlands",
   "image": "assets/img/items/uncooked-piquant-pie.png",
   "recipe": {
@@ -12806,7 +12806,7 @@
  },
  {
   "name": "Jrmundling",
-  "nameEs": "Jörmundling ",
+  "nameEs": "Jörmundling",
   "biome": "Ashlands",
   "image": "assets/img/items/jrmundling.png",
   "page": false,

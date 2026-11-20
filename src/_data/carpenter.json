@@ -4411,7 +4411,7 @@
  },
  {
   "name": "Rustic Drawbridge",
-  "nameEs": "Puente levadizo rústico ",
+  "nameEs": "Puente levadizo rústico",
   "biome": "Mountain",
   "image": "assets/img/items/rustic-drawbridge.png",
   "page": false,
