@@ -3,72 +3,84 @@
   "name": "Perch",
   "nameEs": "Perca",
   "biome": "Meadows, Black Forest",
-  "bait": "Fishing Bait"
+  "bait": "Fishing Bait",
+  "baitEs": "Cebo de pesca"
  },
  {
   "name": "Pike",
   "nameEs": "Lucio",
   "biome": "Meadows, Black Forest",
-  "bait": "Fishing Bait"
+  "bait": "Fishing Bait",
+  "baitEs": "Cebo de pesca"
  },
  {
   "name": "Trollfish",
   "nameEs": "Pez troll",
   "biome": "Black Forest",
-  "bait": "Mossy Fishing Bait"
+  "bait": "Mossy Fishing Bait",
+  "baitEs": "Cebo de pesca musgoso"
  },
  {
   "name": "Giant Herring",
   "nameEs": "Arenque gigante",
   "biome": "Swamp",
-  "bait": "Sticky Fishing Bait"
+  "bait": "Sticky Fishing Bait",
+  "baitEs": "Cebo de pesca pegajoso"
  },
  {
   "name": "Tetra",
   "nameEs": "Tetra",
   "biome": "Mountain (Frost Caves)",
-  "bait": "Cold Fishing Bait"
+  "bait": "Cold Fishing Bait",
+  "baitEs": "Cebo de pesca frío"
  },
  {
   "name": "Grouper",
   "nameEs": "Mero",
   "biome": "Plains",
-  "bait": "Stingy Fishing Bait"
+  "bait": "Stingy Fishing Bait",
+  "baitEs": "Cebo de pesca punzante"
  },
  {
   "name": "Tuna",
   "nameEs": "Atún",
   "biome": "Ocean",
-  "bait": "Heavy Fishing Bait"
+  "bait": "Heavy Fishing Bait",
+  "baitEs": "Cebo de pesca pesado"
  },
  {
   "name": "Coral Cod",
   "nameEs": "Bacalao de coral",
   "biome": "Ocean",
-  "bait": "Heavy Fishing Bait"
+  "bait": "Heavy Fishing Bait",
+  "baitEs": "Cebo de pesca pesado"
  },
  {
   "name": "Pufferfish",
   "nameEs": "Pez globo",
   "biome": "Ocean, Mistlands",
-  "bait": "Misty Fishing Bait"
+  "bait": "Misty Fishing Bait",
+  "baitEs": "Cebo de pesca brumoso"
  },
  {
   "name": "Anglerfish",
   "nameEs": "Rape",
   "biome": "Mistlands",
-  "bait": "Misty Fishing Bait"
+  "bait": "Misty Fishing Bait",
+  "baitEs": "Cebo de pesca brumoso"
  },
  {
   "name": "Northern Salmon",
   "nameEs": "Salmón norteño",
   "biome": "Deep North",
-  "bait": "Frosty Fishing Bait"
+  "bait": "Frosty Fishing Bait",
+  "baitEs": "Cebo de pesca gélido"
  },
  {
   "name": "Magmafish",
   "nameEs": "Magmapez",
   "biome": "Ashlands",
-  "bait": "Hot Fishing Bait"
+  "bait": "Hot Fishing Bait",
+  "baitEs": "Cebo de pesca caliente"
  }
 ]

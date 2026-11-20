@@ -343,7 +343,8 @@
     }
    ],
    "yield": 1,
-   "hint": "con cualquier pez",
+   "hint": "any fish",
+   "hintEs": "con cualquier pez",
    "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pescado crudo"
@@ -2972,6 +2973,7 @@
   "eat": true,
   "intermediate": false,
   "note": "This item can only be spawned via console command, this has already been reported to developers.",
+  "noteEs": "Este objeto solo se puede generar con comandos de consola; ya se ha avisado a los desarrolladores.",
   "image": "assets/img/items/blue-mushroom.png",
   "recipe": null,
   "nameEs": "Seta azul"
@@ -3039,7 +3041,8 @@
      "nameEs": "Semillas de avena"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Semillas de avena"
   },
   "nameEs": "Avena"
  },
