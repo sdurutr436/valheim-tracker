@@ -5097,7 +5097,7 @@
   }
  },
  {
-  "name": "Mushrooms Galore  la Mistlands",
+  "name": "Mushrooms Galore á la Mistlands",
   "nameEs": "Festín de setas al estilo de las Tierras Nubladas",
   "biome": "Mistlands",
   "image": "assets/img/items/mushrooms-galore-la-mistlands.png",
@@ -12084,7 +12084,7 @@
   }
  },
  {
-  "name": "Nidhgg",
+  "name": "Nidhögg",
   "nameEs": "Nidhögg",
   "biome": "Ashlands",
   "image": "assets/img/items/nidhgg.png",
@@ -12117,7 +12117,7 @@
   }
  },
  {
-  "name": "Nidhgg the Bleeding",
+  "name": "Nidhögg the Bleeding",
   "nameEs": "Nidhögg sangrienta",
   "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-bleeding.png",
@@ -12150,7 +12150,7 @@
   }
  },
  {
-  "name": "Nidhgg the Thundering",
+  "name": "Nidhögg the Thundering",
   "nameEs": "Nidhögg atronadora",
   "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-thundering.png",
@@ -12183,7 +12183,7 @@
   }
  },
  {
-  "name": "Nidhgg the Primal",
+  "name": "Nidhögg the Primal",
   "nameEs": "Nidhögg primigenia",
   "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-primal.png",
@@ -12805,7 +12805,7 @@
   }
  },
  {
-  "name": "Jrmundling",
+  "name": "Jörmundling",
   "nameEs": "Jörmundling",
   "biome": "Ashlands",
   "image": "assets/img/items/jrmundling.png",
