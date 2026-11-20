@@ -5,6 +5,7 @@
   --display:"Grenze",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
   --r:10px;
 }
+@property --p{syntax:"<percentage>";inherits:true;initial-value:0%}
 *{box-sizing:border-box}
 [hidden]{display:none!important} /* si no, .food-grid{display:grid} enseña las cards en todas las pestañas */
 body{margin:0;font:17px/1.5 var(--body);font-variant-numeric:lining-nums;color:var(--bone);min-height:100vh;
@@ -33,6 +34,19 @@ h1 span{display:block;margin-top:8px;font:500 19px/1.2 var(--body);color:var(--l
 .lang button:hover{color:var(--bone)}
 .lang button[aria-pressed=true]{background:var(--bone);color:var(--night)}
 .lang button:focus-visible{outline:2px solid var(--bone);outline-offset:-2px}
+
+/* Franja de progreso por bioma: el mundo en orden, de Praderas al Norte profundo */
+.saga{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:3px}
+.saga li{min-width:0;display:grid;gap:5px}
+.saga .nm{font-size:14px;font-weight:500;color:var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.saga .bar{height:12px;border-radius:2px;background:linear-gradient(90deg,var(--c) var(--p),color-mix(in srgb,var(--c) 14%,#121a1f) 0)}
+.saga li:first-child .bar{border-radius:6px 2px 2px 6px}
+.saga li:last-child .bar{border-radius:2px 6px 6px 2px}
+.saga li.full .bar{box-shadow:0 0 14px color-mix(in srgb,var(--c) 60%,transparent)}
+.saga small{font-size:13px;color:var(--lichen);font-variant-numeric:tabular-nums}
+/* Al cargar, cada tramo se llena en orden (app.js quita .intro para no repetirlo al marcar) */
+.saga.intro .bar{animation:fill .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 70ms)}
+@keyframes fill{from{--p:0%}}
 
 /* Pestañas de logros */
 .cards{max-width:1184px;margin:34px auto 0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(140px,1fr);overflow-x:auto;scrollbar-width:thin;
@@ -177,6 +191,10 @@ tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration
   header,main,.cards{padding-left:14px;padding-right:14px}
   header{padding-top:26px}
   h1{font-size:42px}
+  .saga{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:12px}
+  .saga li:nth-child(5) .bar{border-radius:2px 6px 6px 2px}
+  .saga li:nth-child(6) .bar{border-radius:6px 2px 2px 6px}
+  .saga .nm{font-size:12px}
   .cards{grid-auto-columns:minmax(140px,42%)}
   .tools input{max-width:none}
   td,th button{padding-left:10px;padding-right:10px}

@@ -49,6 +49,14 @@ const TABS = [
 const checked = (tab, r, col) => isChecked(tab.ns, r.key, col);
 const complete = (tab, r) => tab.cols.filter(c => c.ap(r)).every(c => checked(tab, r, c.k));
 
+// Progreso por bioma (el primero de cada fila) de todos los logros que suman al total
+function biomeProgress() {
+  const p = BIOMES.map(() => [0, 0]);
+  for (const t of TABS) if (!t.noTotal) for (const r of t.rows) for (const c of t.cols)
+    if (!c.extra && c.ap(r) && p[r.bi]) { p[r.bi][1]++; p[r.bi][0] += checked(t, r, c.k); }
+  return p;
+}
+
 function progress(tab) {
   let done = 0, total = 0;
   for (const r of tab.rows) for (const c of tab.cols) if (!c.extra && c.ap(r)) { total++; done += checked(tab, r, c.k); }

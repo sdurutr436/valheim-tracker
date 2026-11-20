@@ -17,6 +17,10 @@ function renderNav() {
   }).join('');
   $('#total').textContent = `${done} de ${total} completados`;
   $('#total-pct').textContent = `${(total ? done / total * 100 : 0).toFixed(1)} %`;
+  // Un tramo por bioma con algo que hacer
+  const bp = biomeProgress();
+  $('#saga').innerHTML = BIOMES.map((b, j) => bp[j][1] && `<li class="b-${slug(b)} ${bp[j][0] === bp[j][1] ? 'full' : ''}" style="--p:${pctOf(...bp[j])}%;--i:${j}">
+    <span class="nm">${biomeText(b)}</span><span class="bar"></span><small>${bp[j][0]}/${bp[j][1]}</small></li>`).filter(Boolean).join('');
 }
 
 function renderChips() {
@@ -82,7 +86,7 @@ $('#status').addEventListener('change', renderView);
 
 function renderLang() {
   document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
-  applyLang(); renderChips(); renderView();
+  applyLang(); renderNav(); renderChips(); renderView();
 }
 $('.lang').addEventListener('click', e => {
   const b = e.target.closest('[data-lang]');
@@ -99,4 +103,5 @@ document.addEventListener('change', e => {
   renderNav(); renderChips();
 });
 
-renderNav(); renderLang();
+renderLang();
+setTimeout(() => $('#saga').classList.remove('intro'), 1800); // solo se llena animada al cargar
