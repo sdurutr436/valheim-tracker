@@ -36,7 +36,9 @@ const wanted = new Map();
 const walk = o => {
   if (Array.isArray(o)) return o.forEach(walk);
   if (!o || typeof o !== 'object') return;
-  if (o.image?.startsWith(PREFIX)) (wanted.get(o.image.slice(PREFIX.length)) ?? wanted.set(o.image.slice(PREFIX.length), new Set()).get(o.image.slice(PREFIX.length))).add(o.name);
+  const file = o.image?.startsWith(PREFIX) && o.image.slice(PREFIX.length);
+  // "wiki" = nombre del objeto en la wiki cuando no coincide con el del juego ("Leather pants" ↔ "Leather Trousers")
+  if (file) [o.wiki, o.name].filter(Boolean).forEach(n => (wanted.get(file) ?? wanted.set(file, new Set()).get(file)).add(n));
   Object.values(o).forEach(walk);
 };
 for (const f of ['chef', 'artisan', 'carpenter']) walk(JSON.parse(readFileSync(`src/_data/${f}.json`, 'utf8')));
