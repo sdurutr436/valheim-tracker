@@ -2,20 +2,21 @@
 let cur = TABS.find(t => t.id === location.hash.slice(1)) || TABS[0];
 let sort = defaultSort(cur), biome = '';
 
+const pctOf = (d, n) => n ? Math.round(d / n * 100) : 0;
+
 function renderNav() {
   let done = 0, total = 0;
   $('#cards').innerHTML = TABS.map(t => {
     const [d, n] = progress(t);
     if (!t.noTotal) { done += d; total += n; }
-    const pct = n ? Math.round(d / n * 100) : 0;
-    return `<button class="card ${t === cur ? 'active' : ''} ${d === n ? 'full' : ''}" data-tab="${t.id}">
-      <div class="t">${t.title}<span>${t.icon}</span></div>
-      <div class="n">${d}<small> / ${n} · ${pct}%</small></div>
-      <div class="bar"><i style="width:${pct}%"></i></div></button>`;
+    return `<button class="card ${t === cur ? 'active' : ''} ${d === n ? 'full' : ''}" data-tab="${t.id}" aria-current="${t === cur ? 'page' : 'false'}">
+      <span class="ico" aria-hidden="true">${t.icon}</span>
+      <span class="t">${t.title}</span>
+      <span class="n">${d}<small>/${n}</small></span>
+      <span class="bar" style="--p:${pctOf(d, n)}%"></span></button>`;
   }).join('');
-  const pct = total ? (done / total * 100).toFixed(1) : 0;
-  $('#total').textContent = `${done} / ${total} · ${pct}%`;
-  $('#totalbar').style.width = pct + '%';
+  $('#total').textContent = `${done} de ${total} completados`;
+  $('#total-pct').textContent = `${(total ? done / total * 100 : 0).toFixed(1)} %`;
 }
 
 function renderChips() {

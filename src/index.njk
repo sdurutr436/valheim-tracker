@@ -4,14 +4,14 @@ title: Valheim · Tracker de logros
 ---
 <header>
   <div class="head-row">
-    <h1><small>ᚠ ᚢ ᚦ ᚨ ᚱ ᚲ</small>Valheim · Tracker de logros</h1>
+    <h1>Valheim <span>Tracker de logros</span></h1>
     <div class="lang" role="group" aria-label="Idioma de los nombres">
       <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
     </div>
   </div>
-  <div class="total"><b id="total"></b><div class="bar"><i id="totalbar"></i></div></div>
+  <p class="total"><b id="total"></b> <span id="total-pct"></span></p>
 </header>
-<div class="cards" id="cards"></div>
+<nav class="cards" id="cards" aria-label="Logros"></nav>
 <main>
   <div class="tools">
     <input id="q" type="search" placeholder="Buscar…" aria-label="Buscar">

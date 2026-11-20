@@ -23,7 +23,7 @@
   </div>
   <div class="food-detail" id="detail-{{ id }}" hidden>
     {% if item.recipe %}
-      <p class="station"><span data-en="{{ item.recipe.station or 'Receta' }}"{% if item.recipe.stationEs %} data-es="{{ item.recipe.stationEs }}"{% endif %}>{{ item.recipe.station or "Receta" }}</span>{% if item.recipe.level %} · nivel {{ item.recipe.level }}{% endif %}{% if item.recipe.yield > 1 %} · rinde {{ item.recipe.yield }}{% endif %}</p>
+      <p class="station"><span data-en="{{ item.recipe.station or 'Receta' }}"{% if item.recipe.stationEs %} data-es="{{ item.recipe.stationEs }}"{% endif %}>{{ item.recipe.station or "Receta" }}</span>{% if item.recipe.level %} <small>nivel {{ item.recipe.level }}</small>{% endif %}{% if item.recipe.yield > 1 %} <small>rinde {{ item.recipe.yield }}</small>{% endif %}</p>
       <ul class="ingredients">
         {% for ing in item.recipe.ingredients %}
         <li>
