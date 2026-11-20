@@ -1,7 +1,7 @@
 /* Noche de niebla y fuego de hogar: lo pendiente es frío, lo completado brilla en ámbar */
 :root{
-  --night:#1a242b;--slate:#212e36;--slate-2:#283741;--line:#33444f;
-  --bone:#ebe5d8;--lichen:#95a39d;--ember:#f2a14a;
+  --night:#10181d;--slate:#1c2830;--slate-2:#26353e;--line:#465a66;--line-2:#6a808c;--chk:#8297a2;
+  --bone:#f5f0e6;--lichen:#b3c0ba;--ember:#f5a64f;
   --display:"Grenze",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
   --r:10px;
 }
@@ -9,15 +9,15 @@
 *{box-sizing:border-box}
 [hidden]{display:none!important} /* si no, .food-grid{display:grid} enseña las cards en todas las pestañas */
 body{margin:0;font:17px/1.5 var(--body);font-variant-numeric:lining-nums;color:var(--bone);min-height:100vh;
-  background:linear-gradient(#22313a,var(--night) 520px) var(--night)}
+  background:linear-gradient(#1a262d,var(--night) 520px) var(--night)}
 :focus-visible{outline:2px solid var(--bone);outline-offset:2px}
 img{display:block}
 .muted{color:var(--lichen)}
 
 /* Biomas: un color por bioma, lo usan chips, insignias, cabeceras y la franja de progreso */
-.b-meadows{--c:#9bd264}.b-black-forest{--c:#5fb487}.b-swamp{--c:#c2b25a}.b-mountain{--c:#9cccec}
-.b-plains{--c:#eacb68}.b-mistlands{--c:#bf9ae6}.b-ashlands{--c:#f27e4b}.b-deep-north{--c:#7fdfea}
-.b-ocean{--c:#6a9fe6}.b-console{--c:var(--lichen)}
+.b-meadows{--c:#9bd264}.b-black-forest{--c:#6cc295}.b-swamp{--c:#cfbf62}.b-mountain{--c:#9cccec}
+.b-plains{--c:#eacb68}.b-mistlands{--c:#bf9ae6}.b-ashlands{--c:#f58a57}.b-deep-north{--c:#7fdfea}
+.b-ocean{--c:#7aaaf0}.b-console{--c:var(--lichen)}
 
 /* Cabecera */
 header,main{max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px}
@@ -39,7 +39,7 @@ h1 span{display:block;margin-top:8px;font:500 19px/1.2 var(--body);color:var(--l
 .saga{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:3px}
 .saga li{min-width:0;display:grid;gap:5px}
 .saga .nm{font-size:14px;font-weight:500;color:var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.saga .bar{height:12px;border-radius:2px;background:linear-gradient(90deg,var(--c) var(--p),color-mix(in srgb,var(--c) 14%,#121a1f) 0)}
+.saga .bar{height:12px;border-radius:2px;background:linear-gradient(90deg,var(--c) var(--p),color-mix(in srgb,var(--c) 26%,#0a1014) 0)}
 .saga li:first-child .bar{border-radius:6px 2px 2px 6px}
 .saga li:last-child .bar{border-radius:2px 6px 6px 2px}
 .saga li.full .bar{box-shadow:0 0 14px color-mix(in srgb,var(--c) 60%,transparent)}
@@ -55,7 +55,7 @@ h1 span{display:block;margin-top:8px;font:500 19px/1.2 var(--body);color:var(--l
   display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;
   padding:14px 12px 16px;border-left:1px solid var(--line);color:var(--lichen)}
 .card:first-child{border-left:0}
-.card img{grid-row:span 2;width:40px;height:40px;padding:3px;object-fit:contain;border-radius:8px;background:radial-gradient(circle at 50% 45%,#3b505a,#18212700 75%)}
+.card img{grid-row:span 2;width:40px;height:40px;padding:3px;object-fit:contain;border-radius:8px;background:radial-gradient(circle at 50% 45%,#3e5560,#1c283000 75%)}
 .card .t{font-weight:700;font-size:15px;line-height:1.15;color:var(--bone)}
 .card .n{font:600 19px/1.1 var(--display);font-variant-numeric:tabular-nums}
 .card .n small{font:14px var(--body);margin-left:2px}
@@ -74,7 +74,7 @@ main{padding-top:24px;padding-bottom:64px}
 .tools input::placeholder{color:var(--lichen)}
 .tools select{appearance:none;padding-right:34px;cursor:pointer;
   background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%2395a39d' stroke-width='2'%3E%3Cpath d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center}
-.tools input:hover,.tools select:hover{border-color:#4a5d69}
+.tools input:hover,.tools select:hover{border-color:var(--line-2)}
 .tools :focus-visible{outline-offset:0;border-color:var(--bone)}
 .count{margin-left:auto;color:var(--lichen);font-size:15px;font-variant-numeric:tabular-nums}
 
@@ -88,7 +88,7 @@ main{padding-top:24px;padding-bottom:64px}
 .chip.on small{color:var(--bone)}
 
 /* Casillas: frías sin marcar, ámbar al completar */
-input[type=checkbox]{appearance:none;margin:0;flex:none;width:22px;height:22px;border:1.5px solid #5b6f7a;border-radius:5px;
+input[type=checkbox]{appearance:none;margin:0;flex:none;width:22px;height:22px;border:1.5px solid var(--chk);border-radius:5px;
   background:var(--night) no-repeat center/14px;cursor:pointer;vertical-align:middle;transition:background-color .15s,border-color .15s}
 input[type=checkbox]:hover{border-color:var(--bone)}
 input[type=checkbox]:checked{background-color:var(--ember);border-color:var(--ember);
@@ -104,13 +104,13 @@ thead th{position:sticky;top:0;z-index:1;background:var(--slate-2);padding:0;tex
 thead th:first-child{border-top-left-radius:var(--r)}thead th:last-child{border-top-right-radius:var(--r)}
 th button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;padding:10px 14px;font-size:14px;font-weight:700;color:var(--lichen);user-select:none}
 th button:hover,th[aria-sort=ascending] button,th[aria-sort=descending] button{color:var(--bone)}
-th button i{font-style:normal;margin-left:6px;opacity:.5;font-size:10px}
+th button i{font-style:normal;margin-left:6px;opacity:.7;font-size:10px}
 th[aria-sort=ascending] i,th[aria-sort=descending] i{opacity:1}
 th button:focus-visible{outline-offset:-2px}
 th.c button{text-align:center}
-td{padding:9px 14px;border-bottom:1px solid #2b3a43}
+td{padding:9px 14px;border-bottom:1px solid #2f3f49}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:not(.grp):hover{background:#ffffff07}
+tbody tr:not(.grp):hover{background:#ffffff0d}
 td.c{text-align:center;width:110px}
 td.i{color:var(--lichen);width:56px;font-size:14px;font-variant-numeric:tabular-nums}
 td.x{color:var(--lichen);font-size:15px}
@@ -131,15 +131,15 @@ h2.grp:first-child{margin-top:0}
 /* Cards con receta desplegable */
 .food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
 .food{background:var(--slate);border:1px solid var(--line);border-radius:var(--r);cursor:pointer}
-.food:hover{border-color:#4a5d69}
+.food:hover{border-color:var(--line-2)}
 .food.open{border-color:color-mix(in srgb,var(--bone) 45%,transparent);background:var(--slate-2)}
 .food.done{box-shadow:inset 3px 0 0 var(--ember)}
-.food.done .food-img img{opacity:.6}
+.food.done .food-img img{opacity:.8}
 .grouped .food-title .badge{display:none} /* ya lo dice la cabecera del bioma */
 .food-head{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:14px;width:100%;padding:12px 14px 8px;cursor:pointer}
 .food-head:focus-visible{outline:2px solid var(--bone);outline-offset:-2px;border-radius:var(--r)}
 .food-img{position:relative;flex:none;width:60px;height:60px;border-radius:8px;display:grid;place-items:center;overflow:hidden;
-  background:radial-gradient(circle at 50% 45%,#34474f,#151d22 75%)}
+  background:radial-gradient(circle at 50% 45%,#38505b,#0f161a 75%)}
 .food-img img{position:absolute;inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);object-fit:contain;filter:drop-shadow(0 2px 3px #0009)}
 .ph{font:700 26px var(--display);color:var(--lichen)}
 .food-img:has(img) .ph{display:none} /* solo si la imagen falla (onerror la quita) */
@@ -150,7 +150,7 @@ h2.grp:first-child{margin-top:0}
 .food.open .chev{transform:rotate(180deg)}
 .food-checks{display:flex;gap:6px;flex-wrap:wrap;padding:2px 14px 14px;font-size:15px}
 .food-checks label{cursor:pointer;display:flex;align-items:center;gap:7px;padding:3px 11px 3px 5px;border:1px solid var(--line);border-radius:99px;color:var(--lichen)}
-.food-checks label:hover{border-color:#5b6f7a;color:var(--bone)}
+.food-checks label:hover{border-color:var(--chk);color:var(--bone)}
 .food-checks label:has(:checked){border-color:color-mix(in srgb,var(--ember) 55%,transparent);color:var(--bone);background:color-mix(in srgb,var(--ember) 12%,transparent)}
 .food-checks input[type=checkbox]{width:18px;height:18px;border-radius:50%;background-size:11px}
 .food-detail{border-top:1px solid var(--line);padding:12px 14px 14px;font-size:16px}
@@ -159,14 +159,14 @@ h2.grp:first-child{margin-top:0}
 .station small{margin-left:8px;font-weight:400;font-size:15px;color:var(--lichen)}
 .ingredients{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px}
 .ingredients li{display:flex;align-items:center;gap:9px}
-.ingredients img,.shop img{border-radius:6px;background:#151d22}
+.ingredients img,.shop img{border-radius:6px;background:#0f161a}
 .ingredients b,.shop ul li b{color:var(--ember);font-variant-numeric:tabular-nums}
 .wiki{color:var(--lichen);font-size:15px}
 .wiki:hover{color:var(--bone)}
 
 /* Desplegable de ingredientes (Chef × Gourmet) */
 .shop-panel{background:var(--slate);border:1px solid var(--line);border-radius:var(--r);margin-bottom:18px}
-.shop-panel[open]{border-color:#4a5d69}
+.shop-panel[open]{border-color:var(--line-2)}
 .shop-panel summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style-position:inside}
 .shop-panel summary small{font-weight:400;margin-left:6px}
 .shop-panel summary:focus-visible{outline-offset:-2px;border-radius:var(--r)}
