@@ -1,212 +1,202 @@
-/* Noche de niebla y fuego de hogar: lo pendiente es frío, lo completado brilla en ámbar */
+/* Paleta: olive leaf, black forest, cornsilk, sunlit clay, copperwood. Fondo y superficies son tonos de black forest;
+   copperwood y olive leaf solo en barras y bordes (como texto no llegan a 6:1). Todo texto ≥ 6:1 */
 :root{
-  --night:#10181d;--slate:#1c2830;--slate-2:#233139;--line:#465a66;--line-2:#6a808c;--chk:#afbdc4;
-  --bone:#f5f0e6;--lichen:#b3c0ba;--ember:#f6ab59;
-  --display:"Grenze",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
-  --r:10px;
+  --olive-leaf:#606c38;--black-forest:#283618;--cornsilk:#fefae0;--sunlit-clay:#dda15e;--copperwood:#bc6c25;
+  --bg:#141c0b;--surface:#1b2510;--surface-2:#222e14;
+  --line:color-mix(in srgb,var(--olive-leaf) 55%,var(--surface));--line-2:var(--olive-leaf);
+  --ink:var(--cornsilk);--muted:#c9c7a8;--accent:var(--sunlit-clay);--on-accent:var(--bg);
+  --display:"Cinzel",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
+  --r:6px;--c:var(--accent);
 }
-@property --p{syntax:"<percentage>";inherits:true;initial-value:0%}
 *{box-sizing:border-box}
-[hidden]{display:none!important} /* si no, .food-grid{display:grid} enseña las cards en todas las pestañas */
-body{margin:0;font:17px/1.5 var(--body);font-variant-numeric:lining-nums;color:var(--bone);min-height:100vh;
-  background:linear-gradient(#1a262d,var(--night) 520px) var(--night)}
-:focus-visible{outline:2px solid var(--bone);outline-offset:2px}
+[hidden]{display:none!important}
+body{margin:0;font:16px/1.5 var(--body);color:var(--ink);min-height:100vh;
+  background:repeating-linear-gradient(90deg,#0000 0 3px,#0000000f 3px 4px),
+    radial-gradient(1100px 420px at 50% -120px,color-mix(in srgb,var(--black-forest) 60%,var(--bg)),#0000 70%),var(--bg)} /* 60%: sunlit clay sigue en 6:1 */
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 img{display:block}
-.muted{color:var(--lichen)}
+.muted{color:var(--muted)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
 
-/* Biomas: un color por bioma, lo usan chips, insignias, cabeceras y la franja de progreso */
-.b-meadows{--c:#9bd264}.b-black-forest{--c:#80caa3}.b-swamp{--c:#cfbf62}.b-mountain{--c:#9cccec}
-.b-plains{--c:#eacb68}.b-mistlands{--c:#cdb0ec}.b-ashlands{--c:#f8a882}.b-deep-north{--c:#7fdfea}
-.b-ocean{--c:#98bdf3}.b-console{--c:var(--lichen)}
+/* Biomas: color de runa, banda, barra y casillas marcadas */
+.b-meadows{--c:#9ed368}.b-black-forest{--c:#8ed0ad}.b-swamp{--c:#d2c36c}.b-mountain{--c:#9cccec}.b-plains{--c:#eacb68}
+.b-mistlands{--c:#d1b6ed}.b-ashlands{--c:#f9b08e}.b-deep-north{--c:#7fdfea}.b-ocean{--c:#a3c4f4}.b-console,.b-other{--c:var(--muted)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 120px}
 
 /* Cabecera */
-header,main{max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px}
-header{padding-top:40px}
-.head-row{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
-h1{margin:0;font:700 56px/.95 var(--display);letter-spacing:.01em}
-h1 span{display:block;margin-top:8px;font:500 19px/1.2 var(--body);color:var(--lichen);letter-spacing:0}
-.total{margin:30px 0 12px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
-.total b{font:600 27px/1 var(--display)}
-#total-pct{font:600 27px/1 var(--display);color:var(--ember);font-variant-numeric:tabular-nums}
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 32px;padding:40px 0 24px}
+.brand{margin-right:auto}
+h1{margin:0;font:800 40px/1 var(--display);letter-spacing:.04em;color:var(--accent)}
+.brand p{margin:6px 0 0;color:var(--muted)}
+.total{flex:0 1 380px;min-width:240px}
+.total-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+#total{font:800 30px/1 var(--display);font-variant-numeric:tabular-nums}
+#total small{font-size:19px;color:var(--muted)}
+#total-pct{font-weight:700;color:var(--accent)}
+.meter{margin-top:10px;height:10px;border-radius:99px;background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--line);overflow:hidden}
+.meter i{display:block;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--copperwood),var(--sunlit-clay));transition:width .5s}
+.lang{display:flex;align-self:flex-start;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.lang button{all:unset;cursor:pointer;padding:6px 13px;font-size:14px;font-weight:700;color:var(--muted)}
+.lang button:hover{color:var(--ink)}
+.lang button[aria-pressed=true]{background:var(--accent);color:var(--on-accent)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
-.lang{display:flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;flex:none}
-.lang button{all:unset;box-sizing:border-box;cursor:pointer;padding:6px 14px;font-size:14px;font-weight:700;color:var(--lichen)}
-.lang button:hover{color:var(--bone)}
-.lang button[aria-pressed=true]{background:var(--bone);color:var(--night)}
-.lang button:focus-visible{outline:2px solid var(--bone);outline-offset:-2px}
+/* Pestañas de logro */
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px}
+.tab{all:unset;box-sizing:border-box;cursor:pointer;position:relative;overflow:hidden;display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:center;
+  padding:12px 14px 14px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--surface-2),var(--surface)) var(--surface-2);color:var(--muted)}
+.tab img{grid-row:span 2;width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 2px 2px #0009)}
+.tab-t{font:700 14px/1.2 var(--display);letter-spacing:.03em;color:var(--ink)}
+.tab-n{font-size:13px;font-variant-numeric:tabular-nums}
+.tab-bar{position:absolute;left:0;bottom:0;height:3px;width:var(--p,0%);background:var(--copperwood)}
+.tab:hover{border-color:var(--line-2)}
+.tab[aria-current=true]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);color:var(--ink)}
+.tab[aria-current=true] .tab-t{color:var(--accent)}
+.tab.full .tab-bar{background:var(--accent)}
+.tab:focus-visible{outline-offset:2px}
 
-/* Franja de progreso por bioma: el mundo en orden, de Praderas al Norte profundo */
-.saga{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:3px}
-.saga li{min-width:0;display:grid;gap:5px}
-.saga .nm{font-size:14px;font-weight:500;color:var(--c);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.saga .bar{height:12px;border-radius:2px;background:linear-gradient(90deg,var(--c) var(--p),color-mix(in srgb,var(--c) 26%,#0a1014) 0)}
-.saga li:first-child .bar{border-radius:6px 2px 2px 6px}
-.saga li:last-child .bar{border-radius:2px 6px 6px 2px}
-.saga li.full .bar{box-shadow:0 0 14px color-mix(in srgb,var(--c) 60%,transparent)}
-.saga small{font-size:13px;color:var(--lichen);font-variant-numeric:tabular-nums}
-/* Al cargar, cada tramo se llena en orden (app.js quita .intro para no repetirlo al marcar) */
-.saga.intro .bar{animation:fill .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i) * 70ms)}
-@keyframes fill{from{--p:0%}}
+/* Dos columnas: índice de biomas y contenido */
+.layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:32px;align-items:start}
+.spy{position:sticky;top:20px}
+.spy ul{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.spy button{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;gap:8px;width:100%;padding:6px 8px;border-radius:var(--r);color:var(--muted);font-size:15px}
+.spy .rune{width:18px;font:700 16px var(--display);color:var(--c)}
+.spy-name{flex:1}
+.spy-n{font-size:13px;font-variant-numeric:tabular-nums}
+.spy-bar{display:block;margin:2px 8px 0;height:2px;border-radius:2px;background:linear-gradient(90deg,var(--c) var(--p,0%),var(--line) 0)}
+.spy button:hover{background:var(--surface-2);color:var(--ink)}
+.spy li.on button{background:color-mix(in srgb,var(--c) 16%,var(--surface));color:var(--ink);box-shadow:inset 2px 0 0 var(--c)}
+.spy button:focus-visible{outline-offset:-2px}
 
-/* Pestañas de logros */
-.cards{max-width:1184px;margin:34px auto 0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(140px,1fr);overflow-x:auto;scrollbar-width:thin;
-  border-top:1px solid var(--line);border-bottom:1px solid var(--line);scroll-snap-type:x proximity}
-.card{all:unset;box-sizing:border-box;cursor:pointer;scroll-snap-align:start;position:relative;
-  display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;
-  padding:14px 12px 16px;border-left:1px solid var(--line);color:var(--lichen)}
-.card:first-child{border-left:0}
-.card img{grid-row:span 2;width:40px;height:40px;padding:3px;object-fit:contain;border-radius:8px;background:radial-gradient(circle at 50% 45%,#3e5560,#1c283000 75%)}
-.card .t{font-weight:700;font-size:15px;line-height:1.15;color:var(--bone)}
-.card .n{font:600 19px/1.1 var(--display);font-variant-numeric:tabular-nums}
-.card .n small{font:14px var(--body);margin-left:2px}
-.card .bar{position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--ember) var(--p),transparent 0)}
-.card:hover{background:var(--slate)}
-.card.active{background:var(--slate-2);color:var(--bone);box-shadow:inset 0 2px 0 var(--bone)}
-.card.full .n{color:var(--ember)}
-.card:focus-visible{outline-offset:-2px}
+/* Barra de búsqueda y estado, fija al hacer scroll */
+.toolbar{position:sticky;top:0;z-index:10;display:flex;flex-wrap:wrap;gap:8px;margin:0 -12px 18px;padding:12px;
+  background:color-mix(in srgb,var(--bg) 92%,#0000);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.toolbar input{flex:1;min-width:200px;height:40px;padding:0 12px;font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.toolbar input::placeholder{color:var(--muted)}
+.toolbar input:hover{border-color:var(--line-2)}
+.toolbar input:focus-visible{outline-offset:0;border-color:var(--accent)}
+.seg{display:flex;gap:2px;padding:3px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r)}
+.seg label{cursor:pointer}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg span{display:block;padding:5px 12px;border-radius:4px;font-size:14px;color:var(--muted)}
+.seg label:hover span{color:var(--ink)}
+.seg input:checked+span{background:var(--accent);color:var(--on-accent);font-weight:700}
+.seg input:focus-visible+span{outline:2px solid var(--accent);outline-offset:1px}
 
-/* Herramientas */
-main{padding-top:24px;padding-bottom:64px}
-.tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
-.tools input,.tools select{height:40px;background:var(--slate);color:var(--bone);border:1px solid var(--line);border-radius:6px;padding:0 12px;font:inherit;font-size:16px}
-.tools input{flex:1;min-width:200px;max-width:340px;padding-left:36px;
-  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23b3c0ba' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") no-repeat 12px center}
-.tools input::placeholder{color:var(--lichen)}
-.tools select{appearance:none;padding-right:34px;cursor:pointer;
-  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23b3c0ba' stroke-width='2'%3E%3Cpath d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center}
-.tools input:hover,.tools select:hover{border-color:var(--line-2)}
-.tools :focus-visible{outline-offset:0;border-color:var(--bone)}
-.count{margin-left:auto;color:var(--lichen);font-size:15px;font-variant-numeric:tabular-nums}
+/* Guía del logro */
+.guide{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--surface-2),var(--surface)) var(--surface-2);margin-bottom:28px}
+.guide summary{display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;list-style:none;font:700 16px var(--display);letter-spacing:.02em}
+.guide summary::-webkit-details-marker,.banner::-webkit-details-marker,.steps summary::-webkit-details-marker{display:none}
+.guide img{width:28px;height:28px;object-fit:contain}
+.guide ol{list-style:none;counter-reset:g;margin:0;padding:12px 16px 14px;border-top:1px solid var(--line);display:grid;gap:8px}
+.guide li{counter-increment:g;display:flex;gap:12px;align-items:baseline}
+.guide li::before{content:counter(g);flex:none;display:grid;place-items:center;width:22px;height:22px;border:1px solid var(--accent);border-radius:50%;
+  font:700 12px var(--display);color:var(--accent);transform:translateY(-1px)}
+.chev{margin-left:auto;color:var(--muted);transition:transform .2s}
+details:not([open])>summary .chev{transform:rotate(-90deg)}
 
-.chips{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
-.chip{all:unset;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;gap:7px;
-  font-size:15px;padding:4px 12px;border-radius:99px;border:1px solid var(--line);color:var(--bone)}
-.chip::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--c)}
-.chip small{color:var(--lichen);font-size:13px;font-variant-numeric:tabular-nums}
-.chip:hover{border-color:var(--c)}
-.chip.on{border-color:var(--c);background:color-mix(in srgb,var(--c) 22%,var(--slate))}
-.chip.on small{color:var(--bone)}
+/* Sección de bioma */
+.biome{margin-bottom:36px;scroll-margin-top:84px}
+.banner{display:flex;align-items:center;gap:12px;padding:12px 16px;cursor:pointer;list-style:none;border:1px solid var(--line);border-left:3px solid var(--c);border-radius:var(--r);
+  background:linear-gradient(90deg,color-mix(in srgb,var(--c) 16%,var(--surface)),var(--surface) 70%) color-mix(in srgb,var(--c) 16%,var(--surface))}
+.biome[open]>.banner{margin-bottom:14px}
+.banner:hover{border-color:var(--line-2);border-left-color:var(--c)}
+.banner .rune{font:700 24px/1 var(--display);color:var(--c)}
+.banner h2{margin:0;font:700 21px/1.2 var(--display);letter-spacing:.04em}
+.banner-n{color:var(--muted);font-size:14px;font-variant-numeric:tabular-nums}
+.stamp{display:none;padding:1px 8px;border:1px solid var(--c);border-radius:4px;font:700 12px var(--display);color:var(--c)}
+.biome.complete .stamp{display:inline-block;animation:stamp .35s cubic-bezier(.3,1.6,.5,1)}
+@keyframes stamp{from{transform:scale(1.8) rotate(-8deg);opacity:0}}
 
-/* Casillas: frías sin marcar, ámbar al completar */
-input[type=checkbox]{appearance:none;margin:0;flex:none;width:22px;height:22px;border:1.5px solid var(--chk);border-radius:5px;
-  background:var(--night) no-repeat center/14px;cursor:pointer;vertical-align:middle;transition:background-color .15s,border-color .15s}
-input[type=checkbox]:hover{border-color:var(--bone)}
-input[type=checkbox]:checked{background-color:var(--ember);border-color:var(--ember);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%231a242b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m2.5 7.5 3 3 6-7'/%3E%3C/svg%3E")}
+/* Materiales del bioma, bajo la cabecera */
+.mats{margin-bottom:14px;padding:12px 16px;border:1px dashed color-mix(in srgb,var(--c) 50%,var(--surface));border-radius:var(--r);background:color-mix(in srgb,var(--c) 6%,var(--surface))}
+.mats-h{margin:0 0 10px;font-size:14px;color:var(--muted)}
+.mats-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.mats-list li{display:flex;align-items:center;gap:7px;padding:3px 12px 3px 5px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:14px}
+.mats-list li:not(:has(img)){padding-left:12px}
+.mats-list img{width:22px;height:22px;object-fit:contain}
+.mats-list b,.ingredients b{color:var(--c);font-variant-numeric:tabular-nums}
+.steps{margin-top:12px}
+.steps summary{cursor:pointer;font:700 14px var(--display);color:var(--ink);list-style:none;display:flex;gap:8px;align-items:center}
+.steps summary::before{content:"▸";color:var(--muted);transition:transform .2s}
+.steps[open] summary::before{transform:rotate(90deg)}
+.steps ol{margin:10px 0 0;padding-left:22px;display:grid;gap:6px;max-width:80ch;font-size:15px}
+.steps b{color:var(--accent)}
+.steps em{color:var(--muted)}
 
-/* Insignia de bioma: punto de color y nombre */
-.badge{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--c);margin-right:10px;white-space:nowrap}
-.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
+/* Tabla por bioma (Hunter, Trophy, Fisherman) */
+.rows-table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);overflow:hidden}
+.rows-table td{padding:9px 16px;border-top:1px solid var(--line)}
+.rows-table tr:first-child td{border-top:0}
+.rows-table tr:hover{background:var(--surface-2)}
+.rows-table tr.done{background:color-mix(in srgb,var(--c) 10%,var(--surface))}
+.rows-table tr.done .nm{color:var(--muted)}
+td.name{display:flex;align-items:center;gap:12px}
+td.x{color:var(--muted);font-size:15px}
+td.c{text-align:right;width:1%;white-space:nowrap}
+.note{color:var(--muted);font-size:14px}
+.ico,.food-img{position:relative;flex:none;display:grid;place-items:center;border-radius:var(--r);background:radial-gradient(circle at 50% 40%,var(--black-forest),var(--bg) 80%)}
+.ico{width:30px;height:30px}
+.ico img{width:26px;height:26px;object-fit:contain}
+.ico:has(img) .ph,.food-img:has(img) .ph{display:none}
+.ph{font:700 14px var(--display);color:var(--muted)}
+.ico img,.food-img img{filter:grayscale(.6);opacity:.75;transition:filter .3s,opacity .3s}
+.done .ico img,.done .food-img img{filter:none;opacity:1}
 
-/* Tabla */
-table{width:100%;border-collapse:separate;border-spacing:0;background:var(--slate);border:1px solid var(--line);border-radius:var(--r)}
-thead th{position:sticky;top:0;z-index:1;background:var(--slate-2);padding:0;text-align:left;border-bottom:1px solid var(--line)}
-thead th:first-child{border-top-left-radius:var(--r)}thead th:last-child{border-top-right-radius:var(--r)}
-th button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;padding:10px 14px;font-size:14px;font-weight:700;color:var(--lichen);user-select:none}
-th button:hover,th[aria-sort=ascending] button,th[aria-sort=descending] button{color:var(--bone)}
-th button i{font-style:normal;margin-left:6px;font-size:10px}
-th button:focus-visible{outline-offset:-2px}
-th.c button{text-align:center}
-td{padding:9px 14px;border-bottom:1px solid #2f3f49}
-tbody tr:last-child td{border-bottom:none}
-tbody tr:not(.grp):hover{background:#ffffff0a}
-td.c{text-align:center;width:110px}
-td.i{color:var(--lichen);width:56px;font-size:14px;font-variant-numeric:tabular-nums}
-td.x{color:var(--lichen);font-size:15px}
-td.bio{width:1%;white-space:nowrap} /* solo lo que ocupen las insignias (vacía al agrupar por bioma) */
-tr.done{background:color-mix(in srgb,var(--ember) 5%,transparent)}
-tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--ember) 70%,transparent)}
-.note{font-size:14px;color:var(--lichen)}
-.empty{padding:48px 24px;text-align:center;color:var(--lichen)}
+/* Casillas como botones: ✓ y color del bioma al marcar */
+.pill{display:inline-flex;align-items:center;gap:5px;cursor:pointer;padding:2px 11px;border:1px solid var(--line);border-radius:99px;font-size:14px;color:var(--muted);transition:border-color .15s,background-color .15s}
+.pill input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.pill:hover{border-color:color-mix(in srgb,var(--c) 60%,var(--surface));color:var(--ink)}
+.pill:has(:checked){border-color:var(--c);background:color-mix(in srgb,var(--c) 16%,var(--surface));color:var(--ink)}
+.pill:has(:checked)::before{content:"✓";color:var(--c);font-weight:700}
+.pill:has(:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+/* Cada logro de cocina enseña solo sus casillas */
+[data-ach=cook] .pill[data-k=eat],[data-ach=eat] .pill[data-k=prep],[data-ach=eat] .pill[data-k=cook]{display:none}
 
-/* Cabecera de bioma (tabla y cards) cuando se ordena por bioma */
-.grp th,h2.grp{font:600 25px/1.1 var(--display);color:var(--c);text-align:left}
-.grp th{padding:22px 14px 8px;background:var(--night);border-bottom:1px solid var(--line)}
-tbody tr.grp:first-child th{padding-top:14px}
-h2.grp{grid-column:1/-1;margin:18px 0 0;padding-bottom:6px;border-bottom:1px solid color-mix(in srgb,var(--c) 35%,transparent)}
-h2.grp:first-child{margin-top:0}
-.grp-n{margin-left:12px;font:500 15px var(--body);color:var(--lichen);font-variant-numeric:tabular-nums}
-
-/* Cards con receta desplegable */
-.food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
-.food{background:var(--slate);border:1px solid var(--line);border-radius:var(--r);cursor:pointer}
+/* Cards con receta (Master Chef, Gourmet, Artisan, Carpenter) */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px;align-items:start}
+.food{border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--surface-2),var(--surface)) var(--surface-2);cursor:pointer}
 .food:hover{border-color:var(--line-2)}
-.food.open{border-color:color-mix(in srgb,var(--bone) 45%,transparent);background:var(--slate-2)}
-.food.done{box-shadow:inset 3px 0 0 var(--ember)}
-.food.done .food-img img{opacity:.8}
-.grouped .food-title .badge{display:none} /* ya lo dice la cabecera del bioma */
-.food-head{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:14px;width:100%;padding:12px 14px 8px;cursor:pointer}
-.food-head:focus-visible{outline:2px solid var(--bone);outline-offset:-2px;border-radius:var(--r)}
-.food-img{position:relative;flex:none;width:60px;height:60px;border-radius:8px;display:grid;place-items:center;overflow:hidden;
-  background:radial-gradient(circle at 50% 45%,#38505b,#0f161a 75%)}
-.food-img img{position:absolute;inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);object-fit:contain;filter:drop-shadow(0 2px 3px #0009)}
-.ph{font:700 26px var(--display);color:var(--lichen)}
-.food-img:has(img) .ph{display:none} /* solo si la imagen falla (onerror la quita) */
-.food-title{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;align-items:flex-start}
-.food-name{font-weight:700;font-size:17px;line-height:1.2}
-.food.done .food-name{color:var(--lichen)}
-.chev{color:var(--lichen);transition:transform .2s}
+.food.open{border-color:color-mix(in srgb,var(--c) 70%,var(--surface))}
+.food.done{border-color:color-mix(in srgb,var(--c) 55%,var(--surface))}
+.food-head{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;padding:12px 12px 6px;cursor:pointer}
+.food-head:focus-visible{outline:2px solid var(--accent);outline-offset:-2px;border-radius:var(--r)}
+.food-img{width:48px;height:48px}
+.food-img img{width:42px;height:42px;object-fit:contain}
+.food.done .food-img::after{content:"✓";position:absolute;right:-6px;bottom:-6px;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;
+  background:var(--c);color:var(--on-accent);font-size:12px;font-weight:700;animation:stamp .35s cubic-bezier(.3,1.6,.5,1)}
+.food-name{flex:1;min-width:0;font-weight:700;line-height:1.25}
+.food .chev{margin-left:0}
 .food.open .chev{transform:rotate(180deg)}
-.food-checks{display:flex;gap:6px;flex-wrap:wrap;padding:2px 14px 14px;font-size:15px}
-.food-checks label{cursor:pointer;display:flex;align-items:center;gap:7px;padding:3px 11px 3px 5px;border:1px solid var(--line);border-radius:99px;color:var(--lichen)}
-.food-checks label:hover{border-color:var(--chk);color:var(--bone)}
-.food-checks label:has(:checked){border-color:color-mix(in srgb,var(--ember) 55%,transparent);color:var(--bone)}
-.food-checks input[type=checkbox]{width:18px;height:18px;border-radius:50%;background-size:11px}
-.food-detail{border-top:1px solid var(--line);padding:12px 14px 14px;font-size:16px}
+.checks{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 12px 72px}
+.food-detail{border-top:1px solid var(--line);padding:10px 14px 12px;font-size:15px;cursor:auto}
 .food-detail p{margin:0 0 8px}
-.station{color:var(--bone);font-weight:700}
-.station small{margin-left:8px;font-weight:400;font-size:15px;color:var(--lichen)}
-.ingredients{list-style:none;margin:0 0 12px;padding:0;display:grid;gap:6px}
-.ingredients li{display:flex;align-items:center;gap:9px}
-.ingredients img,.shop img{border-radius:6px;background:#0f161a}
-.ingredients b,.shop ul li b{color:var(--ember);font-variant-numeric:tabular-nums}
-.wiki{color:var(--lichen);font-size:15px}
-.wiki:hover{color:var(--bone)}
+.station{font:700 13px var(--display);letter-spacing:.03em;color:var(--muted)}
+.station small{margin-left:6px;font:400 14px var(--body)}
+.ingredients{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:4px}
+.ingredients li{display:flex;align-items:center;gap:8px}
+.ingredients li span{flex:1}
+.ingredients img{width:24px;height:24px;object-fit:contain}
+.wiki{color:var(--muted);font-size:14px}
+.wiki:hover{color:var(--accent)}
 
-/* Desplegable de ingredientes (Chef × Gourmet) */
-.shop-panel{background:var(--slate);border:1px solid var(--line);border-radius:var(--r);margin-bottom:18px}
-.shop-panel[open]{border-color:var(--line-2)}
-.shop-panel summary{cursor:pointer;padding:12px 16px;font-weight:700;list-style-position:inside}
-.shop-panel summary small{font-weight:400;margin-left:6px}
-.shop-panel summary:focus-visible{outline-offset:-2px;border-radius:var(--r)}
-.shop-panel > :not(summary){margin-left:16px;margin-right:16px}
-.shop-panel > :last-child{margin-bottom:16px}
-.shop-note{margin-top:0;margin-bottom:12px;max-width:72ch;font-size:15px}
-.shop-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;align-items:start}
-.shop{background:var(--night);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
-.shop h3{margin:0 0 10px;font-size:15px}
-.shop ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.shop ul li{display:flex;align-items:center;gap:9px}
-.shop ul li b{min-width:30px}
+.empty{padding:80px 0;text-align:center;color:var(--muted)}
 
-/* Con un bioma filtrado: solo su lista, en horizontal y apilándose en filas */
-.shop-panel.filtered .shop-note,.shop-panel.filtered .shop h3{display:none}
-.shop-panel.filtered .shop-grid{display:block}
-.shop-panel.filtered .shop{background:none;border:0;padding:0}
-.shop-panel.filtered .shop ul{display:flex;flex-wrap:wrap;gap:6px}
-.shop-panel.filtered .shop ul li{background:var(--night);border:1px solid var(--line);border-radius:99px;padding:3px 12px 3px 4px;font-size:15px}
-.shop-panel.filtered .shop ul li b{min-width:0}
-.shop-panel.filtered .shop img{width:24px;height:24px;border-radius:50%}
-
-/* Pasos (solo con un bioma filtrado) */
-.shop .steps-h,.shop .steps{display:none}
-.shop-panel.filtered .steps-h{display:block;margin:16px 0 8px;font:600 19px var(--display);color:var(--bone)}
-.shop-panel.filtered .steps{display:grid;gap:6px;margin:0;padding-left:22px;max-width:80ch}
-.steps b{color:var(--ember)}
-.steps em{color:var(--lichen)}
-
-@media(max-width:760px){
-  header,main,.cards{padding-left:14px;padding-right:14px}
-  header{padding-top:26px}
-  h1{font-size:42px}
-  .saga{grid-template-columns:repeat(5,minmax(0,1fr));row-gap:12px}
-  .saga li:nth-child(5) .bar{border-radius:2px 6px 6px 2px}
-  .saga li:nth-child(6) .bar{border-radius:6px 2px 2px 6px}
-  .saga .nm{font-size:12px}
-  .cards{grid-auto-columns:minmax(140px,42%)}
-  .tools input{max-width:none}
-  td,th button{padding-left:10px;padding-right:10px}
-  td.bio{width:auto}
-  td.c{width:80px}
+@media(max-width:1000px){
+  .layout{grid-template-columns:minmax(0,1fr);gap:0}
+  .spy{position:static;margin-bottom:12px}
+  .spy ul{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}
+  .spy li{flex:none;min-width:140px}
+  .tabs{grid-template-columns:repeat(2,1fr)}
 }
-@media(prefers-reduced-motion:reduce){*,*::before{transition:none!important;animation:none!important}}
+@media(max-width:560px){
+  .wrap{padding:0 14px 80px}
+  h1{font-size:32px}
+  .total{flex-basis:100%;order:1} /* EN/ES sube junto al título */
+  .tab{grid-template-columns:28px 1fr;padding:10px}
+  .tab img{width:28px;height:28px}
+  .checks{padding-left:12px}
+  .rows-table td{padding:8px 10px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
