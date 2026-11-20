@@ -100,6 +100,7 @@ document.addEventListener('change', e => {
   setChecked(cur.ns, i.dataset.key, i.dataset.k, i.checked);
   const r = cur.rows.find(r => r.key === i.dataset.key);
   i.closest('tr, .food').classList.toggle('done', complete(cur, r));
+  document.querySelectorAll('[data-grp]').forEach(h => { h.innerHTML = groupHead(cur, +h.dataset.grp); });
   renderNav(); renderChips();
 });
 

@@ -110,15 +110,21 @@ th button:focus-visible{outline-offset:-2px}
 th.c button{text-align:center}
 td{padding:9px 14px;border-bottom:1px solid #2b3a43}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:#ffffff07}
+tbody tr:not(.grp):hover{background:#ffffff07}
 td.c{text-align:center;width:110px}
 td.i{color:var(--lichen);width:56px;font-size:14px;font-variant-numeric:tabular-nums}
 td.x{color:var(--lichen);font-size:15px}
-td.bio{width:220px}
+td.bio{width:1%;white-space:nowrap} /* solo lo que ocupen las insignias (vacía al agrupar por bioma) */
 tr.done{background:color-mix(in srgb,var(--ember) 6%,transparent)}
 tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--ember) 70%,transparent)}
 .note{font-size:14px;color:var(--lichen)}
 .empty{padding:48px 24px;text-align:center;color:var(--lichen)}
+
+/* Cabecera de bioma en la tabla cuando se ordena por bioma */
+.grp th{font:600 25px/1.1 var(--display);color:var(--c);text-align:left}
+.grp th{padding:22px 14px 8px;background:var(--night);border-bottom:1px solid var(--line)}
+tbody tr.grp:first-child th{padding-top:14px}
+.grp-n{margin-left:12px;font:500 15px var(--body);color:var(--lichen);font-variant-numeric:tabular-nums}
 
 /* Cards con receta desplegable */
 .food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;align-items:start}
