@@ -15,15 +15,15 @@
       <span class="chev" aria-hidden="true">▾</span>
     </button>
     <div class="food-checks">
-      {% if item.intermediate %}<label><input type="checkbox" data-k="prep"> Preparado</label>{% endif %}
-      {% if item.cook %}<label><input type="checkbox" data-k="cook"> Cocinado</label>{% endif %}
-      {% if item.eat %}<label><input type="checkbox" data-k="eat"> Comido</label>{% endif %}
-      {% if not (item.cook or item.eat) %}<label><input type="checkbox" data-k="done"> Hecho</label>{% endif %}
+      {% if item.intermediate %}<label><input type="checkbox" data-k="prep"> <span data-en="Prepared" data-es="Preparado">Prepared</span></label>{% endif %}
+      {% if item.cook %}<label><input type="checkbox" data-k="cook"> <span data-en="Cooked" data-es="Cocinado">Cooked</span></label>{% endif %}
+      {% if item.eat %}<label><input type="checkbox" data-k="eat"> <span data-en="Eaten" data-es="Comido">Eaten</span></label>{% endif %}
+      {% if not (item.cook or item.eat) %}<label><input type="checkbox" data-k="done"> <span data-en="Done" data-es="Hecho">Done</span></label>{% endif %}
     </div>
   </div>
   <div class="food-detail" id="detail-{{ id }}" hidden>
     {% if item.recipe %}
-      <p class="station"><span data-en="{{ item.recipe.station or 'Receta' }}"{% if item.recipe.stationEs %} data-es="{{ item.recipe.stationEs }}"{% endif %}>{{ item.recipe.station or "Receta" }}</span>{% if item.recipe.level %} <small>nivel {{ item.recipe.level }}</small>{% endif %}{% if item.recipe.yield > 1 %} <small>rinde {{ item.recipe.yield }}</small>{% endif %}</p>
+      <p class="station"><span data-en="{{ item.recipe.station or 'Recipe' }}" data-es="{{ item.recipe.stationEs or ('Receta' if not item.recipe.station) }}">{{ item.recipe.station or 'Recipe' }}</span>{% if item.recipe.level %} <small><span data-en="level" data-es="nivel">level</span> {{ item.recipe.level }}</small>{% endif %}{% if item.recipe.yield > 1 %} <small><span data-en="makes" data-es="rinde">makes</span> {{ item.recipe.yield }}</small>{% endif %}</p>
       <ul class="ingredients">
         {% for ing in item.recipe.ingredients %}
         <li>
@@ -33,13 +33,13 @@
         {% endfor %}
       </ul>
     {% else %}
-      <p class="muted">Sin receta en la wiki (ingrediente base o contenido muy reciente).</p>
+      <p class="muted" data-en="No recipe on the wiki (base ingredient or very recent content)." data-es="Sin receta en la wiki (ingrediente base o contenido muy reciente).">No recipe on the wiki (base ingredient or very recent content).</p>
     {% endif %}
-    {% if item.note %}<p class="muted">{{ item.note }}</p>{% endif %}
+    {% if item.note %}<p class="muted" data-en="{{ item.note }}" data-es="{{ item.noteEs }}">{{ item.note }}</p>{% endif %}
     {% if item.page == false %}
-    <a class="wiki" href="https://valheim.fandom.com/wiki/Special:Search?query={{ w | urlencode }}" target="_blank" rel="noopener">Buscar en la wiki ↗</a>
+    <a class="wiki" href="https://valheim.fandom.com/wiki/Special:Search?query={{ w | urlencode }}" target="_blank" rel="noopener" data-en="Search the wiki ↗" data-es="Buscar en la wiki ↗">Search the wiki ↗</a>
     {% else %}
-    <a class="wiki" href="https://valheim.fandom.com/wiki/{{ w | replace(' ', '_') | urlencode }}" target="_blank" rel="noopener">Ver en la wiki ↗</a>
+    <a class="wiki" href="https://valheim.fandom.com/wiki/{{ w | replace(' ', '_') | urlencode }}" target="_blank" rel="noopener" data-en="View on the wiki ↗" data-es="Ver en la wiki ↗">View on the wiki ↗</a>
     {% endif %}
   </div>
 </article>

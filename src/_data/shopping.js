@@ -35,7 +35,8 @@ function makeStep(group, baking) {
   const tables = group.filter(m => recipes.get(m.k).station === 'Food Preparation Table').length;
   const step = {
     kind: 'make',
-    verb: baking ? 'Hornea' : tables === 0 ? 'Cocina' : tables === group.length ? 'Prepara' : 'Cocina o prepara',
+    verb: baking ? { en: 'Bake', es: 'Hornea' } : tables === 0 ? { en: 'Cook', es: 'Cocina' }
+      : tables === group.length ? { en: 'Prepare', es: 'Prepara' } : { en: 'Cook or prepare', es: 'Cocina o prepara' },
     items: group.map(m => {
       const r = recipes.get(m.k);
       // Cocinar un ingrediente suelto (carne cruda, masa…): se nombra lo que se mete, con su cantidad
@@ -46,7 +47,8 @@ function makeStep(group, baking) {
       return {
         ...label(info.get(m.k)),
         qty: !batches && m.crafts > 1 ? m.crafts : null,
-        hint: batches ? `${m.crafts} ${m.crafts > 1 ? 'tandas' : 'tanda'} de ${r.yield}` : r.hint ?? null,
+        hint: batches ? { en: `${m.crafts} ${m.crafts > 1 ? 'batches' : 'batch'} of ${r.yield}`, es: `${m.crafts} ${m.crafts > 1 ? 'tandas' : 'tanda'} de ${r.yield}` }
+          : r.hint ? { en: r.hint, es: r.hintEs ?? r.hint } : null,
       };
     }),
   };
@@ -84,11 +86,11 @@ function plan(biome) {
     const oven = group.filter(m => recipes.get(m.k).station === 'Stone Oven');
     [group.filter(m => !oven.includes(m)), oven].filter(g => g.length).forEach(g => steps.push(makeStep(g, g === oven)));
     const eat = targets.filter(t => depthOf(key(t.name)) === d);
-    for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', items: eat.slice(i, i + 3).map(label) });
+    for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', verb: { en: 'Eat', es: 'Come' }, items: eat.slice(i, i + 3).map(label) });
   }
   // Lo que no se recolecta sino que se pesca va al principio de la guía
   const fished = items.filter(i => FISHED.has(key(i.name)));
-  if (fished.length) steps.unshift({ kind: 'fish', verb: 'Pesca', items: fished.map(i => ({ ...label(i), qty: i.qty })) });
+  if (fished.length) steps.unshift({ kind: 'fish', verb: { en: 'Fish', es: 'Pesca' }, items: fished.map(i => ({ ...label(i), qty: i.qty })) });
   return { items, steps };
 }
 

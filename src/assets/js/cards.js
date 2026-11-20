@@ -31,9 +31,11 @@ function renderCards(tab, rows, grouped) {
   });
 }
 
-// Nombres y biomas según el idioma (el HTML estático viene en inglés)
+// Textos, nombres y biomas según el idioma (el HTML estático viene en inglés).
+// data-en/data-es cambian el texto; data-en-label/data-es-label, el aria-label
 function applyLang() {
   document.querySelectorAll('[data-en]').forEach(el => { el.textContent = (lang === 'es' && el.dataset.es) || el.dataset.en; });
+  document.querySelectorAll('[data-en-label]').forEach(el => { el.setAttribute('aria-label', (lang === 'es' && el.dataset.esLabel) || el.dataset.enLabel); });
   document.querySelectorAll('.badge[data-biome]').forEach(el => { el.textContent = biomeText(el.dataset.biome); });
 }
 

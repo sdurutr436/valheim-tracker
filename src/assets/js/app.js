@@ -11,12 +11,13 @@ function renderNav() {
     if (!t.noTotal) { done += d; total += n; }
     return `<button class="card ${t === cur ? 'active' : ''} ${d === n ? 'full' : ''}" data-tab="${t.id}" aria-current="${t === cur ? 'page' : 'false'}">
       <img src="assets/img/items/${t.icon}.png" alt="" width="40" height="40">
-      <span class="t">${t.title}</span>
+      <span class="t">${tx(t.title)}</span>
       <span class="n">${d}<small>/${n}</small></span>
       <span class="bar" style="--p:${pctOf(d, n)}%"></span></button>`;
   }).join('');
-  $('#total').textContent = `${done} de ${total} completados`;
-  $('#total-pct').textContent = `${(total ? done / total * 100 : 0).toFixed(1)} %`;
+  $('#total').textContent = tx({ en: `${done} of ${total} completed`, es: `${done} de ${total} completados` });
+  const pct = (total ? done / total * 100 : 0).toLocaleString(lang, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  $('#total-pct').textContent = tx({ en: pct + '%', es: pct + ' %' }); // 37.7% / 37,7 %
   // Un tramo por bioma con algo que hacer
   const bp = biomeProgress();
   $('#saga').innerHTML = BIOMES.map((b, j) => bp[j][1] && `<li class="b-${slug(b)} ${bp[j][0] === bp[j][1] ? 'full' : ''}" style="--p:${pctOf(...bp[j])}%;--i:${j}">
@@ -51,7 +52,7 @@ function renderView() {
   order.querySelector('[value=biome]').hidden = !cur.biome;
   order.value = sort.k;
   renderShopping(cur.id === 'both');
-  $('#count').textContent = `${rows.length} de ${cur.rows.length}`;
+  $('#count').textContent = `${rows.length} ${tx({ en: 'of', es: 'de' })} ${cur.rows.length}`;
   if (cards) renderCards(cur, rows, sort.k === 'biome'); else renderTable($('#table'), cur, rows, sort);
 }
 
@@ -86,6 +87,9 @@ $('#status').addEventListener('change', renderView);
 
 function renderLang() {
   document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+  document.documentElement.lang = lang;
+  document.title = tx({ en: 'Valheim · Achievement tracker', es: 'Valheim · Tracker de logros' });
+  $('#q').placeholder = tx({ en: 'Search by name', es: 'Buscar por nombre' });
   applyLang(); renderNav(); renderChips(); renderView();
 }
 $('.lang').addEventListener('click', e => {
