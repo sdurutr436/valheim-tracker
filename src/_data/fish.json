@@ -1,61 +1,73 @@
 [
  {
   "name": "Perch",
+  "nameEs": "Perca",
   "biome": "Meadows, Black Forest",
   "bait": "Fishing Bait"
  },
  {
   "name": "Pike",
+  "nameEs": "Lucio",
   "biome": "Meadows, Black Forest",
   "bait": "Fishing Bait"
  },
  {
   "name": "Trollfish",
+  "nameEs": "Pez troll",
   "biome": "Black Forest",
   "bait": "Mossy Fishing Bait"
  },
  {
   "name": "Giant Herring",
+  "nameEs": "Arenque gigante",
   "biome": "Swamp",
   "bait": "Sticky Fishing Bait"
  },
  {
   "name": "Tetra",
+  "nameEs": "Tetra",
   "biome": "Mountain (Frost Caves)",
   "bait": "Cold Fishing Bait"
  },
  {
   "name": "Grouper",
+  "nameEs": "Mero",
   "biome": "Plains",
   "bait": "Stingy Fishing Bait"
  },
  {
   "name": "Tuna",
+  "nameEs": "Atún",
   "biome": "Ocean",
   "bait": "Heavy Fishing Bait"
  },
  {
   "name": "Coral Cod",
+  "nameEs": "Bacalao de coral",
   "biome": "Ocean",
   "bait": "Heavy Fishing Bait"
  },
  {
   "name": "Pufferfish",
+  "nameEs": "Pez globo",
   "biome": "Ocean, Mistlands",
   "bait": "Misty Fishing Bait"
  },
  {
   "name": "Anglerfish",
+  "nameEs": "Rape",
   "biome": "Mistlands",
   "bait": "Misty Fishing Bait"
  },
  {
   "name": "Northern Salmon",
+  "nameEs": "Salmón norteño",
   "biome": "Deep North",
   "bait": "Frosty Fishing Bait"
  },
  {
   "name": "Magmafish",
+  "nameEs": "Magmapez",
   "biome": "Ashlands",
   "bait": "Hot Fishing Bait"
  }

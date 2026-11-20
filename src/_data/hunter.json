@@ -1,434 +1,542 @@
 [
  {
   "name": "Abomination",
+  "nameEs": "Abominación",
   "biome": "Swamp"
  },
  {
   "name": "Asksvin",
+  "nameEs": "Cenicerdo",
   "biome": "Ashlands"
  },
  {
   "name": "Asksvin Hatchling",
+  "nameEs": "Cría de cenicerdo",
   "biome": "Ashlands"
  },
  {
   "name": "Aspect of the Writhing Dead",
+  "nameEs": "Aspecto del Muerto Retorcido",
   "biome": "Deep North"
  },
  {
   "name": "Aspect of the Lightning Stag",
+  "nameEs": "Aspecto del Ciervo del Rayo",
   "biome": "Deep North"
  },
  {
   "name": "Aspect of the Living Forest",
+  "nameEs": "Aspecto del Bosque Viviente",
   "biome": "Deep North"
  },
  {
   "name": "Aspect of the Emerald Flame",
+  "nameEs": "Aspecto de la Llama Esmeralda",
   "biome": "Deep North"
  },
  {
   "name": "Aspect of the Dragon Mother",
+  "nameEs": "Aspecto de la Madre Dragón",
   "biome": "Deep North"
  },
  {
   "name": "Aspect of the Crawling Matriarch",
+  "nameEs": "Aspecto de la Matriarca Reptante",
   "biome": "Deep North"
  },
  {
   "name": "Root",
+  "nameEs": "Raíz",
   "biome": "Black Forest"
  },
  {
   "name": "Aspect of the Twisted Soul",
+  "nameEs": "Aspecto del Alma Retorcida",
   "biome": "Deep North"
  },
  {
   "name": "Barka",
+  "nameEs": "Barka",
   "biome": "Deep North"
  },
  {
   "name": "Bat",
+  "nameEs": "Murciélago",
   "biome": "Mountain"
  },
  {
   "name": "Bear",
+  "nameEs": "Bjorn",
   "biome": "Black Forest"
  },
  {
   "name": "Spiritcaller Bjorn",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "Blob",
+  "nameEs": "Babosa",
   "biome": "Swamp"
  },
  {
   "name": "Oozer",
+  "nameEs": "Exudador",
   "biome": "Swamp"
  },
  {
   "name": "Frost Blob",
+  "nameEs": "Babosa de hielo",
   "biome": "Mountain"
  },
  {
   "name": "Lava Blob",
+  "nameEs": "Bola de lava",
   "biome": "Ashlands"
  },
  {
   "name": "Shapeless Pulp",
+  "nameEs": "Pulpa informe",
   "biome": "Deep North"
  },
  {
   "name": "Tiny Pulp",
+  "nameEs": "Pulpa diminuta",
   "biome": "Deep North"
  },
  {
   "name": "Growth",
+  "nameEs": "Bulto",
   "biome": "Plains"
  },
  {
   "name": "Boar",
+  "nameEs": "Jabalí",
   "biome": "Meadows"
  },
  {
   "name": "Piggy",
+  "nameEs": "Cerdito",
   "biome": "Meadows"
  },
  {
   "name": "Spiritcaller Boar",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "Kvastur",
+  "nameEs": "Kvastur",
   "biome": "Swamp"
  },
  {
   "name": "Bonemass",
+  "nameEs": "Tuétano",
   "biome": "Swamp"
  },
  {
   "name": "Bonemaw",
+  "nameEs": "Faucesoseas",
   "biome": "Ashlands"
  },
  {
   "name": "Charred Marksman",
+  "nameEs": "Arquero carbonizado",
   "biome": "Ashlands"
  },
  {
   "name": "Summoned Charred Warrior",
+  "nameEs": "Guerrero carbonizado invocado",
   "biome": "Ashlands"
  },
  {
   "name": "Charred Warlock",
+  "nameEs": "Brujo carbonizado",
   "biome": "Ashlands"
  },
  {
   "name": "Charred Warrior",
+  "nameEs": "Guerrero carbonizado",
   "biome": "Ashlands"
  },
  {
   "name": "Lord Reto",
+  "nameEs": null,
   "biome": "Ashlands"
  },
  {
   "name": "Charred Twitcher",
+  "nameEs": "Crispante carbonizado",
   "biome": "Ashlands"
  },
  {
   "name": "Summoned Twitcher",
+  "nameEs": "Nervioso invocado",
   "biome": "Ashlands"
  },
  {
   "name": "Chicken",
+  "nameEs": "Pollo",
   "biome": "Black Forest"
  },
  {
   "name": "Deathsquito",
+  "nameEs": "Muersquito",
   "biome": "Plains"
  },
  {
   "name": "Deer",
+  "nameEs": "Ciervo",
   "biome": "Meadows"
  },
  {
   "name": "Moder",
+  "nameEs": "Moder",
   "biome": "Mountain"
  },
  {
   "name": "Draugr",
+  "nameEs": "Draugr",
   "biome": "Swamp"
  },
  {
   "name": "Draugr Elite",
+  "nameEs": "Draugr Elite",
   "biome": "Swamp"
  },
  {
   "name": "Dvergr Rogue",
+  "nameEs": "Pícaro Dvergr",
   "biome": "Mistlands"
  },
  {
   "name": "Imprisoned Dvergr",
+  "nameEs": "Dvergr encarcelado",
   "biome": "Deep North"
  },
  {
   "name": "Dvergr Mage",
+  "nameEs": "Mago Dvergr",
   "biome": "Mistlands"
  },
  {
   "name": "Eikthyr",
+  "nameEs": "Eikthyr",
   "biome": "Meadows"
  },
  {
   "name": "Elaking",
+  "nameEs": "Elaking",
   "biome": "Deep North"
  },
  {
   "name": "Eyeless One",
+  "nameEs": "Sin ojos",
   "biome": "Deep North"
  },
  {
   "name": "Fader",
+  "nameEs": "Fader",
   "biome": "Ashlands"
  },
  {
   "name": "Fallen Valkyrie",
+  "nameEs": "Valquiria caída",
   "biome": "Ashlands"
  },
  {
   "name": "Fallen Warrior",
+  "nameEs": "Guerrero caído",
   "biome": "Deep North"
  },
  {
   "name": "Fenring",
+  "nameEs": "Fenring",
   "biome": "Mountain"
  },
  {
   "name": "Cultist",
+  "nameEs": "Cultista",
   "biome": "Mountain"
  },
  {
   "name": "Geirrhafa",
+  "nameEs": null,
   "biome": "Mountain"
  },
  {
   "name": "Kall Fimbulbringer (Phase 1)",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "Kall Fimbulbringer (Phase 3)",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "The Elder",
+  "nameEs": "El Sabio",
   "biome": "Black Forest"
  },
  {
   "name": "Ghost",
+  "nameEs": "Fantasma",
   "biome": "Black Forest"
  },
  {
   "name": "Gjall",
+  "nameEs": "Gjall",
   "biome": "Mistlands"
  },
  {
   "name": "Fuling",
+  "nameEs": "Fuling",
   "biome": "Plains"
  },
  {
   "name": "Fuling Berserker",
+  "nameEs": "Fuling berserker",
   "biome": "Plains"
  },
  {
   "name": "Zil & Thungr",
+  "nameEs": null,
   "biome": "Plains"
  },
  {
   "name": "Captive Fuling",
+  "nameEs": "Fuling cautivo",
   "biome": "Deep North"
  },
  {
   "name": "Yagluth",
+  "nameEs": "Yagluth",
   "biome": "Plains"
  },
  {
   "name": "Fuling Shaman",
+  "nameEs": "Fuling Chamán",
   "biome": "Plains"
  },
  {
   "name": "Zil",
+  "nameEs": null,
   "biome": "Plains"
  },
  {
   "name": "Greydwarf",
+  "nameEs": "Grisucio",
   "biome": "Black Forest"
  },
  {
   "name": "Greydwarf Brute",
+  "nameEs": "Grisucio Bruto",
   "biome": "Black Forest"
  },
  {
   "name": "Greydwarf Shaman",
+  "nameEs": "Grisucio Chamán",
   "biome": "Black Forest"
  },
  {
   "name": "Greyling",
+  "nameEs": "Enanillogrís",
   "biome": "Meadows"
  },
  {
   "name": "Hare",
+  "nameEs": "Liebre",
   "biome": "Mistlands"
  },
  {
   "name": "Drake",
+  "nameEs": "Draco",
   "biome": "Mountain"
  },
  {
   "name": "Hen",
+  "nameEs": "Gallina",
   "biome": "Black Forest"
  },
  {
   "name": "Krigen",
+  "nameEs": "Krigen",
   "biome": "Deep North"
  },
  {
   "name": "Hexen",
+  "nameEs": "Hexen",
   "biome": "Deep North"
  },
  {
   "name": "Leech",
+  "nameEs": "Sanguijuela",
   "biome": "Swamp"
  },
  {
   "name": "Lox",
+  "nameEs": "Luey",
   "biome": "Plains"
  },
  {
   "name": "Lox Calf",
+  "nameEs": "Cría de luey",
   "biome": "Plains"
  },
  {
   "name": "Moose",
+  "nameEs": "Alce",
   "biome": "Deep North"
  },
  {
   "name": "Moose Calf",
+  "nameEs": "Cervatillo de alce",
   "biome": "Deep North"
  },
  {
   "name": "Spiritcaller Moose",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "Morgen",
+  "nameEs": "Morgen",
   "biome": "Ashlands"
  },
  {
   "name": "Neck",
+  "nameEs": "Nixe",
   "biome": "Meadows"
  },
  {
   "name": "T.W.I.G.",
+  "nameEs": "P. A. L. O.",
   "biome": "Black Forest"
  },
  {
   "name": "Seal",
+  "nameEs": "Foca",
   "biome": "Deep North"
  },
  {
   "name": "Baby Seal",
+  "nameEs": "Cría de foca",
   "biome": "Deep North"
  },
  {
   "name": "Seeker",
+  "nameEs": "Buscador",
   "biome": "Mistlands"
  },
  {
   "name": "Seeker Brood",
+  "nameEs": "Prole de Buscador",
   "biome": "Mistlands"
  },
  {
   "name": "Seeker Soldier",
+  "nameEs": "Soldado buscador",
   "biome": "Mistlands"
  },
  {
   "name": "The Queen",
+  "nameEs": "La Reina",
   "biome": "Mistlands"
  },
  {
   "name": "Serpent",
+  "nameEs": "Serpiente",
   "biome": "Ocean"
  },
  {
   "name": "Skeleton",
+  "nameEs": "Esqueleto",
   "biome": "Black Forest"
  },
  {
   "name": "Skelett",
+  "nameEs": "Esquel",
   "biome": "Mistlands"
  },
  {
   "name": "Brenna",
+  "nameEs": null,
   "biome": "Black Forest"
  },
  {
   "name": "Rancid Remains",
+  "nameEs": "Restos rancios",
   "biome": "Black Forest"
  },
  {
   "name": "Stone Golem",
+  "nameEs": "Gólem de piedra",
   "biome": "Mountain"
  },
  {
   "name": "Surtling",
+  "nameEs": "Surtling",
   "biome": "Swamp"
  },
  {
   "name": "Tick",
+  "nameEs": "Garrapata",
   "biome": "Mistlands"
  },
  {
   "name": "Troll",
+  "nameEs": "Trol",
   "biome": "Black Forest"
  },
  {
   "name": "Summoned Troll",
+  "nameEs": "Trol invocado",
   "biome": "Ashlands"
  },
  {
   "name": "Gammeltroll",
+  "nameEs": "Gammeltrol",
   "biome": "Deep North"
  },
  {
   "name": "Ulv",
+  "nameEs": "Ulv",
   "biome": "Mountain"
  },
  {
   "name": "Vile",
+  "nameEs": "Vil",
   "biome": "Plains"
  },
  {
   "name": "Volture",
+  "nameEs": "Buicán",
   "biome": "Ashlands"
  },
  {
   "name": "Wolf",
+  "nameEs": "Lobo",
   "biome": "Mountain"
  },
  {
   "name": "Wolf Cub",
+  "nameEs": "Lobo Cachorrillo",
   "biome": "Mountain"
  },
  {
   "name": "Spiritcaller Wolf",
+  "nameEs": null,
   "biome": "Deep North"
  },
  {
   "name": "Wraith",
+  "nameEs": "Espíritu",
   "biome": "Swamp"
  },
  {
   "name": "Writhan",
+  "nameEs": "Marchitado",
   "biome": "Swamp"
  }
 ]

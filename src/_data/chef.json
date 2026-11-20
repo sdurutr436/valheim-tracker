@@ -15,30 +15,31 @@
      "name": "Seal Blubber",
      "qty": 1,
      "image": "assets/img/items/seal-blubber.png",
-     "nameEs": null
+     "nameEs": "Grasa de foca"
     },
     {
      "name": "Kale",
      "qty": 2,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     },
     {
      "name": "Poteitr",
      "qty": 1,
      "image": "assets/img/items/poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr"
     },
     {
      "name": "Oat Flour",
      "qty": 2,
      "image": "assets/img/items/oat-flour.png",
-     "nameEs": null
+     "nameEs": "Harina de avena"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
-  "nameEs": null
+  "nameEs": "Poteitr sin hornear"
  },
  {
   "name": "Black Soup",
@@ -71,7 +72,8 @@
      "nameEs": "Nabo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Sopa negra"
  },
@@ -106,7 +108,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Flan de sangre"
  },
@@ -135,7 +138,8 @@
      "nameEs": "Miel"
     }
    ],
-   "yield": 2
+   "yield": 2,
+   "stationEs": "Caldero"
   },
   "nameEs": "Cecina de jabalí"
  },
@@ -158,7 +162,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 2
+   "yield": 2,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Masa de pan"
  },
@@ -187,7 +192,8 @@
      "nameEs": "Zanahoria"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Sopa de zanahoria"
  },
@@ -210,7 +216,8 @@
      "nameEs": "Huevo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Huevo cocinado"
  },
@@ -245,7 +252,8 @@
      "nameEs": "Zanahoria"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Cocido de ciervo"
  },
@@ -274,7 +282,8 @@
      "nameEs": "Glándula congelada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Heladojo"
  },
@@ -309,7 +318,8 @@
      "nameEs": "Soplahumo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Guiso porcino ardiente"
  },
@@ -333,7 +343,8 @@
     }
    ],
    "yield": 1,
-   "hint": "con cualquier pez"
+   "hint": "con cualquier pez",
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pescado crudo"
  },
@@ -362,7 +373,8 @@
      "nameEs": "Masa de pan"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pan de pescado sin cocinar"
  },
@@ -388,18 +400,19 @@
      "name": "Kale",
      "qty": 2,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     },
     {
      "name": "Ice",
      "qty": 2,
      "image": "assets/img/items/ice.png",
-     "nameEs": null
+     "nameEs": "Hielo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Sopa de pescado"
  },
  {
   "name": "Fish Wraps",
@@ -426,7 +439,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Rollitos de pescado"
  },
@@ -461,7 +475,8 @@
      "nameEs": "Soplo de Jotun"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pollo glaseado en miel sin cocinar"
  },
@@ -481,12 +496,13 @@
      "name": "Kale",
      "qty": 12,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
-  "nameEs": null
+  "nameEs": "Chips de col rizada cruda"
  },
  {
   "name": "Lingonberry Juice",
@@ -504,18 +520,19 @@
      "name": "Lingonberries",
      "qty": 5,
      "image": "assets/img/items/lingonberries.png",
-     "nameEs": null
+     "nameEs": "Arándanos rojos"
     },
     {
      "name": "Ice",
      "qty": 5,
      "image": "assets/img/items/ice.png",
-     "nameEs": null
+     "nameEs": "Hielo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Zumo de arándanos rojos"
  },
  {
   "name": "Unbaked Lox Pie",
@@ -548,7 +565,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pastel de luey sin hornear"
  },
@@ -583,7 +601,8 @@
      "nameEs": "Nabo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Hongos rellenos sin cocinar"
  },
@@ -624,7 +643,8 @@
      "nameEs": "Soplahumo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Verduras marinadas"
  },
@@ -659,7 +679,8 @@
      "nameEs": "Cabeza de violín"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Puré de carne"
  },
@@ -679,24 +700,25 @@
      "name": "Moose Meat",
      "qty": 1,
      "image": "assets/img/items/moose-meat.png",
-     "nameEs": null
+     "nameEs": "Carne de alce"
     },
     {
      "name": "Lingonberries",
      "qty": 2,
      "image": "assets/img/items/lingonberries.png",
-     "nameEs": null
+     "nameEs": "Arándanos rojos"
     },
     {
      "name": "Poteitr",
      "qty": 2,
      "image": "assets/img/items/poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Albóndigas con poteitr"
  },
  {
   "name": "Uncooked Meat Platter",
@@ -729,7 +751,8 @@
      "nameEs": "Carne de liebre"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Plato de carne sin cocinar"
  },
@@ -764,7 +787,8 @@
      "nameEs": "Zanahoria"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Salsa de carne picada"
  },
@@ -799,7 +823,8 @@
      "nameEs": "Zanahoria"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Supremacía de la liebre neblinosa sin cocinar"
  },
@@ -819,30 +844,31 @@
      "name": "Moose Meat",
      "qty": 1,
      "image": "assets/img/items/moose-meat.png",
-     "nameEs": null
+     "nameEs": "Carne de alce"
     },
     {
      "name": "Kale",
      "qty": 2,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     },
     {
      "name": "Oat Flour",
      "qty": 1,
      "image": "assets/img/items/oat-flour.png",
-     "nameEs": null
+     "nameEs": "Harina de avena"
     },
     {
      "name": "Lingonberries",
      "qty": 2,
      "image": "assets/img/items/lingonberries.png",
-     "nameEs": null
+     "nameEs": "Arándanos rojos"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Carne en pan"
  },
  {
   "name": "Mushroom Omelette",
@@ -869,7 +895,8 @@
      "nameEs": "Soplo de Jotun"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Tortilla de hongos"
  },
@@ -889,24 +916,25 @@
      "name": "Oats",
      "qty": 2,
      "image": "assets/img/items/oats.png",
-     "nameEs": null
+     "nameEs": "Avena"
     },
     {
      "name": "Lingonberries",
      "qty": 2,
      "image": "assets/img/items/lingonberries.png",
-     "nameEs": null
+     "nameEs": "Arándanos rojos"
     },
     {
      "name": "Oat Milk",
      "qty": 1,
      "image": "assets/img/items/oat-milk.png",
-     "nameEs": null
+     "nameEs": "Leche de avena"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Gachas de avena"
  },
  {
   "name": "Oat Milk",
@@ -924,18 +952,19 @@
      "name": "Oats",
      "qty": 5,
      "image": "assets/img/items/oats.png",
-     "nameEs": null
+     "nameEs": "Avena"
     },
     {
      "name": "Ice",
      "qty": 5,
      "image": "assets/img/items/ice.png",
-     "nameEs": null
+     "nameEs": "Hielo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero de aguamiel"
   },
-  "nameEs": null
+  "nameEs": "Leche de avena"
  },
  {
   "name": "Onion Soup",
@@ -956,7 +985,8 @@
      "nameEs": "Cebolla"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Sopa de cebolla"
  },
@@ -976,30 +1006,31 @@
      "name": "Moose Meat",
      "qty": 1,
      "image": "assets/img/items/moose-meat.png",
-     "nameEs": null
+     "nameEs": "Carne de alce"
     },
     {
      "name": "Poteitr",
      "qty": 2,
      "image": "assets/img/items/poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr"
     },
     {
      "name": "Lingonberries",
      "qty": 2,
      "image": "assets/img/items/lingonberries.png",
-     "nameEs": null
+     "nameEs": "Arándanos rojos"
     },
     {
      "name": "Oat Flour",
      "qty": 2,
      "image": "assets/img/items/oat-flour.png",
-     "nameEs": null
+     "nameEs": "Harina de avena"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
-  "nameEs": null
+  "nameEs": "Masa para tortita al horno"
  },
  {
   "name": "Pancakes",
@@ -1017,13 +1048,13 @@
      "name": "Oat Milk",
      "qty": 1,
      "image": "assets/img/items/oat-milk.png",
-     "nameEs": null
+     "nameEs": "Leche de avena"
     },
     {
      "name": "Oat Flour",
      "qty": 2,
      "image": "assets/img/items/oat-flour.png",
-     "nameEs": null
+     "nameEs": "Harina de avena"
     },
     {
      "name": "Egg",
@@ -1038,9 +1069,10 @@
      "nameEs": "Arándanos"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Tortitas"
  },
  {
   "name": "Uncooked Piquant Pie",
@@ -1073,7 +1105,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pastel picante crudo"
  },
@@ -1108,9 +1141,10 @@
      "nameEs": "Zanahoria"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Carne de oso desmenuzada"
  },
  {
   "name": "Queen's Jam",
@@ -1137,7 +1171,8 @@
      "nameEs": "Arándanos"
     }
    ],
-   "yield": 4
+   "yield": 4,
+   "stationEs": "Caldero"
   },
   "nameEs": "Mermelada de la reina"
  },
@@ -1172,7 +1207,8 @@
      "nameEs": "Harina de cebada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pastel de masa asada crudo"
  },
@@ -1207,7 +1243,8 @@
      "nameEs": "Mora de los pantanos"
     }
    ],
-   "yield": 3
+   "yield": 3,
+   "stationEs": "Caldero"
   },
   "nameEs": "Ensalada"
  },
@@ -1242,7 +1279,8 @@
      "nameEs": "Cardo"
     }
    ],
-   "yield": 4
+   "yield": 4,
+   "stationEs": "Caldero"
   },
   "nameEs": "Salchichas"
  },
@@ -1277,7 +1315,8 @@
      "nameEs": "Cabeza de violín"
     }
    ],
-   "yield": 3
+   "yield": 3,
+   "stationEs": "Caldero"
   },
   "nameEs": "Mezcla abrasadora"
  },
@@ -1297,24 +1336,25 @@
      "name": "Seal Blubber",
      "qty": 2,
      "image": "assets/img/items/seal-blubber.png",
-     "nameEs": null
+     "nameEs": "Grasa de foca"
     },
     {
      "name": "Kale",
      "qty": 2,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     },
     {
      "name": "Ice",
      "qty": 2,
      "image": "assets/img/items/ice.png",
-     "nameEs": null
+     "nameEs": "Hielo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Sopa de carne de foca"
  },
  {
   "name": "Seeker Aspic",
@@ -1347,7 +1387,8 @@
      "nameEs": "Jalea real"
     }
    ],
-   "yield": 2
+   "yield": 2,
+   "stationEs": "Caldero"
   },
   "nameEs": "Espliego de buscador"
  },
@@ -1382,7 +1423,8 @@
      "nameEs": "Miel"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Cocido de serpiente"
  },
@@ -1417,7 +1459,8 @@
      "nameEs": "Arándanos"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Batilodo"
  },
@@ -1452,7 +1495,8 @@
      "nameEs": "Racimo de parrabaya"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Caldo de bayas chisporroteantes"
  },
@@ -1478,18 +1522,19 @@
      "name": "Kale",
      "qty": 1,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     },
     {
      "name": "Poteitr",
      "qty": 1,
      "image": "assets/img/items/poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Pescado ahumado"
  },
  {
   "name": "Smoked Moose Meat",
@@ -1507,18 +1552,19 @@
      "name": "Moose Meat",
      "qty": 1,
      "image": "assets/img/items/moose-meat.png",
-     "nameEs": null
+     "nameEs": "Carne de alce"
     },
     {
      "name": "Kale",
      "qty": 2,
      "image": "assets/img/items/kale.png",
-     "nameEs": null
+     "nameEs": "Col rizada"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
-  "nameEs": null
+  "nameEs": "Carne de alce ahumada"
  },
  {
   "name": "Sparkling Shroomshake",
@@ -1557,7 +1603,8 @@
      "nameEs": "Oronja de los magos"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Batido de setas espumoso"
  },
@@ -1592,7 +1639,8 @@
      "nameEs": "Cabeza de violín"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Mermelada picante"
  },
@@ -1621,7 +1669,8 @@
      "nameEs": "Nabo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Cocido de nabos"
  },
@@ -1662,7 +1711,8 @@
      "nameEs": "Miel"
     }
    ],
-   "yield": 2
+   "yield": 2,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pan dulce sin hornear"
  },
@@ -1691,7 +1741,8 @@
      "nameEs": "Miel"
     }
    ],
-   "yield": 2
+   "yield": 2,
+   "stationEs": "Caldero"
   },
   "nameEs": "Cecina de lobo"
  },
@@ -1726,7 +1777,8 @@
      "nameEs": "Cebolla"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Pincho de lobo"
  },
@@ -1761,7 +1813,8 @@
      "nameEs": "Jalea real"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Caldero"
   },
   "nameEs": "Papilla de Yggdrasil"
  },
@@ -1784,7 +1837,8 @@
      "nameEs": "Carne de jabalí"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de jabalí cocinada"
  },
@@ -1807,7 +1861,8 @@
      "nameEs": "Cola de nixe"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Cola de nixe asada"
  },
@@ -1830,7 +1885,8 @@
      "nameEs": "Pescado crudo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Pescado cocinado"
  },
@@ -1853,7 +1909,8 @@
      "nameEs": "Carne de ciervo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de ciervo cocinada"
  },
@@ -1876,7 +1933,8 @@
      "nameEs": "Carne de lobo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de lobo cocinada"
  },
@@ -1899,7 +1957,8 @@
      "nameEs": "Carne de pollo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de pollo cocinada"
  },
@@ -1922,7 +1981,8 @@
      "nameEs": "Carne de liebre"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de liebre cocinada"
  },
@@ -1945,7 +2005,8 @@
      "nameEs": "Carne de Bjorn"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina"
   },
   "nameEs": "Carne de Bjorn cocinada"
  },
@@ -1968,7 +2029,8 @@
      "nameEs": "Carne de serpiente"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Carne de serpiente preparada"
  },
@@ -1991,7 +2053,8 @@
      "nameEs": "Carne de luey"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Carne de luey preparada"
  },
@@ -2014,7 +2077,8 @@
      "nameEs": "Carne de buscador"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Carne de buscador cocinada"
  },
@@ -2037,7 +2101,8 @@
      "nameEs": "Carne de buicán"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Carne de buicán cocinada"
  },
@@ -2060,7 +2125,8 @@
      "nameEs": "Cola de cenicerdo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Cola de cenicerdo cocida"
  },
@@ -2083,7 +2149,8 @@
      "nameEs": "Carne de faucesoseas"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
   },
   "nameEs": "Carne de faucesoseas cocida"
  },
@@ -2096,7 +2163,7 @@
   "note": "",
   "image": "assets/img/items/cooked-moose-meat.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Carne de alce cocinada"
  },
  {
   "name": "Lox Meat Pie",
@@ -2117,7 +2184,8 @@
      "nameEs": "Pastel de luey sin hornear"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pastel de luey"
  },
@@ -2140,7 +2208,8 @@
      "nameEs": "Masa de pan"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pan"
  },
@@ -2163,7 +2232,8 @@
      "nameEs": "Pan de pescado sin cocinar"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pan de pescado"
  },
@@ -2186,7 +2256,8 @@
      "nameEs": "Plato de carne sin cocinar"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Plato de carne"
  },
@@ -2209,7 +2280,8 @@
      "nameEs": "Pollo glaseado en miel sin cocinar"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pollo glaseado en miel"
  },
@@ -2232,7 +2304,8 @@
      "nameEs": "Supremacía de la liebre neblinosa sin cocinar"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Supremacía de la liebre neblinosa"
  },
@@ -2255,7 +2328,8 @@
      "nameEs": "Hongos rellenos sin cocinar"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Hongos rellenos"
  },
@@ -2278,7 +2352,8 @@
      "nameEs": "Pastel de masa asada crudo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pastel de masa asada"
  },
@@ -2301,7 +2376,8 @@
      "nameEs": "Pastel picante crudo"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pastel picante"
  },
@@ -2324,7 +2400,8 @@
      "nameEs": "Pan dulce sin hornear"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
   "nameEs": "Pan dulce escarchado"
  },
@@ -2337,7 +2414,7 @@
   "note": "",
   "image": "assets/img/items/cooked-seal-blubber.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Grasa de foca cocinada"
  },
  {
   "name": "Oven Pancake",
@@ -2355,12 +2432,13 @@
      "name": "Oven Pancake Batter",
      "qty": 1,
      "image": "assets/img/items/oven-pancake-batter.png",
-     "nameEs": null
+     "nameEs": "Masa para tortita al horno"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
-  "nameEs": null
+  "nameEs": "Tortita al horno"
  },
  {
   "name": "Kale Chips",
@@ -2378,12 +2456,13 @@
      "name": "Raw Kale Chips",
      "qty": 1,
      "image": "assets/img/items/raw-kale-chips.png",
-     "nameEs": null
+     "nameEs": "Chips de col rizada cruda"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
-  "nameEs": null
+  "nameEs": "Chips de col rizada"
  },
  {
   "name": "Baked Poteitr",
@@ -2401,12 +2480,13 @@
      "name": "Unbaked Poteitr",
      "qty": 1,
      "image": "assets/img/items/unbaked-poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr sin hornear"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Horno de piedra"
   },
-  "nameEs": null
+  "nameEs": "Poteitr al horno"
  },
  {
   "name": "Blueberries",
@@ -2478,7 +2558,8 @@
      "nameEs": "Polvo de especias picantes"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Cuenco gourmet de las Tierras de Ceniza"
  },
@@ -2519,7 +2600,8 @@
      "nameEs": "Mezcla de hierbas de los bosques"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Bandeja de bufé del Bosque negro"
  },
@@ -2539,30 +2621,31 @@
      "name": "Cooked Moose Meat",
      "qty": 3,
      "image": "assets/img/items/cooked-moose-meat.png",
-     "nameEs": null
+     "nameEs": "Carne de alce cocinada"
     },
     {
      "name": "Poteitr",
      "qty": 5,
      "image": "assets/img/items/poteitr.png",
-     "nameEs": null
+     "nameEs": "Poteitr"
     },
     {
      "name": "Oat Flour",
      "qty": 2,
      "image": "assets/img/items/oat-flour.png",
-     "nameEs": null
+     "nameEs": "Harina de avena"
     },
     {
      "name": "Seasoning of the Gourd",
      "qty": 1,
      "image": "assets/img/items/seasoning-of-the-gourd.png",
-     "nameEs": null
+     "nameEs": "Condimento de la calabaza"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
-  "nameEs": null
+  "nameEs": "Desayuno del norte"
  },
  {
   "name": "Whole Roasted Meadow Boar",
@@ -2601,7 +2684,8 @@
      "nameEs": "Mezcla de hierbas de los bosques"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Jabalí de pradera entero asado"
  },
@@ -2642,7 +2726,8 @@
      "nameEs": "Hierbas de las colinas ocultas"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Festín de setas al estilo de las Tierras Nubladas"
  },
@@ -2683,7 +2768,8 @@
      "nameEs": "Pimienta en polvo del pico"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Guiso vigoroso del leñador de montaña"
  },
@@ -2724,7 +2810,8 @@
      "nameEs": "Hierbas de marinero"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Manjar de marinero"
  },
@@ -2765,7 +2852,8 @@
      "nameEs": "Cosecha de herbolario de pastizales"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Pícnic de pastel de las llanuras"
  },
@@ -2806,7 +2894,8 @@
      "nameEs": "Mezcla de hierbas de los bosques"
     }
    ],
-   "yield": 1
+   "yield": 1,
+   "stationEs": "Mesa para preparación de alimentos"
   },
   "nameEs": "Delicias del habitante del pantano"
  },
@@ -2830,7 +2919,7 @@
   "note": "",
   "image": "assets/img/items/luminous-larva.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Larva luminosa"
  },
  {
   "name": "Honey",
@@ -2852,7 +2941,7 @@
   "note": "",
   "image": "assets/img/items/kale.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Col rizada"
  },
  {
   "name": "Lingonberries",
@@ -2863,7 +2952,7 @@
   "note": "",
   "image": "assets/img/items/lingonberries.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Arándanos rojos"
  },
  {
   "name": "Mushroom",
@@ -2947,12 +3036,12 @@
      "name": "Oat Seeds",
      "qty": 1,
      "image": "assets/img/items/oat-seeds.png",
-     "nameEs": null
+     "nameEs": "Semillas de avena"
     }
    ],
    "yield": 1
   },
-  "nameEs": null
+  "nameEs": "Avena"
  },
  {
   "name": "Onion",
@@ -2974,7 +3063,7 @@
   "note": "",
   "image": "assets/img/items/poteitr.png",
   "recipe": null,
-  "nameEs": null
+  "nameEs": "Poteitr"
  },
  {
   "name": "Raspberries",

@@ -1,274 +1,342 @@
 [
  {
   "name": "Abomination Trophy",
+  "nameEs": "Trofeo de abominación",
   "biome": "Swamp"
  },
  {
   "name": "Asksvin Trophy",
+  "nameEs": "Trofeo de cenicerdo",
   "biome": "Ashlands"
  },
  {
   "name": "Barka Trophy",
+  "nameEs": "Trofeo de barka",
   "biome": "Deep North"
  },
  {
   "name": "Bear Trophy",
+  "nameEs": "Trofeo de Bjorn",
   "biome": "Black Forest"
  },
  {
   "name": "Vile Trophy",
+  "nameEs": "Trofeo vil",
   "biome": "Plains"
  },
  {
   "name": "Blob Trophy",
+  "nameEs": "Trofeo de masa",
   "biome": "Swamp"
  },
  {
   "name": "Frost Blob Trophy",
+  "nameEs": "Trofeo de pegote de escarcha",
   "biome": "Mountain"
  },
  {
   "name": "Lava Blob Trophy",
+  "nameEs": "Trofeo de pegote de lava",
   "biome": "Ashlands"
  },
  {
   "name": "Pulp Trophy",
+  "nameEs": "Trofeo de pulpa",
   "biome": "Deep North"
  },
  {
   "name": "Boar Trophy",
+  "nameEs": "Trofeo de jabalí",
   "biome": "Meadows"
  },
  {
   "name": "Bonemass Trophy",
+  "nameEs": "Trofeo de Tuétano",
   "biome": "Swamp"
  },
  {
   "name": "Bonemaw Trophy",
+  "nameEs": "Trofeo de faucesoseas",
   "biome": "Ashlands"
  },
  {
   "name": "Marksman Trophy",
+  "nameEs": "Trofeo de arquero",
   "biome": "Ashlands"
  },
  {
   "name": "Warlock Trophy",
+  "nameEs": "Trofeo de brujo",
   "biome": "Ashlands"
  },
  {
   "name": "Warrior Trophy",
+  "nameEs": "Trofeo de guerrero",
   "biome": "Ashlands"
  },
  {
   "name": "Cultist Trophy",
+  "nameEs": "Trofeo de cultista",
   "biome": "Mountain"
  },
  {
   "name": "Geirrhafa Trophy",
+  "nameEs": "Trofeo de Geirrhafa",
   "biome": "Mountain"
  },
  {
   "name": "Deathsquito Trophy",
+  "nameEs": "Trofeo de muersquito",
   "biome": "Plains"
  },
  {
   "name": "Deer Trophy",
+  "nameEs": "Trofeo de ciervo",
   "biome": "Meadows"
  },
  {
   "name": "Moder Trophy",
+  "nameEs": "Trofeo de Moder",
   "biome": "Mountain"
  },
  {
   "name": "Draugr Trophy",
+  "nameEs": "Trofeo de draugr",
   "biome": "Swamp"
  },
  {
   "name": "Draugr Elite Trophy",
+  "nameEs": "Trofeo de draugr de élite",
   "biome": "Swamp"
  },
  {
   "name": "Dvergr Trophy",
+  "nameEs": "Trofeo de Dvergr",
   "biome": "Mistlands"
  },
  {
   "name": "Eikthyr Trophy",
+  "nameEs": "Trofeo de Eikthyr",
   "biome": "Meadows"
  },
  {
   "name": "Elaking Trophy",
+  "nameEs": "Trofeo de elaking",
   "biome": "Deep North"
  },
  {
   "name": "Fader Trophy",
+  "nameEs": "Trofeo de Fader",
   "biome": "Ashlands"
  },
  {
   "name": "Fallen Valkyrie Trophy",
+  "nameEs": "Trofeo de valquiria caída",
   "biome": "Ashlands"
  },
  {
   "name": "Fenring Trophy",
+  "nameEs": "Trofeo de fenring",
   "biome": "Mountain"
  },
  {
   "name": "Ghost Trophy",
+  "nameEs": "Trofeo de fantasma",
   "biome": "Black Forest"
  },
  {
   "name": "Gjall Trophy",
+  "nameEs": "Trofeo de gjall",
   "biome": "Mistlands"
  },
  {
   "name": "Fuling Trophy",
+  "nameEs": "Trofeo de fuling",
   "biome": "Plains"
  },
  {
   "name": "Fuling Berserker Trophy",
+  "nameEs": "Trofeo de fuling berserker",
   "biome": "Plains"
  },
  {
   "name": "Thungr Trophy",
+  "nameEs": "Trofeo de Thungr",
   "biome": "Plains"
  },
  {
   "name": "Zil Trophy",
+  "nameEs": "Trofeo de Zil",
   "biome": "Plains"
  },
  {
   "name": "Yagluth Trophy",
+  "nameEs": "Trofeo de Yagluth",
   "biome": "Plains"
  },
  {
   "name": "Fuling Shaman Trophy",
+  "nameEs": "Trofeo de fuling chamán",
   "biome": "Plains"
  },
  {
   "name": "Greydwarf Trophy",
+  "nameEs": "Trofeo de grisucio",
   "biome": "Black Forest"
  },
  {
   "name": "Greydwarf Brute Trophy",
+  "nameEs": "Trofeo de grisucio bárbaro",
   "biome": "Black Forest"
  },
  {
   "name": "Greydwarf Shaman Trophy",
+  "nameEs": "Trofeo del grisucio chamán",
   "biome": "Black Forest"
  },
  {
   "name": "Growth Trophy",
+  "nameEs": "Trofeo del bulto",
   "biome": "Plains"
  },
  {
   "name": "Hare Trophy",
+  "nameEs": "Trofeo de liebre",
   "biome": "Mistlands"
  },
  {
   "name": "Drake Trophy",
+  "nameEs": "Trofeo de draco",
   "biome": "Mountain"
  },
  {
   "name": "Krigen Trophy",
+  "nameEs": "Trofeo de Krigen",
   "biome": "Deep North"
  },
  {
   "name": "Hexen Trophy",
+  "nameEs": "Trofeo de Hexen",
   "biome": "Deep North"
  },
  {
   "name": "Kvastur Trophy",
+  "nameEs": null,
   "biome": "Swamp"
  },
  {
   "name": "Leech Trophy",
+  "nameEs": "Trofeo de sanguijuela",
   "biome": "Swamp"
  },
  {
   "name": "Lox Trophy",
+  "nameEs": "Trofeo de luey",
   "biome": "Plains"
  },
  {
   "name": "Eyeless One Trophy",
+  "nameEs": "Trofeo de sin ojos",
   "biome": "Deep North"
  },
  {
   "name": "Moose Trophy",
+  "nameEs": "Trofeo de alce",
   "biome": "Deep North"
  },
  {
   "name": "Morgen Trophy",
+  "nameEs": "Trofeo de Morgen",
   "biome": "Ashlands"
  },
  {
   "name": "Neck Trophy",
+  "nameEs": "Trofeo de nixe",
   "biome": "Meadows"
  },
  {
   "name": "Seal Trophy",
+  "nameEs": "Trofeo de foca",
   "biome": "Deep North"
  },
  {
   "name": "Seeker Trophy",
+  "nameEs": "Trofeo de buscador",
   "biome": "Mistlands"
  },
  {
   "name": "Seeker Soldier Trophy",
+  "nameEs": "Trofeo de buscador soldado",
   "biome": "Mistlands"
  },
  {
   "name": "The Queen Trophy",
+  "nameEs": "Trofeo de La Reina",
   "biome": "Mistlands"
  },
  {
   "name": "Serpent Trophy",
+  "nameEs": "Trofeo de serpiente",
   "biome": "Ocean"
  },
  {
   "name": "Stone Golem Trophy",
+  "nameEs": "Trofeo de gólem de piedra",
   "biome": "Mountain"
  },
  {
   "name": "Skeleton Trophy",
+  "nameEs": "Trofeo de esqueleto",
   "biome": "Black Forest"
  },
  {
   "name": "Brenna Trophy",
+  "nameEs": "Trofeo de Brenna",
   "biome": "Black Forest"
  },
  {
   "name": "Rancid Remains Trophy",
+  "nameEs": "Trofeo de restos rancios",
   "biome": "Black Forest"
  },
  {
   "name": "Surtling Trophy",
+  "nameEs": "Trofeo de surtling",
   "biome": "Swamp"
  },
  {
   "name": "The Elder Trophy",
+  "nameEs": "Trofeo del Sabio",
   "biome": "Black Forest"
  },
  {
   "name": "Tick Trophy",
+  "nameEs": "Trofeo de garrapata",
   "biome": "Mistlands"
  },
  {
   "name": "Ulv Trophy",
+  "nameEs": "Trofeo de Ulv",
   "biome": "Mountain"
  },
  {
   "name": "Volture Trophy",
+  "nameEs": "Trofeo de buicán",
   "biome": "Ashlands"
  },
  {
   "name": "Wolf Trophy",
+  "nameEs": "Trofeo de lobo",
   "biome": "Mountain"
  },
  {
   "name": "Wraith Trophy",
+  "nameEs": "Trofeo del espectro",
   "biome": "Swamp"
  },
  {
   "name": "Writhan Trophy",
+  "nameEs": "Trofeo de writhan",
   "biome": "Swamp"
  }
 ]
