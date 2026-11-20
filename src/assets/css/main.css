@@ -1,5 +1,6 @@
 :root{--bg:#14110d;--card:#1f1a13;--card2:#271f16;--ink:#ece3d1;--muted:#9a8f7a;--line:#3a3025;--gold:#e0a93f;--ok:#7fb55a}
 *{box-sizing:border-box}
+[hidden]{display:none!important} /* si no, .food-grid{display:grid} enseña las cards en todas las pestañas */
 body{font-variant-numeric:lining-nums;margin:0;font:15px/1.45 system-ui,"Segoe UI",sans-serif;color:var(--ink);
   background:radial-gradient(1200px 500px at 50% -150px,#3a2a17 0,transparent 70%),var(--bg);min-height:100vh}
 header{padding:28px 24px 8px;max-width:1300px;margin:0 auto}
@@ -57,7 +58,6 @@ input[type=checkbox]{width:19px;height:19px;accent-color:var(--gold);cursor:poin
 @media(max-width:700px){td.bio{width:auto}header,main,.cards{padding-left:12px;padding-right:12px}}
 
 /* Cards de comida (vista Chef × Gourmet) */
-.tools select[hidden],.food[hidden],.food-detail[hidden]{display:none}
 .food-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;align-items:start}
 .food{background:var(--card);border:1px solid var(--line);border-radius:12px;cursor:pointer;transition:border-color .15s}
 .food:hover{border-color:#5a4a36}
