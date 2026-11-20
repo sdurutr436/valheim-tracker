@@ -1,0 +1,11 @@
+{#- Un botón por logro. El recuento y la barra los pone app.js #}
+<nav class="tabs" aria-label="Achievements" data-en-label="Achievements" data-es-label="Logros">
+  {%- for t in tracker.tabs %}
+  <button type="button" class="tab" data-tab="{{ t.id }}">
+    <img src="assets/img/items/{{ t.icon }}.png" alt="" width="36" height="36">
+    <span class="tab-t" data-en="{{ t.title.en }}" data-es="{{ t.title.es }}">{{ t.title.en }}</span>
+    <span class="tab-n" data-n></span>
+    <span class="tab-bar" aria-hidden="true"></span>
+  </button>
+  {%- endfor %}
+</nav>

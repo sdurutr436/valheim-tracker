@@ -1,0 +1,14 @@
+{#- Sección plegable de un bioma: cabecera con runa, nombre, recuento (app.js) y sello de completado.
+    El contenido (tabla o cards) lo pone quien llama: {% call section(ns, b) %}…{% endcall %} #}
+{% macro section(ns, b) %}
+<details class="biome b-{{ b.slug }}" id="{{ ns }}-{{ b.slug }}" data-bi="{{ b.i }}" open>
+  <summary class="banner">
+    <span class="rune" aria-hidden="true">{{ b.rune }}</span>
+    <h2 data-en="{{ b.en }}" data-es="{{ b.es }}">{{ b.en }}</h2>
+    <span class="banner-n" data-count></span>
+    <span class="stamp" data-en="Completed" data-es="Completado">Completed</span>
+    <span class="chev" aria-hidden="true">▾</span>
+  </summary>
+  {{ caller() }}
+</details>
+{% endmacro %}

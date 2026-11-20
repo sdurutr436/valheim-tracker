@@ -8,17 +8,15 @@
 {#- Sin conexión se usan las fuentes de respaldo del CSS #}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Grenze:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Cinzel:wght@600;700;800&display=swap">
 <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 {{ content | safe }}
-<script type="application/json" id="tracker-data">{{ clientData | dump | safe }}</script>
+<script type="application/json" id="tracker-data">{{ tracker.client | dump | safe }}</script>
 {# Scripts clásicos (no módulos) para que también funcione abriendo _site/index.html con doble clic #}
 <script src="assets/js/store.js"></script>
 <script src="assets/js/model.js"></script>
-<script src="assets/js/table.js"></script>
-<script src="assets/js/cards.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

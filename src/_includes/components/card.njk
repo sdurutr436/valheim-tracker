@@ -1,42 +1,41 @@
-{#- Card con receta desplegable (cocina y crafteables). La clave de cada check la pone cards.js -#}
-{%- set id = ns + '-' + loop.index %}
-{%- set w = item.wiki or item.name %}
-<article class="food">
-  <div class="food-main">
-    <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ id }}">
-      <span class="food-img">
-        <span class="ph" aria-hidden="true">{{ item.name | first }}</span>
-        {% if item.image %}<img src="{{ item.image }}" alt="" width="56" height="56" loading="lazy" onerror="this.remove()">{% endif %}
-      </span>
-      <span class="food-title">
-        <span class="food-name" data-en="{{ item.name }}"{% if item.nameEs %} data-es="{{ item.nameEs }}"{% endif %}>{{ item.name }}</span>
-        {% if item.biome %}<span class="badge b-{{ item.biome | slugify }}" data-biome="{{ item.biome }}">{{ item.biome }}</span>{% endif %}
-      </span>
-      <span class="chev" aria-hidden="true">▾</span>
-    </button>
-    <div class="food-checks">
-      {% if item.intermediate %}<label><input type="checkbox" data-k="prep"> <span data-en="Prepared" data-es="Preparado">Prepared</span></label>{% endif %}
-      {% if item.cook %}<label><input type="checkbox" data-k="cook"> <span data-en="Cooked" data-es="Cocinado">Cooked</span></label>{% endif %}
-      {% if item.eat %}<label><input type="checkbox" data-k="eat"> <span data-en="Eaten" data-es="Comido">Eaten</span></label>{% endif %}
-      {% if not (item.cook or item.eat) %}<label><input type="checkbox" data-k="done"> <span data-en="Done" data-es="Hecho">Done</span></label>{% endif %}
-    </div>
+{#- Card con receta desplegable (cocina, Artisan, Carpenter). Usa r (fila), ns, s (sección) y loop -#}
+{%- set id = ns + '-' + s.biome.slug + '-' + loop.index %}
+{%- set w = r.wiki or r.name %}
+{%- set c = tracker.cols %}
+<article class="food" data-key="{{ r.key }}">
+  <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ id }}">
+    <span class="food-img">
+      <span class="ph" aria-hidden="true">{{ r.name | first }}</span>
+      {% if r.image %}<img src="{{ r.image }}" alt="" width="48" height="48" loading="lazy" onerror="this.remove()">{% endif %}
+    </span>
+    <span class="nm food-name" data-en="{{ r.name }}"{% if r.nameEs %} data-es="{{ r.nameEs }}"{% endif %}>{{ r.name }}</span>
+    <span class="chev" aria-hidden="true">▾</span>
+  </button>
+  <div class="checks">
+    {%- for k in ['prep', 'cook', 'eat'] %}{% if r[c[k].field] %}
+    <label class="pill" data-k="{{ k }}"><input type="checkbox" data-k="{{ k }}"><span data-en="{{ c[k].label.en }}" data-es="{{ c[k].label.es }}">{{ c[k].label.en }}</span></label>
+    {%- endif %}{% endfor %}
+    {%- if not (r.cook or r.eat) %}
+    <label class="pill" data-k="done"><input type="checkbox" data-k="done"><span data-en="{{ tracker.done[ns].en }}" data-es="{{ tracker.done[ns].es }}">{{ tracker.done[ns].en }}</span></label>
+    {%- endif %}
   </div>
   <div class="food-detail" id="detail-{{ id }}" hidden>
-    {% if item.recipe %}
-      <p class="station"><span data-en="{{ item.recipe.station or 'Recipe' }}" data-es="{{ item.recipe.stationEs or ('Receta' if not item.recipe.station) }}">{{ item.recipe.station or 'Recipe' }}</span>{% if item.recipe.level %} <small><span data-en="level" data-es="nivel">level</span> {{ item.recipe.level }}</small>{% endif %}{% if item.recipe.yield > 1 %} <small><span data-en="makes" data-es="rinde">makes</span> {{ item.recipe.yield }}</small>{% endif %}</p>
+    {% if r.recipe %}
+      <p class="station"><span data-en="{{ r.recipe.station or 'Recipe' }}" data-es="{{ r.recipe.stationEs or ('Receta' if not r.recipe.station) }}">{{ r.recipe.station or 'Recipe' }}</span>{% if r.recipe.level %} <small><span data-en="level" data-es="nivel">level</span> {{ r.recipe.level }}</small>{% endif %}{% if r.recipe.yield > 1 %} <small><span data-en="makes" data-es="rinde">makes</span> {{ r.recipe.yield }}</small>{% endif %}</p>
       <ul class="ingredients">
-        {% for ing in item.recipe.ingredients %}
+        {%- for ing in r.recipe.ingredients %}
         <li>
-          {% if ing.image %}<img src="{{ ing.image }}" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">{% endif %}
-          <b>{{ ing.qty }}×</b> <span data-en="{{ ing.name }}"{% if ing.nameEs %} data-es="{{ ing.nameEs }}"{% endif %}>{{ ing.name }}</span>
+          {% if ing.image %}<img src="{{ ing.image }}" alt="" width="24" height="24" loading="lazy" onerror="this.remove()">{% endif %}
+          <span data-en="{{ ing.name }}"{% if ing.nameEs %} data-es="{{ ing.nameEs }}"{% endif %}>{{ ing.name }}</span>
+          <b>×{{ ing.qty }}</b>
         </li>
-        {% endfor %}
+        {%- endfor %}
       </ul>
     {% else %}
       <p class="muted" data-en="No recipe on the wiki (base ingredient or very recent content)." data-es="Sin receta en la wiki (ingrediente base o contenido muy reciente).">No recipe on the wiki (base ingredient or very recent content).</p>
     {% endif %}
-    {% if item.note %}<p class="muted" data-en="{{ item.note }}" data-es="{{ item.noteEs }}">{{ item.note }}</p>{% endif %}
-    {% if item.page == false %}
+    {% if r.note %}<p class="muted" data-en="{{ r.note }}" data-es="{{ r.noteEs }}">{{ r.note }}</p>{% endif %}
+    {% if r.page == false %}
     <a class="wiki" href="https://valheim.fandom.com/wiki/Special:Search?query={{ w | urlencode }}" target="_blank" rel="noopener" data-en="Search the wiki ↗" data-es="Buscar en la wiki ↗">Search the wiki ↗</a>
     {% else %}
     <a class="wiki" href="https://valheim.fandom.com/wiki/{{ w | replace(' ', '_') | urlencode }}" target="_blank" rel="noopener" data-en="View on the wiki ↗" data-es="Ver en la wiki ↗">View on the wiki ↗</a>

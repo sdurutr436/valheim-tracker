@@ -1,112 +1,144 @@
-// Navegación, filtros y eventos. Une model + table + cards.
+// Vista: pestañas de logro, índice de biomas con spy-scroll, filtros, casillas e idioma.
+// Todo el HTML lo genera 11ty; aquí solo se sincroniza el estado y se enseña/oculta.
+const ROWS = Object.fromEntries(Object.entries(DATA.rows).map(([ns, rs]) => [ns, new Map(rs.map(r => [r.key, r]))]));
+const pct = (d, n) => n ? d / n * 100 : 0;
 let cur = TABS.find(t => t.id === location.hash.slice(1)) || TABS[0];
-let sort = defaultSort(cur), biome = '';
 
-const pctOf = (d, n) => n ? Math.round(d / n * 100) : 0;
+const panel = () => $('#panel-' + cur.ns);
+const sections = () => [...panel().querySelectorAll('.biome')];
+const inBiome = sec => cur.rows.filter(r => r.bi === +sec.dataset.bi);
+const spyItem = sec => $(`.spy [data-bi="${sec.dataset.bi}"]`);
 
-function renderNav() {
+function renderTabs() {
   let done = 0, total = 0;
-  $('#cards').innerHTML = TABS.map(t => {
+  for (const t of TABS) {
     const [d, n] = progress(t);
     if (!t.noTotal) { done += d; total += n; }
-    return `<button class="card ${t === cur ? 'active' : ''} ${d === n ? 'full' : ''}" data-tab="${t.id}" aria-current="${t === cur ? 'page' : 'false'}">
-      <img src="assets/img/items/${t.icon}.png" alt="" width="40" height="40">
-      <span class="t">${tx(t.title)}</span>
-      <span class="n">${d}<small>/${n}</small></span>
-      <span class="bar" style="--p:${pctOf(d, n)}%"></span></button>`;
-  }).join('');
-  $('#total').textContent = tx({ en: `${done} of ${total} completed`, es: `${done} de ${total} completados` });
-  const pct = (total ? done / total * 100 : 0).toLocaleString(lang, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
-  $('#total-pct').textContent = tx({ en: pct + '%', es: pct + ' %' }); // 37.7% / 37,7 %
-  // Un tramo por bioma con algo que hacer
-  const bp = biomeProgress();
-  $('#saga').innerHTML = BIOMES.map((b, j) => bp[j][1] && `<li class="b-${slug(b)} ${bp[j][0] === bp[j][1] ? 'full' : ''}" style="--p:${pctOf(...bp[j])}%;--i:${j}">
-    <span class="nm">${biomeText(b)}</span><span class="bar"></span><small>${bp[j][0]}/${bp[j][1]}</small></li>`).filter(Boolean).join('');
+    const b = $(`[data-tab="${t.id}"]`);
+    b.setAttribute('aria-current', t === cur);
+    b.classList.toggle('full', d === n);
+    b.querySelector('[data-n]').textContent = `${d}/${n}`;
+    b.style.setProperty('--p', pct(d, n) + '%');
+  }
+  const p = pct(done, total);
+  $('#total').innerHTML = `${done}<small> / ${total}</small>`;
+  $('#total-pct').textContent = `Total · ${p.toLocaleString(lang, { maximumFractionDigits: 1 })}${lang === 'es' ? ' %' : '%'}`;
+  $('#total-bar').style.width = p + '%';
 }
 
-function renderChips() {
-  $('#chips').innerHTML = !cur.biome ? '' : BIOMES.filter(b => cur.rows.some(r => r.biome.includes(b))).map(b => {
-    const rs = cur.rows.filter(r => r.biome.includes(b));
-    return `<button class="chip b-${slug(b)} ${biome === b ? 'on' : ''}" data-biome="${b}">${biomeText(b)}<small>${rs.filter(r => complete(cur, r)).length}/${rs.length}</small></button>`;
-  }).join('');
+// Recuento de cada bioma (cabecera e índice): objetos completos del logro actual, sin filtros
+function renderBiomes() {
+  document.querySelectorAll('.spy li').forEach(li => { li.hidden = true; });
+  for (const sec of sections()) {
+    const rs = inBiome(sec), d = rs.filter(r => complete(cur, r)).length, li = spyItem(sec);
+    sec.classList.toggle('complete', rs.length > 0 && d === rs.length);
+    sec.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
+    li.hidden = !rs.length;
+    li.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
+    li.style.setProperty('--p', pct(d, rs.length) + '%');
+  }
 }
 
-// Desplegable de ingredientes: solo en Chef × Gourmet. Sin filtro enseña todo; con un bioma
-// elegido solo la lista de ese bioma, en horizontal (el CSS lo reparte según .filtered)
-function renderShopping(show) {
-  const sh = $('#shopping'), sections = [...sh.querySelectorAll('.shop')];
-  sections.forEach(s => { s.hidden = !!biome && s.dataset.biome !== biome; });
-  sh.classList.toggle('filtered', !!biome);
-  $('#shop-biome').textContent = biome ? biomeText(biome) : '';
-  sh.hidden = !show ||(!!biome && sections.every(s => s.hidden)); // p. ej. Console no tiene lista
+function syncChecks() {
+  for (const el of panel().querySelectorAll('[data-key]')) {
+    const r = ROWS[cur.ns].get(el.dataset.key);
+    el.querySelectorAll('input[data-k]').forEach(i => { i.checked = checked(cur, r, i.dataset.k); });
+    el.classList.toggle('done', complete(cur, r));
+  }
 }
 
-function renderView() {
-  const f = { q: fold($('#q').value.trim()), status: $('#status').value, biome };
-  const rows = cur.rows.filter(r => matches(cur, r, f)).sort(compare(cur, sort));
-  const cards = cur.view === 'cards';
-  $('#table').hidden = cards;
-  document.querySelectorAll('.food-grid').forEach(g => { g.hidden = g !== cur.grid; });
-  const order = $('#order');
-  order.hidden = !cards;
-  order.querySelector('[value=biome]').hidden = !cur.biome;
-  order.value = sort.k;
-  renderShopping(cur.id === 'both');
-  $('#count').textContent = `${rows.length} ${tx({ en: 'of', es: 'de' })} ${cur.rows.length}`;
-  if (cards) renderCards(cur, rows, sort.k === 'biome'); else renderTable($('#table'), cur, rows, sort);
+// Búsqueda y estado. Un bioma sin nada visible se oculta entero
+function renderFilter() {
+  const f = { q: fold($('#q').value.trim()), status: $('[name=status]:checked').value };
+  const inTab = new Set(cur.rows);
+  for (const el of panel().querySelectorAll('[data-key]')) {
+    const r = ROWS[cur.ns].get(el.dataset.key);
+    el.hidden = !inTab.has(r) || !matches(cur, r, f);
+  }
+  let any = false;
+  for (const sec of sections()) {
+    sec.hidden = !sec.querySelector('[data-key]:not([hidden])');
+    any ||= !sec.hidden;
+  }
+  $('#empty').hidden = any;
+  spy();
 }
-
-function renderAll() { renderNav(); renderChips(); renderView(); }
 
 function selectTab(t) {
-  cur = t; location.hash = t.id;
-  sort = defaultSort(t); biome = '';
-  renderAll();
+  cur = t;
+  history.replaceState(null, '', '#' + t.id);
+  document.body.dataset.ach = t.id; // el CSS enseña solo las casillas de este logro
+  document.querySelectorAll('.panel').forEach(p => { p.hidden = p.dataset.ns !== t.ns; });
+  document.querySelectorAll('[data-guide]').forEach(g => { g.hidden = g.dataset.guide !== t.id; });
+  $('#q').placeholder = tx({ en: `Search in ${t.title.en}…`, es: `Buscar en ${t.title.es}…` });
+  syncChecks(); renderTabs(); renderBiomes(); renderFilter();
+  // Los biomas ya completos empiezan plegados
+  sections().forEach(sec => { sec.open = !sec.classList.contains('complete'); });
 }
 
-$('#cards').addEventListener('click', e => {
-  const b = e.target.closest('[data-tab]');
-  if (b) selectTab(TABS.find(t => t.id === b.dataset.tab));
-});
-$('#chips').addEventListener('click', e => {
-  const b = e.target.closest('[data-biome]');
-  if (!b) return;
-  biome = biome === b.dataset.biome ? '' : b.dataset.biome;
-  renderChips(); renderView();
-});
-$('#table').addEventListener('click', e => {
-  const b = e.target.closest('[data-sort]');
-  if (!b) return;
-  const k = b.dataset.sort;
-  sort = { k, dir: sort.k === k ? -sort.dir : 1 };
-  renderView();
-});
-$('#order').addEventListener('change', e => { sort = { k: e.target.value, dir: 1 }; renderView(); });
-$('#q').addEventListener('input', renderView);
-$('#status').addEventListener('change', renderView);
+// Spy-scroll: el bioma activo es el último cuya cabecera ya pasó bajo la barra fija
+function spy() {
+  const secs = sections().filter(s => !s.hidden);
+  let on = secs[0];
+  for (const s of secs) if (s.getBoundingClientRect().top < 150) on = s;
+  document.querySelectorAll('.spy li').forEach(li => li.classList.toggle('on', !!on && li === spyItem(on)));
+}
+addEventListener('scroll', () => requestAnimationFrame(spy), { passive: true });
 
+$('.spy').addEventListener('click', e => {
+  const b = e.target.closest('[data-jump]');
+  const sec = b && document.getElementById(`${cur.ns}-${b.dataset.jump}`);
+  if (!sec) return;
+  sec.open = true;
+  sec.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+});
+
+$('.tabs').addEventListener('click', e => {
+  const b = e.target.closest('[data-tab]');
+  if (!b) return;
+  selectTab(TABS.find(t => t.id === b.dataset.tab));
+  scrollTo({ top: 0 });
+});
+
+$('#q').addEventListener('input', renderFilter);
+
+// Casillas (y el filtro de estado). No se refiltra al marcar: la fila no salta bajo el ratón
+document.addEventListener('change', e => {
+  const i = e.target;
+  if (i.name === 'status') return renderFilter();
+  if (!i.dataset.k) return;
+  const el = i.closest('[data-key]'), r = ROWS[cur.ns].get(el.dataset.key);
+  setChecked(cur.ns, r.key, i.dataset.k, i.checked);
+  el.classList.toggle('done', complete(cur, r));
+  renderTabs(); renderBiomes();
+});
+
+// Pulsar una card (menos sus casillas y enlaces) despliega o pliega la receta
+$('main').addEventListener('click', e => {
+  const card = e.target.closest('.food');
+  if (!card || e.target.closest('label, input, a')) return;
+  const open = card.classList.toggle('open');
+  card.querySelector('.food-head').setAttribute('aria-expanded', open);
+  card.querySelector('.food-detail').hidden = !open;
+});
+
+// Idioma: textos con data-en/data-es, aria-label con data-en-label/data-es-label, y orden por nombre
 function renderLang() {
-  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
   document.documentElement.lang = lang;
   document.title = tx({ en: 'Valheim · Achievement tracker', es: 'Valheim · Tracker de logros' });
-  $('#q').placeholder = tx({ en: 'Search by name', es: 'Buscar por nombre' });
-  applyLang(); renderNav(); renderChips(); renderView();
+  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
+  document.querySelectorAll('[data-en]').forEach(el => { el.textContent = (lang === 'es' && el.dataset.es) || el.dataset.en; });
+  document.querySelectorAll('[data-en-label]').forEach(el => { el.setAttribute('aria-label', (lang === 'es' && el.dataset.esLabel) || el.dataset.enLabel); });
+  for (const box of document.querySelectorAll('.rows')) [...box.children]
+    .sort((a, b) => a.querySelector('.nm').textContent.localeCompare(b.querySelector('.nm').textContent, lang))
+    .forEach(el => box.append(el));
+  $('#q').placeholder = tx({ en: `Search in ${cur.title.en}…`, es: `Buscar en ${cur.title.es}…` });
+  renderTabs();
 }
 $('.lang').addEventListener('click', e => {
   const b = e.target.closest('[data-lang]');
   if (b) { setLang(b.dataset.lang); renderLang(); }
 });
 
-// Marcar/desmarcar (tabla y cards). No se reordena ni refiltra: la fila no salta bajo el ratón
-document.addEventListener('change', e => {
-  const i = e.target;
-  if (!i.dataset.key) return;
-  setChecked(cur.ns, i.dataset.key, i.dataset.k, i.checked);
-  const r = cur.rows.find(r => r.key === i.dataset.key);
-  i.closest('tr, .food').classList.toggle('done', complete(cur, r));
-  document.querySelectorAll('[data-grp]').forEach(h => { h.innerHTML = groupHead(cur, +h.dataset.grp); });
-  renderNav(); renderChips();
-});
-
 renderLang();
-setTimeout(() => $('#saga').classList.remove('intro'), 1800); // solo se llena animada al cargar
+selectTab(cur);

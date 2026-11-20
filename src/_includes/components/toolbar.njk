@@ -1,0 +1,9 @@
+{#- Búsqueda y filtro de estado. Fija arriba al hacer scroll #}
+<div class="toolbar">
+  <input id="q" type="search" placeholder="Search…" aria-label="Search" data-en-label="Search" data-es-label="Buscar">
+  <div class="seg" role="radiogroup" aria-label="Status" data-en-label="Status" data-es-label="Estado">
+    {%- for v in [['all', 'All', 'Todos'], ['todo', 'To do', 'Pendientes'], ['done', 'Done', 'Hechos']] %}
+    <label><input type="radio" name="status" value="{{ v[0] }}"{% if loop.first %} checked{% endif %}><span data-en="{{ v[1] }}" data-es="{{ v[2] }}">{{ v[1] }}</span></label>
+    {%- endfor %}
+  </div>
+</div>

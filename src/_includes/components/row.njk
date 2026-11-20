@@ -1,0 +1,15 @@
+{#- Fila de tabla (Hunter, Trophy, Fisherman). Usa r (fila) y ns -#}
+<tr data-key="{{ r.key }}">
+  <td class="name">
+    <span class="ico">
+      <span class="ph" aria-hidden="true">{{ r.name | first }}</span>
+      {% if r.image %}<img src="{{ r.image }}" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">{% endif %}
+    </span>
+    <span class="nm" data-en="{{ r.name }}"{% if r.nameEs %} data-es="{{ r.nameEs }}"{% endif %}>{{ r.name }}</span>
+    {% if r.note %}<small class="note" data-en="{{ r.note }}" data-es="{{ r.noteEs }}">{{ r.note }}</small>{% endif %}
+  </td>
+  {%- if r.bait %}
+  <td class="x" data-en="{{ r.bait }}" data-es="{{ r.baitEs }}">{{ r.bait }}</td>
+  {%- endif %}
+  <td class="c"><label class="pill"><input type="checkbox" data-k="done"><span data-en="{{ tracker.done[ns].en }}" data-es="{{ tracker.done[ns].es }}">{{ tracker.done[ns].en }}</span></label></td>
+</tr>

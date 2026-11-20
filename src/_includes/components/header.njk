@@ -1,0 +1,14 @@
+{#- Título, progreso total (lo rellena app.js) y selector de idioma #}
+<header class="top">
+  <div class="brand">
+    <h1>Valheim</h1>
+    <p data-en="Achievement tracker" data-es="Tracker de logros">Achievement tracker</p>
+  </div>
+  <div class="total">
+    <div class="total-row"><b id="total"></b><span id="total-pct"></span></div>
+    <div class="meter"><i id="total-bar"></i></div>
+  </div>
+  <div class="lang" role="group" aria-label="Language" data-en-label="Language" data-es-label="Idioma">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</header>

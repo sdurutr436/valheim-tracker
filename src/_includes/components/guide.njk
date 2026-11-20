@@ -1,0 +1,15 @@
+{#- Cómo conseguir cada logro. app.js enseña solo la del logro actual #}
+{%- for t in tracker.tabs %}
+<details class="guide" data-guide="{{ t.id }}" open hidden>
+  <summary>
+    <img src="assets/img/items/{{ t.icon }}.png" alt="" width="28" height="28">
+    <span data-en="How to get {{ t.title.en }}" data-es="Cómo conseguir {{ t.title.es }}">How to get {{ t.title.en }}</span>
+    <span class="chev" aria-hidden="true">▾</span>
+  </summary>
+  <ol>
+    {%- for g in t.guide %}
+    <li data-en="{{ g.en }}" data-es="{{ g.es }}">{{ g.en }}</li>
+    {%- endfor %}
+  </ol>
+</details>
+{%- endfor %}

@@ -2,69 +2,46 @@
 layout: base.njk
 title: Valheim · Achievement tracker
 ---
-{#- Texto que cambia con el selector EN/ES (cards.js applyLang) #}
-{%- macro t(en, es) %}<span data-en="{{ en }}" data-es="{{ es }}">{{ en }}</span>{% endmacro %}
-<header>
-  <div class="head-row">
-    <h1>Valheim <span data-en="Achievement tracker" data-es="Tracker de logros">Achievement tracker</span></h1>
-    <div class="lang" role="group" aria-label="Language" data-en-label="Language" data-es-label="Idioma">
-      <button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button>
-    </div>
-  </div>
-  <p class="total"><b id="total"></b> <span id="total-pct"></span></p>
-  {#- Progreso de todos los logros por bioma, en orden de progresión. Lo rellena app.js #}
-  <ol class="saga intro" id="saga" aria-label="Progress by biome" data-en-label="Progress by biome" data-es-label="Progreso por bioma"></ol>
-</header>
-<nav class="cards" id="cards" aria-label="Achievements" data-en-label="Achievements" data-es-label="Logros"></nav>
-<main>
-  <div class="tools">
-    <input id="q" type="search" placeholder="Search by name" aria-label="Search" data-en-label="Search" data-es-label="Buscar">
-    <select id="status" aria-label="Status" data-en-label="Status" data-es-label="Estado">
-      <option value="all" data-en="All" data-es="Todos">All</option><option value="todo" data-en="To do" data-es="Pendientes">To do</option><option value="done" data-en="Done" data-es="Completados">Done</option>
-    </select>
-    <select id="order" aria-label="Sort" data-en-label="Sort" data-es-label="Ordenar" hidden>
-      <option value="biome" data-en="Sort by biome" data-es="Ordenar por bioma">Sort by biome</option><option value="i" data-en="List order" data-es="Orden de la lista">List order</option><option value="name" data-en="Sort by name" data-es="Ordenar por nombre">Sort by name</option><option value="status" data-en="Sort by status" data-es="Ordenar por estado">Sort by status</option>
-    </select>
-    <span class="count" id="count"></span>
-  </div>
-  <div class="chips" id="chips"></div>
-  <details class="shop-panel" id="shopping" hidden>
-    <summary>{{ t("Ingredients I need", "Ingredientes que necesito") }} <small class="muted" id="shop-biome"></small></summary>
-    <p class="muted shop-note" data-en="Base ingredients to cook and eat everything once. Each dish counts with all its ingredients (the cooked meat a stew uses is separate from the one you eat). Intermediates, such as doughs or &quot;uncooked&quot; items, are used up in the final dish and don't count separately." data-es="Ingredientes base para cocinar y comer todo una sola vez. Cada plato cuenta con todos sus ingredientes (la carne cocinada que gasta un cocido es aparte de la que comes). Los intermedios, como masas o &quot;sin cocinar&quot;, se gastan en el plato final y no cuentan aparte.">Base ingredients to cook and eat everything once. Each dish counts with all its ingredients (the cooked meat a stew uses is separate from the one you eat). Intermediates, such as doughs or "uncooked" items, are used up in the final dish and don't count separately.</p>
-    <div class="shop-grid">
-      {%- for b in shopping %}
-      <section class="shop" data-biome="{{ b.en }}">
-        <h3><span class="badge b-{{ b.en | slugify }}" data-biome="{{ b.en }}">{{ b.en }}</span></h3>
-        <ul>
-          {%- for i in b.items %}
-          <li>
-            {% if i.image %}<img src="{{ i.image }}" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
-            <b>{{ i.qty }}×</b> <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>
-          </li>
-          {%- endfor %}
-        </ul>
-        {%- if b.steps.length %}
-        <h4 class="steps-h" data-en="Steps" data-es="Pasos">Steps</h4>
-        <ol class="steps">
-          {%- for s in b.steps %}
-          <li><b data-en="{{ s.verb.en }}" data-es="{{ s.verb.es }}">{{ s.verb.en }}</b>
-            {%- for i in s.items %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} {% if i.qty %}{{ i.qty }}× {% endif %}<span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% if i.hint %} <em>({{ t(i.hint.en, i.hint.es) }})</em>{% endif %}{% endfor %}.
-            {%- if s.result %} <em>{{ t('You get', 'Se obtienen') }}{% for i in s.result %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% endfor %}.</em>{% endif %}
-            {%- if s.kind == 'eat' %} <em>{{ t('Vomit.', 'Vomita.') }}</em>{% endif %}</li>
-          {%- endfor %}
-        </ol>
-        {%- endif %}
-      </section>
+{%- from "components/section.njk" import section %}
+<div class="wrap">
+  {% include "components/header.njk" %}
+  {% include "components/tabs.njk" %}
+  <div class="layout">
+    {% include "components/spy.njk" %}
+    <main>
+      {% include "components/toolbar.njk" %}
+      {% include "components/guide.njk" %}
+      {#- Un panel por lista. Master Chef, Gourmet y Chef × Gourmet comparten el de cocina (app.js filtra) #}
+      {%- for ns, list in tracker.sections %}
+      <div class="panel" id="panel-{{ ns }}" data-ns="{{ ns }}" hidden>
+        {%- for s in list %}
+        {%- call section(ns, s.biome) %}
+          {%- if ns in ['hunter', 'trophy', 'fish'] %}
+          <table class="rows-table">
+            <thead class="sr-only"><tr>
+              <th scope="col" data-en="Name" data-es="Nombre">Name</th>
+              {%- if ns == 'fish' %}<th scope="col" data-en="Bait" data-es="Cebo">Bait</th>{% endif %}
+              <th scope="col" data-en="Status" data-es="Estado">Status</th>
+            </tr></thead>
+            <tbody class="rows">
+              {%- for r in s.rows %}
+              {% include "components/row.njk" %}
+              {%- endfor %}
+            </tbody>
+          </table>
+          {%- else %}
+          {% include "components/materials.njk" %}
+          <div class="grid rows">
+            {%- for r in s.rows %}
+            {% include "components/card.njk" %}
+            {%- endfor %}
+          </div>
+          {%- endif %}
+        {%- endcall %}
+        {%- endfor %}
+      </div>
       {%- endfor %}
-    </div>
-  </details>
-  <div id="table"></div>
-  {#- Una rejilla por lista, en el orden de los datos (cards.js cuenta con ello) #}
-  {%- for ns, list in { chef: chef, artisan: artisan, carpenter: carpenter } %}
-  <div class="food-grid" id="grid-{{ ns }}" hidden>
-    {%- for item in list %}
-    {% include "food-card.njk" %}
-    {%- endfor %}
+      <p class="empty" id="empty" hidden data-en="Nothing matches. Try another name or status." data-es="Nada coincide. Prueba otro nombre u otro estado.">Nothing matches. Try another name or status.</p>
+    </main>
   </div>
-  {%- endfor %}
-</main>
+</div>

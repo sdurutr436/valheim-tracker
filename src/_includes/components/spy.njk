@@ -1,0 +1,15 @@
+{#- Índice de biomas con spy-scroll. app.js oculta los que no tiene el logro y marca el que está en pantalla #}
+<aside class="spy" aria-label="Biomes" data-en-label="Biomes" data-es-label="Biomas">
+  <ul>
+    {%- for b in tracker.biomes %}
+    <li class="b-{{ b.slug }}" data-bi="{{ b.i }}">
+      <button type="button" data-jump="{{ b.slug }}">
+        <span class="rune" aria-hidden="true">{{ b.rune }}</span>
+        <span class="spy-name" data-en="{{ b.en }}" data-es="{{ b.es }}">{{ b.en }}</span>
+        <span class="spy-n" data-count></span>
+      </button>
+      <span class="spy-bar" aria-hidden="true"></span>
+    </li>
+    {%- endfor %}
+  </ul>
+</aside>

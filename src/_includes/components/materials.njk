@@ -1,0 +1,33 @@
+{#- Todo lo que pide un bioma, bajo su cabecera. Usa ns y s (sección con items y steps) -#}
+{%- macro t(en, es) %}<span data-en="{{ en }}" data-es="{{ es }}">{{ en }}</span>{% endmacro %}
+{%- if s.items.length %}
+<div class="mats">
+  {%- if ns == 'chef' %}
+  <p class="mats-h">{{ t('Base ingredients to cook and eat everything once', 'Ingredientes base para cocinar y comer todo una vez') }}</p>
+  {%- else %}
+  <p class="mats-h">{{ t('Materials for everything in this biome', 'Materiales para todo lo de este bioma') }}</p>
+  {%- endif %}
+  <ul class="mats-list">
+    {%- for i in s.items %}
+    <li>
+      {% if i.image %}<img src="{{ i.image }}" alt="" width="22" height="22" loading="lazy" onerror="this.remove()">{% endif %}
+      <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>
+      <b>×{{ i.qty }}</b>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- if s.steps.length %}
+  <details class="steps">
+    <summary>{{ t('Steps in order', 'Pasos en orden') }}</summary>
+    <ol>
+      {%- for st in s.steps %}
+      <li><b data-en="{{ st.verb.en }}" data-es="{{ st.verb.es }}">{{ st.verb.en }}</b>
+        {%- for i in st.items %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} {% if i.qty %}{{ i.qty }}× {% endif %}<span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% if i.hint %} <em>({{ t(i.hint.en, i.hint.es) }})</em>{% endif %}{% endfor %}.
+        {%- if st.result %} <em>{{ t('You get', 'Se obtienen') }}{% for i in st.result %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% endfor %}.</em>{% endif %}
+        {%- if st.kind == 'eat' %} <em>{{ t('Vomit.', 'Vomita.') }}</em>{% endif %}</li>
+      {%- endfor %}
+    </ol>
+  </details>
+  {%- endif %}
+</div>
+{%- endif %}
