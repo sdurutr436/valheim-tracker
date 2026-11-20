@@ -44,7 +44,6 @@ function renderView() {
   const order = $('#order');
   order.hidden = !cards;
   order.querySelector('[value=biome]').hidden = !cur.biome;
-  order.querySelector('[value=i]').hidden = !!cur.biome;
   order.value = sort.k;
   renderShopping(cur.id === 'both');
   $('#count').textContent = `${rows.length} de ${cur.rows.length}`;

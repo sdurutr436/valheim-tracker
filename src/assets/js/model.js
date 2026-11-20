@@ -16,7 +16,7 @@ const slug = s => s.toLowerCase().replace(/\W+/g, '-'); // igual que el filtro s
 function prep(rows) {
   const seen = {};
   return rows.map((r, i) => {
-    const o = { ...r, i: i + 1, key: r.name + (seen[r.name] ? '#' + seen[r.name] : '') };
+    const o = { biome: '', ...r, i: i + 1, key: r.name + (seen[r.name] ? '#' + seen[r.name] : '') };
     seen[r.name] = (seen[r.name] || 0) + 1;
     o.bi = Math.min(99, ...BIOMES.map((b, j) => (o.biome || '').includes(b) ? j : 99));
     return o;
@@ -39,8 +39,8 @@ const TABS = [
   { id: 'cook', ns: 'chef', icon: '🍳', title: 'Master Chef', rows: chef.filter(r => r.cook), cols: [COL.prep, COL.cook], biome: true, label: 'Plato' },
   { id: 'eat', ns: 'chef', icon: '🍽️', title: 'Gourmet', rows: chef.filter(r => r.eat), cols: [COL.eat], biome: true, label: 'Comida' },
   simple('fish', '🎣', 'Fisherman', DATA.fish, { biome: true, label: 'Pez', extraCol: { k: 'bait', label: 'Cebo' } }),
-  simple('artisan', '⚒️', 'Artisan', DATA.artisan, { label: 'Objeto', num: true, view: 'cards' }),
-  simple('carpenter', '🪵', 'Carpenter', DATA.carpenter, { label: 'Estructura', num: true, view: 'cards' }),
+  simple('artisan', '⚒️', 'Artisan', DATA.artisan, { biome: true, label: 'Objeto', num: true, view: 'cards' }),
+  simple('carpenter', '🪵', 'Carpenter', DATA.carpenter, { biome: true, label: 'Estructura', num: true, view: 'cards' }),
   // Vista combinada en cards. No suma al total global (ya cuenta en Chef y Gourmet)
   { id: 'both', ns: 'chef', icon: '🥘', title: 'Chef × Gourmet', rows: chef, cols: [COL.prep, COL.cook, COL.eat], biome: true, label: 'Plato / Comida', noTotal: true, view: 'cards' },
 ];
