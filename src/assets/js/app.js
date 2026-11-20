@@ -10,7 +10,7 @@ function renderNav() {
     const [d, n] = progress(t);
     if (!t.noTotal) { done += d; total += n; }
     return `<button class="card ${t === cur ? 'active' : ''} ${d === n ? 'full' : ''}" data-tab="${t.id}" aria-current="${t === cur ? 'page' : 'false'}">
-      <span class="ico" aria-hidden="true">${t.icon}</span>
+      <img src="assets/img/items/${t.icon}.png" alt="" width="40" height="40">
       <span class="t">${t.title}</span>
       <span class="n">${d}<small>/${n}</small></span>
       <span class="bar" style="--p:${pctOf(d, n)}%"></span></button>`;

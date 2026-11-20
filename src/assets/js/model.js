@@ -30,19 +30,20 @@ const COL = {
   eat:  { k: 'eat',  label: 'Comido',   ap: r => r.eat },
   done: { k: 'done', label: 'Hecho',    ap: () => true },
 };
+// icon = imagen de la wiki (assets/img/items/<icon>.png)
 const simple = (id, icon, title, rows, o = {}) =>
   ({ id, ns: id, icon, title, rows: prep(rows), cols: [COL.done], label: 'Nombre', ...o });
 
 const TABS = [
-  simple('hunter', '🏹', 'Master Hunter', DATA.hunter, { biome: true, label: 'Criatura' }),
-  simple('trophy', '🏆', 'Trophy Collector', DATA.trophy, { biome: true, label: 'Trofeo' }),
-  { id: 'cook', ns: 'chef', icon: '🍳', title: 'Master Chef', rows: chef.filter(r => r.cook), cols: [COL.prep, COL.cook], biome: true, label: 'Plato' },
-  { id: 'eat', ns: 'chef', icon: '🍽️', title: 'Gourmet', rows: chef.filter(r => r.eat), cols: [COL.eat], biome: true, label: 'Comida' },
-  simple('fish', '🎣', 'Fisherman', DATA.fish, { biome: true, label: 'Pez', extraCol: { k: 'bait', label: 'Cebo' } }),
-  simple('artisan', '⚒️', 'Artisan', DATA.artisan, { biome: true, label: 'Objeto', num: true, view: 'cards' }),
-  simple('carpenter', '🪵', 'Carpenter', DATA.carpenter, { biome: true, label: 'Estructura', num: true, view: 'cards' }),
+  simple('hunter', 'huntsman-bow', 'Master Hunter', DATA.hunter, { biome: true, label: 'Criatura' }),
+  simple('trophy', 'deer-trophy', 'Trophy Collector', DATA.trophy, { biome: true, label: 'Trofeo' }),
+  { id: 'cook', ns: 'chef', icon: 'cooking-station', title: 'Master Chef', rows: chef.filter(r => r.cook), cols: [COL.prep, COL.cook], biome: true, label: 'Plato' },
+  { id: 'eat', ns: 'chef', icon: 'ashlands-gourmet-bowl', title: 'Gourmet', rows: chef.filter(r => r.eat), cols: [COL.eat], biome: true, label: 'Comida' },
+  simple('fish', 'any-fish', 'Fisherman', DATA.fish, { biome: true, label: 'Pez', extraCol: { k: 'bait', label: 'Cebo' } }),
+  simple('artisan', 'artisan-table', 'Artisan', DATA.artisan, { biome: true, label: 'Objeto', num: true, view: 'cards' }),
+  simple('carpenter', 'workbench', 'Carpenter', DATA.carpenter, { biome: true, label: 'Estructura', num: true, view: 'cards' }),
   // Vista combinada en cards. No suma al total global (ya cuenta en Chef y Gourmet)
-  { id: 'both', ns: 'chef', icon: '🥘', title: 'Chef × Gourmet', rows: chef, cols: [COL.prep, COL.cook, COL.eat], biome: true, label: 'Plato / Comida', noTotal: true, view: 'cards' },
+  { id: 'both', ns: 'chef', icon: 'cauldron', title: 'Chef × Gourmet', rows: chef, cols: [COL.prep, COL.cook, COL.eat], biome: true, label: 'Plato / Comida', noTotal: true, view: 'cards' },
 ];
 
 const checked = (tab, r, col) => isChecked(tab.ns, r.key, col);

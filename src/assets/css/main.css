@@ -41,7 +41,7 @@ h1 span{display:block;margin-top:8px;font:500 19px/1.2 var(--body);color:var(--l
   display:grid;grid-template-columns:40px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;
   padding:14px 12px 16px;border-left:1px solid var(--line);color:var(--lichen)}
 .card:first-child{border-left:0}
-.card .ico{grid-row:span 2;width:40px;font-size:26px;line-height:40px;text-align:center}
+.card img{grid-row:span 2;width:40px;height:40px;padding:3px;object-fit:contain;border-radius:8px;background:radial-gradient(circle at 50% 45%,#3b505a,#18212700 75%)}
 .card .t{font-weight:700;font-size:15px;line-height:1.15;color:var(--bone)}
 .card .n{font:600 19px/1.1 var(--display);font-variant-numeric:tabular-nums}
 .card .n small{font:14px var(--body);margin-left:2px}
