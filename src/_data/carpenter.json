@@ -3045,7 +3045,7 @@
      "name": "Flametal",
      "qty": 1,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Ashwood",
@@ -3631,7 +3631,7 @@
      "name": "Flametal",
      "qty": 2,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -3651,7 +3651,7 @@
      "name": "Flametal",
      "qty": 2,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -3671,7 +3671,7 @@
      "name": "Flametal",
      "qty": 16,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -4391,7 +4391,7 @@
      "name": "Flametal",
      "qty": 2,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Bloodgold",
@@ -4849,7 +4849,7 @@
      "name": "Flametal",
      "qty": 4,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -5257,7 +5257,7 @@
      "name": "Flametal",
      "qty": 5,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Ashwood",
@@ -5289,7 +5289,7 @@
      "name": "Flametal",
      "qty": 5,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Ashwood",
@@ -6328,7 +6328,7 @@
      "name": "Flametal",
      "qty": 4,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Grausten",
@@ -6976,7 +6976,7 @@
      "name": "Flametal",
      "qty": 2,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -7759,7 +7759,7 @@
      "name": "Flametal",
      "qty": 1,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Proustite Powder",
@@ -9175,7 +9175,7 @@
      "name": "Flametal",
      "qty": 30,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     }
    ],
    "yield": 1
@@ -9883,7 +9883,7 @@
      "name": "Flametal",
      "qty": 10,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Surtling Core",
@@ -9915,7 +9915,7 @@
      "name": "Flametal",
      "qty": 10,
      "image": "assets/img/items/flametal.png",
-     "nameEs": "Flametal"
+     "nameEs": "Llametal"
     },
     {
      "name": "Charred Cogwheel",
