@@ -73,6 +73,13 @@ main{padding-top:24px;padding-bottom:64px}
 .chip.on{border-color:var(--c);background:color-mix(in srgb,var(--c) 22%,var(--slate))}
 .chip.on small{color:var(--bone)}
 
+/* Casillas: frías sin marcar, ámbar al completar */
+input[type=checkbox]{appearance:none;margin:0;flex:none;width:22px;height:22px;border:1.5px solid #5b6f7a;border-radius:5px;
+  background:var(--night) no-repeat center/14px;cursor:pointer;vertical-align:middle;transition:background-color .15s,border-color .15s}
+input[type=checkbox]:hover{border-color:var(--bone)}
+input[type=checkbox]:checked{background-color:var(--ember);border-color:var(--ember);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' stroke='%231a242b' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m2.5 7.5 3 3 6-7'/%3E%3C/svg%3E")}
+
 /* Insignia de bioma: punto de color y nombre */
 .badge{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--c);margin-right:10px;white-space:nowrap}
 .badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--c)}
@@ -119,7 +126,10 @@ tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration
 .chev{color:var(--lichen);transition:transform .2s}
 .food.open .chev{transform:rotate(180deg)}
 .food-checks{display:flex;gap:6px;flex-wrap:wrap;padding:2px 14px 14px;font-size:15px}
-.food-checks label{cursor:pointer;display:flex;align-items:center;gap:7px}
+.food-checks label{cursor:pointer;display:flex;align-items:center;gap:7px;padding:3px 11px 3px 5px;border:1px solid var(--line);border-radius:99px;color:var(--lichen)}
+.food-checks label:hover{border-color:#5b6f7a;color:var(--bone)}
+.food-checks label:has(:checked){border-color:color-mix(in srgb,var(--ember) 55%,transparent);color:var(--bone);background:color-mix(in srgb,var(--ember) 12%,transparent)}
+.food-checks input[type=checkbox]{width:18px;height:18px;border-radius:50%;background-size:11px}
 .food-detail{border-top:1px solid var(--line);padding:12px 14px 14px;font-size:16px}
 .food-detail p{margin:0 0 8px}
 .station{color:var(--bone);font-weight:700}
