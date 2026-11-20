@@ -52,7 +52,7 @@ function renderView() {
   order.value = sort.k;
   renderShopping(cur.id === 'both');
   $('#count').textContent = `${rows.length} de ${cur.rows.length}`;
-  if (cards) renderCards(cur, rows); else renderTable($('#table'), cur, rows, sort);
+  if (cards) renderCards(cur, rows, sort.k === 'biome'); else renderTable($('#table'), cur, rows, sort);
 }
 
 function renderAll() { renderNav(); renderChips(); renderView(); }

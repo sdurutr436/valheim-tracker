@@ -17,10 +17,18 @@ function syncCard(tab, r) {
 }
 
 // rows ya vienen filtradas y ordenadas
-function renderCards(tab, rows) {
+// grouped: cabecera antes de cada bioma (groupHead está en table.js)
+function renderCards(tab, rows, grouped) {
   const visible = new Set(rows);
   for (const r of tab.rows) { syncCard(tab, r); tab.els.get(r.key).hidden = !visible.has(r); }
-  rows.forEach(r => tab.grid.append(tab.els.get(r.key)));
+  tab.grid.classList.toggle('grouped', grouped);
+  tab.grid.querySelectorAll('.grp').forEach(h => h.remove());
+  let g;
+  rows.forEach(r => {
+    if (grouped && r.bi !== g && BIOMES[r.bi])
+      tab.grid.insertAdjacentHTML('beforeend', `<h2 class="grp b-${slug(BIOMES[r.bi])}" data-grp="${g = r.bi}">${groupHead(tab, r.bi)}</h2>`);
+    tab.grid.append(tab.els.get(r.key));
+  });
 }
 
 // Nombres y biomas según el idioma (el HTML estático viene en inglés)

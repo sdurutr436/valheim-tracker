@@ -120,10 +120,12 @@ tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration
 .note{font-size:14px;color:var(--lichen)}
 .empty{padding:48px 24px;text-align:center;color:var(--lichen)}
 
-/* Cabecera de bioma en la tabla cuando se ordena por bioma */
-.grp th{font:600 25px/1.1 var(--display);color:var(--c);text-align:left}
+/* Cabecera de bioma (tabla y cards) cuando se ordena por bioma */
+.grp th,h2.grp{font:600 25px/1.1 var(--display);color:var(--c);text-align:left}
 .grp th{padding:22px 14px 8px;background:var(--night);border-bottom:1px solid var(--line)}
 tbody tr.grp:first-child th{padding-top:14px}
+h2.grp{grid-column:1/-1;margin:18px 0 0;padding-bottom:6px;border-bottom:1px solid color-mix(in srgb,var(--c) 35%,transparent)}
+h2.grp:first-child{margin-top:0}
 .grp-n{margin-left:12px;font:500 15px var(--body);color:var(--lichen);font-variant-numeric:tabular-nums}
 
 /* Cards con receta desplegable */
@@ -133,6 +135,7 @@ tbody tr.grp:first-child th{padding-top:14px}
 .food.open{border-color:color-mix(in srgb,var(--bone) 45%,transparent);background:var(--slate-2)}
 .food.done{box-shadow:inset 3px 0 0 var(--ember)}
 .food.done .food-img img{opacity:.6}
+.grouped .food-title .badge{display:none} /* ya lo dice la cabecera del bioma */
 .food-head{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:14px;width:100%;padding:12px 14px 8px;cursor:pointer}
 .food-head:focus-visible{outline:2px solid var(--bone);outline-offset:-2px;border-radius:var(--r)}
 .food-img{position:relative;flex:none;width:60px;height:60px;border-radius:8px;display:grid;place-items:center;overflow:hidden;
