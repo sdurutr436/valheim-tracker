@@ -1,10 +1,17 @@
-// Vista en cards (Chef × Gourmet). El HTML de cada card lo genera 11ty; aquí solo se
-// sincroniza el estado, se filtra/ordena y se despliega la receta.
-const grid = $('#food-grid');
-const foodEls = new Map([...grid.querySelectorAll('.food')].map(el => [el.dataset.key, el]));
+// Vistas en cards (Chef × Gourmet, Artisan, Carpenter). El HTML de cada card lo genera 11ty en el
+// orden de los datos; aquí se sincroniza el estado, se filtra/ordena y se despliega la receta.
+for (const t of TABS.filter(t => t.view === 'cards')) {
+  t.grid = $('#grid-' + t.ns);
+  const els = [...t.grid.children];
+  // card i = fila i. La clave (con #n en los nombres repetidos) se pone aquí para no repetir la lógica en 11ty
+  t.els = new Map(t.rows.map((r, i) => {
+    els[i].querySelectorAll('input').forEach(x => { x.dataset.key = r.key; });
+    return [r.key, els[i]];
+  }));
+}
 
 function syncCard(tab, r) {
-  const el = foodEls.get(r.key);
+  const el = tab.els.get(r.key);
   el.querySelectorAll('input[data-k]').forEach(i => { i.checked = checked(tab, r, i.dataset.k); });
   el.classList.toggle('done', complete(tab, r));
 }
@@ -12,8 +19,8 @@ function syncCard(tab, r) {
 // rows ya vienen filtradas y ordenadas
 function renderCards(tab, rows) {
   const visible = new Set(rows);
-  for (const r of tab.rows) { syncCard(tab, r); foodEls.get(r.key).hidden = !visible.has(r); }
-  rows.forEach(r => grid.append(foodEls.get(r.key)));
+  for (const r of tab.rows) { syncCard(tab, r); tab.els.get(r.key).hidden = !visible.has(r); }
+  rows.forEach(r => tab.grid.append(tab.els.get(r.key)));
 }
 
 // Nombres y biomas según el idioma (el HTML estático viene en inglés)
@@ -22,8 +29,8 @@ function applyLang() {
   document.querySelectorAll('.badge[data-biome]').forEach(el => { el.textContent = biomeText(el.dataset.biome); });
 }
 
-// Pulsar la card (menos sus checks) despliega/pliega la receta
-grid.addEventListener('click', e => {
+// Pulsar la card (menos sus checks y enlaces) despliega/pliega la receta
+$('main').addEventListener('click', e => {
   const card = e.target.closest('.food');
   if (!card || e.target.closest('label, input, a')) return;
   const open = card.classList.toggle('open');

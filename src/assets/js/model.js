@@ -39,8 +39,8 @@ const TABS = [
   { id: 'cook', ns: 'chef', icon: '🍳', title: 'Master Chef', rows: chef.filter(r => r.cook), cols: [COL.prep, COL.cook], biome: true, label: 'Plato' },
   { id: 'eat', ns: 'chef', icon: '🍽️', title: 'Gourmet', rows: chef.filter(r => r.eat), cols: [COL.eat], biome: true, label: 'Comida' },
   simple('fish', '🎣', 'Fisherman', DATA.fish, { biome: true, label: 'Pez', extraCol: { k: 'bait', label: 'Cebo' } }),
-  simple('artisan', '⚒️', 'Artisan', DATA.artisan, { label: 'Objeto', num: true }),
-  simple('carpenter', '🪵', 'Carpenter', DATA.carpenter, { label: 'Estructura', num: true }),
+  simple('artisan', '⚒️', 'Artisan', DATA.artisan, { label: 'Objeto', num: true, view: 'cards' }),
+  simple('carpenter', '🪵', 'Carpenter', DATA.carpenter, { label: 'Estructura', num: true, view: 'cards' }),
   // Vista combinada en cards. No suma al total global (ya cuenta en Chef y Gourmet)
   { id: 'both', ns: 'chef', icon: '🥘', title: 'Chef × Gourmet', rows: chef, cols: [COL.prep, COL.cook, COL.eat], biome: true, label: 'Plato / Comida', noTotal: true, view: 'cards' },
 ];

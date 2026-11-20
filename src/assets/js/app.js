@@ -27,12 +27,12 @@ function renderChips() {
 
 // Desplegable de ingredientes: solo en Chef × Gourmet. Sin filtro enseña todo; con un bioma
 // elegido solo la lista de ese bioma, en horizontal (el CSS lo reparte según .filtered)
-function renderShopping(cards) {
+function renderShopping(show) {
   const sh = $('#shopping'), sections = [...sh.querySelectorAll('.shop')];
   sections.forEach(s => { s.hidden = !!biome && s.dataset.biome !== biome; });
   sh.classList.toggle('filtered', !!biome);
   $('#shop-biome').textContent = biome ? biomeText(biome) : '';
-  sh.hidden = !cards || (!!biome && sections.every(s => s.hidden)); // p. ej. Console no tiene lista
+  sh.hidden = !show ||(!!biome && sections.every(s => s.hidden)); // p. ej. Console no tiene lista
 }
 
 function renderView() {
@@ -40,9 +40,13 @@ function renderView() {
   const rows = cur.rows.filter(r => matches(cur, r, f)).sort(compare(cur, sort));
   const cards = cur.view === 'cards';
   $('#table').hidden = cards;
-  grid.hidden = !cards;
-  $('#order').hidden = !cards;
-  renderShopping(cards);
+  document.querySelectorAll('.food-grid').forEach(g => { g.hidden = g !== cur.grid; });
+  const order = $('#order');
+  order.hidden = !cards;
+  order.querySelector('[value=biome]').hidden = !cur.biome;
+  order.querySelector('[value=i]').hidden = !!cur.biome;
+  order.value = sort.k;
+  renderShopping(cur.id === 'both');
   $('#count').textContent = `${rows.length} de ${cur.rows.length}`;
   if (cards) renderCards(cur, rows); else renderTable($('#table'), cur, rows, sort);
 }
@@ -52,7 +56,6 @@ function renderAll() { renderNav(); renderChips(); renderView(); }
 function selectTab(t) {
   cur = t; location.hash = t.id;
   sort = defaultSort(t); biome = '';
-  $('#order').value = 'biome';
   renderAll();
 }
 

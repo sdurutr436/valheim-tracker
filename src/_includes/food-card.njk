@@ -1,29 +1,33 @@
-<article class="food" data-key="{{ item.name }}" id="food-{{ item.name | slugify }}">
+{#- Card con receta desplegable (cocina y crafteables). La clave de cada check la pone cards.js -#}
+{%- set id = ns + '-' + loop.index %}
+{%- set w = item.wiki or item.name %}
+<article class="food">
   <div class="food-main">
-    <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ item.name | slugify }}">
+    <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ id }}">
       <span class="food-img">
         <span class="ph" aria-hidden="true">{{ item.name | first }}</span>
-        {% if item.image %}<img src="{{ item.image }}" alt="" width="56" height="56" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
+        {% if item.image %}<img src="{{ item.image }}" alt="" width="56" height="56" loading="lazy" onerror="this.remove()">{% endif %}
       </span>
       <span class="food-title">
         <span class="food-name" data-en="{{ item.name }}"{% if item.nameEs %} data-es="{{ item.nameEs }}"{% endif %}>{{ item.name }}</span>
-        <span class="badge b-{{ item.biome | slugify }}" data-biome="{{ item.biome }}">{{ item.biome }}</span>
+        {% if item.biome %}<span class="badge b-{{ item.biome | slugify }}" data-biome="{{ item.biome }}">{{ item.biome }}</span>{% endif %}
       </span>
       <span class="chev" aria-hidden="true">▾</span>
     </button>
     <div class="food-checks">
-      {% if item.intermediate %}<label><input type="checkbox" data-key="{{ item.name }}" data-k="prep"> Preparado</label>{% endif %}
-      {% if item.cook %}<label><input type="checkbox" data-key="{{ item.name }}" data-k="cook"> Cocinado</label>{% endif %}
-      {% if item.eat %}<label><input type="checkbox" data-key="{{ item.name }}" data-k="eat"> Comido</label>{% endif %}
+      {% if item.intermediate %}<label><input type="checkbox" data-k="prep"> Preparado</label>{% endif %}
+      {% if item.cook %}<label><input type="checkbox" data-k="cook"> Cocinado</label>{% endif %}
+      {% if item.eat %}<label><input type="checkbox" data-k="eat"> Comido</label>{% endif %}
+      {% if not (item.cook or item.eat) %}<label><input type="checkbox" data-k="done"> Hecho</label>{% endif %}
     </div>
   </div>
-  <div class="food-detail" id="detail-{{ item.name | slugify }}" hidden>
+  <div class="food-detail" id="detail-{{ id }}" hidden>
     {% if item.recipe %}
-      <p class="station">{{ item.recipe.station or "Receta" }}{% if item.recipe.level %} · nivel {{ item.recipe.level }}{% endif %}</p>
+      <p class="station"><span data-en="{{ item.recipe.station or 'Receta' }}"{% if item.recipe.stationEs %} data-es="{{ item.recipe.stationEs }}"{% endif %}>{{ item.recipe.station or "Receta" }}</span>{% if item.recipe.level %} · nivel {{ item.recipe.level }}{% endif %}{% if item.recipe.yield > 1 %} · rinde {{ item.recipe.yield }}{% endif %}</p>
       <ul class="ingredients">
         {% for ing in item.recipe.ingredients %}
         <li>
-          {% if ing.image %}<img src="{{ ing.image }}" alt="" width="28" height="28" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">{% endif %}
+          {% if ing.image %}<img src="{{ ing.image }}" alt="" width="28" height="28" loading="lazy" onerror="this.remove()">{% endif %}
           <b>{{ ing.qty }}×</b> <span data-en="{{ ing.name }}"{% if ing.nameEs %} data-es="{{ ing.nameEs }}"{% endif %}>{{ ing.name }}</span>
         </li>
         {% endfor %}
@@ -32,6 +36,10 @@
       <p class="muted">Sin receta en la wiki (ingrediente base o contenido muy reciente).</p>
     {% endif %}
     {% if item.note %}<p class="muted">{{ item.note }}</p>{% endif %}
-    <a class="wiki" href="https://valheim.fandom.com/wiki/{{ item.name | replace(' ', '_') | urlencode }}" target="_blank" rel="noopener">Ver en la wiki ↗</a>
+    {% if item.page == false %}
+    <a class="wiki" href="https://valheim.fandom.com/wiki/Special:Search?query={{ w | urlencode }}" target="_blank" rel="noopener">Buscar en la wiki ↗</a>
+    {% else %}
+    <a class="wiki" href="https://valheim.fandom.com/wiki/{{ w | replace(' ', '_') | urlencode }}" target="_blank" rel="noopener">Ver en la wiki ↗</a>
+    {% endif %}
   </div>
 </article>

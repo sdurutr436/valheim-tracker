@@ -19,7 +19,7 @@ title: Valheim · Tracker de logros
       <option value="all">Todos</option><option value="todo">Pendientes</option><option value="done">Completados</option>
     </select>
     <select id="order" aria-label="Ordenar" hidden>
-      <option value="biome">Ordenar por bioma</option><option value="name">Ordenar por nombre</option><option value="status">Ordenar por estado</option>
+      <option value="biome">Ordenar por bioma</option><option value="i">Orden de la lista</option><option value="name">Ordenar por nombre</option><option value="status">Ordenar por estado</option>
     </select>
     <span class="count" id="count"></span>
   </div>
@@ -55,9 +55,12 @@ title: Valheim · Tracker de logros
     </div>
   </details>
   <div id="table"></div>
-  <div class="food-grid" id="food-grid" hidden>
-    {%- for item in chef %}
+  {#- Una rejilla por lista, en el orden de los datos (cards.js cuenta con ello) #}
+  {%- for ns, list in { chef: chef, artisan: artisan, carpenter: carpenter } %}
+  <div class="food-grid" id="grid-{{ ns }}" hidden>
+    {%- for item in list %}
     {% include "food-card.njk" %}
     {%- endfor %}
   </div>
+  {%- endfor %}
 </main>
