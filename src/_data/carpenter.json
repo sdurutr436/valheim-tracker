@@ -2,6 +2,7 @@
  {
   "name": "Wood Wall 1x1",
   "nameEs": "Pared de madera 1x1",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-1x1.png",
   "recipe": {
    "station": "Workbench",
@@ -21,6 +22,7 @@
  {
   "name": "Wood Wall Half",
   "nameEs": "Pared de madera media",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-half.png",
   "recipe": {
    "station": "Workbench",
@@ -40,6 +42,7 @@
  {
   "name": "Wood Wall",
   "nameEs": "Pared de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall.png",
   "recipe": {
    "station": "Workbench",
@@ -59,6 +62,7 @@
  {
   "name": "Wood Wall 26°",
   "nameEs": "Pared de madera 26°",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-26.png",
   "recipe": {
    "station": "Workbench",
@@ -78,6 +82,7 @@
  {
   "name": "Wood Wall 45°",
   "nameEs": "Pared de madera 45°",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-45.png",
   "recipe": {
    "station": "Workbench",
@@ -97,6 +102,7 @@
  {
   "name": "Wood Wall 67°",
   "nameEs": "Pared de madera 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-67.png",
   "page": false,
   "recipe": {
@@ -117,6 +123,7 @@
  {
   "name": "Wood Wall 26° (Inverted)",
   "nameEs": "Pared de madera 26° (invertida)",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-26-inverted.png",
   "recipe": {
    "station": "Workbench",
@@ -136,6 +143,7 @@
  {
   "name": "Wood Wall 45° (Inverted)",
   "nameEs": "Pared de madera 45° (invertida)",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-45-inverted.png",
   "recipe": {
    "station": "Workbench",
@@ -155,6 +163,7 @@
  {
   "name": "Wood Wall 67° (Inverted)",
   "nameEs": "Pared de madera 67° (invertida)",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-wall-67-inverted.png",
   "page": false,
   "recipe": {
@@ -175,6 +184,7 @@
  {
   "name": "Wood Floor 1x1",
   "nameEs": "Suelo de madera 1x1",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-floor-1x1.png",
   "recipe": {
    "station": "Workbench",
@@ -194,6 +204,7 @@
  {
   "name": "Wood Floor 2x2",
   "nameEs": "Suelo de madera 2x2",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-floor-2x2.png",
   "recipe": {
    "station": "Workbench",
@@ -213,6 +224,7 @@
  {
   "name": "Wood Pole 1 m",
   "nameEs": "Poste de madera 1m",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-pole-1-m.png",
   "recipe": {
    "station": "Workbench",
@@ -232,6 +244,7 @@
  {
   "name": "Wood Pole 2 m",
   "nameEs": "Poste de madera 2m",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-pole-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -251,6 +264,7 @@
  {
   "name": "Wood Beam 1 m",
   "nameEs": "Viga de madera 1m",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-beam-1-m.png",
   "recipe": {
    "station": "Workbench",
@@ -270,6 +284,7 @@
  {
   "name": "Wood Beam 2 m",
   "nameEs": "Viga de madera 2m",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-beam-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -289,6 +304,7 @@
  {
   "name": "Wood Beam 26°",
   "nameEs": "Viga de madera 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-beam-26.png",
   "recipe": {
    "station": "Workbench",
@@ -308,6 +324,7 @@
  {
   "name": "Wood Beam 45°",
   "nameEs": "Viga de madera 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-beam-45.png",
   "recipe": {
    "station": "Workbench",
@@ -327,6 +344,7 @@
  {
   "name": "Wood Beam 67°",
   "nameEs": "Viga de madera 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-beam-67.png",
   "page": false,
   "recipe": {
@@ -347,6 +365,7 @@
  {
   "name": "Wood Roof Cross 26°",
   "nameEs": "Cruz de tejado 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-roof-cross-26.png",
   "recipe": {
    "station": "Workbench",
@@ -366,6 +385,7 @@
  {
   "name": "Wood Roof Cross 45°",
   "nameEs": "Cruz de tejado 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-roof-cross-45.png",
   "recipe": {
    "station": "Workbench",
@@ -385,6 +405,7 @@
  {
   "name": "Wood Roof Cross 67°",
   "nameEs": "Cruce de tejado de madera 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-roof-cross-67.png",
   "page": false,
   "recipe": {
@@ -405,6 +426,7 @@
  {
   "name": "Thatch Roof 26",
   "nameEs": "Tejado de paja 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-26.png",
   "page": false,
   "recipe": {
@@ -425,6 +447,7 @@
  {
   "name": "Thatch Roof 45",
   "nameEs": "Tejado de paja 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-45.png",
   "page": false,
   "recipe": {
@@ -445,6 +468,7 @@
  {
   "name": "Thatch Roof 67",
   "nameEs": "Tejado de paja 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-67.png",
   "page": false,
   "recipe": {
@@ -465,6 +489,7 @@
  {
   "name": "Thatch Roof Inner Corner 26°",
   "nameEs": "Esquina i. del tejado de paja 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-inner-corner-26.png",
   "wiki": "Thatch roof i-corner 26°",
   "recipe": {
@@ -485,6 +510,7 @@
  {
   "name": "Thatch Roof Inner Corner 45°",
   "nameEs": "Esquina i. del tejado de paja 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-inner-corner-45.png",
   "wiki": "Thatch roof i-corner 45°",
   "recipe": {
@@ -505,6 +531,7 @@
  {
   "name": "Thatch Roof Inner Corner 67°",
   "nameEs": "Tejado de paja esquina interior 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-inner-corner-67.png",
   "page": false,
   "recipe": {
@@ -525,6 +552,7 @@
  {
   "name": "Thatch Roof Outer Corner 26°",
   "nameEs": "Esquina e. del tejado de paja 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-outer-corner-26.png",
   "wiki": "Thatch roof o-corner 26°",
   "recipe": {
@@ -545,6 +573,7 @@
  {
   "name": "Thatch Roof Outer Corner 45°",
   "nameEs": "Esquina e. del tejado de paja 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-outer-corner-45.png",
   "wiki": "Thatch roof o-corner 45°",
   "recipe": {
@@ -565,6 +594,7 @@
  {
   "name": "Thatch Roof Outer Corner 67°",
   "nameEs": "Tejado de paja esquina exterior 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-outer-corner-67.png",
   "page": false,
   "recipe": {
@@ -585,6 +615,7 @@
  {
   "name": "Thatch Roof Ridge 26°",
   "nameEs": "Cumbrera de paja 26º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-ridge-26.png",
   "recipe": {
    "station": "Workbench",
@@ -604,6 +635,7 @@
  {
   "name": "Thatch Roof Ridge 45°",
   "nameEs": "Cumbrera de paja 45º",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-ridge-45.png",
   "recipe": {
    "station": "Workbench",
@@ -623,6 +655,7 @@
  {
   "name": "Thatch Roof Ridge 67°",
   "nameEs": "Cumbrera de paja 67°",
+  "biome": "Meadows",
   "image": "assets/img/items/thatch-roof-ridge-67.png",
   "page": false,
   "recipe": {
@@ -643,6 +676,7 @@
  {
   "name": "Wood Door",
   "nameEs": "Puerta de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-door.png",
   "recipe": {
    "station": "Workbench",
@@ -662,6 +696,7 @@
  {
   "name": "Wood Gate",
   "nameEs": "Portón de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-gate.png",
   "recipe": {
    "station": "Workbench",
@@ -681,6 +716,7 @@
  {
   "name": "Wood Shutter",
   "nameEs": "Contraventana de madera",
+  "biome": "Black Forest",
   "image": "assets/img/items/wood-shutter.png",
   "recipe": {
    "station": "Workbench",
@@ -706,6 +742,7 @@
  {
   "name": "Wood Dragon Adornment",
   "nameEs": "Adorno de dragón de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-dragon-adornment.png",
   "recipe": {
    "station": "Workbench",
@@ -725,6 +762,7 @@
  {
   "name": "Roundpole Fence",
   "nameEs": "Cerca de troncos redondos",
+  "biome": "Meadows",
   "image": "assets/img/items/roundpole-fence.png",
   "recipe": {
    "station": "Workbench",
@@ -744,6 +782,7 @@
  {
   "name": "Roundpole Gate",
   "nameEs": "Puerta de poste redondo",
+  "biome": "Meadows",
   "image": "assets/img/items/roundpole-gate.png",
   "page": false,
   "recipe": {
@@ -764,6 +803,7 @@
  {
   "name": "Stone Fence",
   "nameEs": "Valla de piedra",
+  "biome": "Meadows",
   "image": "assets/img/items/stone-fence.png",
   "page": false,
   "recipe": {
@@ -784,6 +824,7 @@
  {
   "name": "Wood Stairs",
   "nameEs": "Escalera de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-stairs.png",
   "wiki": "Wood stair",
   "recipe": {
@@ -804,6 +845,7 @@
  {
   "name": "Wood Ladder",
   "nameEs": "Escalerilla de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-ladder.png",
   "recipe": {
    "station": "Workbench",
@@ -823,6 +865,7 @@
  {
   "name": "Stakewall",
   "nameEs": "Empalizada",
+  "biome": "Meadows",
   "image": "assets/img/items/stakewall.png",
   "recipe": {
    "station": "Workbench",
@@ -842,6 +885,7 @@
  {
   "name": "Sharp Stakes",
   "nameEs": "Estacas afiladas",
+  "biome": "Black Forest",
   "image": "assets/img/items/sharp-stakes.png",
   "recipe": {
    "station": "Workbench",
@@ -867,6 +911,7 @@
  {
   "name": "Log Pole 2 m",
   "nameEs": "Poste de tronco 2m",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-pole-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -886,6 +931,7 @@
  {
   "name": "Log Pole 4 m",
   "nameEs": "Poste de tronco 4m",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-pole-4-m.png",
   "recipe": {
    "station": "Workbench",
@@ -905,6 +951,7 @@
  {
   "name": "Log Beam 2 m",
   "nameEs": "Viga de tronco 2m",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-beam-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -924,6 +971,7 @@
  {
   "name": "Log Beam 4 m",
   "nameEs": "Viga de tronco 4m",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-beam-4-m.png",
   "recipe": {
    "station": "Workbench",
@@ -943,6 +991,7 @@
  {
   "name": "Log Beam 26°",
   "nameEs": "Viga de tronco 26°",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-beam-26.png",
   "recipe": {
    "station": "Workbench",
@@ -962,6 +1011,7 @@
  {
   "name": "Log Beam 45°",
   "nameEs": "Viga de tronco 45°",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-beam-45.png",
   "recipe": {
    "station": "Workbench",
@@ -981,6 +1031,7 @@
  {
   "name": "Log Beam 67°",
   "nameEs": "Viga de tronco 67°",
+  "biome": "Black Forest",
   "image": "assets/img/items/log-beam-67.png",
   "page": false,
   "recipe": {
@@ -1001,6 +1052,7 @@
  {
   "name": "Stone Wall 1x1",
   "nameEs": "Muro de piedra 1x1",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-wall-1x1.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1020,6 +1072,7 @@
  {
   "name": "Stone Wall 2x1",
   "nameEs": "Muro de piedra 2x1",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-wall-2x1.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1039,6 +1092,7 @@
  {
   "name": "Stone Wall 4x2",
   "nameEs": "Muro de piedra 4x2",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-wall-4x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1058,6 +1112,7 @@
  {
   "name": "Stone Floor 2x2",
   "nameEs": "Suelo de piedra 2x2",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-floor-2x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1077,6 +1132,7 @@
  {
   "name": "Stone Pillar",
   "nameEs": "Pilar de piedra",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-pillar.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1096,6 +1152,7 @@
  {
   "name": "Stone Arch",
   "nameEs": "Arco de piedra",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-arch.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1115,6 +1172,7 @@
  {
   "name": "Stone Stair",
   "nameEs": "Escalera de piedra",
+  "biome": "Swamp",
   "image": "assets/img/items/stone-stair.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1134,6 +1192,7 @@
  {
   "name": "Wood Iron Pole",
   "nameEs": "Poste de madera y hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/wood-iron-pole.png",
   "recipe": {
    "station": "Forge",
@@ -1159,6 +1218,7 @@
  {
   "name": "Wood Iron Beam",
   "nameEs": "Viga de madera y hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/wood-iron-beam.png",
   "recipe": {
    "station": "Forge",
@@ -1184,6 +1244,7 @@
  {
   "name": "Wood Iron Beam 26°",
   "nameEs": "Viga de madera y hierro 26°",
+  "biome": "Swamp",
   "image": "assets/img/items/wood-iron-beam-26.png",
   "recipe": {
    "station": "Forge",
@@ -1209,6 +1270,7 @@
  {
   "name": "Wood Iron Beam 45°",
   "nameEs": "Viga de madera y hierro 45°",
+  "biome": "Swamp",
   "image": "assets/img/items/wood-iron-beam-45.png",
   "recipe": {
    "station": "Forge",
@@ -1234,6 +1296,7 @@
  {
   "name": "Wood Iron Beam 67°",
   "nameEs": "Viga de madera y hierro 67°",
+  "biome": "Swamp",
   "image": "assets/img/items/wood-iron-beam-67.png",
   "page": false,
   "recipe": {
@@ -1260,6 +1323,7 @@
  {
   "name": "Cage Floor 1x1",
   "nameEs": "Suelo de rejas 1x1",
+  "biome": "Swamp",
   "image": "assets/img/items/cage-floor-1x1.png",
   "recipe": {
    "station": "Forge",
@@ -1279,6 +1343,7 @@
  {
   "name": "Cage Floor 2x2",
   "nameEs": "Suelo de rejas 2x2",
+  "biome": "Swamp",
   "image": "assets/img/items/cage-floor-2x2.png",
   "recipe": {
    "station": "Forge",
@@ -1298,6 +1363,7 @@
  {
   "name": "Cage Wall 1x1",
   "nameEs": "Pared de rejas 1x1",
+  "biome": "Swamp",
   "image": "assets/img/items/cage-wall-1x1.png",
   "recipe": {
    "station": "Forge",
@@ -1317,6 +1383,7 @@
  {
   "name": "Cage Wall 2x2",
   "nameEs": "Pared de rejas 2x2",
+  "biome": "Swamp",
   "image": "assets/img/items/cage-wall-2x2.png",
   "recipe": {
    "station": "Forge",
@@ -1336,6 +1403,7 @@
  {
   "name": "Iron Gate",
   "nameEs": "Portón de Hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-gate.png",
   "recipe": {
    "station": "Forge",
@@ -1355,6 +1423,7 @@
  {
   "name": "Carved Darkwood Divider",
   "nameEs": "Separador de madera oscura tallada",
+  "biome": "Plains",
   "image": "assets/img/items/carved-darkwood-divider.png",
   "recipe": {
    "station": "Workbench",
@@ -1380,6 +1449,7 @@
  {
   "name": "Darkwood Pole 2 m",
   "nameEs": "Poste de madera oscura 2m",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-pole-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -1405,6 +1475,7 @@
  {
   "name": "Darkwood Pole 4 m",
   "nameEs": "Poste de madera oscura 4m",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-pole-4-m.png",
   "recipe": {
    "station": "Workbench",
@@ -1430,6 +1501,7 @@
  {
   "name": "Darkwood Beam 2 m",
   "nameEs": "Viga de madera oscura 2m",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-beam-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -1455,6 +1527,7 @@
  {
   "name": "Darkwood Beam 4 m",
   "nameEs": "Viga de madera oscura 4m",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-beam-4-m.png",
   "recipe": {
    "station": "Workbench",
@@ -1480,6 +1553,7 @@
  {
   "name": "Darkwood Beam 26°",
   "nameEs": "Viga de madera oscura 26°",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-beam-26.png",
   "recipe": {
    "station": "Workbench",
@@ -1505,6 +1579,7 @@
  {
   "name": "Darkwood Beam 45°",
   "nameEs": "Viga de madera oscura 45°",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-beam-45.png",
   "recipe": {
    "station": "Workbench",
@@ -1531,11 +1606,13 @@
   "name": "Darkwood Beam 67°",
   "nameEs": null,
   "image": "assets/img/items/darkwood-beam-67.png",
-  "page": false
+  "page": false,
+  "biome": "Plains"
  },
  {
   "name": "Darkwood Arch",
   "nameEs": "Arco de madera oscura",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-arch.png",
   "recipe": {
    "station": "Workbench",
@@ -1561,6 +1638,7 @@
  {
   "name": "Shingle Roof 26°",
   "nameEs": "Tejado de tejas 26°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-26.png",
   "recipe": {
    "station": "Workbench",
@@ -1586,6 +1664,7 @@
  {
   "name": "Shingle Roof 45°",
   "nameEs": "Tejado de tejas 45°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-45.png",
   "recipe": {
    "station": "Workbench",
@@ -1611,6 +1690,7 @@
  {
   "name": "Shingle Roof 67°",
   "nameEs": "Tejado de tejas 67°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-67.png",
   "page": false,
   "recipe": {
@@ -1637,6 +1717,7 @@
  {
   "name": "Shingle Roof Inner Corner 26°",
   "nameEs": "Esquina i. del tejado de tejas 26°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-inner-corner-26.png",
   "recipe": {
    "station": "Workbench",
@@ -1662,6 +1743,7 @@
  {
   "name": "Shingle Roof Inner Corner 45°",
   "nameEs": "Esquina i. del tejado de tejas 45°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-inner-corner-45.png",
   "recipe": {
    "station": "Workbench",
@@ -1687,6 +1769,7 @@
  {
   "name": "Shingle Roof Inner Corner 67°",
   "nameEs": "Tejado de tejas esquina interior 67°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-inner-corner-67.png",
   "page": false,
   "recipe": {
@@ -1713,6 +1796,7 @@
  {
   "name": "Shingle Roof Outer Corner 26°",
   "nameEs": "Esquina e. del tejado de tejas 26°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-outer-corner-26.png",
   "recipe": {
    "station": "Workbench",
@@ -1738,6 +1822,7 @@
  {
   "name": "Shingle Roof Outer Corner 45°",
   "nameEs": "Esquina e. del tejado de tejas 45°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-outer-corner-45.png",
   "recipe": {
    "station": "Workbench",
@@ -1763,6 +1848,7 @@
  {
   "name": "Shingle Roof Outer Corner 67°",
   "nameEs": "Tejado de tejas esquina exterior 67°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-outer-corner-67.png",
   "page": false,
   "recipe": {
@@ -1789,6 +1875,7 @@
  {
   "name": "Shingle Roof Ridge 26°",
   "nameEs": "Cumbrera de tejas 26°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-ridge-26.png",
   "recipe": {
    "station": "Workbench",
@@ -1814,6 +1901,7 @@
  {
   "name": "Shingle Roof Ridge 45°",
   "nameEs": "Cumbrera de tejas 45°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-ridge-45.png",
   "recipe": {
    "station": "Workbench",
@@ -1839,6 +1927,7 @@
  {
   "name": "Shingle Roof Ridge 67°",
   "nameEs": "Cumbrera de tejas 67°",
+  "biome": "Plains",
   "image": "assets/img/items/shingle-roof-ridge-67.png",
   "page": false,
   "recipe": {
@@ -1865,6 +1954,7 @@
  {
   "name": "Darkwood Gate",
   "nameEs": "Puerta de madera oscura",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-gate.png",
   "recipe": {
    "station": "Forge",
@@ -1896,6 +1986,7 @@
  {
   "name": "Raven Adornment",
   "nameEs": "Ornamento de cuervo",
+  "biome": "Plains",
   "image": "assets/img/items/raven-adornment.png",
   "recipe": {
    "station": "Workbench",
@@ -1921,6 +2012,7 @@
  {
   "name": "Wolf Adornment",
   "nameEs": "Ornamento de lobo",
+  "biome": "Plains",
   "image": "assets/img/items/wolf-adornment.png",
   "recipe": {
    "station": "Workbench",
@@ -1946,6 +2038,7 @@
  {
   "name": "Black Marble 1x1x1",
   "nameEs": "Mármol negro 1x1x1",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-1x1x1.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1965,6 +2058,7 @@
  {
   "name": "Black Marble 2x1x1",
   "nameEs": "Mármol negro 2x1x1",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-2x1x1.png",
   "recipe": {
    "station": "Stonecutter",
@@ -1984,6 +2078,7 @@
  {
   "name": "Black Marble 2x2x2",
   "nameEs": "Mármol negro 2x2x2",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-2x2x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2003,6 +2098,7 @@
  {
   "name": "Black Marble Floor",
   "nameEs": "Suelo de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-floor.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2022,6 +2118,7 @@
  {
   "name": "Black Marble Floor Triangle",
   "nameEs": "Suelo triangular de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-floor-triangle.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2041,6 +2138,7 @@
  {
   "name": "Black Marble Plinth",
   "nameEs": "Pedestal de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-plinth.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2060,6 +2158,7 @@
  {
   "name": "Black Marble Plinth Corner",
   "nameEs": "Esquina de pedestal de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-plinth-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2079,6 +2178,7 @@
  {
   "name": "Black Marble Quarter Spire",
   "nameEs": "Cuarta de espira de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-quarter-spire.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2098,6 +2198,7 @@
  {
   "name": "Black Marble Cornice",
   "nameEs": "Cornisa de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-cornice.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2117,6 +2218,7 @@
  {
   "name": "Black Marble Cornice Corner",
   "nameEs": "Esquina de cornisa de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-cornice-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2136,6 +2238,7 @@
  {
   "name": "Black Marble Column Small",
   "nameEs": "Columna pequeña de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-column-small.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2155,6 +2258,7 @@
  {
   "name": "Black Marble Column Wide",
   "nameEs": "Columna ancha de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-column-wide.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2174,6 +2278,7 @@
  {
   "name": "Black Marble Arch",
   "nameEs": "Arco de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-arch.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2193,6 +2298,7 @@
  {
   "name": "Black Marble Stair",
   "nameEs": "Escalera de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-stair.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2212,6 +2318,7 @@
  {
   "name": "Crystal Wall 1x1",
   "nameEs": "Muro de cristal 1x1",
+  "biome": "Mountain",
   "image": "assets/img/items/crystal-wall-1x1.png",
   "recipe": {
    "station": "Workbench",
@@ -2231,6 +2338,7 @@
  {
   "name": "Dvergr Metal Wall",
   "nameEs": "Muro de metal dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-metal-wall.png",
   "page": false,
   "recipe": {
@@ -2251,6 +2359,7 @@
  {
   "name": "Dvergr Stakewall",
   "nameEs": "Empalizada dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-stakewall.png",
   "recipe": {
    "station": "Black Forge",
@@ -2276,6 +2385,7 @@
  {
   "name": "Dvergr Sharp Stakes",
   "nameEs": "Estacas afiladas dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-sharp-stakes.png",
   "recipe": {
    "station": "Black Forge",
@@ -2301,6 +2411,7 @@
  {
   "name": "Hexagonal Gate",
   "nameEs": "Puerta hexagonal",
+  "biome": "Mistlands",
   "image": "assets/img/items/hexagonal-gate.png",
   "recipe": {
    "station": "Black Forge",
@@ -2326,6 +2437,7 @@
  {
   "name": "Dvergr Spiral Staircase Left",
   "nameEs": "Escalera espiral izquierda dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-spiral-staircase-left.png",
   "recipe": {
    "station": "Black Forge",
@@ -2351,6 +2463,7 @@
  {
   "name": "Dvergr Spiral Staircase Right",
   "nameEs": "Escalera espiral derecha dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-spiral-staircase-right.png",
   "recipe": {
    "station": "Black Forge",
@@ -2376,6 +2489,7 @@
  {
   "name": "Ashwood Quarter Wall",
   "nameEs": "Cuarto de muro de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-quarter-wall.png",
   "recipe": {
    "station": "Workbench",
@@ -2395,6 +2509,7 @@
  {
   "name": "Ashwood Half Wall",
   "nameEs": "Medio muro de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-half-wall.png",
   "recipe": {
    "station": "Workbench",
@@ -2414,6 +2529,7 @@
  {
   "name": "Ashwood Wall",
   "nameEs": "Muro de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall.png",
   "recipe": {
    "station": "Workbench",
@@ -2433,6 +2549,7 @@
  {
   "name": "Ashwood Arched Wall",
   "nameEs": "Muro arqueado de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-arched-wall.png",
   "page": false,
   "recipe": {
@@ -2453,6 +2570,7 @@
  {
   "name": "Ashwood Decorative Wall",
   "nameEs": "Muro decorativo de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-decorative-wall.png",
   "recipe": {
    "station": "Workbench",
@@ -2472,6 +2590,7 @@
  {
   "name": "Ashwood Divider",
   "nameEs": "Separador de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-divider.png",
   "recipe": {
    "station": "Workbench",
@@ -2491,6 +2610,7 @@
  {
   "name": "Ashwood Decorative Window",
   "nameEs": "Ventana decorativa de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-decorative-window.png",
   "recipe": {
    "station": "Workbench",
@@ -2510,6 +2630,7 @@
  {
   "name": "Ashwood Wall 26°",
   "nameEs": "Muro de madera de muro 26°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-26.png",
   "recipe": {
    "station": "Workbench",
@@ -2529,6 +2650,7 @@
  {
   "name": "Ashwood Wall 26° (Inverted)",
   "nameEs": "Muro de madera de ceniza 26° (invertido)",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-26-inverted.png",
   "recipe": {
    "station": "Workbench",
@@ -2548,6 +2670,7 @@
  {
   "name": "Ashwood Wall 45°",
   "nameEs": "Muro de madera de ceniza 45°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-45.png",
   "recipe": {
    "station": "Workbench",
@@ -2567,6 +2690,7 @@
  {
   "name": "Ashwood Wall 45° (Inverted)",
   "nameEs": "Muro de madera de ceniza 45° (invertido)",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-45-inverted.png",
   "recipe": {
    "station": "Workbench",
@@ -2586,6 +2710,7 @@
  {
   "name": "Ashwood Wall 67°",
   "nameEs": "Pared de madera de ceniza 67°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-67.png",
   "page": false,
   "recipe": {
@@ -2606,6 +2731,7 @@
  {
   "name": "Ashwood Wall 67° (Inverted)",
   "nameEs": "Pared de madera de ceniza 67° (invertida)",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-wall-67-inverted.png",
   "page": false,
   "recipe": {
@@ -2626,6 +2752,7 @@
  {
   "name": "Ashwood Floor 1x1",
   "nameEs": "Suelo de madera de ceniza 1x1",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-floor-1x1.png",
   "recipe": {
    "station": "Workbench",
@@ -2645,6 +2772,7 @@
  {
   "name": "Ashwood Floor 2x2",
   "nameEs": "Suelo de madera de ceniza 2x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-floor-2x2.png",
   "recipe": {
    "station": "Workbench",
@@ -2664,6 +2792,7 @@
  {
   "name": "Ashwood Decorative Floor",
   "nameEs": "Suelo decorativo de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-decorative-floor.png",
   "recipe": {
    "station": "Workbench",
@@ -2683,6 +2812,7 @@
  {
   "name": "Ashwood Arch",
   "nameEs": "Arco de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-arch.png",
   "recipe": {
    "station": "Workbench",
@@ -2702,6 +2832,7 @@
  {
   "name": "Ashwood Pole 1 m",
   "nameEs": "Poste de madera de ceniza 1 m",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-pole-1-m.png",
   "recipe": {
    "station": "Workbench",
@@ -2721,6 +2852,7 @@
  {
   "name": "Ashwood Pole 2 m",
   "nameEs": "Poste de madera de ceniza 2 m",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-pole-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -2740,6 +2872,7 @@
  {
   "name": "Ashwood Beam 1 m",
   "nameEs": "Viga de madera de ceniza 1 m",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-beam-1-m.png",
   "recipe": {
    "station": "Workbench",
@@ -2759,6 +2892,7 @@
  {
   "name": "Ashwood Beam 2 m",
   "nameEs": "Viga de madera de ceniza 2 m",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-beam-2-m.png",
   "recipe": {
    "station": "Workbench",
@@ -2778,6 +2912,7 @@
  {
   "name": "Ashwood Beam 26°",
   "nameEs": "Viga de madera de ceniza, 26°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-beam-26.png",
   "recipe": {
    "station": "Workbench",
@@ -2797,6 +2932,7 @@
  {
   "name": "Ashwood Beam 45°",
   "nameEs": "Viga de madera de ceniza, 45°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-beam-45.png",
   "recipe": {
    "station": "Workbench",
@@ -2816,6 +2952,7 @@
  {
   "name": "Ashwood Beam 67°",
   "nameEs": "Viga de madera de ceniza 67°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-beam-67.png",
   "page": false,
   "recipe": {
@@ -2836,6 +2973,7 @@
  {
   "name": "Ashwood Roof Cross 26°",
   "nameEs": "Cruz de tejado de madera de ceniza, 26°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-roof-cross-26.png",
   "recipe": {
    "station": "Workbench",
@@ -2855,6 +2993,7 @@
  {
   "name": "Ashwood Roof Cross 45°",
   "nameEs": "Cruz de tejado de madera de ceniza, 45°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-roof-cross-45.png",
   "recipe": {
    "station": "Workbench",
@@ -2874,6 +3013,7 @@
  {
   "name": "Ashwood Roof Cross 67°",
   "nameEs": "Cruce de tejado de madera de ceniza 67°",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-roof-cross-67.png",
   "page": false,
   "recipe": {
@@ -2894,6 +3034,7 @@
  {
   "name": "Ashwood Door",
   "nameEs": "Puerta de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-door.png",
   "recipe": {
    "station": "Workbench",
@@ -2919,6 +3060,7 @@
  {
   "name": "Ashwood Stair",
   "nameEs": "Escaleras de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-stair.png",
   "recipe": {
    "station": "Workbench",
@@ -2938,6 +3080,7 @@
  {
   "name": "Ashwood Stakewall",
   "nameEs": "Empalizada de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-stakewall.png",
   "recipe": {
    "station": "Workbench",
@@ -2957,6 +3100,7 @@
  {
   "name": "Grausten Wall 1x2",
   "nameEs": "Muro de piedra cenicienta 1x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-wall-1x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2976,6 +3120,7 @@
  {
   "name": "Grausten Wall 2x2",
   "nameEs": "Muro de piedra cenicienta 2x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-wall-2x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -2995,6 +3140,7 @@
  {
   "name": "Grausten Window 2x2",
   "nameEs": "Ventana de piedra cenicienta 2x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-window-2x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3014,6 +3160,7 @@
  {
   "name": "Grausten Wall 4x2",
   "nameEs": "Muro de piedra cenicienta 4x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-wall-4x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3033,6 +3180,7 @@
  {
   "name": "Grausten Window 4x2",
   "nameEs": "Ventana de piedra cenicienta 4x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-window-4x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3052,6 +3200,7 @@
  {
   "name": "Grausten Wall Arch",
   "nameEs": "Arco de muro de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-wall-arch.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3071,6 +3220,7 @@
  {
   "name": "Grausten Wall Arch (Inverted)",
   "nameEs": "Arco de muro invertido de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-wall-arch-inverted.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3090,6 +3240,7 @@
  {
   "name": "Grausten Floor 1x1",
   "nameEs": "Suelo de piedra cenicienta 1x1",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-floor-1x1.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3109,6 +3260,7 @@
  {
   "name": "Grausten Floor 2x2",
   "nameEs": "Suelo de piedra cenicienta 2x2",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-floor-2x2.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3128,6 +3280,7 @@
  {
   "name": "Grausten Floor 4x4",
   "nameEs": "Suelo de piedra cenicienta 4x4",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-floor-4x4.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3147,6 +3300,7 @@
  {
   "name": "Grausten Small Pillar",
   "nameEs": "Pilar pequeño de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-small-pillar.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3166,6 +3320,7 @@
  {
   "name": "Grausten Medium Pillar",
   "nameEs": "Pilar mediano de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-medium-pillar.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3185,6 +3340,7 @@
  {
   "name": "Grausten Small Beam",
   "nameEs": "Viga pequeña de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-small-beam.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3204,6 +3360,7 @@
  {
   "name": "Grausten Medium Beam",
   "nameEs": "Viga mediana de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-medium-beam.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3223,6 +3380,7 @@
  {
   "name": "Grausten Tapered Pillar",
   "nameEs": "Pilar cónico de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-tapered-pillar.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3242,6 +3400,7 @@
  {
   "name": "Grausten Tapered Pillar (Inverted)",
   "nameEs": "Pilar cónico de piedra cenicienta (invertido)",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-tapered-pillar-inverted.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3261,6 +3420,7 @@
  {
   "name": "Grausten Small Arch",
   "nameEs": "Arco pequeño de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-small-arch.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3280,6 +3440,7 @@
  {
   "name": "Grausten Medium Arch",
   "nameEs": "Arco mediano de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-medium-arch.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3299,6 +3460,7 @@
  {
   "name": "Grausten Roof",
   "nameEs": "Tejado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-roof.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3318,6 +3480,7 @@
  {
   "name": "Grausten Roof Corner",
   "nameEs": "Esquina de tejado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-roof-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3337,6 +3500,7 @@
  {
   "name": "Grausten Roof Corner",
   "nameEs": "Esquina de tejado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-roof-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3356,6 +3520,7 @@
  {
   "name": "Grausten Arched Roof",
   "nameEs": "Tejado arqueado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-arched-roof.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3375,6 +3540,7 @@
  {
   "name": "Grausten Arched Roof Corner",
   "nameEs": "Esquina de tejado arqueado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-arched-roof-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3394,6 +3560,7 @@
  {
   "name": "Grausten Arched Roof Corner",
   "nameEs": "Esquina de tejado arqueado de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-arched-roof-corner.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3413,6 +3580,7 @@
  {
   "name": "Grausten Stairs",
   "nameEs": "Escaleras de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-stairs.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3432,6 +3600,7 @@
  {
   "name": "Grausten Steep Stairs",
   "nameEs": "Escaleras empinadas de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-steep-stairs.png",
   "recipe": {
    "station": "Stonecutter",
@@ -3451,6 +3620,7 @@
  {
   "name": "Flametal Pillar",
   "nameEs": "Pilar de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-pillar.png",
   "recipe": {
    "station": "Black Forge",
@@ -3470,6 +3640,7 @@
  {
   "name": "Flametal Beam",
   "nameEs": "Viga de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-beam.png",
   "recipe": {
    "station": "Black Forge",
@@ -3489,6 +3660,7 @@
  {
   "name": "Flametal Gate",
   "nameEs": "Puerta de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-gate.png",
   "recipe": {
    "station": "Black Forge",
@@ -3508,6 +3680,7 @@
  {
   "name": "Timber Wall",
   "nameEs": "Pared de leño",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-wall.png",
   "page": false,
   "recipe": {
@@ -3528,6 +3701,7 @@
  {
   "name": "Timber Pole 2m",
   "nameEs": "Poste de leño 2 m",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-pole-2m.png",
   "page": false,
   "recipe": {
@@ -3548,6 +3722,7 @@
  {
   "name": "Timber Pole 4m",
   "nameEs": "Poste de leño 4 m",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-pole-4m.png",
   "page": false,
   "recipe": {
@@ -3568,6 +3743,7 @@
  {
   "name": "Timber Beam 2m",
   "nameEs": "Viga de leño 2 m",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-beam-2m.png",
   "page": false,
   "recipe": {
@@ -3588,6 +3764,7 @@
  {
   "name": "Timber Beam 4m",
   "nameEs": "Viga de leño 4 m",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-beam-4m.png",
   "page": false,
   "recipe": {
@@ -3608,6 +3785,7 @@
  {
   "name": "Timber Beam 26°",
   "nameEs": "Viga de leño 26°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-beam-26.png",
   "page": false,
   "recipe": {
@@ -3628,6 +3806,7 @@
  {
   "name": "Timber Beam 45°",
   "nameEs": "Viga de leño 45°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-beam-45.png",
   "page": false,
   "recipe": {
@@ -3648,6 +3827,7 @@
  {
   "name": "Timber Beam 67°",
   "nameEs": "Viga de leño 67°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-beam-67.png",
   "page": false,
   "recipe": {
@@ -3668,6 +3848,7 @@
  {
   "name": "Timber Roof Cross 26°",
   "nameEs": "Cruce de tejado de leño 26°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-roof-cross-26.png",
   "page": false,
   "recipe": {
@@ -3688,6 +3869,7 @@
  {
   "name": "Timber Roof Cross 45°",
   "nameEs": "Cruce de tejado de leño 45°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-roof-cross-45.png",
   "page": false,
   "recipe": {
@@ -3708,6 +3890,7 @@
  {
   "name": "Timber Roof Cross 67°",
   "nameEs": "Cruce de tejado de leño 67°",
+  "biome": "Deep North",
   "image": "assets/img/items/timber-roof-cross-67.png",
   "page": false,
   "recipe": {
@@ -3728,6 +3911,7 @@
  {
   "name": "Lathed Timber Wall",
   "nameEs": "Pared de leño entramada",
+  "biome": "Deep North",
   "image": "assets/img/items/lathed-timber-wall.png",
   "page": false,
   "recipe": {
@@ -3748,6 +3932,7 @@
  {
   "name": "Decorated Timber Pole 2m",
   "nameEs": "Poste de leño decorado 2 m",
+  "biome": "Deep North",
   "image": "assets/img/items/decorated-timber-pole-2m.png",
   "page": false,
   "recipe": {
@@ -3768,6 +3953,7 @@
  {
   "name": "Decorated Timber Beam 2m",
   "nameEs": "Viga de leño decorada 2 m",
+  "biome": "Deep North",
   "image": "assets/img/items/decorated-timber-beam-2m.png",
   "page": false,
   "recipe": {
@@ -3788,6 +3974,7 @@
  {
   "name": "Decorated Timber Beam 26",
   "nameEs": "Viga de leño decorada 26°",
+  "biome": "Deep North",
   "image": "assets/img/items/decorated-timber-beam-26.png",
   "page": false,
   "recipe": {
@@ -3808,6 +3995,7 @@
  {
   "name": "Decorated Timber Beam 45°",
   "nameEs": "Viga de leño decorada 45°",
+  "biome": "Deep North",
   "image": "assets/img/items/decorated-timber-beam-45.png",
   "page": false,
   "recipe": {
@@ -3828,6 +4016,7 @@
  {
   "name": "Decorated Timber Beam 67°",
   "nameEs": "Viga de leño decorada 67°",
+  "biome": "Deep North",
   "image": "assets/img/items/decorated-timber-beam-67.png",
   "page": false,
   "recipe": {
@@ -3848,6 +4037,7 @@
  {
   "name": "Scalewood Quarter Wall",
   "nameEs": "Cuarto de pared de madera escamada",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-quarter-wall.png",
   "page": false,
   "recipe": {
@@ -3868,6 +4058,7 @@
  {
   "name": "Scalewood Half Wall",
   "nameEs": "Media pared de madera escamada",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-half-wall.png",
   "page": false,
   "recipe": {
@@ -3888,6 +4079,7 @@
  {
   "name": "Scalewood Wall",
   "nameEs": "Pared de madera escamada",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall.png",
   "page": false,
   "recipe": {
@@ -3908,6 +4100,7 @@
  {
   "name": "Scalewood Wall 26° Left",
   "nameEs": "Pared de madera escamada 26° izquierda",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-26-left.png",
   "page": false,
   "recipe": {
@@ -3928,6 +4121,7 @@
  {
   "name": "Scalewood Wall 26° Right",
   "nameEs": "Pared de madera escamada 26° derecha",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-26-right.png",
   "page": false,
   "recipe": {
@@ -3948,6 +4142,7 @@
  {
   "name": "Scalewood Wall 45° Left",
   "nameEs": "Pared de madera escamada 45° izquierda",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-45-left.png",
   "page": false,
   "recipe": {
@@ -3968,6 +4163,7 @@
  {
   "name": "Scalewood Wall 45° Right",
   "nameEs": "Pared de madera escamada 45° derecha",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-45-right.png",
   "page": false,
   "recipe": {
@@ -3988,6 +4184,7 @@
  {
   "name": "Scalewood Wall 67° Left",
   "nameEs": "Pared de madera escamada 67° izquierda",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-67-left.png",
   "page": false,
   "recipe": {
@@ -4008,6 +4205,7 @@
  {
   "name": "Scalewood Wall 67° Right",
   "nameEs": "Pared de madera escamada 67° derecha",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-67-right.png",
   "page": false,
   "recipe": {
@@ -4028,6 +4226,7 @@
  {
   "name": "Scalewood Wall 26° Right (Inverted)",
   "nameEs": "Pared de madera escamada 26° derecha (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-26-right-inverted.png",
   "page": false,
   "recipe": {
@@ -4048,6 +4247,7 @@
  {
   "name": "Scalewood Wall 26° Left (Inverted)",
   "nameEs": "Pared de madera escamada 26° izquierda (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-26-left-inverted.png",
   "page": false,
   "recipe": {
@@ -4068,6 +4268,7 @@
  {
   "name": "Scalewood Wall 45° Right (Inverted)",
   "nameEs": "Pared de madera escamada 45° derecha (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-45-right-inverted.png",
   "page": false,
   "recipe": {
@@ -4088,6 +4289,7 @@
  {
   "name": "Scalewood Wall 45° Left (Inverted)",
   "nameEs": "Pared de madera escamada 45° izquierda (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-45-left-inverted.png",
   "page": false,
   "recipe": {
@@ -4108,6 +4310,7 @@
  {
   "name": "Scalewood Wall 67° Right (Inverted)",
   "nameEs": "Pared de madera escamada 67° derecha (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-67-right-inverted.png",
   "page": false,
   "recipe": {
@@ -4128,6 +4331,7 @@
  {
   "name": "Scalewood Wall 67° Left (Inverted)",
   "nameEs": "Pared de madera escamada 67° izquierda (invertida)",
+  "biome": "Deep North",
   "image": "assets/img/items/scalewood-wall-67-left-inverted.png",
   "page": false,
   "recipe": {
@@ -4148,6 +4352,7 @@
  {
   "name": "Timberwood Gate",
   "nameEs": "Puerta de leño de construcción",
+  "biome": "Deep North",
   "image": "assets/img/items/timberwood-gate.png",
   "page": false,
   "recipe": {
@@ -4174,6 +4379,7 @@
  {
   "name": "Timeberwood Drawbridge",
   "nameEs": "Puente levadizo de leño de construcción",
+  "biome": "Deep North",
   "image": "assets/img/items/timeberwood-drawbridge.png",
   "page": false,
   "recipe": {
@@ -4206,6 +4412,7 @@
  {
   "name": "Rustic Drawbridge",
   "nameEs": "Puente levadizo rústico ",
+  "biome": "Mountain",
   "image": "assets/img/items/rustic-drawbridge.png",
   "page": false,
   "recipe": {
@@ -4238,6 +4445,7 @@
  {
   "name": "Ice Block",
   "nameEs": "Bloque de hielo",
+  "biome": "Black Forest",
   "image": "assets/img/items/ice-block.png",
   "page": false,
   "recipe": {
@@ -4258,6 +4466,7 @@
  {
   "name": "Cooking Station",
   "nameEs": "Estación de cocina",
+  "biome": "Meadows",
   "image": "assets/img/items/cooking-station.png",
   "recipe": {
    "station": "Hammer",
@@ -4277,6 +4486,7 @@
  {
   "name": "Iron Cooking Station",
   "nameEs": "Estación de cocina de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-cooking-station.png",
   "recipe": {
    "station": "Forge",
@@ -4302,6 +4512,7 @@
  {
   "name": "Workbench",
   "nameEs": "Banco de trabajo",
+  "biome": "Meadows",
   "image": "assets/img/items/workbench.png",
   "recipe": {
    "station": "Hammer",
@@ -4321,6 +4532,7 @@
  {
   "name": "Chopping Block",
   "nameEs": "Tabla de cortar",
+  "biome": "Meadows",
   "image": "assets/img/items/chopping-block.png",
   "recipe": {
    "station": "Workbench",
@@ -4346,6 +4558,7 @@
  {
   "name": "Tanning Rack",
   "nameEs": "Soporte para curtir piel",
+  "biome": "Meadows",
   "image": "assets/img/items/tanning-rack.png",
   "recipe": {
    "station": "Workbench",
@@ -4383,6 +4596,7 @@
  {
   "name": "Adze",
   "nameEs": "Azuela",
+  "biome": "Black Forest",
   "image": "assets/img/items/adze.png",
   "recipe": {
    "station": "Forge",
@@ -4408,6 +4622,7 @@
  {
   "name": "Tool Shelf",
   "nameEs": "Estante para herramientas",
+  "biome": "Mountain",
   "image": "assets/img/items/tool-shelf.png",
   "recipe": {
    "station": "Forge",
@@ -4439,6 +4654,7 @@
  {
   "name": "Cauldron",
   "nameEs": "Caldero",
+  "biome": "Black Forest",
   "image": "assets/img/items/cauldron.png",
   "recipe": {
    "station": "Forge",
@@ -4458,6 +4674,7 @@
  {
   "name": "Spice Rack",
   "nameEs": "Especiero",
+  "biome": "Swamp",
   "image": "assets/img/items/spice-rack.png",
   "recipe": {
    "station": "Workbench",
@@ -4501,6 +4718,7 @@
  {
   "name": "Butcher's Table",
   "nameEs": "Mesa de carnicero",
+  "biome": "Mountain",
   "image": "assets/img/items/butcher-s-table.png",
   "recipe": {
    "station": "Workbench",
@@ -4538,6 +4756,7 @@
  {
   "name": "Pots and Pans",
   "nameEs": "Cacerolas y sartenes",
+  "biome": "Plains",
   "image": "assets/img/items/pots-and-pans.png",
   "recipe": {
    "station": "Workbench",
@@ -4575,6 +4794,7 @@
  {
   "name": "Mortar and Pestle",
   "nameEs": "Mortero y maja",
+  "biome": "Mistlands",
   "image": "assets/img/items/mortar-and-pestle.png",
   "recipe": {
    "station": "Workbench",
@@ -4606,6 +4826,7 @@
  {
   "name": "Rolling Pins and Cutting Boards",
   "nameEs": "Rodillos y tablas de cortar",
+  "biome": "Ashlands",
   "image": "assets/img/items/rolling-pins-and-cutting-boards.png",
   "recipe": {
    "station": "Workbench",
@@ -4637,6 +4858,7 @@
  {
   "name": "Smoker",
   "nameEs": "Ahumador",
+  "biome": "Deep North",
   "image": "assets/img/items/smoker.png",
   "page": false,
   "recipe": {
@@ -4663,6 +4885,7 @@
  {
   "name": "Forge",
   "nameEs": "Forja",
+  "biome": "Black Forest",
   "image": "assets/img/items/forge.png",
   "recipe": {
    "station": "Workbench",
@@ -4700,6 +4923,7 @@
  {
   "name": "Forge Bellows",
   "nameEs": "Fuelle de la forja",
+  "biome": "Swamp",
   "image": "assets/img/items/forge-bellows.png",
   "recipe": {
    "station": "Workbench",
@@ -4731,6 +4955,7 @@
  {
   "name": "Anvils",
   "nameEs": "Yunques",
+  "biome": "Black Forest",
   "image": "assets/img/items/anvils.png",
   "recipe": {
    "station": "Workbench",
@@ -4756,6 +4981,7 @@
  {
   "name": "Grinding Wheel",
   "nameEs": "Piedra de afilar",
+  "biome": "Swamp",
   "image": "assets/img/items/grinding-wheel.png",
   "recipe": {
    "station": "Workbench",
@@ -4781,6 +5007,7 @@
  {
   "name": "Smith's Anvil",
   "nameEs": "Yunque de herrería",
+  "biome": "Swamp",
   "image": "assets/img/items/smith-s-anvil.png",
   "recipe": {
    "station": "Workbench",
@@ -4806,6 +5033,7 @@
  {
   "name": "Forge Cooler",
   "nameEs": "Refrigerador de la forja",
+  "biome": "Black Forest",
   "image": "assets/img/items/forge-cooler.png",
   "recipe": {
    "station": "Workbench",
@@ -4831,6 +5059,7 @@
  {
   "name": "Forge Tool Rack",
   "nameEs": "Soporte de herramientas",
+  "biome": "Swamp",
   "image": "assets/img/items/forge-tool-rack.png",
   "page": false,
   "recipe": {
@@ -4857,6 +5086,7 @@
  {
   "name": "Artisan Table",
   "nameEs": "Mesa de artesanía",
+  "biome": "Mountain",
   "image": "assets/img/items/artisan-table.png",
   "recipe": {
    "station": "Hammer",
@@ -4882,6 +5112,7 @@
  {
   "name": "Artisan Press",
   "nameEs": "Prensa artesanal",
+  "biome": "Mistlands",
   "image": "assets/img/items/artisan-press.png",
   "recipe": {
    "station": "Artisan Table",
@@ -4913,6 +5144,7 @@
  {
   "name": "Black Forge",
   "nameEs": "Forja negra",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-forge.png",
   "recipe": {
    "station": "Workbench",
@@ -4944,6 +5176,7 @@
  {
   "name": "Black Forge Cooler",
   "nameEs": "Enfriador de la forja negra",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-forge-cooler.png",
   "recipe": {
    "station": "Black Forge",
@@ -4975,6 +5208,7 @@
  {
   "name": "Vice",
   "nameEs": "Tornillo de banco",
+  "biome": "Mistlands",
   "image": "assets/img/items/vice.png",
   "recipe": {
    "station": "Black Forge",
@@ -5006,6 +5240,7 @@
  {
   "name": "Metal Cutter",
   "nameEs": "Cortador de metal",
+  "biome": "Ashlands",
   "image": "assets/img/items/metal-cutter.png",
   "recipe": {
    "station": "Black Forge",
@@ -5043,6 +5278,7 @@
  {
   "name": "Gem Cutter",
   "nameEs": "Cortador de gemas",
+  "biome": "Ashlands",
   "image": "assets/img/items/gem-cutter.png",
   "recipe": {
    "station": "Black Forge",
@@ -5080,6 +5316,7 @@
  {
   "name": "Smith's Aprons",
   "nameEs": "Delantal de herrero",
+  "biome": "Deep North",
   "image": "assets/img/items/smith-s-aprons.png",
   "recipe": {
    "station": "Black Forge",
@@ -5111,6 +5348,7 @@
  {
   "name": "Galdr Table",
   "nameEs": "Mesa de galdr",
+  "biome": "Mistlands",
   "image": "assets/img/items/galdr-table.png",
   "recipe": {
    "station": "Workbench",
@@ -5148,6 +5386,7 @@
  {
   "name": "Rune Table",
   "nameEs": "Mesa rúnica",
+  "biome": "Mistlands",
   "image": "assets/img/items/rune-table.png",
   "recipe": {
    "station": "Galdr Table",
@@ -5179,6 +5418,7 @@
  {
   "name": "Unfading Candles",
   "nameEs": "Velas inextinguibles",
+  "biome": "Mistlands",
   "image": "assets/img/items/unfading-candles.png",
   "recipe": {
    "station": "Galdr Table",
@@ -5216,6 +5456,7 @@
  {
   "name": "Feathery Wreath",
   "nameEs": "Corona de plumas",
+  "biome": "Ashlands",
   "image": "assets/img/items/feathery-wreath.png",
   "recipe": {
    "station": "Galdr Table",
@@ -5253,6 +5494,7 @@
  {
   "name": "Standing Loom",
   "nameEs": "Telar de pie",
+  "biome": "Deep North",
   "image": "assets/img/items/standing-loom.png",
   "page": false,
   "recipe": {
@@ -5279,6 +5521,7 @@
  {
   "name": "Food Preparation Table",
   "nameEs": "Mesa para preparación de alimentos",
+  "biome": "Swamp",
   "image": "assets/img/items/food-preparation-table.png",
   "recipe": {
    "station": "Workbench",
@@ -5310,6 +5553,7 @@
  {
   "name": "Mead Ketill",
   "nameEs": "Caldero de aguamiel",
+  "biome": "Black Forest",
   "image": "assets/img/items/mead-ketill.png",
   "recipe": {
    "station": "Forge",
@@ -5341,6 +5585,7 @@
  {
   "name": "Fermenter",
   "nameEs": "Fermentador",
+  "biome": "Black Forest",
   "image": "assets/img/items/fermenter.png",
   "recipe": {
    "station": "Forge",
@@ -5372,6 +5617,7 @@
  {
   "name": "Stone Oven",
   "nameEs": "Horno de piedra",
+  "biome": "Mountain",
   "image": "assets/img/items/stone-oven.png",
   "recipe": {
    "station": "Artisan Table",
@@ -5403,6 +5649,7 @@
  {
   "name": "Windmill",
   "nameEs": "Molino de viento",
+  "biome": "Mountain",
   "image": "assets/img/items/windmill.png",
   "recipe": {
    "station": "Artisan Table",
@@ -5434,6 +5681,7 @@
  {
   "name": "Stonecutter",
   "nameEs": "Cortapiedras",
+  "biome": "Swamp",
   "image": "assets/img/items/stonecutter.png",
   "recipe": {
    "station": "Workbench",
@@ -5465,6 +5713,7 @@
  {
   "name": "Spinning Wheel",
   "nameEs": "Rueca",
+  "biome": "Mountain",
   "image": "assets/img/items/spinning-wheel.png",
   "recipe": {
    "station": "Artisan Table",
@@ -5496,6 +5745,7 @@
  {
   "name": "Frost Foundry",
   "nameEs": "Forja de escarcha",
+  "biome": "Deep North",
   "image": "assets/img/items/frost-foundry.png",
   "page": false,
   "recipe": {
@@ -5528,6 +5778,7 @@
  {
   "name": "Smelter",
   "nameEs": "Horno de fundición",
+  "biome": "Black Forest",
   "image": "assets/img/items/smelter.png",
   "recipe": {
    "station": "Workbench",
@@ -5553,6 +5804,7 @@
  {
   "name": "Charcoal Kiln",
   "nameEs": "Horno de carbón",
+  "biome": "Black Forest",
   "image": "assets/img/items/charcoal-kiln.png",
   "recipe": {
    "station": "Workbench",
@@ -5578,6 +5830,7 @@
  {
   "name": "Blast Furnace",
   "nameEs": "Gran horno",
+  "biome": "Mountain",
   "image": "assets/img/items/blast-furnace.png",
   "recipe": {
    "station": "Artisan Table",
@@ -5615,6 +5868,7 @@
  {
   "name": "Eitr Refinery",
   "nameEs": "Refinería de Eitr",
+  "biome": "Mistlands",
   "image": "assets/img/items/eitr-refinery.png",
   "recipe": {
    "station": "Workbench",
@@ -5658,6 +5912,7 @@
  {
   "name": "Frigid Kiln",
   "nameEs": "Horno gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frigid-kiln.png",
   "page": false,
   "recipe": {
@@ -5690,6 +5945,7 @@
  {
   "name": "Sap Extractor",
   "nameEs": "Extractor de savia",
+  "biome": "Mistlands",
   "image": "assets/img/items/sap-extractor.png",
   "recipe": {
    "station": "Workbench",
@@ -5721,6 +5977,7 @@
  {
   "name": "Beehive",
   "nameEs": "Colmena",
+  "biome": "Meadows",
   "image": "assets/img/items/beehive.png",
   "recipe": {
    "station": "Workbench",
@@ -5746,6 +6003,7 @@
  {
   "name": "Birds' Nest",
   "nameEs": "Nido de pájaros",
+  "biome": "Swamp",
   "image": "assets/img/items/birds-nest.png",
   "recipe": {
    "station": "Workbench",
@@ -5777,6 +6035,7 @@
  {
   "name": "Wisp Fountain",
   "nameEs": "Fuente de Wisp",
+  "biome": "Plains",
   "image": "assets/img/items/wisp-fountain.png",
   "recipe": {
    "station": "Stonecutter",
@@ -5802,6 +6061,7 @@
  {
   "name": "Eternal Pyre",
   "nameEs": "Pira eterna",
+  "biome": "Ashlands",
   "image": "assets/img/items/eternal-pyre.png",
   "recipe": {
    "station": "Stonecutter",
@@ -5827,6 +6087,7 @@
  {
   "name": "Obliterator",
   "nameEs": "Obliterador",
+  "biome": "Swamp",
   "image": "assets/img/items/obliterator.png",
   "recipe": {
    "station": "Forge",
@@ -5858,6 +6119,7 @@
  {
   "name": "Bed",
   "nameEs": "Cama",
+  "biome": "Meadows",
   "image": "assets/img/items/bed.png",
   "recipe": {
    "station": "Workbench",
@@ -5877,6 +6139,7 @@
  {
   "name": "Dragon Bed",
   "nameEs": "Cama de dragón",
+  "biome": "Mountain",
   "image": "assets/img/items/dragon-bed.png",
   "recipe": {
    "station": "Workbench",
@@ -5920,6 +6183,7 @@
  {
   "name": "Ashwood Bed",
   "nameEs": "Cama de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-bed.png",
   "recipe": {
    "station": "Workbench",
@@ -5951,6 +6215,7 @@
  {
   "name": "Raven Throne",
   "nameEs": "Trono de cuervo",
+  "biome": "Swamp",
   "image": "assets/img/items/raven-throne.png",
   "recipe": {
    "station": "Workbench",
@@ -5976,6 +6241,7 @@
  {
   "name": "Stone Throne",
   "nameEs": "Trono de piedra",
+  "biome": "Mountain",
   "image": "assets/img/items/stone-throne.png",
   "recipe": {
    "station": "Stonecutter",
@@ -6007,6 +6273,7 @@
  {
   "name": "Black Marble Throne",
   "nameEs": "Trono de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-throne.png",
   "recipe": {
    "station": "Stonecutter",
@@ -6044,6 +6311,7 @@
  {
   "name": "Bone Throne",
   "nameEs": "Trono de hueso",
+  "biome": "Ashlands",
   "image": "assets/img/items/bone-throne.png",
   "recipe": {
    "station": "Stonecutter",
@@ -6081,6 +6349,7 @@
  {
   "name": "Antler Throne",
   "nameEs": "Trono de astas",
+  "biome": "Deep North",
   "image": "assets/img/items/antler-throne.png",
   "page": false,
   "recipe": {
@@ -6113,6 +6382,7 @@
  {
   "name": "Stool",
   "nameEs": "Taburete",
+  "biome": "Meadows",
   "image": "assets/img/items/stool.png",
   "recipe": {
    "station": "Workbench",
@@ -6132,6 +6402,7 @@
  {
   "name": "Wood Chair",
   "nameEs": "Silla",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-chair.png",
   "wiki": "Chair",
   "recipe": {
@@ -6152,6 +6423,7 @@
  {
   "name": "Darkwood Chair",
   "nameEs": "Silla de madera oscura",
+  "biome": "Plains",
   "image": "assets/img/items/darkwood-chair.png",
   "recipe": {
    "station": "Workbench",
@@ -6189,6 +6461,7 @@
  {
   "name": "Carved Chair",
   "nameEs": "Silla tallada",
+  "biome": "Deep North",
   "image": "assets/img/items/carved-chair.png",
   "page": false,
   "recipe": {
@@ -6215,6 +6488,7 @@
  {
   "name": "Sitting Log",
   "nameEs": "Tronco para sentarse",
+  "biome": "Black Forest",
   "image": "assets/img/items/sitting-log.png",
   "recipe": {
    "station": "Hammer",
@@ -6234,6 +6508,7 @@
  {
   "name": "Wood Bench",
   "nameEs": "Banco",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-bench.png",
   "wiki": "Bench",
   "recipe": {
@@ -6254,6 +6529,7 @@
  {
   "name": "Black Marble Bench",
   "nameEs": "Banco de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-bench.png",
   "recipe": {
    "station": "Stonecutter",
@@ -6279,6 +6555,7 @@
  {
   "name": "Ashwood Bench",
   "nameEs": "Banco de madera de ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-bench.png",
   "recipe": {
    "station": "Workbench",
@@ -6298,6 +6575,7 @@
  {
   "name": "Carved Bench",
   "nameEs": "Banco tallado",
+  "biome": "Deep North",
   "image": "assets/img/items/carved-bench.png",
   "page": false,
   "recipe": {
@@ -6324,6 +6602,7 @@
  {
   "name": "Table",
   "nameEs": "Mesa",
+  "biome": "Meadows",
   "image": "assets/img/items/table.png",
   "recipe": {
    "station": "Workbench",
@@ -6343,6 +6622,7 @@
  {
   "name": "Long Heavy Table",
   "nameEs": "Mesa larga pesada",
+  "biome": "Plains",
   "image": "assets/img/items/long-heavy-table.png",
   "recipe": {
    "station": "Workbench",
@@ -6374,6 +6654,7 @@
  {
   "name": "Round Table",
   "nameEs": "Mesa redonda",
+  "biome": "Plains",
   "image": "assets/img/items/round-table.png",
   "recipe": {
    "station": "Workbench",
@@ -6405,6 +6686,7 @@
  {
   "name": "Black Marble Table",
   "nameEs": "Mesa de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-table.png",
   "recipe": {
    "station": "Stonecutter",
@@ -6430,6 +6712,7 @@
  {
   "name": "Long Carved Table",
   "nameEs": "Mesa larga tallada",
+  "biome": "Deep North",
   "image": "assets/img/items/long-carved-table.png",
   "page": false,
   "recipe": {
@@ -6462,6 +6745,7 @@
  {
   "name": "Square Carved Table",
   "nameEs": "Mesa cuadrada tallada",
+  "biome": "Deep North",
   "image": "assets/img/items/square-carved-table.png",
   "page": false,
   "recipe": {
@@ -6494,6 +6778,7 @@
  {
   "name": "Chest",
   "nameEs": "Cofre",
+  "biome": "Meadows",
   "image": "assets/img/items/chest.png",
   "recipe": {
    "station": "Workbench",
@@ -6513,6 +6798,7 @@
  {
   "name": "Reinforced Chest",
   "nameEs": "Cofre acorazado",
+  "biome": "Swamp",
   "image": "assets/img/items/reinforced-chest.png",
   "recipe": {
    "station": "Workbench",
@@ -6538,6 +6824,7 @@
  {
   "name": "Personal Chest",
   "nameEs": "Cofre personal",
+  "biome": "Swamp",
   "image": "assets/img/items/personal-chest.png",
   "recipe": {
    "station": "Workbench",
@@ -6563,6 +6850,7 @@
  {
   "name": "Barrel",
   "nameEs": "Barril",
+  "biome": "Black Forest",
   "image": "assets/img/items/barrel.png",
   "recipe": {
    "station": "Workbench",
@@ -6588,6 +6876,7 @@
  {
   "name": "Treasure Chest",
   "nameEs": "Cofre de tesoros",
+  "biome": "Mountain",
   "image": "assets/img/items/treasure-chest.png",
   "recipe": {
    "station": "Workbench",
@@ -6631,6 +6920,7 @@
  {
   "name": "Black Metal Chest",
   "nameEs": "Cofre de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-chest.png",
   "recipe": {
    "station": "Workbench",
@@ -6662,6 +6952,7 @@
  {
   "name": "Grausten Chest",
   "nameEs": "Cofre de piedra cenicienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-chest.png",
   "page": false,
   "recipe": {
@@ -6694,6 +6985,7 @@
  {
   "name": "Medium Green Pot",
   "nameEs": "Olla verde mediana",
+  "biome": "Ashlands",
   "image": "assets/img/items/medium-green-pot.png",
   "page": false,
   "recipe": {
@@ -6720,6 +7012,7 @@
  {
   "name": "Large Green Pot",
   "nameEs": "Olla verde grande",
+  "biome": "Ashlands",
   "image": "assets/img/items/large-green-pot.png",
   "page": false,
   "recipe": {
@@ -6746,6 +7039,7 @@
  {
   "name": "Small Green Pot",
   "nameEs": "Olla verde pequeña",
+  "biome": "Ashlands",
   "image": "assets/img/items/small-green-pot.png",
   "page": false,
   "recipe": {
@@ -6772,6 +7066,7 @@
  {
   "name": "Wardrobe",
   "nameEs": "Armario",
+  "biome": "Deep North",
   "image": "assets/img/items/wardrobe.png",
   "page": false,
   "recipe": {
@@ -6804,6 +7099,7 @@
  {
   "name": "Yuleklapp",
   "nameEs": "Regalo de Yule",
+  "biome": "Meadows",
   "image": "assets/img/items/yuleklapp-small.png",
   "wiki": "Yuleklapp (small)",
   "recipe": {
@@ -6830,6 +7126,7 @@
  {
   "name": "Yuleklapp",
   "nameEs": "Regalo de Yule",
+  "biome": "Meadows",
   "image": "assets/img/items/yuleklapp-medium.png",
   "wiki": "Yuleklapp (medium)",
   "recipe": {
@@ -6856,6 +7153,7 @@
  {
   "name": "Yuleklapp",
   "nameEs": "Regalo de Yule",
+  "biome": "Meadows",
   "image": "assets/img/items/yuleklapp-large.png",
   "wiki": "Yuleklapp (large)",
   "recipe": {
@@ -6883,6 +7181,7 @@
  {
   "name": "Cart",
   "nameEs": "Carro",
+  "biome": "Black Forest",
   "image": "assets/img/items/cart.png",
   "recipe": {
    "station": "Workbench",
@@ -6908,6 +7207,7 @@
  {
   "name": "Armour Stand",
   "nameEs": "Soporte de armadura",
+  "biome": "Swamp",
   "image": "assets/img/items/armour-stand.png",
   "page": false,
   "recipe": {
@@ -6940,6 +7240,7 @@
  {
   "name": "Item Stand",
   "nameEs": "Expositor",
+  "biome": "Black Forest",
   "image": "assets/img/items/item-stand-vertical.png",
   "wiki": "Item stand (vertical)",
   "recipe": {
@@ -6966,6 +7267,7 @@
  {
   "name": "Item Stand",
   "nameEs": "Expositor",
+  "biome": "Black Forest",
   "image": "assets/img/items/item-stand-horizontal.png",
   "wiki": "Item stand (horizontal)",
   "recipe": {
@@ -6992,6 +7294,7 @@
  {
   "name": "Sign",
   "nameEs": "Letrero",
+  "biome": "Meadows",
   "image": "assets/img/items/sign.png",
   "recipe": {
    "station": "Hammer",
@@ -7017,6 +7320,7 @@
  {
   "name": "Campfire",
   "nameEs": "Fogata",
+  "biome": "Meadows",
   "image": "assets/img/items/campfire.png",
   "recipe": {
    "station": "Hammer",
@@ -7042,6 +7346,7 @@
  {
   "name": "Iron Fire Pit",
   "nameEs": "Hoguera de hierro",
+  "biome": "Meadows",
   "image": "assets/img/items/iron-fire-pit.png",
   "recipe": {
    "station": "Hammer",
@@ -7067,6 +7372,7 @@
  {
   "name": "Hearth",
   "nameEs": "Chimenea",
+  "biome": "Swamp",
   "image": "assets/img/items/hearth.png",
   "recipe": {
    "station": "Stonecutter",
@@ -7086,6 +7392,7 @@
  {
   "name": "Bonfire",
   "nameEs": "Hoguera",
+  "biome": "Swamp",
   "image": "assets/img/items/bonfire.png",
   "recipe": {
    "station": "Hammer",
@@ -7123,6 +7430,7 @@
  {
   "name": "Standing Wood Torch",
   "nameEs": "Antorcha de madera de pie",
+  "biome": "Meadows",
   "image": "assets/img/items/standing-wood-torch.png",
   "recipe": {
    "station": "Workbench",
@@ -7148,6 +7456,7 @@
  {
   "name": "Standing Iron Torch",
   "nameEs": "Antorcha de hierro de pie",
+  "biome": "Swamp",
   "image": "assets/img/items/standing-iron-torch.png",
   "recipe": {
    "station": "Forge",
@@ -7173,6 +7482,7 @@
  {
   "name": "Standing Blue-burning Iron Torch",
   "nameEs": "Antorcha de hierro zafiro de pie",
+  "biome": "Swamp",
   "image": "assets/img/items/standing-blue-burning-iron-torch.png",
   "recipe": {
    "station": "Forge",
@@ -7198,6 +7508,7 @@
  {
   "name": "Standing Green-burning Iron Torch",
   "nameEs": "Antorcha de hierro esmeralda de pie",
+  "biome": "Swamp",
   "image": "assets/img/items/standing-green-burning-iron-torch.png",
   "recipe": {
    "station": "Forge",
@@ -7223,6 +7534,7 @@
  {
   "name": "Wisp Torch",
   "nameEs": "Antorcha de Wisp",
+  "biome": "Mistlands",
   "image": "assets/img/items/wisp-torch.png",
   "recipe": {
    "station": "Hammer",
@@ -7248,6 +7560,7 @@
  {
   "name": "Resin Candle",
   "nameEs": "Vela de resina",
+  "biome": "Swamp",
   "image": "assets/img/items/resin-candle.png",
   "page": false,
   "recipe": {
@@ -7274,6 +7587,7 @@
  {
   "name": "Dvergr Wall Lantern",
   "nameEs": "Linterna dvergr para muro",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-wall-lantern.png",
   "recipe": {
    "station": "Black Forge",
@@ -7305,6 +7619,7 @@
  {
   "name": "Dvergr Pole Lantern",
   "nameEs": "Poste de linterna dvergr",
+  "biome": "Mistlands",
   "image": "assets/img/items/dvergr-pole-lantern.png",
   "page": false,
   "recipe": {
@@ -7337,6 +7652,7 @@
  {
   "name": "Standing Brazier",
   "nameEs": "Brasero de pie",
+  "biome": "Mountain",
   "image": "assets/img/items/standing-brazier.png",
   "recipe": {
    "station": "Forge",
@@ -7368,6 +7684,7 @@
  {
   "name": "Blue Standing Brazier",
   "nameEs": "Brasero azul de pie",
+  "biome": "Mountain",
   "image": "assets/img/items/blue-standing-brazier.png",
   "recipe": {
    "station": "Forge",
@@ -7399,6 +7716,7 @@
  {
   "name": "Hanging Brazier",
   "nameEs": "Brasero colgante",
+  "biome": "Swamp",
   "image": "assets/img/items/hanging-brazier.png",
   "recipe": {
    "station": "Forge",
@@ -7430,6 +7748,7 @@
  {
   "name": "Lava Lantern",
   "nameEs": "Farol de lava",
+  "biome": "Ashlands",
   "image": "assets/img/items/lava-lantern.png",
   "recipe": {
    "station": "Workbench",
@@ -7461,6 +7780,7 @@
  {
   "name": "Hooded Lantern",
   "nameEs": "Farol con capucha",
+  "biome": "Deep North",
   "image": "assets/img/items/hooded-lantern.png",
   "page": false,
   "recipe": {
@@ -7487,6 +7807,7 @@
  {
   "name": "Jack-o-turnip",
   "nameEs": "Nabo farol",
+  "biome": "Swamp",
   "image": "assets/img/items/jack-o-turnip.png",
   "recipe": {
    "station": "Workbench",
@@ -7512,6 +7833,7 @@
  {
   "name": "Snow Lantern",
   "nameEs": "Farol de nieve",
+  "biome": "Black Forest",
   "image": "assets/img/items/snow-lantern.png",
   "page": false,
   "recipe": {
@@ -7532,6 +7854,7 @@
  {
   "name": "Sconce",
   "nameEs": "Candelero de pared",
+  "biome": "Black Forest",
   "image": "assets/img/items/sconce.png",
   "recipe": {
    "station": "Forge",
@@ -7563,6 +7886,7 @@
  {
   "name": "Deer Rug",
   "nameEs": "Alfombra de venado",
+  "biome": "Meadows",
   "image": "assets/img/items/deer-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7582,6 +7906,7 @@
  {
   "name": "Bearskin Rug",
   "nameEs": "Alfombra de piel de bjorn",
+  "biome": "Black Forest",
   "image": "assets/img/items/bearskin-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7613,6 +7938,7 @@
  {
   "name": "Wolf Rug",
   "nameEs": "Alfombra de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7632,6 +7958,7 @@
  {
   "name": "Lox Rug",
   "nameEs": "Alfombra de luey",
+  "biome": "Plains",
   "image": "assets/img/items/lox-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7651,6 +7978,7 @@
  {
   "name": "Straw",
   "nameEs": "Paja",
+  "biome": "Plains",
   "image": "assets/img/items/straw.png",
   "recipe": {
    "station": "Workbench",
@@ -7676,6 +8004,7 @@
  {
   "name": "Hare Rug",
   "nameEs": "Alfombra de liebre",
+  "biome": "Mistlands",
   "image": "assets/img/items/hare-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7695,6 +8024,7 @@
  {
   "name": "Asksvin Rug",
   "nameEs": "Alfombra de cenicerdo",
+  "biome": "Ashlands",
   "image": "assets/img/items/asksvin-rug.png",
   "recipe": {
    "station": "Workbench",
@@ -7714,6 +8044,7 @@
  {
   "name": "Sealskin Rug",
   "nameEs": "Alfombra de piel de foca",
+  "biome": "Deep North",
   "image": "assets/img/items/sealskin-rug.png",
   "page": false,
   "recipe": {
@@ -7734,6 +8065,7 @@
  {
   "name": "Moose Hide Carpet",
   "nameEs": "Alfombra de piel de alce",
+  "biome": "Deep North",
   "image": "assets/img/items/moose-hide-carpet.png",
   "page": false,
   "recipe": {
@@ -7754,6 +8086,7 @@
  {
   "name": "Red Jute Carpet",
   "nameEs": "Alfombra de yute rojo",
+  "biome": "Mountain",
   "image": "assets/img/items/red-jute-carpet.png",
   "recipe": {
    "station": "Workbench",
@@ -7773,6 +8106,7 @@
  {
   "name": "Blue Jute Carpet",
   "nameEs": "Alfombra de yute azul",
+  "biome": "Mistlands",
   "image": "assets/img/items/blue-jute-carpet.png",
   "recipe": {
    "station": "Workbench",
@@ -7792,6 +8126,7 @@
  {
   "name": "Red Jute Curtain",
   "nameEs": "Cortina de yute rojo",
+  "biome": "Mountain",
   "image": "assets/img/items/red-jute-curtain.png",
   "recipe": {
    "station": "Workbench",
@@ -7817,6 +8152,7 @@
  {
   "name": "Blue Jute Drapes",
   "nameEs": "Telas de yute azul",
+  "biome": "Mistlands",
   "image": "assets/img/items/blue-jute-drapes.png",
   "recipe": {
    "station": "Workbench",
@@ -7842,6 +8178,7 @@
  {
   "name": "Blue Jute Curtain",
   "nameEs": "Cortina de yute azul",
+  "biome": "Mistlands",
   "image": "assets/img/items/blue-jute-curtain.png",
   "recipe": {
    "station": "Workbench",
@@ -7867,6 +8204,7 @@
  {
   "name": "Black Banner",
   "nameEs": "Bandera negra",
+  "biome": "Meadows",
   "image": "assets/img/items/black-banner.png",
   "page": false,
   "recipe": {
@@ -7899,6 +8237,7 @@
  {
   "name": "Blue Banner",
   "nameEs": "Bandera azul",
+  "biome": "Black Forest",
   "image": "assets/img/items/blue-banner.png",
   "page": false,
   "recipe": {
@@ -7931,6 +8270,7 @@
  {
   "name": "White and Red Striped Banner",
   "nameEs": "Bandera a rayas blancas y rojas",
+  "biome": "Meadows",
   "image": "assets/img/items/white-and-red-striped-banner.png",
   "wiki": "White & red banner",
   "page": false,
@@ -7965,6 +8305,7 @@
  {
   "name": "Red Banner",
   "nameEs": "Bandera roja",
+  "biome": "Swamp",
   "image": "assets/img/items/red-banner.png",
   "page": false,
   "recipe": {
@@ -7997,6 +8338,7 @@
  {
   "name": "Green Banner",
   "nameEs": "Bandera verde",
+  "biome": "Swamp",
   "image": "assets/img/items/green-banner.png",
   "page": false,
   "recipe": {
@@ -8029,6 +8371,7 @@
  {
   "name": "Blue, Red and White Banner",
   "nameEs": "Azul",
+  "biome": "Plains",
   "image": "assets/img/items/blue-red-and-white-banner.png",
   "page": false,
   "recipe": {
@@ -8074,6 +8417,7 @@
  {
   "name": "White and Blue Striped Banner",
   "nameEs": "Bandera a rayas blancas y azules",
+  "biome": "Plains",
   "image": "assets/img/items/white-and-blue-striped-banner.png",
   "page": false,
   "recipe": {
@@ -8112,6 +8456,7 @@
  {
   "name": "Yellow Banner",
   "nameEs": "Bandera amarilla",
+  "biome": "Meadows",
   "image": "assets/img/items/yellow-banner.png",
   "page": false,
   "recipe": {
@@ -8150,6 +8495,7 @@
  {
   "name": "Purple Banner",
   "nameEs": "Bandera morada",
+  "biome": "Black Forest",
   "image": "assets/img/items/purple-banner.png",
   "page": false,
   "recipe": {
@@ -8189,6 +8535,7 @@
  {
   "name": "Orange Banner",
   "nameEs": "Bandera naranja",
+  "biome": "Plains",
   "image": "assets/img/items/orange-banner.png",
   "page": false,
   "recipe": {
@@ -8227,6 +8574,7 @@
  {
   "name": "White Banner",
   "nameEs": "Bandera blanca",
+  "biome": "Plains",
   "image": "assets/img/items/white-banner.png",
   "page": false,
   "recipe": {
@@ -8265,6 +8613,7 @@
  {
   "name": "Flower Garland",
   "nameEs": "Guirnalda de flores",
+  "biome": "Meadows",
   "image": "assets/img/items/flower-garland.png",
   "recipe": {
    "station": "Workbench",
@@ -8290,6 +8639,7 @@
  {
   "name": "Fey Lights",
   "nameEs": "Luces místicas",
+  "biome": "Black Forest",
   "image": "assets/img/items/fey-lights.png",
   "recipe": {
    "station": "Workbench",
@@ -8315,6 +8665,7 @@
  {
   "name": "Maypole",
   "nameEs": "Árbol de mayo",
+  "biome": "Black Forest",
   "image": "assets/img/items/maypole.png",
   "recipe": {
    "station": "Workbench",
@@ -8346,6 +8697,7 @@
  {
   "name": "Mistletoe",
   "nameEs": "Muérdago",
+  "biome": "Mountain",
   "image": "assets/img/items/mistletoe.png",
   "recipe": {
    "station": "Workbench",
@@ -8371,6 +8723,7 @@
  {
   "name": "Yule Wreath",
   "nameEs": "Espiral de Yule",
+  "biome": "Mountain",
   "image": "assets/img/items/yule-wreath.png",
   "page": false,
   "recipe": {
@@ -8403,6 +8756,7 @@
  {
   "name": "Yule Garland",
   "nameEs": "Guirnalda de Yule",
+  "biome": "Black Forest",
   "image": "assets/img/items/yule-garland.png",
   "page": false,
   "recipe": {
@@ -8429,6 +8783,7 @@
  {
   "name": "Yule Tree",
   "nameEs": "Árbol de Yule",
+  "biome": "Black Forest",
   "image": "assets/img/items/yule-tree.png",
   "recipe": {
    "station": "Workbench",
@@ -8454,6 +8809,7 @@
  {
   "name": "Mysterious Rock",
   "nameEs": "Roca misteriosa",
+  "biome": "Meadows",
   "image": "assets/img/items/mysterious-rock.png",
   "recipe": {
    "station": "Hammer",
@@ -8479,6 +8835,7 @@
  {
   "name": "Wood Stack",
   "nameEs": "Pila de leña",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8498,6 +8855,7 @@
  {
   "name": "Finewood Stack",
   "nameEs": "Pila de madera noble",
+  "biome": "Meadows",
   "image": "assets/img/items/finewood-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8517,6 +8875,7 @@
  {
   "name": "Corewood Stack",
   "nameEs": "Pila de madera resistente",
+  "biome": "Black Forest",
   "image": "assets/img/items/corewood-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8536,6 +8895,7 @@
  {
   "name": "Yggdrasil Wood Stack",
   "nameEs": "Pila de madera de Yggdrasil",
+  "biome": "Mistlands",
   "image": "assets/img/items/yggdrasil-wood-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8555,6 +8915,7 @@
  {
   "name": "Ashwood Stack",
   "nameEs": "Madera de ceniza apilada",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashwood-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8574,6 +8935,7 @@
  {
   "name": "Timberwood Stack",
   "nameEs": "Montón de leño de construcción",
+  "biome": "Deep North",
   "image": "assets/img/items/timberwood-stack.png",
   "page": false,
   "recipe": {
@@ -8594,6 +8956,7 @@
  {
   "name": "Stone Pile",
   "nameEs": "Pila de piedras",
+  "biome": "Meadows",
   "image": "assets/img/items/stone-pile.png",
   "recipe": {
    "station": "Hammer",
@@ -8613,6 +8976,7 @@
  {
   "name": "Flint Pile",
   "nameEs": "Montón de sílex",
+  "biome": "Meadows",
   "image": "assets/img/items/flint-pile.png",
   "page": false,
   "recipe": {
@@ -8633,6 +8997,7 @@
  {
   "name": "Black Marble Pile",
   "nameEs": "Pila de mármol negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-marble-pile.png",
   "recipe": {
    "station": "Hammer",
@@ -8652,6 +9017,7 @@
  {
   "name": "Grausten Pile",
   "nameEs": "Pila de piedras cenicientas",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-pile.png",
   "recipe": {
    "station": "Hammer",
@@ -8671,6 +9037,7 @@
  {
   "name": "Tin Stack",
   "nameEs": "Montón de estaño",
+  "biome": "Black Forest",
   "image": "assets/img/items/tin-stack.png",
   "page": false,
   "recipe": {
@@ -8691,6 +9058,7 @@
  {
   "name": "Copper Stack",
   "nameEs": "Montón de cobre",
+  "biome": "Black Forest",
   "image": "assets/img/items/copper-stack.png",
   "page": false,
   "recipe": {
@@ -8711,6 +9079,7 @@
  {
   "name": "Bronze Stack",
   "nameEs": "Montón de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-stack.png",
   "page": false,
   "recipe": {
@@ -8731,6 +9100,7 @@
  {
   "name": "Iron Stack",
   "nameEs": "Montón de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-stack.png",
   "page": false,
   "recipe": {
@@ -8751,6 +9121,7 @@
  {
   "name": "Silver Stack",
   "nameEs": "Montón de plata",
+  "biome": "Mountain",
   "image": "assets/img/items/silver-stack.png",
   "page": false,
   "recipe": {
@@ -8771,6 +9142,7 @@
  {
   "name": "Black Metal Stack",
   "nameEs": "Montón de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-stack.png",
   "page": false,
   "recipe": {
@@ -8791,6 +9163,7 @@
  {
   "name": "Flametal Stack",
   "nameEs": "Montón de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-stack.png",
   "page": false,
   "recipe": {
@@ -8811,6 +9184,7 @@
  {
   "name": "Bloodgold Stack",
   "nameEs": "Montón de oro sanguino",
+  "biome": "Deep North",
   "image": "assets/img/items/bloodgold-stack.png",
   "page": false,
   "recipe": {
@@ -8831,6 +9205,7 @@
  {
   "name": "Coal Pile",
   "nameEs": "Pila de carbón",
+  "biome": "Meadows",
   "image": "assets/img/items/coal-pile.png",
   "recipe": {
    "station": "Hammer",
@@ -8850,6 +9225,7 @@
  {
   "name": "Bone Stack",
   "nameEs": "Pila de huesos",
+  "biome": "Meadows",
   "image": "assets/img/items/bone-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8869,6 +9245,7 @@
  {
   "name": "Pile of Skulls",
   "nameEs": "Montón de cráneos",
+  "biome": "Ashlands",
   "image": "assets/img/items/pile-of-skulls.png",
   "recipe": {
    "station": "Hammer",
@@ -8888,6 +9265,7 @@
  {
   "name": "Coin Stack",
   "nameEs": "Montón de monedas",
+  "biome": "Meadows",
   "image": "assets/img/items/coin-stack.png",
   "recipe": {
    "station": "Hammer",
@@ -8907,6 +9285,7 @@
  {
   "name": "Coin Pile",
   "nameEs": "Pila de monedas",
+  "biome": "Meadows",
   "image": "assets/img/items/coin-pile.png",
   "recipe": {
    "station": "Hammer",
@@ -8926,6 +9305,7 @@
  {
   "name": "Asksvin Skeleton",
   "nameEs": "Esqueleto de cenicerdo",
+  "biome": "Ashlands",
   "image": "assets/img/items/asksvin-skeleton.png",
   "recipe": {
    "station": "Workbench",
@@ -8969,6 +9349,7 @@
  {
   "name": "Portal",
   "nameEs": "Portal",
+  "biome": "Black Forest",
   "image": "assets/img/items/portal.png",
   "recipe": {
    "station": "Workbench",
@@ -9000,6 +9381,7 @@
  {
   "name": "Portal  Stone",
   "nameEs": "Portal – Piedra",
+  "biome": "Ashlands",
   "image": "assets/img/items/portal-stone.png",
   "recipe": {
    "station": "Stonecutter",
@@ -9031,6 +9413,7 @@
  {
   "name": "Raft",
   "nameEs": "Balsa",
+  "biome": "Meadows",
   "image": "assets/img/items/raft.png",
   "recipe": {
    "station": "Workbench",
@@ -9062,6 +9445,7 @@
  {
   "name": "Karve",
   "nameEs": "Karve",
+  "biome": "Black Forest",
   "image": "assets/img/items/karve.png",
   "recipe": {
    "station": "Workbench",
@@ -9099,6 +9483,7 @@
  {
   "name": "Longship",
   "nameEs": "Barco vikingo",
+  "biome": "Swamp",
   "image": "assets/img/items/longship.png",
   "recipe": {
    "station": "Workbench",
@@ -9136,6 +9521,7 @@
  {
   "name": "Drakkar",
   "nameEs": "Drakkar",
+  "biome": "Mistlands",
   "image": "assets/img/items/drakkar.png",
   "recipe": {
    "station": "Workbench",
@@ -9173,6 +9559,7 @@
  {
   "name": "Hot Tub",
   "nameEs": "Bañera",
+  "biome": "Plains",
   "image": "assets/img/items/hot-tub.png",
   "recipe": {
    "station": "Workbench",
@@ -9210,6 +9597,7 @@
  {
   "name": "Barber Station",
   "nameEs": "Barbería",
+  "biome": "Black Forest",
   "image": "assets/img/items/barber-station.png",
   "recipe": {
    "station": "Workbench",
@@ -9247,6 +9635,7 @@
  {
   "name": "Cartography Table",
   "nameEs": "Mesa de cartografía",
+  "biome": "Black Forest",
   "image": "assets/img/items/cartography-table.png",
   "recipe": {
    "station": "Workbench",
@@ -9291,6 +9680,7 @@
  {
   "name": "T.W.I.G.",
   "nameEs": "P. A. L. O.",
+  "biome": "Black Forest",
   "image": "assets/img/items/t-w-i-g.png",
   "recipe": {
    "station": "Workbench",
@@ -9322,6 +9712,7 @@
  {
   "name": "Archery Target",
   "nameEs": "Blanco de tiro con arco",
+  "biome": "Meadows",
   "image": "assets/img/items/archery-target.png",
   "recipe": {
    "station": "Workbench",
@@ -9347,6 +9738,7 @@
  {
   "name": "Ward",
   "nameEs": "Estatua guardiana",
+  "biome": "Black Forest",
   "image": "assets/img/items/ward.png",
   "recipe": {
    "station": "Hammer",
@@ -9378,6 +9770,7 @@
  {
   "name": "Shield Generator",
   "nameEs": "Generador de escudo",
+  "biome": "Mistlands",
   "image": "assets/img/items/shield-generator.png",
   "recipe": {
    "station": "Workbench",
@@ -9409,6 +9802,7 @@
  {
   "name": "Trap",
   "nameEs": "Trampa",
+  "biome": "Mistlands",
   "image": "assets/img/items/trap.png",
   "recipe": {
    "station": "Workbench",
@@ -9440,6 +9834,7 @@
  {
   "name": "Ballista",
   "nameEs": "Ballesta",
+  "biome": "Mistlands",
   "image": "assets/img/items/ballista.png",
   "recipe": {
    "station": "Workbench",
@@ -9471,6 +9866,7 @@
  {
   "name": "Battering Ram",
   "nameEs": "Ariete",
+  "biome": "Ashlands",
   "image": "assets/img/items/battering-ram.png",
   "recipe": {
    "station": "Workbench",
@@ -9502,6 +9898,7 @@
  {
   "name": "Catapult",
   "nameEs": "Catapulta",
+  "biome": "Ashlands",
   "image": "assets/img/items/catapult.png",
   "recipe": {
    "station": "Workbench",

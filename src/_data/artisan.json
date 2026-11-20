@@ -2,6 +2,7 @@
  {
   "name": "Patterns of the Bear",
   "nameEs": "Patrones de Bjorn",
+  "biome": "Black Forest",
   "image": "assets/img/items/patterns-of-the-bear.png",
   "recipe": {
    "station": "Workbench",
@@ -33,6 +34,7 @@
  {
   "name": "Loincloth of the Bear",
   "nameEs": "Taparrabo de Bjorn",
+  "biome": "Black Forest",
   "image": "assets/img/items/loincloth-of-the-bear.png",
   "recipe": {
    "station": "Workbench",
@@ -58,6 +60,7 @@
  {
   "name": "Vilebone Cage",
   "nameEs": "Torso de hueso vil",
+  "biome": "Plains",
   "image": "assets/img/items/vilebone-cage.png",
   "recipe": {
    "station": "Forge",
@@ -89,6 +92,7 @@
  {
   "name": "Vilebone Drapes",
   "nameEs": "Faldón de hueso vil",
+  "biome": "Plains",
   "image": "assets/img/items/vilebone-drapes.png",
   "recipe": {
    "station": "Forge",
@@ -120,6 +124,7 @@
  {
   "name": "Bronze Plate Tunic",
   "nameEs": "Coraza de placas de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-plate-tunic.png",
   "wiki": "Bronze plate cuirass",
   "recipe": {
@@ -146,6 +151,7 @@
  {
   "name": "Bronze Plate Leggings",
   "nameEs": "Mallas de placas de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-plate-leggings.png",
   "page": false,
   "recipe": {
@@ -172,6 +178,7 @@
  {
   "name": "Carapace Breastplate",
   "nameEs": "Coraza de Caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-breastplate.png",
   "recipe": {
    "station": "Black Forge",
@@ -209,6 +216,7 @@
  {
   "name": "Carapace Greaves",
   "nameEs": "Rodilleras de Caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-greaves.png",
   "recipe": {
    "station": "Black Forge",
@@ -246,6 +254,7 @@
  {
   "name": "Fenris Coat",
   "nameEs": "Pelaje de Fenris",
+  "biome": "Mountain",
   "image": "assets/img/items/fenris-coat.png",
   "recipe": {
    "station": "Workbench",
@@ -277,6 +286,7 @@
  {
   "name": "Fenris Leggings",
   "nameEs": "Mallas de Fenris",
+  "biome": "Mountain",
   "image": "assets/img/items/fenris-leggings.png",
   "recipe": {
    "station": "Workbench",
@@ -308,6 +318,7 @@
  {
   "name": "Flametal Breastplate",
   "nameEs": "Coraza de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-breastplate.png",
   "recipe": {
    "station": "Black Forge",
@@ -345,6 +356,7 @@
  {
   "name": "Flametal Greaves",
   "nameEs": "Grebas de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-greaves.png",
   "recipe": {
    "station": "Black Forge",
@@ -376,6 +388,7 @@
  {
   "name": "Breastplate of the Protector",
   "nameEs": "Coraza del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/breastplate-of-the-protector.png",
   "recipe": {
    "station": "Black Forge",
@@ -413,6 +426,7 @@
  {
   "name": "Cast: Breastplate of the Protector",
   "nameEs": "Pieza fundida: coraza del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-breastplate-of-the-protector.png",
   "page": false,
   "recipe": {
@@ -451,6 +465,7 @@
  {
   "name": "Trousers of the Protector",
   "nameEs": "Pantalones del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/trousers-of-the-protector.png",
   "recipe": {
    "station": "Black Forge",
@@ -488,6 +503,7 @@
  {
   "name": "Cast: Trousers of the Protector",
   "nameEs": "Pieza fundida: pantalones del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-trousers-of-the-protector.png",
   "page": false,
   "recipe": {
@@ -526,6 +542,7 @@
  {
   "name": "Robes of the Caller",
   "nameEs": "Túnica del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/robes-of-the-caller.png",
   "recipe": {
    "station": "Galdr Table",
@@ -563,6 +580,7 @@
  {
   "name": "Cast: Robes of the Caller",
   "nameEs": "Pieza fundida: túnica del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-robes-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -601,6 +619,7 @@
  {
   "name": "Trousers of the Caller",
   "nameEs": "Pantalones del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/trousers-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -639,6 +658,7 @@
  {
   "name": "Cast: Trousers of the Caller",
   "nameEs": "Pieza fundida: pantalones del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-trousers-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -677,6 +697,7 @@
  {
   "name": "Chestpiece of the Vanguard",
   "nameEs": "Peto de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/chestpiece-of-the-vanguard.png",
   "page": false,
   "recipe": {
@@ -715,6 +736,7 @@
  {
   "name": "Cast: Chestpiece of the Vanguard",
   "nameEs": "Pieza fundida: peto de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-chestpiece-of-the-vanguard.png",
   "page": false,
   "recipe": {
@@ -753,6 +775,7 @@
  {
   "name": "Trousers of the Vanguard",
   "nameEs": "Pantalones de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/trousers-of-the-vanguard.png",
   "page": false,
   "recipe": {
@@ -791,6 +814,7 @@
  {
   "name": "Cast: Trousers of the Vanguard",
   "nameEs": "Pieza fundida: pantalones de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-trousers-of-the-vanguard.png",
   "page": false,
   "recipe": {
@@ -829,6 +853,7 @@
  {
   "name": "Iron Scale Mail",
   "nameEs": "Armadura de escamas de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-scale-mail.png",
   "recipe": {
    "station": "Forge",
@@ -854,6 +879,7 @@
  {
   "name": "Iron Greaves",
   "nameEs": "Grebas de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-greaves.png",
   "recipe": {
    "station": "Forge",
@@ -879,6 +905,7 @@
  {
   "name": "Leather Tunic",
   "nameEs": "Túnica de cuero",
+  "biome": "Meadows",
   "image": "assets/img/items/leather-tunic.png",
   "recipe": {
    "station": "Workbench",
@@ -898,6 +925,7 @@
  {
   "name": "Leather Trousers",
   "nameEs": "Pantalones de cuero",
+  "biome": "Meadows",
   "image": "assets/img/items/leather-trousers.png",
   "wiki": "Leather pants",
   "recipe": {
@@ -918,6 +946,7 @@
  {
   "name": "Lox Fur Jacket",
   "nameEs": "Chaqueta de piel de lox",
+  "biome": "Plains",
   "image": "assets/img/items/lox-fur-jacket.png",
   "recipe": {
    "station": "Workbench",
@@ -949,6 +978,7 @@
  {
   "name": "Lox Fur Trousers",
   "nameEs": "Pantalones de piel de lox",
+  "biome": "Plains",
   "image": "assets/img/items/lox-fur-trousers.png",
   "recipe": {
    "station": "Workbench",
@@ -980,6 +1010,7 @@
  {
   "name": "Eitr-weave Robe",
   "nameEs": "Túnica tejida en Eitr",
+  "biome": "Mistlands",
   "image": "assets/img/items/eitr-weave-robe.png",
   "recipe": {
    "station": "Galdr Table",
@@ -1017,6 +1048,7 @@
  {
   "name": "Robes of Embla",
   "nameEs": "Túnica de Embla",
+  "biome": "Ashlands",
   "image": "assets/img/items/robes-of-embla.png",
   "recipe": {
    "station": "Galdr Table",
@@ -1054,6 +1086,7 @@
  {
   "name": "Eitr-weave Trousers",
   "nameEs": "Pantalones tejidos en Eitr",
+  "biome": "Mistlands",
   "image": "assets/img/items/eitr-weave-trousers.png",
   "recipe": {
    "station": "Galdr Table",
@@ -1085,6 +1118,7 @@
  {
   "name": "Trousers of Embla",
   "nameEs": "Pantalones de Embla",
+  "biome": "Ashlands",
   "image": "assets/img/items/trousers-of-embla.png",
   "recipe": {
    "station": "Galdr Table",
@@ -1116,6 +1150,7 @@
  {
   "name": "Breastplate of Ask",
   "nameEs": "Coraza de Ask",
+  "biome": "Ashlands",
   "image": "assets/img/items/breastplate-of-ask.png",
   "recipe": {
    "station": "Black Forge",
@@ -1147,6 +1182,7 @@
  {
   "name": "Trousers of Ask",
   "nameEs": "Pantalones de Ask",
+  "biome": "Ashlands",
   "image": "assets/img/items/trousers-of-ask.png",
   "recipe": {
    "station": "Black Forge",
@@ -1178,6 +1214,7 @@
  {
   "name": "Padded Cuirass",
   "nameEs": "Gambesón acolchado",
+  "biome": "Plains",
   "image": "assets/img/items/padded-cuirass.png",
   "recipe": {
    "station": "Forge",
@@ -1203,6 +1240,7 @@
  {
   "name": "Padded Greaves",
   "nameEs": "Grebas acolchadas",
+  "biome": "Plains",
   "image": "assets/img/items/padded-greaves.png",
   "recipe": {
    "station": "Forge",
@@ -1228,6 +1266,7 @@
  {
   "name": "Rag Tunic",
   "nameEs": "Túnica harapienta",
+  "biome": "Meadows",
   "image": "assets/img/items/rag-tunic.png",
   "recipe": {
    "station": "Workbench",
@@ -1247,6 +1286,7 @@
  {
   "name": "Rag Trousers",
   "nameEs": "Pantalones harapientos",
+  "biome": "Meadows",
   "image": "assets/img/items/rag-trousers.png",
   "wiki": "Rag pants",
   "recipe": {
@@ -1267,6 +1307,7 @@
  {
   "name": "Root Harnesk",
   "nameEs": "Coraza de raíces",
+  "biome": "Swamp",
   "image": "assets/img/items/root-harnesk.png",
   "recipe": {
    "station": "Workbench",
@@ -1298,6 +1339,7 @@
  {
   "name": "Root Leggings",
   "nameEs": "Mallas de raíces",
+  "biome": "Swamp",
   "image": "assets/img/items/root-leggings.png",
   "recipe": {
    "station": "Workbench",
@@ -1329,6 +1371,7 @@
  {
   "name": "Troll Leather Tunic",
   "nameEs": "Túnica de cuero de trol",
+  "biome": "Black Forest",
   "image": "assets/img/items/troll-leather-tunic.png",
   "recipe": {
    "station": "Workbench",
@@ -1348,6 +1391,7 @@
  {
   "name": "Troll Leather Trousers",
   "nameEs": "Pantalones de cuero de trol",
+  "biome": "Black Forest",
   "image": "assets/img/items/troll-leather-trousers.png",
   "wiki": "Troll leather pants",
   "recipe": {
@@ -1368,6 +1412,7 @@
  {
   "name": "Wolf Hide Chestpiece",
   "nameEs": "Pechera de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-hide-chestpiece.png",
   "wiki": "Wolf armor chest",
   "recipe": {
@@ -1400,6 +1445,7 @@
  {
   "name": "Wolf Hide Trousers",
   "nameEs": "Pantalones de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-hide-trousers.png",
   "wiki": "Wolf armor legs",
   "recipe": {
@@ -1432,6 +1478,7 @@
  {
   "name": "Bloodgold Arrow",
   "nameEs": "Flecha de oro sanguino",
+  "biome": "Deep North",
   "image": "assets/img/items/bloodgold-arrow.png",
   "page": false,
   "recipe": {
@@ -1464,6 +1511,7 @@
  {
   "name": "Bronzehead Arrow",
   "nameEs": "Flecha de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronzehead-arrow.png",
   "recipe": {
    "station": "Forge",
@@ -1495,6 +1543,7 @@
  {
   "name": "Carapace Arrow",
   "nameEs": "Flecha de caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-arrow.png",
   "recipe": {
    "station": "Black Forge",
@@ -1526,6 +1575,7 @@
  {
   "name": "Charred Arrow",
   "nameEs": "Flecha carbonizada",
+  "biome": "Ashlands",
   "image": "assets/img/items/charred-arrow.png",
   "recipe": {
    "station": "Black Forge",
@@ -1557,6 +1607,7 @@
  {
   "name": "Fire Arrow",
   "nameEs": "Flecha ígnea",
+  "biome": "Meadows",
   "image": "assets/img/items/fire-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1588,6 +1639,7 @@
  {
   "name": "Flinthead Arrow",
   "nameEs": "Flecha de sílex",
+  "biome": "Meadows",
   "image": "assets/img/items/flinthead-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1619,6 +1671,7 @@
  {
   "name": "Frost Arrow",
   "nameEs": "Flecha gélida",
+  "biome": "Mountain",
   "image": "assets/img/items/frost-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1656,6 +1709,7 @@
  {
   "name": "Ironhead Arrow",
   "nameEs": "Flecha de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/ironhead-arrow.png",
   "recipe": {
    "station": "Forge",
@@ -1687,6 +1741,7 @@
  {
   "name": "Needle Arrow",
   "nameEs": "Flecha de aguja",
+  "biome": "Plains",
   "image": "assets/img/items/needle-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1712,6 +1767,7 @@
  {
   "name": "Obsidian Arrow",
   "nameEs": "Flecha de obsidiana",
+  "biome": "Mountain",
   "image": "assets/img/items/obsidian-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1743,6 +1799,7 @@
  {
   "name": "Poison Arrow",
   "nameEs": "Flecha ponzoñosa",
+  "biome": "Swamp",
   "image": "assets/img/items/poison-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1780,6 +1837,7 @@
  {
   "name": "Silver Arrow",
   "nameEs": "Flecha de plata",
+  "biome": "Mountain",
   "image": "assets/img/items/silver-arrow.png",
   "recipe": {
    "station": "Forge",
@@ -1811,6 +1869,7 @@
  {
   "name": "Wood Arrow",
   "nameEs": "Flecha de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-arrow.png",
   "recipe": {
    "station": "Workbench",
@@ -1830,6 +1889,7 @@
  {
   "name": "Black Metal Atgeir",
   "nameEs": "Atgeir de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-atgeir.png",
   "recipe": {
    "station": "Forge",
@@ -1861,6 +1921,7 @@
  {
   "name": "Bronze Atgeir",
   "nameEs": "Atgeir de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-atgeir.png",
   "recipe": {
    "station": "Forge",
@@ -1892,6 +1953,7 @@
  {
   "name": "Nord Atgeir",
   "nameEs": "Atgeir nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-atgeir.png",
   "page": false,
   "recipe": {
@@ -1924,6 +1986,7 @@
  {
   "name": "Thunderblood Atgeir",
   "nameEs": "Atgeir de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-atgeir.png",
   "page": false,
   "recipe": {
@@ -1956,6 +2019,7 @@
  {
   "name": "Frostfire Atgeir",
   "nameEs": "Atgeir de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-atgeir.png",
   "page": false,
   "recipe": {
@@ -1988,6 +2052,7 @@
  {
   "name": "Cast: Nord Atgeir",
   "nameEs": "Pieza fundida: atgeir nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-atgeir.png",
   "page": false,
   "recipe": {
@@ -2020,6 +2085,7 @@
  {
   "name": "Himminafl",
   "nameEs": "Himmin afl",
+  "biome": "Mistlands",
   "image": "assets/img/items/himminafl.png",
   "recipe": {
    "station": "Black Forge",
@@ -2057,6 +2123,7 @@
  {
   "name": "Iron Atgeir",
   "nameEs": "Atgeir de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-atgeir.png",
   "recipe": {
    "station": "Forge",
@@ -2088,6 +2155,7 @@
  {
   "name": "Berserkir Axes",
   "nameEs": "Hachas berserkir",
+  "biome": "Ashlands",
   "image": "assets/img/items/berserkir-axes.png",
   "recipe": {
    "station": "Black Forge",
@@ -2119,6 +2187,7 @@
  {
   "name": "Bleeding Berserkir Axes",
   "nameEs": "Hachas berserkir sangrantes",
+  "biome": "Ashlands",
   "image": "assets/img/items/bleeding-berserkir-axes.png",
   "recipe": {
    "station": "Black Forge",
@@ -2150,6 +2219,7 @@
  {
   "name": "Thundering Berserkir Axes",
   "nameEs": "Hachas berserkir atronadoras",
+  "biome": "Ashlands",
   "image": "assets/img/items/thundering-berserkir-axes.png",
   "recipe": {
    "station": "Black Forge",
@@ -2181,6 +2251,7 @@
  {
   "name": "Primal Berserkir Axes",
   "nameEs": "Hachas berserkir salvajes",
+  "biome": "Ashlands",
   "image": "assets/img/items/primal-berserkir-axes.png",
   "recipe": {
    "station": "Black Forge",
@@ -2212,6 +2283,7 @@
  {
   "name": "Black Metal Axe",
   "nameEs": "Hacha de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-axe.png",
   "recipe": {
    "station": "Forge",
@@ -2243,6 +2315,7 @@
  {
   "name": "Bronze Axe",
   "nameEs": "Hacha de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-axe.png",
   "recipe": {
    "station": "Forge",
@@ -2274,6 +2347,7 @@
  {
   "name": "Early Axes",
   "nameEs": "Hachas antiguas",
+  "biome": "Meadows",
   "image": "assets/img/items/early-axes.png",
   "recipe": {
    "station": "Workbench",
@@ -2305,6 +2379,7 @@
  {
   "name": "Flint Axe",
   "nameEs": "Hacha de sílex",
+  "biome": "Meadows",
   "image": "assets/img/items/flint-axe.png",
   "recipe": {
    "station": "Workbench",
@@ -2330,6 +2405,7 @@
  {
   "name": "Nord Axe",
   "nameEs": "Hacha nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-axe.png",
   "page": false,
   "recipe": {
@@ -2362,6 +2438,7 @@
  {
   "name": "Thunderblood Axe",
   "nameEs": "Hacha de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-axe.png",
   "page": false,
   "recipe": {
@@ -2394,6 +2471,7 @@
  {
   "name": "Frostfire Axe",
   "nameEs": "Hacha de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-axe.png",
   "page": false,
   "recipe": {
@@ -2426,6 +2504,7 @@
  {
   "name": "Cast: Nord Axe",
   "nameEs": "Pieza fundida: hacha nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-axe.png",
   "page": false,
   "recipe": {
@@ -2458,6 +2537,7 @@
  {
   "name": "Iron Axe",
   "nameEs": "Hacha de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-axe.png",
   "recipe": {
    "station": "Forge",
@@ -2489,6 +2569,7 @@
  {
   "name": "Jotun Bane",
   "nameEs": "Ruina de los Jotun",
+  "biome": "Mistlands",
   "image": "assets/img/items/jotun-bane.png",
   "recipe": {
    "station": "Black Forge",
@@ -2526,6 +2607,7 @@
  {
   "name": "Unbaked Poteitr",
   "nameEs": "Poteitr sin hornear",
+  "biome": "Deep North",
   "image": "assets/img/items/unbaked-poteitr.png",
   "recipe": {
    "station": "Cauldron",
@@ -2563,6 +2645,7 @@
  {
   "name": "Barley Wine Base: Fire Resistance",
   "nameEs": "Base de vino de cebada: Resistencia al fuego",
+  "biome": "Plains",
   "image": "assets/img/items/barley-wine-base-fire-resistance.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -2588,6 +2671,7 @@
  {
   "name": "Battleaxe",
   "nameEs": "Hacha de guerra",
+  "biome": "Swamp",
   "image": "assets/img/items/battleaxe.png",
   "recipe": {
    "station": "Forge",
@@ -2619,6 +2703,7 @@
  {
   "name": "Black Metal Battleaxe",
   "nameEs": "Hacha de batalla de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-battleaxe.png",
   "recipe": {
    "station": "Forge",
@@ -2650,6 +2735,7 @@
  {
   "name": "Crystal Battleaxe",
   "nameEs": "Hacha de guerra de cristal",
+  "biome": "Mountain",
   "image": "assets/img/items/crystal-battleaxe.png",
   "recipe": {
    "station": "Forge",
@@ -2681,6 +2767,7 @@
  {
   "name": "Skull Splittur",
   "nameEs": "Partecráneos",
+  "biome": "Mistlands",
   "image": "assets/img/items/skull-splittur.png",
   "recipe": {
    "station": "Black Forge",
@@ -2712,6 +2799,7 @@
  {
   "name": "Nord Greataxe",
   "nameEs": "Gran hacha nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-greataxe.png",
   "page": false,
   "recipe": {
@@ -2744,6 +2832,7 @@
  {
   "name": "Thunderblood Greataxe",
   "nameEs": "Gran hacha de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-greataxe.png",
   "page": false,
   "recipe": {
@@ -2776,6 +2865,7 @@
  {
   "name": "Frostfire Greataxe",
   "nameEs": "Gran hacha de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-greataxe.png",
   "page": false,
   "recipe": {
@@ -2808,6 +2898,7 @@
  {
   "name": "Cast: Nord Greataxe",
   "nameEs": "Pieza fundida: gran hacha nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-greataxe.png",
   "page": false,
   "recipe": {
@@ -2840,6 +2931,7 @@
  {
   "name": "Bell",
   "nameEs": "Campana",
+  "biome": "Ashlands",
   "image": "assets/img/items/bell.png",
   "recipe": {
    "station": "Black Forge",
@@ -2859,6 +2951,7 @@
  {
   "name": "Black Soup",
   "nameEs": "Sopa negra",
+  "biome": "Swamp",
   "image": "assets/img/items/black-soup.png",
   "recipe": {
    "station": "Cauldron",
@@ -2890,6 +2983,7 @@
  {
   "name": "Cast: Intricate Key",
   "nameEs": "Pieza fundida: llave intrincada",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-intricate-key.png",
   "page": false,
   "recipe": {
@@ -2916,6 +3010,7 @@
  {
   "name": "Blood Pudding",
   "nameEs": "Flan de sangre",
+  "biome": "Plains",
   "image": "assets/img/items/blood-pudding.png",
   "recipe": {
    "station": "Cauldron",
@@ -2947,6 +3042,7 @@
  {
   "name": "Boar Jerky",
   "nameEs": "Cecina de jabalí",
+  "biome": "Black Forest",
   "image": "assets/img/items/boar-jerky.png",
   "recipe": {
    "station": "Cauldron",
@@ -2972,6 +3068,7 @@
  {
   "name": "Black Metal Bolt",
   "nameEs": "Virote de metal negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-metal-bolt.png",
   "recipe": {
    "station": "Black Forge",
@@ -3003,6 +3100,7 @@
  {
   "name": "Bloodgold Bolt",
   "nameEs": "Virote de oro sanguino",
+  "biome": "Deep North",
   "image": "assets/img/items/bloodgold-bolt.png",
   "page": false,
   "recipe": {
@@ -3035,6 +3133,7 @@
  {
   "name": "Bone Bolt",
   "nameEs": "Virote de hueso",
+  "biome": "Mistlands",
   "image": "assets/img/items/bone-bolt.png",
   "recipe": {
    "station": "Black Forge",
@@ -3060,6 +3159,7 @@
  {
   "name": "Carapace Bolt",
   "nameEs": "Virote de caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-bolt.png",
   "recipe": {
    "station": "Black Forge",
@@ -3091,6 +3191,7 @@
  {
   "name": "Charred Bolt",
   "nameEs": "Virote carbonizado",
+  "biome": "Ashlands",
   "image": "assets/img/items/charred-bolt.png",
   "recipe": {
    "station": "Black Forge",
@@ -3122,6 +3223,7 @@
  {
   "name": "Iron Bolt",
   "nameEs": "Virote de hierro",
+  "biome": "Mistlands",
   "image": "assets/img/items/iron-bolt.png",
   "recipe": {
    "station": "Black Forge",
@@ -3153,6 +3255,7 @@
  {
   "name": "Bile Bomb",
   "nameEs": "Bomba de bilis",
+  "biome": "Mistlands",
   "image": "assets/img/items/bile-bomb.png",
   "recipe": {
    "station": "Workbench",
@@ -3184,6 +3287,7 @@
  {
   "name": "Blob Bomb: Frost",
   "nameEs": "Bombabosa: Escarcha",
+  "biome": "Mountain",
   "image": "assets/img/items/blob-bomb-frost.png",
   "page": false,
   "recipe": {
@@ -3216,6 +3320,7 @@
  {
   "name": "Blob Bomb: Lava",
   "nameEs": "Bombabosa: Lava",
+  "biome": "Ashlands",
   "image": "assets/img/items/blob-bomb-lava.png",
   "page": false,
   "recipe": {
@@ -3248,6 +3353,7 @@
  {
   "name": "Blob Bomb: Pulp",
   "nameEs": "Bomba pegote: pulpa",
+  "biome": "Deep North",
   "image": "assets/img/items/blob-bomb-pulp.png",
   "page": false,
   "recipe": {
@@ -3280,6 +3386,7 @@
  {
   "name": "Blob Bomb: Poison",
   "nameEs": "Bombabosa: Veneno",
+  "biome": "Swamp",
   "image": "assets/img/items/blob-bomb-poison.png",
   "page": false,
   "recipe": {
@@ -3312,6 +3419,7 @@
  {
   "name": "Blob Bomb: Elite Poison",
   "nameEs": "Bombabosa: Super veneno",
+  "biome": "Swamp",
   "image": "assets/img/items/blob-bomb-elite-poison.png",
   "page": false,
   "recipe": {
@@ -3344,6 +3452,7 @@
  {
   "name": "Blob Bomb: Tar",
   "nameEs": "Bombabosa: Brea",
+  "biome": "Plains",
   "image": "assets/img/items/blob-bomb-tar.png",
   "page": false,
   "recipe": {
@@ -3376,6 +3485,7 @@
  {
   "name": "Ember Charge",
   "nameEs": "Carga de brasas",
+  "biome": "Deep North",
   "image": "assets/img/items/ember-charge.png",
   "page": false,
   "recipe": {
@@ -3402,6 +3512,7 @@
  {
   "name": "Ooze Bomb",
   "nameEs": "Bomba de lodo",
+  "biome": "Swamp",
   "image": "assets/img/items/ooze-bomb.png",
   "recipe": {
    "station": "Workbench",
@@ -3433,6 +3544,7 @@
  {
   "name": "Explosive Payload",
   "nameEs": "Carga explosiva",
+  "biome": "Ashlands",
   "image": "assets/img/items/explosive-payload.png",
   "recipe": {
    "station": "Workbench",
@@ -3464,6 +3576,7 @@
  {
   "name": "Crude Bow",
   "nameEs": "Arco tosco",
+  "biome": "Meadows",
   "image": "assets/img/items/crude-bow.png",
   "recipe": {
    "station": "Workbench",
@@ -3489,6 +3602,7 @@
  {
   "name": "Ash Fang",
   "nameEs": "Colmillo de las cenizas",
+  "biome": "Ashlands",
   "image": "assets/img/items/ash-fang.png",
   "recipe": {
    "station": "Black Forge",
@@ -3526,6 +3640,7 @@
  {
   "name": "Blood Fang",
   "nameEs": "Colmillo de sangre",
+  "biome": "Ashlands",
   "image": "assets/img/items/blood-fang.png",
   "recipe": {
    "station": "Black Forge",
@@ -3557,6 +3672,7 @@
  {
   "name": "Storm Fang",
   "nameEs": "Colmillo de tormenta",
+  "biome": "Ashlands",
   "image": "assets/img/items/storm-fang.png",
   "recipe": {
    "station": "Black Forge",
@@ -3588,6 +3704,7 @@
  {
   "name": "Root Fang",
   "nameEs": "Colmillo de raíz",
+  "biome": "Ashlands",
   "image": "assets/img/items/root-fang.png",
   "recipe": {
    "station": "Black Forge",
@@ -3619,6 +3736,7 @@
  {
   "name": "Draugr Fang",
   "nameEs": "Colmillo de draugr",
+  "biome": "Mountain",
   "image": "assets/img/items/draugr-fang.png",
   "recipe": {
    "station": "Forge",
@@ -3656,6 +3774,7 @@
  {
   "name": "Finewood Bow",
   "nameEs": "Arco de madera noble",
+  "biome": "Black Forest",
   "image": "assets/img/items/finewood-bow.png",
   "recipe": {
    "station": "Workbench",
@@ -3687,6 +3806,7 @@
  {
   "name": "Nord Bow",
   "nameEs": "Arco nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-bow.png",
   "page": false,
   "recipe": {
@@ -3719,6 +3839,7 @@
  {
   "name": "Thunderblood Bow",
   "nameEs": "Arco de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-bow.png",
   "page": false,
   "recipe": {
@@ -3751,6 +3872,7 @@
  {
   "name": "Frostfire Bow",
   "nameEs": "Arco de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-bow.png",
   "page": false,
   "recipe": {
@@ -3783,6 +3905,7 @@
  {
   "name": "Cast: Nord Bow",
   "nameEs": "Pieza fundida: arco nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-bow.png",
   "page": false,
   "recipe": {
@@ -3815,6 +3938,7 @@
  {
   "name": "Huntsman Bow",
   "nameEs": "Arco de cazador",
+  "biome": "Swamp",
   "image": "assets/img/items/huntsman-bow.png",
   "recipe": {
    "station": "Forge",
@@ -3852,6 +3976,7 @@
  {
   "name": "Spinesnap",
   "nameEs": "Estallacolumnas",
+  "biome": "Mistlands",
   "image": "assets/img/items/spinesnap.png",
   "recipe": {
    "station": "Black Forge",
@@ -3883,6 +4008,7 @@
  {
   "name": "Bread Dough",
   "nameEs": "Masa de pan",
+  "biome": "Plains",
   "image": "assets/img/items/bread-dough.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -3902,6 +4028,7 @@
  {
   "name": "Bronze",
   "nameEs": "Bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze.png",
   "recipe": {
    "station": "Forge",
@@ -3927,6 +4054,7 @@
  {
   "name": "Bronze (duplicate, bug?)",
   "nameEs": "Bronce (duplicado)",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze.png",
   "wiki": "Bronze",
   "recipe": {
@@ -3953,6 +4081,7 @@
  {
   "name": "Bronze Nails",
   "nameEs": "Clavos de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-nails.png",
   "recipe": {
    "station": "Forge",
@@ -3972,6 +4101,7 @@
  {
   "name": "Ashen Cape",
   "nameEs": "Capa cinérea",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashen-cape.png",
   "recipe": {
    "station": "Black Forge",
@@ -4003,6 +4133,7 @@
  {
   "name": "Asksvin Cloak",
   "nameEs": "Capa de cenicerdo",
+  "biome": "Ashlands",
   "image": "assets/img/items/asksvin-cloak.png",
   "recipe": {
    "station": "Galdr Table",
@@ -4028,6 +4159,7 @@
  {
   "name": "Moose Hide Cape",
   "nameEs": "Capa de piel de alce",
+  "biome": "Deep North",
   "image": "assets/img/items/moose-hide-cape.png",
   "page": false,
   "recipe": {
@@ -4060,6 +4192,7 @@
  {
   "name": "Cape of the Caller",
   "nameEs": "Capa del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/cape-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -4098,6 +4231,7 @@
  {
   "name": "Deer Hide Cape",
   "nameEs": "Capa de piel de ciervo",
+  "biome": "Meadows",
   "image": "assets/img/items/deer-hide-cape.png",
   "recipe": {
    "station": "Workbench",
@@ -4123,6 +4257,7 @@
  {
   "name": "Feather Cape",
   "nameEs": "Capa emplumada",
+  "biome": "Mistlands",
   "image": "assets/img/items/feather-cape.png",
   "recipe": {
    "station": "Galdr Table",
@@ -4154,6 +4289,7 @@
  {
   "name": "Linen Cape",
   "nameEs": "Capa de lino",
+  "biome": "Plains",
   "image": "assets/img/items/linen-cape.png",
   "recipe": {
    "station": "Workbench",
@@ -4179,6 +4315,7 @@
  {
   "name": "Lox Cape",
   "nameEs": "Capa de luey",
+  "biome": "Plains",
   "image": "assets/img/items/lox-cape.png",
   "recipe": {
    "station": "Workbench",
@@ -4204,6 +4341,7 @@
  {
   "name": "Troll Hide Cape",
   "nameEs": "Capa de piel de trol",
+  "biome": "Black Forest",
   "image": "assets/img/items/troll-hide-cape.png",
   "recipe": {
    "station": "Workbench",
@@ -4229,6 +4367,7 @@
  {
   "name": "Wolf Fur Cape",
   "nameEs": "Capa de pelo de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-fur-cape.png",
   "recipe": {
    "station": "Workbench",
@@ -4260,6 +4399,7 @@
  {
   "name": "Carrot Soup",
   "nameEs": "Sopa de zanahoria",
+  "biome": "Black Forest",
   "image": "assets/img/items/carrot-soup.png",
   "recipe": {
    "station": "Cauldron",
@@ -4285,6 +4425,7 @@
  {
   "name": "Bloodgold Payload",
   "nameEs": "Carga de oro sanguino",
+  "biome": "Deep North",
   "image": "assets/img/items/bloodgold-payload.png",
   "page": false,
   "recipe": {
@@ -4317,6 +4458,7 @@
  {
   "name": "Grausten Payload",
   "nameEs": "Carga de piedras cenicientas",
+  "biome": "Ashlands",
   "image": "assets/img/items/grausten-payload.png",
   "recipe": {
    "station": "Workbench",
@@ -4336,6 +4478,7 @@
  {
   "name": "Ceramic Plate",
   "nameEs": "Placa de cerámica",
+  "biome": "Mistlands",
   "image": "assets/img/items/ceramic-plate.png",
   "recipe": {
    "station": "Artisan Table",
@@ -4355,6 +4498,7 @@
  {
   "name": "Cooked Egg",
   "nameEs": "Huevo cocinado",
+  "biome": "Plains",
   "image": "assets/img/items/cooked-egg.png",
   "page": false,
   "recipe": {
@@ -4375,6 +4519,7 @@
  {
   "name": "Arbalest",
   "nameEs": "Arbalesta",
+  "biome": "Mistlands",
   "image": "assets/img/items/arbalest.png",
   "recipe": {
    "station": "Black Forge",
@@ -4406,6 +4551,7 @@
  {
   "name": "Nord Crossbow",
   "nameEs": "Ballesta nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-crossbow.png",
   "page": false,
   "recipe": {
@@ -4438,6 +4584,7 @@
  {
   "name": "Thunderblood Crossbow",
   "nameEs": "Ballesta de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-crossbow.png",
   "page": false,
   "recipe": {
@@ -4470,6 +4617,7 @@
  {
   "name": "Frostfire Crossbow",
   "nameEs": "Ballesta de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-crossbow.png",
   "page": false,
   "recipe": {
@@ -4502,6 +4650,7 @@
  {
   "name": "Cast: Nord Crossbow",
   "nameEs": "Pieza fundida: ballesta nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-crossbow.png",
   "page": false,
   "recipe": {
@@ -4534,6 +4683,7 @@
  {
   "name": "Ripper",
   "nameEs": "Desgarradora",
+  "biome": "Ashlands",
   "image": "assets/img/items/ripper.png",
   "recipe": {
    "station": "Black Forge",
@@ -4571,6 +4721,7 @@
  {
   "name": "Wound Ripper",
   "nameEs": "Desgarradora de heridas",
+  "biome": "Ashlands",
   "image": "assets/img/items/wound-ripper.png",
   "recipe": {
    "station": "Black Forge",
@@ -4602,6 +4753,7 @@
  {
   "name": "Storm Ripper",
   "nameEs": "Desgarradora de las tormentas",
+  "biome": "Ashlands",
   "image": "assets/img/items/storm-ripper.png",
   "recipe": {
    "station": "Black Forge",
@@ -4633,6 +4785,7 @@
  {
   "name": "Root Ripper",
   "nameEs": "Desgarradora de raíz",
+  "biome": "Ashlands",
   "image": "assets/img/items/root-ripper.png",
   "recipe": {
    "station": "Black Forge",
@@ -4664,6 +4817,7 @@
  {
   "name": "Cultivator",
   "nameEs": "Cultivador",
+  "biome": "Black Forest",
   "image": "assets/img/items/cultivator.png",
   "recipe": {
    "station": "Forge",
@@ -4689,6 +4843,7 @@
  {
   "name": "Deer Stew",
   "nameEs": "Cocido de ciervo",
+  "biome": "Black Forest",
   "image": "assets/img/items/deer-stew.png",
   "recipe": {
    "station": "Cauldron",
@@ -4720,6 +4875,7 @@
  {
   "name": "Wisplight",
   "nameEs": "Luz de Wisp",
+  "biome": "Mistlands",
   "image": "assets/img/items/wisplight.png",
   "recipe": {
    "station": "Workbench",
@@ -4745,6 +4901,7 @@
  {
   "name": "Sealbreaker",
   "nameEs": "Rompedor de sellos",
+  "biome": "Mistlands",
   "image": "assets/img/items/sealbreaker.png",
   "recipe": {
    "station": "Galdr Table",
@@ -4764,6 +4921,7 @@
  {
   "name": "Eyescream",
   "nameEs": "Heladojo",
+  "biome": "Mountain",
   "image": "assets/img/items/eyescream.png",
   "recipe": {
    "station": "Cauldron",
@@ -4789,6 +4947,7 @@
  {
   "name": "Ashlands Gourmet Bowl",
   "nameEs": "Cuenco gourmet de las Tierras de Ceniza",
+  "biome": "Ashlands",
   "image": "assets/img/items/ashlands-gourmet-bowl.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -4826,6 +4985,7 @@
  {
   "name": "Black Forest Buffet Platter",
   "nameEs": "Bandeja de bufé del Bosque negro",
+  "biome": "Swamp",
   "image": "assets/img/items/black-forest-buffet-platter.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -4863,6 +5023,7 @@
  {
   "name": "Northern Morning Fare",
   "nameEs": "Desayuno del norte",
+  "biome": "Deep North",
   "image": "assets/img/items/northern-morning-fare.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -4900,6 +5061,7 @@
  {
   "name": "Whole Roasted Meadow Boar",
   "nameEs": "Jabalí de pradera entero asado",
+  "biome": "Swamp",
   "image": "assets/img/items/whole-roasted-meadow-boar.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -4937,6 +5099,7 @@
  {
   "name": "Mushrooms Galore  la Mistlands",
   "nameEs": "Festín de setas al estilo de las Tierras Nubladas",
+  "biome": "Mistlands",
   "image": "assets/img/items/mushrooms-galore-la-mistlands.png",
   "page": false,
   "recipe": {
@@ -4975,6 +5138,7 @@
  {
   "name": "Hearty Mountain Logger's Stew",
   "nameEs": "Guiso vigoroso del leñador de montaña",
+  "biome": "Mountain",
   "image": "assets/img/items/hearty-mountain-logger-s-stew.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5012,6 +5176,7 @@
  {
   "name": "Sailor's Bounty",
   "nameEs": "Manjar de marinero",
+  "biome": "Ocean",
   "image": "assets/img/items/sailor-s-bounty.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5049,6 +5214,7 @@
  {
   "name": "Plains Pie Picnic",
   "nameEs": "Pícnic de pastel de las llanuras",
+  "biome": "Plains",
   "image": "assets/img/items/plains-pie-picnic.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5086,6 +5252,7 @@
  {
   "name": "Swamp Dweller's Delight",
   "nameEs": "Delicias del habitante del pantano",
+  "biome": "Swamp",
   "image": "assets/img/items/swamp-dweller-s-delight.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5123,6 +5290,7 @@
  {
   "name": "Fiery Svinstew",
   "nameEs": "Guiso porcino ardiente",
+  "biome": "Ashlands",
   "image": "assets/img/items/fiery-svinstew.png",
   "recipe": {
    "station": "Cauldron",
@@ -5154,6 +5322,7 @@
  {
   "name": "Blue Fireworks",
   "nameEs": "Cohete azul",
+  "biome": "Plains",
   "image": "assets/img/items/blue-fireworks.png",
   "page": false,
   "recipe": {
@@ -5180,6 +5349,7 @@
  {
   "name": "Cyan Fireworks",
   "nameEs": "Cohete cian",
+  "biome": "Plains",
   "image": "assets/img/items/cyan-fireworks.png",
   "page": false,
   "recipe": {
@@ -5206,6 +5376,7 @@
  {
   "name": "Green Fireworks",
   "nameEs": "Cohete verde",
+  "biome": "Plains",
   "image": "assets/img/items/green-fireworks.png",
   "page": false,
   "recipe": {
@@ -5232,6 +5403,7 @@
  {
   "name": "Purple Fireworks",
   "nameEs": "Cohete morado",
+  "biome": "Plains",
   "image": "assets/img/items/purple-fireworks.png",
   "page": false,
   "recipe": {
@@ -5258,6 +5430,7 @@
  {
   "name": "Red Fireworks",
   "nameEs": "Cohete rojo",
+  "biome": "Plains",
   "image": "assets/img/items/red-fireworks.png",
   "page": false,
   "recipe": {
@@ -5285,6 +5458,7 @@
  {
   "name": "Yellow Fireworks",
   "nameEs": "Cohete amarillo",
+  "biome": "Plains",
   "image": "assets/img/items/yellow-fireworks.png",
   "page": false,
   "recipe": {
@@ -5311,6 +5485,7 @@
  {
   "name": "Raw Fish",
   "nameEs": "Pescado crudo",
+  "biome": "Swamp",
   "image": "assets/img/items/raw-fish.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5396,6 +5571,7 @@
  {
   "name": "Uncooked Fish 'n' Bread",
   "nameEs": "Pan de pescado sin cocinar",
+  "biome": "Mistlands",
   "image": "assets/img/items/uncooked-fish-n-bread.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -5421,6 +5597,7 @@
  {
   "name": "Hot Fishing Bait",
   "nameEs": "Carnada caliente",
+  "biome": "Ashlands",
   "image": "assets/img/items/hot-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5447,6 +5624,7 @@
  {
   "name": "Cold Fishing Bait",
   "nameEs": "Carnada fría",
+  "biome": "Mountain",
   "image": "assets/img/items/cold-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5473,6 +5651,7 @@
  {
   "name": "Frosty Fishing Bait",
   "nameEs": "Carnada helada",
+  "biome": "Mountain",
   "image": "assets/img/items/frosty-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5499,6 +5678,7 @@
  {
   "name": "Mossy Fishing Bait",
   "nameEs": "Carnada musgosa",
+  "biome": "Swamp",
   "image": "assets/img/items/mossy-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5525,6 +5705,7 @@
  {
   "name": "Misty Fishing Bait",
   "nameEs": "Carnada brumosa",
+  "biome": "Plains",
   "image": "assets/img/items/misty-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5551,6 +5732,7 @@
  {
   "name": "Heavy Fishing Bait",
   "nameEs": "Carnada pesada",
+  "biome": "Ocean",
   "image": "assets/img/items/heavy-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5577,6 +5759,7 @@
  {
   "name": "Stingy Fishing Bait",
   "nameEs": "Carnada picosa",
+  "biome": "Plains",
   "image": "assets/img/items/stingy-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5603,6 +5786,7 @@
  {
   "name": "Sticky Fishing Bait",
   "nameEs": "Carnada apestosa",
+  "biome": "Swamp",
   "image": "assets/img/items/sticky-fishing-bait.png",
   "page": false,
   "recipe": {
@@ -5629,6 +5813,7 @@
  {
   "name": "Fish Soup",
   "nameEs": "Sopa de pescado",
+  "biome": "Deep North",
   "image": "assets/img/items/fish-soup.png",
   "recipe": {
    "station": "Cauldron",
@@ -5660,6 +5845,7 @@
  {
   "name": "Fish Wraps",
   "nameEs": "Rollitos de pescado",
+  "biome": "Plains",
   "image": "assets/img/items/fish-wraps.png",
   "recipe": {
    "station": "Cauldron",
@@ -5685,6 +5871,7 @@
  {
   "name": "Paws of the Bear",
   "nameEs": "Garras de Bjorn",
+  "biome": "Black Forest",
   "image": "assets/img/items/paws-of-the-bear.png",
   "recipe": {
    "station": "Workbench",
@@ -5716,6 +5903,7 @@
  {
   "name": "Flesh Rippers",
   "nameEs": "Despellejadores",
+  "biome": "Mountain",
   "image": "assets/img/items/flesh-rippers.png",
   "recipe": {
    "station": "Forge",
@@ -5747,6 +5935,7 @@
  {
   "name": "Thunderblood Knucklechains",
   "nameEs": "Nudillos de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-knucklechains.png",
   "page": false,
   "recipe": {
@@ -5779,6 +5968,7 @@
  {
   "name": "Frostfire Knucklechains",
   "nameEs": "Nudillos de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-knucklechains.png",
   "page": false,
   "recipe": {
@@ -5811,6 +6001,7 @@
  {
   "name": "Vilebone Maulclaws",
   "nameEs": "Garras furiosas de hueso vil",
+  "biome": "Plains",
   "image": "assets/img/items/vilebone-maulclaws.png",
   "recipe": {
    "station": "Forge",
@@ -5848,6 +6039,7 @@
  {
   "name": "Nord Knucklechains",
   "nameEs": "Nudillos nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-knucklechains.png",
   "page": false,
   "recipe": {
@@ -5880,6 +6072,7 @@
  {
   "name": "Cast: Nord Knucklechains",
   "nameEs": "Pieza fundida: nudillos nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-knucklechains.png",
   "page": false,
   "recipe": {
@@ -5912,6 +6105,7 @@
  {
   "name": "Grappling Hook",
   "nameEs": "Gancho de agarre",
+  "biome": "Mistlands",
   "image": "assets/img/items/grappling-hook.png",
   "recipe": {
    "station": "Black Forge",
@@ -5949,6 +6143,7 @@
  {
   "name": "Headdress of the Bear",
   "nameEs": "Tocado de Bjorn",
+  "biome": "Black Forest",
   "image": "assets/img/items/headdress-of-the-bear.png",
   "recipe": {
    "station": "Workbench",
@@ -5974,6 +6169,7 @@
  {
   "name": "Vilebone Visage",
   "nameEs": "Mentonera de hueso vil",
+  "biome": "Plains",
   "image": "assets/img/items/vilebone-visage.png",
   "recipe": {
    "station": "Forge",
@@ -5999,6 +6195,7 @@
  {
   "name": "Bronze Helmet",
   "nameEs": "Casco de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-helmet.png",
   "page": false,
   "recipe": {
@@ -6025,6 +6222,7 @@
  {
   "name": "Carapace Helmet",
   "nameEs": "Casco de Caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-helmet.png",
   "recipe": {
    "station": "Black Forge",
@@ -6062,6 +6260,7 @@
  {
   "name": "Celebratory Cap",
   "nameEs": "Gorra festiva",
+  "biome": "Black Forest",
   "image": "assets/img/items/celebratory-cap.png",
   "page": false,
   "recipe": {
@@ -6100,6 +6299,7 @@
  {
   "name": "Crown of Valheim",
   "nameEs": "Corona de Valheim",
+  "biome": "Deep North",
   "image": "assets/img/items/crown-of-valheim.png",
   "page": false,
   "recipe": {
@@ -6126,6 +6326,7 @@
  {
   "name": "Drake Helmet",
   "nameEs": "Casco dracónico",
+  "biome": "Mountain",
   "image": "assets/img/items/drake-helmet.png",
   "recipe": {
    "station": "Forge",
@@ -6157,6 +6358,7 @@
  {
   "name": "Fenris Hood",
   "nameEs": "Capucha de Fenris",
+  "biome": "Mountain",
   "image": "assets/img/items/fenris-hood.png",
   "recipe": {
    "station": "Workbench",
@@ -6188,6 +6390,7 @@
  {
   "name": "Fishing Hat",
   "nameEs": "Gorro de pescar",
+  "biome": "Deep North",
   "image": "assets/img/items/fishing-hat.png",
   "recipe": {
    "station": "Workbench",
@@ -6273,6 +6476,7 @@
  {
   "name": "Flametal Helmet",
   "nameEs": "Casco de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-helmet.png",
   "recipe": {
    "station": "Black Forge",
@@ -6310,6 +6514,7 @@
  {
   "name": "Helmet of the Protector",
   "nameEs": "Yelmo del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/helmet-of-the-protector.png",
   "recipe": {
    "station": "Black Forge",
@@ -6341,6 +6546,7 @@
  {
   "name": "Headdress of the Caller",
   "nameEs": "Tocado del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/headdress-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -6379,6 +6585,7 @@
  {
   "name": "Cast: Headdress of the Caller",
   "nameEs": "Pieza fundida: tocado del Invocador",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-headdress-of-the-caller.png",
   "page": false,
   "recipe": {
@@ -6417,6 +6624,7 @@
  {
   "name": "Hood of the Vanguard",
   "nameEs": "Capucha de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/hood-of-the-vanguard.png",
   "recipe": {
    "station": "Black Forge",
@@ -6454,6 +6662,7 @@
  {
   "name": "Cast: Hood of the Vanguard",
   "nameEs": "Pieza fundida: capucha de la Vanguardia",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-hood-of-the-vanguard.png",
   "page": false,
   "recipe": {
@@ -6492,6 +6701,7 @@
  {
   "name": "Cast: Helmet of the Protector",
   "nameEs": "Pieza fundida: yelmo del Protector",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-helmet-of-the-protector.png",
   "page": false,
   "recipe": {
@@ -6524,6 +6734,7 @@
  {
   "name": "Iron Helmet",
   "nameEs": "Casco de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-helmet.png",
   "recipe": {
    "station": "Forge",
@@ -6549,6 +6760,7 @@
  {
   "name": "Leather Helmet",
   "nameEs": "Casco de cuero",
+  "biome": "Meadows",
   "image": "assets/img/items/leather-helmet.png",
   "recipe": {
    "station": "Workbench",
@@ -6568,6 +6780,7 @@
  {
   "name": "Lox Fur Hood",
   "nameEs": "Capucha de piel de lox",
+  "biome": "Plains",
   "image": "assets/img/items/lox-fur-hood.png",
   "recipe": {
    "station": "Workbench",
@@ -6599,6 +6812,7 @@
  {
   "name": "Eitr-weave Hood",
   "nameEs": "Capucha tejida en Eitr",
+  "biome": "Mistlands",
   "image": "assets/img/items/eitr-weave-hood.png",
   "recipe": {
    "station": "Galdr Table",
@@ -6630,6 +6844,7 @@
  {
   "name": "Hood of Embla",
   "nameEs": "Capucha de Embla",
+  "biome": "Ashlands",
   "image": "assets/img/items/hood-of-embla.png",
   "recipe": {
    "station": "Galdr Table",
@@ -6661,6 +6876,7 @@
  {
   "name": "Hood of Ask",
   "nameEs": "Capucha de Ask",
+  "biome": "Ashlands",
   "image": "assets/img/items/hood-of-ask.png",
   "recipe": {
    "station": "Black Forge",
@@ -6692,6 +6908,7 @@
  {
   "name": "Padded Helmet",
   "nameEs": "Casco acolchado",
+  "biome": "Plains",
   "image": "assets/img/items/padded-helmet.png",
   "recipe": {
    "station": "Forge",
@@ -6717,6 +6934,7 @@
  {
   "name": "Root Mask",
   "nameEs": "Máscara de raíces",
+  "biome": "Swamp",
   "image": "assets/img/items/root-mask.png",
   "recipe": {
    "station": "Workbench",
@@ -6748,6 +6966,7 @@
  {
   "name": "Troll Leather Hood",
   "nameEs": "Casco de cuero de trol",
+  "biome": "Black Forest",
   "image": "assets/img/items/troll-leather-hood.png",
   "wiki": "Troll leather helmet",
   "recipe": {
@@ -6774,6 +6993,7 @@
  {
   "name": "Hoe",
   "nameEs": "Azada",
+  "biome": "Meadows",
   "image": "assets/img/items/hoe.png",
   "recipe": {
    "station": "Workbench",
@@ -6799,6 +7019,7 @@
  {
   "name": "Uncooked Honey Glazed Chicken",
   "nameEs": "Pollo glaseado en miel sin cocinar",
+  "biome": "Mistlands",
   "image": "assets/img/items/uncooked-honey-glazed-chicken.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -6830,6 +7051,7 @@
  {
   "name": "Iron Nails",
   "nameEs": "Clavos de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-nails.png",
   "recipe": {
    "station": "Forge",
@@ -6849,6 +7071,7 @@
  {
   "name": "Raw Kale Chips",
   "nameEs": "Chips de col rizada cruda",
+  "biome": "Deep North",
   "image": "assets/img/items/raw-kale-chips.png",
   "recipe": {
    "station": "Cauldron",
@@ -6868,6 +7091,7 @@
  {
   "name": "Black Metal Knife",
   "nameEs": "Cuchillo de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-knife.png",
   "recipe": {
    "station": "Forge",
@@ -6899,6 +7123,7 @@
  {
   "name": "Butcher Knife",
   "nameEs": "Cuchillo de carnicero",
+  "biome": "Black Forest",
   "image": "assets/img/items/butcher-knife.png",
   "recipe": {
    "station": "Forge",
@@ -6924,6 +7149,7 @@
  {
   "name": "Abyssal Razor",
   "nameEs": "Navaja abisal",
+  "biome": "Ocean",
   "image": "assets/img/items/abyssal-razor.png",
   "wiki": "Abyssal razor/knife",
   "page": false,
@@ -6957,6 +7183,7 @@
  {
   "name": "Copper Knife",
   "nameEs": "Cuchillo de cobre",
+  "biome": "Black Forest",
   "image": "assets/img/items/copper-knife.png",
   "recipe": {
    "station": "Forge",
@@ -6982,6 +7209,7 @@
  {
   "name": "Flint Knife",
   "nameEs": "Cuchillo de sílex",
+  "biome": "Meadows",
   "image": "assets/img/items/flint-knife.png",
   "recipe": {
    "station": "Workbench",
@@ -7013,6 +7241,7 @@
  {
   "name": "Nord Dagger",
   "nameEs": "Daga nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-dagger.png",
   "page": false,
   "recipe": {
@@ -7045,6 +7274,7 @@
  {
   "name": "Thunderblood Dagger",
   "nameEs": "Daga de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-dagger.png",
   "page": false,
   "recipe": {
@@ -7077,6 +7307,7 @@
  {
   "name": "Frostfire Dagger",
   "nameEs": "Daga de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-dagger.png",
   "page": false,
   "recipe": {
@@ -7109,6 +7340,7 @@
  {
   "name": "Cast: Nord Dagger",
   "nameEs": "Pieza fundida: daga nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-dagger.png",
   "page": false,
   "recipe": {
@@ -7141,6 +7373,7 @@
  {
   "name": "Silver Knife",
   "nameEs": "Cuchillo de plata",
+  "biome": "Mountain",
   "image": "assets/img/items/silver-knife.png",
   "recipe": {
    "station": "Forge",
@@ -7178,6 +7411,7 @@
  {
   "name": "Skoll and Hati",
   "nameEs": "Skoll y Hati",
+  "biome": "Mistlands",
   "image": "assets/img/items/skoll-and-hati.png",
   "recipe": {
    "station": "Black Forge",
@@ -7209,6 +7443,7 @@
  {
   "name": "Lingonberry Juice",
   "nameEs": "Zumo de arándanos rojos",
+  "biome": "Deep North",
   "image": "assets/img/items/lingonberry-juice.png",
   "recipe": {
    "station": "Cauldron",
@@ -7234,6 +7469,7 @@
  {
   "name": "Unbaked Lox Pie",
   "nameEs": "Pastel de luey sin hornear",
+  "biome": "Plains",
   "image": "assets/img/items/unbaked-lox-pie.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -7265,6 +7501,7 @@
  {
   "name": "Bronze Mace",
   "nameEs": "Maza de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-mace.png",
   "recipe": {
    "station": "Forge",
@@ -7296,6 +7533,7 @@
  {
   "name": "Flametal Mace",
   "nameEs": "Maza de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-mace.png",
   "recipe": {
    "station": "Black Forge",
@@ -7333,6 +7571,7 @@
  {
   "name": "Bloodgeon",
   "nameEs": "Sanguinaria",
+  "biome": "Ashlands",
   "image": "assets/img/items/bloodgeon.png",
   "recipe": {
    "station": "Black Forge",
@@ -7364,6 +7603,7 @@
  {
   "name": "Storm Star",
   "nameEs": "Estrella de tormenta",
+  "biome": "Ashlands",
   "image": "assets/img/items/storm-star.png",
   "recipe": {
    "station": "Black Forge",
@@ -7395,6 +7635,7 @@
  {
   "name": "Klossen",
   "nameEs": "Klossen",
+  "biome": "Ashlands",
   "image": "assets/img/items/klossen.png",
   "recipe": {
    "station": "Black Forge",
@@ -7426,6 +7667,7 @@
  {
   "name": "Nord Mace",
   "nameEs": "Maza nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-mace.png",
   "page": false,
   "recipe": {
@@ -7458,6 +7700,7 @@
  {
   "name": "Thunderblood Mace",
   "nameEs": "Maza de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-mace.png",
   "page": false,
   "recipe": {
@@ -7490,6 +7733,7 @@
  {
   "name": "Frostfire Mace",
   "nameEs": "Maza de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-mace.png",
   "page": false,
   "recipe": {
@@ -7522,6 +7766,7 @@
  {
   "name": "Cast: Nord Mace",
   "nameEs": "Pieza fundida: maza nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-mace.png",
   "page": false,
   "recipe": {
@@ -7554,6 +7799,7 @@
  {
   "name": "Iron Mace",
   "nameEs": "Maza de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-mace.png",
   "recipe": {
    "station": "Forge",
@@ -7585,6 +7831,7 @@
  {
   "name": "Porcupine",
   "nameEs": "Puercoespín",
+  "biome": "Plains",
   "image": "assets/img/items/porcupine.png",
   "recipe": {
    "station": "Forge",
@@ -7622,6 +7869,7 @@
  {
   "name": "Frostner",
   "nameEs": "Escarchador",
+  "biome": "Mountain",
   "image": "assets/img/items/frostner.png",
   "recipe": {
    "station": "Forge",
@@ -7659,6 +7907,7 @@
  {
   "name": "Uncooked Stuffed Mushroom",
   "nameEs": "Hongo relleno sin cocinar",
+  "biome": "Mistlands",
   "image": "assets/img/items/uncooked-stuffed-mushroom.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -7690,6 +7939,7 @@
  {
   "name": "Marinated Greens",
   "nameEs": "Verduras marinadas",
+  "biome": "Ashlands",
   "image": "assets/img/items/marinated-greens.png",
   "recipe": {
    "station": "Cauldron",
@@ -7727,6 +7977,7 @@
  {
   "name": "Mashed Meat",
   "nameEs": "Puré de carne",
+  "biome": "Ashlands",
   "image": "assets/img/items/mashed-meat.png",
   "recipe": {
    "station": "Cauldron",
@@ -7758,6 +8009,7 @@
  {
   "name": "Mead Base: Anti-Sting",
   "nameEs": "Base de hidromiel: fuerza de trol",
+  "biome": "Plains",
   "image": "assets/img/items/mead-base-anti-sting.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7789,6 +8041,7 @@
  {
   "name": "Mead base: Berserkir",
   "nameEs": "Base de hidromiel: Berserkir",
+  "biome": "Mountain",
   "image": "assets/img/items/mead-base-berserkir.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7820,6 +8073,7 @@
  {
   "name": "Mead Base: Lingering Eitr",
   "nameEs": "Malta: Eitr constante",
+  "biome": "Ashlands",
   "image": "assets/img/items/mead-base-lingering-eitr.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7851,6 +8105,7 @@
  {
   "name": "Mead Base: Minor Eitr",
   "nameEs": "Malta: Mágica",
+  "biome": "Mistlands",
   "image": "assets/img/items/mead-base-minor-eitr.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7888,6 +8143,7 @@
  {
   "name": "Mead Base: Frost Resistance",
   "nameEs": "Malta: resistencia al frío",
+  "biome": "Swamp",
   "image": "assets/img/items/mead-base-frost-resistance.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7925,6 +8181,7 @@
  {
   "name": "Mead base: Ratatosk",
   "nameEs": "Base de hidromiel: Ratatosk",
+  "biome": "Swamp",
   "image": "assets/img/items/mead-base-ratatosk.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7956,6 +8213,7 @@
  {
   "name": "Mead Base: Lingering Health",
   "nameEs": "Malta: salud constante",
+  "biome": "Ashlands",
   "image": "assets/img/items/mead-base-lingering-health.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -7987,6 +8245,7 @@
  {
   "name": "Mead Base: Major Healing",
   "nameEs": "Malta: Extra supersaludable",
+  "biome": "Mistlands",
   "image": "assets/img/items/mead-base-major-healing.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8018,6 +8277,7 @@
  {
   "name": "Mead Base: Medium Healing",
   "nameEs": "Malta: supersaludable",
+  "biome": "Swamp",
   "image": "assets/img/items/mead-base-medium-healing.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8056,6 +8316,7 @@
  {
   "name": "Mead Base: Minor Healing",
   "nameEs": "Malta: saludable",
+  "biome": "Black Forest",
   "image": "assets/img/items/mead-base-minor-healing.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8094,6 +8355,7 @@
  {
   "name": "Mead Base: Lightfoot",
   "nameEs": "Base de hidromiel: Pies ligeros",
+  "biome": "Mistlands",
   "image": "assets/img/items/mead-base-lightfoot.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8125,6 +8387,7 @@
  {
   "name": "Mead Base: Poison Resistance",
   "nameEs": "Malta: resistencia al veneno",
+  "biome": "Black Forest",
   "image": "assets/img/items/mead-base-poison-resistance.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8162,6 +8425,7 @@
  {
   "name": "Mead Base: Lingering Stamina",
   "nameEs": "Malta: Vigorización constante",
+  "biome": "Mistlands",
   "image": "assets/img/items/mead-base-lingering-stamina.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8193,6 +8457,7 @@
  {
   "name": "Mead Base: Medium Stamina",
   "nameEs": "Malta: supervigorizante",
+  "biome": "Plains",
   "image": "assets/img/items/mead-base-medium-stamina.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8224,6 +8489,7 @@
  {
   "name": "Mead Base: Minor Stamina",
   "nameEs": "Malta: vigorizante",
+  "biome": "Black Forest",
   "image": "assets/img/items/mead-base-minor-stamina.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8256,6 +8522,7 @@
  {
   "name": "Mead Base: Troll Endurance",
   "nameEs": "Base de hidromiel: Fuerza de trol",
+  "biome": "Swamp",
   "image": "assets/img/items/mead-base-troll-endurance.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8287,6 +8554,7 @@
  {
   "name": "Mead Base: Vananidir",
   "nameEs": "Base de hidromiel: Vananidir",
+  "biome": "Swamp",
   "image": "assets/img/items/mead-base-vananidir.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8318,6 +8586,7 @@
  {
   "name": "Mead Base: Animal Whispers",
   "nameEs": "Base de hidromiel: susurros salvajes",
+  "biome": "Mountain",
   "image": "assets/img/items/mead-base-animal-whispers.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8349,6 +8618,7 @@
  {
   "name": "Mead Base: Tasty",
   "nameEs": "Malta: sabrosa",
+  "biome": "Black Forest",
   "image": "assets/img/items/mead-base-tasty.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8381,6 +8651,7 @@
  {
   "name": "Meatballs and Poteitr",
   "nameEs": "Albóndigas con poteitr",
+  "biome": "Deep North",
   "image": "assets/img/items/meatballs-and-poteitr.png",
   "recipe": {
    "station": "Cauldron",
@@ -8412,6 +8683,7 @@
  {
   "name": "Uncooked Meat Platter",
   "nameEs": "Plato de carne sin cocinar",
+  "biome": "Mistlands",
   "image": "assets/img/items/uncooked-meat-platter.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -8443,6 +8715,7 @@
  {
   "name": "Mechanical Spring",
   "nameEs": "Resorte mecánico",
+  "biome": "Mistlands",
   "image": "assets/img/items/mechanical-spring.png",
   "recipe": {
    "station": "Artisan Table",
@@ -8468,6 +8741,7 @@
  {
   "name": "Minced Meat Sauce",
   "nameEs": "Salsa de carne picada",
+  "biome": "Black Forest",
   "image": "assets/img/items/minced-meat-sauce.png",
   "recipe": {
    "station": "Cauldron",
@@ -8499,6 +8773,7 @@
  {
   "name": "Uncooked Misthare Supreme",
   "nameEs": "Supremacía de la liebre neblinosa sin cocinar",
+  "biome": "Mistlands",
   "image": "assets/img/items/uncooked-misthare-supreme.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -8530,6 +8805,7 @@
  {
   "name": "Meat In Bread",
   "nameEs": "Carne en pan",
+  "biome": "Deep North",
   "image": "assets/img/items/meat-in-bread.png",
   "recipe": {
    "station": "Cauldron",
@@ -8567,6 +8843,7 @@
  {
   "name": "Mushroom Omelette",
   "nameEs": "Tortilla de hongos",
+  "biome": "Mistlands",
   "image": "assets/img/items/mushroom-omelette.png",
   "recipe": {
    "station": "Cauldron",
@@ -8592,6 +8869,7 @@
  {
   "name": "Oatmeal",
   "nameEs": "Gachas de avena",
+  "biome": "Deep North",
   "image": "assets/img/items/oatmeal.png",
   "recipe": {
    "station": "Cauldron",
@@ -8623,6 +8901,7 @@
  {
   "name": "Oat Milk",
   "nameEs": "Leche de avena",
+  "biome": "Deep North",
   "image": "assets/img/items/oat-milk.png",
   "recipe": {
    "station": "Mead Ketill",
@@ -8648,6 +8927,7 @@
  {
   "name": "Onion Soup",
   "nameEs": "Sopa de cebolla",
+  "biome": "Mountain",
   "image": "assets/img/items/onion-soup.png",
   "recipe": {
    "station": "Cauldron",
@@ -8667,6 +8947,7 @@
  {
   "name": "Oven Pancake Batter",
   "nameEs": "Masa para tortita al horno",
+  "biome": "Deep North",
   "image": "assets/img/items/oven-pancake-batter.png",
   "recipe": {
    "station": "Cauldron",
@@ -8704,6 +8985,7 @@
  {
   "name": "Pancakes",
   "nameEs": "Tortitas",
+  "biome": "Deep North",
   "image": "assets/img/items/pancakes.png",
   "recipe": {
    "station": "Cauldron",
@@ -8741,6 +9023,7 @@
  {
   "name": "Antler Pickaxe",
   "nameEs": "Pico de cuernos",
+  "biome": "Meadows",
   "image": "assets/img/items/antler-pickaxe.png",
   "recipe": {
    "station": "Workbench",
@@ -8766,6 +9049,7 @@
  {
   "name": "Black Metal Pickaxe",
   "nameEs": "Pico de metal negro",
+  "biome": "Mistlands",
   "image": "assets/img/items/black-metal-pickaxe.png",
   "recipe": {
    "station": "Forge",
@@ -8791,6 +9075,7 @@
  {
   "name": "Bronze Pickaxe",
   "nameEs": "Pico de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-pickaxe.png",
   "recipe": {
    "station": "Forge",
@@ -8816,6 +9101,7 @@
  {
   "name": "Iron Pickaxe",
   "nameEs": "Pico de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-pickaxe.png",
   "recipe": {
    "station": "Forge",
@@ -8841,6 +9127,7 @@
  {
   "name": "Uncooked Piquant Pie",
   "nameEs": " Pastel picante crudo",
+  "biome": "Ashlands",
   "image": "assets/img/items/uncooked-piquant-pie.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -8872,6 +9159,7 @@
  {
   "name": "Pulled Bear",
   "nameEs": "Carne de oso desmenuzada",
+  "biome": "Black Forest",
   "image": "assets/img/items/pulled-bear.png",
   "recipe": {
    "station": "Cauldron",
@@ -8903,6 +9191,7 @@
  {
   "name": "Queen's Jam",
   "nameEs": "Mermelada de la reina",
+  "biome": "Black Forest",
   "image": "assets/img/items/queen-s-jam.png",
   "recipe": {
    "station": "Cauldron",
@@ -8929,6 +9218,7 @@
  {
   "name": "Uncooked Roasted Crust Pie",
   "nameEs": "Pastel de masa asada crudo",
+  "biome": "Ashlands",
   "image": "assets/img/items/uncooked-roasted-crust-pie.png",
   "recipe": {
    "station": "Food Preparation Table",
@@ -8960,6 +9250,7 @@
  {
   "name": "Asksvin Saddle",
   "nameEs": "Silla de cenicerdo",
+  "biome": "Ashlands",
   "image": "assets/img/items/asksvin-saddle.png",
   "recipe": {
    "station": "Black Forge",
@@ -8991,6 +9282,7 @@
  {
   "name": "Moose Saddle",
   "nameEs": "Silla de alce",
+  "biome": "Deep North",
   "image": "assets/img/items/moose-saddle.png",
   "page": false,
   "recipe": {
@@ -9029,6 +9321,7 @@
  {
   "name": "Lox Saddle",
   "nameEs": "Silla de montar para luey",
+  "biome": "Plains",
   "image": "assets/img/items/lox-saddle.png",
   "recipe": {
    "station": "Workbench",
@@ -9060,6 +9353,7 @@
  {
   "name": "Salad",
   "nameEs": "Ensalada",
+  "biome": "Mistlands",
   "image": "assets/img/items/salad.png",
   "recipe": {
    "station": "Cauldron",
@@ -9091,6 +9385,7 @@
  {
   "name": "Sausages",
   "nameEs": "Salchichas",
+  "biome": "Swamp",
   "image": "assets/img/items/sausages.png",
   "recipe": {
    "station": "Cauldron",
@@ -9122,6 +9417,7 @@
  {
   "name": "Scorching Medley",
   "nameEs": "Mezcla abrasadora",
+  "biome": "Ashlands",
   "image": "assets/img/items/scorching-medley.png",
   "recipe": {
    "station": "Cauldron",
@@ -9153,6 +9449,7 @@
  {
   "name": "Scythe",
   "nameEs": "Guadaña",
+  "biome": "Mountain",
   "image": "assets/img/items/scythe.png",
   "recipe": {
    "station": "Forge",
@@ -9178,6 +9475,7 @@
  {
   "name": "Seal Meat Soup",
   "nameEs": "Sopa de carne de foca",
+  "biome": "Deep North",
   "image": "assets/img/items/seal-meat-soup.png",
   "recipe": {
    "station": "Cauldron",
@@ -9209,6 +9507,7 @@
  {
   "name": "Seeker Aspic",
   "nameEs": "Espliego de buscador",
+  "biome": "Mistlands",
   "image": "assets/img/items/seeker-aspic.png",
   "recipe": {
    "station": "Cauldron",
@@ -9240,6 +9539,7 @@
  {
   "name": "Serpent Stew",
   "nameEs": "Cocido de serpiente",
+  "biome": "Swamp",
   "image": "assets/img/items/serpent-stew.png",
   "recipe": {
    "station": "Cauldron",
@@ -9271,6 +9571,7 @@
  {
   "name": "Sharpening Stone",
   "nameEs": "Piedra de afilar",
+  "biome": "Swamp",
   "image": "assets/img/items/sharpening-stone.png",
   "recipe": {
    "station": "Stonecutter",
@@ -9290,6 +9591,7 @@
  {
   "name": "Banded Shield",
   "nameEs": "Escudo de aros",
+  "biome": "Swamp",
   "image": "assets/img/items/banded-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9315,6 +9617,7 @@
  {
   "name": "Black Metal Shield",
   "nameEs": "Escudo de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9346,6 +9649,7 @@
  {
   "name": "Black Metal Tower Shield",
   "nameEs": "Escudo de torre de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-tower-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9377,6 +9681,7 @@
  {
   "name": "Bone Tower Shield",
   "nameEs": "Escudo de torre de hueso",
+  "biome": "Black Forest",
   "image": "assets/img/items/bone-tower-shield.png",
   "recipe": {
    "station": "Workbench",
@@ -9408,6 +9713,7 @@
  {
   "name": "Bronze Buckler",
   "nameEs": "Rodela de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-buckler.png",
   "recipe": {
    "station": "Forge",
@@ -9433,6 +9739,7 @@
  {
   "name": "Nord Buckler",
   "nameEs": "Broquel nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-buckler.png",
   "page": false,
   "recipe": {
@@ -9465,6 +9772,7 @@
  {
   "name": "Cast: Nord Buckler",
   "nameEs": "Pieza fundida: broquel nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-buckler.png",
   "page": false,
   "recipe": {
@@ -9497,6 +9805,7 @@
  {
   "name": "Carapace Shield",
   "nameEs": "Escudo de caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-shield.png",
   "recipe": {
    "station": "Black Forge",
@@ -9528,6 +9837,7 @@
  {
   "name": "Carapace Buckler",
   "nameEs": "Rodela de caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-buckler.png",
   "recipe": {
    "station": "Black Forge",
@@ -9559,6 +9869,7 @@
  {
   "name": "Shield Core",
   "nameEs": "Núcleo de escudo",
+  "biome": "Mistlands",
   "image": "assets/img/items/shield-core.png",
   "recipe": {
    "station": "Artisan Table",
@@ -9590,6 +9901,7 @@
  {
   "name": "Flametal Shield",
   "nameEs": "Escudo de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-shield.png",
   "recipe": {
    "station": "Black Forge",
@@ -9621,6 +9933,7 @@
  {
   "name": "Flametal Tower Shield",
   "nameEs": "Escudo de torre de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-tower-shield.png",
   "recipe": {
    "station": "Black Forge",
@@ -9652,6 +9965,7 @@
  {
   "name": "Iron Buckler",
   "nameEs": "Rodela de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-buckler.png",
   "recipe": {
    "station": "Forge",
@@ -9677,6 +9991,7 @@
  {
   "name": "Iron Tower Shield",
   "nameEs": "Escudo de torre de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-tower-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9702,6 +10017,7 @@
  {
   "name": "Shield of Roots",
   "nameEs": "Escudo de raíces",
+  "biome": "Swamp",
   "image": "assets/img/items/shield-of-roots.png",
   "recipe": {
    "station": "Workbench",
@@ -9727,6 +10043,7 @@
  {
   "name": "Nord Shield",
   "nameEs": "Escudo nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-shield.png",
   "page": false,
   "recipe": {
@@ -9759,6 +10076,7 @@
  {
   "name": "Cast: Nord Shield",
   "nameEs": "Pieza fundida: escudo nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-shield.png",
   "page": false,
   "recipe": {
@@ -9791,6 +10109,7 @@
  {
   "name": "Serpent Scale Shield",
   "nameEs": "Escudo de escamas de serpiente",
+  "biome": "Ocean",
   "image": "assets/img/items/serpent-scale-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9822,6 +10141,7 @@
  {
   "name": "Silver Shield",
   "nameEs": "Escudo de plata",
+  "biome": "Mountain",
   "image": "assets/img/items/silver-shield.png",
   "recipe": {
    "station": "Forge",
@@ -9847,6 +10167,7 @@
  {
   "name": "Nord Greatshield",
   "nameEs": "Gran escudo nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-greatshield.png",
   "page": false,
   "recipe": {
@@ -9879,6 +10200,7 @@
  {
   "name": "Cast: Nord Greatshield",
   "nameEs": "Pieza fundida: gran escudo nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-greatshield.png",
   "page": false,
   "recipe": {
@@ -9911,6 +10233,7 @@
  {
   "name": "Wood Shield",
   "nameEs": "Escudo de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-shield.png",
   "recipe": {
    "station": "Workbench",
@@ -9942,6 +10265,7 @@
  {
   "name": "Wood Tower Shield",
   "nameEs": "Escudo de torre de madera",
+  "biome": "Meadows",
   "image": "assets/img/items/wood-tower-shield.png",
   "recipe": {
    "station": "Workbench",
@@ -9967,6 +10291,7 @@
  {
   "name": "Muckshake",
   "nameEs": "Batilodo",
+  "biome": "Swamp",
   "image": "assets/img/items/muckshake.png",
   "recipe": {
    "station": "Cauldron",
@@ -9999,6 +10324,7 @@
  {
   "name": "Sizzling Berry Broth",
   "nameEs": "Caldo de bayas chisporroteantes",
+  "biome": "Ashlands",
   "image": "assets/img/items/sizzling-berry-broth.png",
   "recipe": {
    "station": "Cauldron",
@@ -10030,6 +10356,7 @@
  {
   "name": "Demolisher",
   "nameEs": "Demoledor",
+  "biome": "Mistlands",
   "image": "assets/img/items/demolisher.png",
   "recipe": {
    "station": "Black Forge",
@@ -10061,6 +10388,7 @@
  {
   "name": "Nord Sledge",
   "nameEs": "Almádena nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-sledge.png",
   "page": false,
   "recipe": {
@@ -10093,6 +10421,7 @@
  {
   "name": "Thunderblood Sledge",
   "nameEs": "Almádena de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-sledge.png",
   "page": false,
   "recipe": {
@@ -10125,6 +10454,7 @@
  {
   "name": "Frostfire Sledge",
   "nameEs": "Almádena de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-sledge.png",
   "page": false,
   "recipe": {
@@ -10157,6 +10487,7 @@
  {
   "name": "Cast: Nord Sledge",
   "nameEs": "Pieza fundida: almádena nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-sledge.png",
   "page": false,
   "recipe": {
@@ -10189,6 +10520,7 @@
  {
   "name": "Iron Sledge",
   "nameEs": "Mazo de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-sledge.png",
   "recipe": {
    "station": "Forge",
@@ -10226,6 +10558,7 @@
  {
   "name": "Stagbreaker",
   "nameEs": "Quebrantaciervos",
+  "biome": "Black Forest",
   "image": "assets/img/items/stagbreaker.png",
   "recipe": {
    "station": "Workbench",
@@ -10257,6 +10590,7 @@
  {
   "name": "Smoked Fish",
   "nameEs": "Pescado ahumado",
+  "biome": "Deep North",
   "image": "assets/img/items/smoked-fish.png",
   "recipe": {
    "station": "Cauldron",
@@ -10288,6 +10622,7 @@
  {
   "name": "Smoked Moose Meat",
   "nameEs": "Carne de alce ahumada",
+  "biome": "Deep North",
   "image": "assets/img/items/smoked-moose-meat.png",
   "recipe": {
    "station": "Cauldron",
@@ -10313,6 +10648,7 @@
  {
   "name": "Sparkling Shroomshake",
   "nameEs": "Batido de setas espumoso",
+  "biome": "Ashlands",
   "image": "assets/img/items/sparkling-shroomshake.png",
   "recipe": {
    "station": "Cauldron",
@@ -10350,6 +10686,7 @@
  {
   "name": "Bronze Spear",
   "nameEs": "Lanza de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-spear.png",
   "recipe": {
    "station": "Forge",
@@ -10381,6 +10718,7 @@
  {
   "name": "Carapace Spear",
   "nameEs": "Lanza de caparazón",
+  "biome": "Mistlands",
   "image": "assets/img/items/carapace-spear.png",
   "recipe": {
    "station": "Black Forge",
@@ -10412,6 +10750,7 @@
  {
   "name": "Abyssal Harpoon",
   "nameEs": "Arpón abisal",
+  "biome": "Ocean",
   "image": "assets/img/items/abyssal-harpoon.png",
   "recipe": {
    "station": "Workbench",
@@ -10443,6 +10782,7 @@
  {
   "name": "Ancient Bark Spear",
   "nameEs": "Lanza de corteza ancestral",
+  "biome": "Swamp",
   "image": "assets/img/items/ancient-bark-spear.png",
   "recipe": {
    "station": "Forge",
@@ -10474,6 +10814,7 @@
  {
   "name": "Flint Spear",
   "nameEs": "Lanza de sílex",
+  "biome": "Meadows",
   "image": "assets/img/items/flint-spear.png",
   "recipe": {
    "station": "Workbench",
@@ -10505,6 +10846,7 @@
  {
   "name": "Nord Spear",
   "nameEs": "Lanza nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-spear.png",
   "page": false,
   "recipe": {
@@ -10537,6 +10879,7 @@
  {
   "name": "Thunderblood Spear",
   "nameEs": "Lanza de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-spear.png",
   "page": false,
   "recipe": {
@@ -10569,6 +10912,7 @@
  {
   "name": "Frostfire Spear",
   "nameEs": "Lanza de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-spear.png",
   "page": false,
   "recipe": {
@@ -10601,6 +10945,7 @@
  {
   "name": "Cast: Nord Spear",
   "nameEs": "Pieza fundida: lanza nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-spear.png",
   "page": false,
   "recipe": {
@@ -10633,6 +10978,7 @@
  {
   "name": "Splitnir",
   "nameEs": "Divisora",
+  "biome": "Ashlands",
   "image": "assets/img/items/splitnir.png",
   "recipe": {
    "station": "Black Forge",
@@ -10670,6 +11016,7 @@
  {
   "name": "Splitnir the Bleeding",
   "nameEs": "Divisora sangrienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/splitnir-the-bleeding.png",
   "recipe": {
    "station": "Black Forge",
@@ -10701,6 +11048,7 @@
  {
   "name": "Splitnir the Storming",
   "nameEs": "Divisora tempestuosa",
+  "biome": "Ashlands",
   "image": "assets/img/items/splitnir-the-storming.png",
   "recipe": {
    "station": "Black Forge",
@@ -10732,6 +11080,7 @@
  {
   "name": "Splitnir the Primal",
   "nameEs": "Divisora primigenia",
+  "biome": "Ashlands",
   "image": "assets/img/items/splitnir-the-primal.png",
   "recipe": {
    "station": "Black Forge",
@@ -10763,6 +11112,7 @@
  {
   "name": "Fang Spear",
   "nameEs": "Lanza de colmillo",
+  "biome": "Mountain",
   "image": "assets/img/items/fang-spear.png",
   "recipe": {
    "station": "Forge",
@@ -10800,6 +11150,7 @@
  {
   "name": "Spicy Marmalade",
   "nameEs": "Mermelada picante",
+  "biome": "Ashlands",
   "image": "assets/img/items/spicy-marmalade.png",
   "recipe": {
    "station": "Cauldron",
@@ -10831,6 +11182,7 @@
  {
   "name": "Staff of Fracturing",
   "nameEs": "Báculo Fracturador",
+  "biome": "Ashlands",
   "image": "assets/img/items/staff-of-fracturing.png",
   "recipe": {
    "station": "Galdr Table",
@@ -10862,6 +11214,7 @@
  {
   "name": "Staff of Embers",
   "nameEs": "Bastón de Ascuas",
+  "biome": "Mistlands",
   "image": "assets/img/items/staff-of-embers.png",
   "recipe": {
    "station": "Galdr Table",
@@ -10893,6 +11246,7 @@
  {
   "name": "Cast: Northern Vengeance",
   "nameEs": "Pieza fundida: venganza del norte",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-northern-vengeance.png",
   "page": false,
   "recipe": {
@@ -10931,6 +11285,7 @@
  {
   "name": "Northern Vengeance",
   "nameEs": "Venganza del norte",
+  "biome": "Deep North",
   "image": "assets/img/items/northern-vengeance.png",
   "page": false,
   "recipe": {
@@ -10963,6 +11318,7 @@
  {
   "name": "Staff of the Wild",
   "nameEs": "Báculo Silvestre",
+  "biome": "Ashlands",
   "image": "assets/img/items/staff-of-the-wild.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11000,6 +11356,7 @@
  {
   "name": "Staff of Frost",
   "nameEs": "Bastón de la Ventisca",
+  "biome": "Mistlands",
   "image": "assets/img/items/staff-of-frost.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11031,6 +11388,7 @@
  {
   "name": "Dundr",
   "nameEs": "Dundr",
+  "biome": "Ashlands",
   "image": "assets/img/items/dundr.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11068,6 +11426,7 @@
  {
   "name": "Cast: Echo Spike",
   "nameEs": "Pieza fundida: púa de eco",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-echo-spike.png",
   "page": false,
   "recipe": {
@@ -11106,6 +11465,7 @@
  {
   "name": "Echo Spike",
   "nameEs": "Púa de eco",
+  "biome": "Deep North",
   "image": "assets/img/items/echo-spike.png",
   "page": false,
   "recipe": {
@@ -11138,6 +11498,7 @@
  {
   "name": "Trollstav",
   "nameEs": "Trollstav",
+  "biome": "Ashlands",
   "image": "assets/img/items/trollstav.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11175,6 +11536,7 @@
  {
   "name": "Staff of Protection",
   "nameEs": "Báculo de Protección",
+  "biome": "Mistlands",
   "image": "assets/img/items/staff-of-protection.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11206,6 +11568,7 @@
  {
   "name": "Dead Raiser",
   "nameEs": "Levantamuertos",
+  "biome": "Mistlands",
   "image": "assets/img/items/dead-raiser.png",
   "recipe": {
    "station": "Galdr Table",
@@ -11237,6 +11600,7 @@
  {
   "name": "Cast: Spirit Caller",
   "nameEs": "Pieza fundida: invocador de espíritus",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-spirit-caller.png",
   "page": false,
   "recipe": {
@@ -11275,6 +11639,7 @@
  {
   "name": "Spirit Caller",
   "nameEs": "Invocador de espíritus",
+  "biome": "Deep North",
   "image": "assets/img/items/spirit-caller.png",
   "page": false,
   "recipe": {
@@ -11307,6 +11672,7 @@
  {
   "name": "Cast: Lightning Strike",
   "nameEs": "Pieza fundida: golpe de relámpago",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-lightning-strike.png",
   "page": false,
   "recipe": {
@@ -11345,6 +11711,7 @@
  {
   "name": "Lightning Strike",
   "nameEs": "Golpe de relámpago",
+  "biome": "Deep North",
   "image": "assets/img/items/lightning-strike.png",
   "page": false,
   "recipe": {
@@ -11377,6 +11744,7 @@
  {
   "name": "Black Metal Sword",
   "nameEs": "Espada de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-sword.png",
   "recipe": {
    "station": "Forge",
@@ -11408,6 +11776,7 @@
  {
   "name": "Bronze Sword",
   "nameEs": "Espada de bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-sword.png",
   "recipe": {
    "station": "Forge",
@@ -11439,6 +11808,7 @@
  {
   "name": "Dyrnwyn",
   "nameEs": "Dyrnwyn",
+  "biome": "Ashlands",
   "image": "assets/img/items/dyrnwyn.png",
   "recipe": {
    "station": "Black Forge",
@@ -11482,6 +11852,7 @@
  {
   "name": "Nord Sword",
   "nameEs": "Espada nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-sword.png",
   "page": false,
   "recipe": {
@@ -11514,6 +11885,7 @@
  {
   "name": "Thunderblood Sword",
   "nameEs": "Espada de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-sword.png",
   "page": false,
   "recipe": {
@@ -11546,6 +11918,7 @@
  {
   "name": "Frostfire Sword",
   "nameEs": "Espada de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-sword.png",
   "page": false,
   "recipe": {
@@ -11578,6 +11951,7 @@
  {
   "name": "Cast: Nord Sword",
   "nameEs": "Pieza fundida: espada nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-sword.png",
   "page": false,
   "recipe": {
@@ -11610,6 +11984,7 @@
  {
   "name": "Iron Sword",
   "nameEs": "Espada de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-sword.png",
   "recipe": {
    "station": "Forge",
@@ -11641,6 +12016,7 @@
  {
   "name": "Krom",
   "nameEs": "Krom",
+  "biome": "Mistlands",
   "image": "assets/img/items/krom.png",
   "recipe": {
    "station": "Black Forge",
@@ -11672,6 +12048,7 @@
  {
   "name": "Mistwalker",
   "nameEs": "Caminante de la Neblina",
+  "biome": "Mistlands",
   "image": "assets/img/items/mistwalker.png",
   "recipe": {
    "station": "Black Forge",
@@ -11709,6 +12086,7 @@
  {
   "name": "Nidhgg",
   "nameEs": "Nidhögg",
+  "biome": "Ashlands",
   "image": "assets/img/items/nidhgg.png",
   "page": false,
   "recipe": {
@@ -11741,6 +12119,7 @@
  {
   "name": "Nidhgg the Bleeding",
   "nameEs": "Nidhögg sangrienta",
+  "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-bleeding.png",
   "page": false,
   "recipe": {
@@ -11773,6 +12152,7 @@
  {
   "name": "Nidhgg the Thundering",
   "nameEs": "Nidhögg atronadora",
+  "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-thundering.png",
   "page": false,
   "recipe": {
@@ -11805,6 +12185,7 @@
  {
   "name": "Nidhgg the Primal",
   "nameEs": "Nidhögg primigenia",
+  "biome": "Ashlands",
   "image": "assets/img/items/nidhgg-the-primal.png",
   "page": false,
   "recipe": {
@@ -11837,6 +12218,7 @@
  {
   "name": "Silver Sword",
   "nameEs": "Espada de plata",
+  "biome": "Mountain",
   "image": "assets/img/items/silver-sword.png",
   "recipe": {
    "station": "Forge",
@@ -11874,6 +12256,7 @@
  {
   "name": "Slayer",
   "nameEs": "Asesina",
+  "biome": "Ashlands",
   "image": "assets/img/items/slayer.png",
   "recipe": {
    "station": "Black Forge",
@@ -11905,6 +12288,7 @@
  {
   "name": "Brutal Slayer",
   "nameEs": "Asesina brutal",
+  "biome": "Ashlands",
   "image": "assets/img/items/brutal-slayer.png",
   "recipe": {
    "station": "Black Forge",
@@ -11936,6 +12320,7 @@
  {
   "name": "Scourging Slayer",
   "nameEs": "Asesina tempestuosa",
+  "biome": "Ashlands",
   "image": "assets/img/items/scourging-slayer.png",
   "recipe": {
    "station": "Black Forge",
@@ -11967,6 +12352,7 @@
  {
   "name": "Primal Slayer",
   "nameEs": "Asesina primigenia",
+  "biome": "Ashlands",
   "image": "assets/img/items/primal-slayer.png",
   "recipe": {
    "station": "Black Forge",
@@ -11998,6 +12384,7 @@
  {
   "name": "Wooden Sword",
   "nameEs": "Espada de madera",
+  "biome": "Black Forest",
   "image": "assets/img/items/wooden-sword.png",
   "page": false,
   "recipe": {
@@ -12030,6 +12417,7 @@
  {
   "name": "Nord Greatsword",
   "nameEs": "Espadón nord",
+  "biome": "Deep North",
   "image": "assets/img/items/nord-greatsword.png",
   "page": false,
   "recipe": {
@@ -12062,6 +12450,7 @@
  {
   "name": "Thunderblood Greatsword",
   "nameEs": "Espadón de sangre de trueno",
+  "biome": "Deep North",
   "image": "assets/img/items/thunderblood-greatsword.png",
   "page": false,
   "recipe": {
@@ -12094,6 +12483,7 @@
  {
   "name": "Frostfire Greatsword",
   "nameEs": "Espadón de fuego gélido",
+  "biome": "Deep North",
   "image": "assets/img/items/frostfire-greatsword.png",
   "page": false,
   "recipe": {
@@ -12126,6 +12516,7 @@
  {
   "name": "Cast: Nord Greatsword",
   "nameEs": "Pieza fundida: espadón nord",
+  "biome": "Deep North",
   "image": "assets/img/items/cast-nord-greatsword.png",
   "page": false,
   "recipe": {
@@ -12158,6 +12549,7 @@
  {
   "name": "Bracelets of the Brave",
   "nameEs": "Brazaletes de Valentía",
+  "biome": "Plains",
   "image": "assets/img/items/bracelets-of-the-brave.png",
   "recipe": {
    "station": "Forge",
@@ -12189,6 +12581,7 @@
  {
   "name": "Evasion Mantle",
   "nameEs": "Manto de Evasión",
+  "biome": "Plains",
   "image": "assets/img/items/evasion-mantle.png",
   "recipe": {
    "station": "Forge",
@@ -12220,6 +12613,7 @@
  {
   "name": "Neckstabber",
   "nameEs": "Degollador",
+  "biome": "Deep North",
   "image": "assets/img/items/neckstabber.png",
   "page": false,
   "recipe": {
@@ -12252,6 +12646,7 @@
  {
   "name": "Witch Crown",
   "nameEs": "Corona de bruja",
+  "biome": "Deep North",
   "image": "assets/img/items/witch-crown.png",
   "page": false,
   "recipe": {
@@ -12284,6 +12679,7 @@
  {
   "name": "Heart of the Forest",
   "nameEs": "Corazón del Bosque",
+  "biome": "Black Forest",
   "image": "assets/img/items/heart-of-the-forest.png",
   "recipe": {
    "station": "Forge",
@@ -12315,6 +12711,7 @@
  {
   "name": "Bronze Pendant",
   "nameEs": "Colgante de Bronce",
+  "biome": "Black Forest",
   "image": "assets/img/items/bronze-pendant.png",
   "recipe": {
    "station": "Forge",
@@ -12346,6 +12743,7 @@
  {
   "name": "Pulsating Earrings",
   "nameEs": "Pendientes Pulsantes",
+  "biome": "Mistlands",
   "image": "assets/img/items/pulsating-earrings.png",
   "recipe": {
    "station": "Black Forge",
@@ -12377,6 +12775,7 @@
  {
   "name": "Fins of Destiny",
   "nameEs": "Aletas del Destino",
+  "biome": "Ocean",
   "image": "assets/img/items/fins-of-destiny.png",
   "recipe": {
    "station": "Forge",
@@ -12408,6 +12807,7 @@
  {
   "name": "Jrmundling",
   "nameEs": "Jörmundling ",
+  "biome": "Ashlands",
   "image": "assets/img/items/jrmundling.png",
   "page": false,
   "recipe": {
@@ -12446,6 +12846,7 @@
  {
   "name": "Brimstone",
   "nameEs": "Corazón de fuego",
+  "biome": "Ashlands",
   "image": "assets/img/items/brimstone.png",
   "recipe": {
    "station": "Black Forge",
@@ -12483,6 +12884,7 @@
  {
   "name": "Iron Brooch",
   "nameEs": "Broche de hierro",
+  "biome": "Swamp",
   "image": "assets/img/items/iron-brooch.png",
   "recipe": {
    "station": "Forge",
@@ -12514,6 +12916,7 @@
  {
   "name": "Nimble Anklet",
   "nameEs": "Tobillera",
+  "biome": "Swamp",
   "image": "assets/img/items/nimble-anklet.png",
   "recipe": {
    "station": "Forge",
@@ -12545,6 +12948,7 @@
  {
   "name": "Resounding Shackle",
   "nameEs": "Grillete resonante",
+  "biome": "Mistlands",
   "image": "assets/img/items/resounding-shackle.png",
   "recipe": {
    "station": "Black Forge",
@@ -12582,6 +12986,7 @@
  {
   "name": "Wolf Sight",
   "nameEs": "Vista de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-sight.png",
   "recipe": {
    "station": "Forge",
@@ -12613,6 +13018,7 @@
  {
   "name": "Crystal Heart",
   "nameEs": "Corazón de cristal",
+  "biome": "Mountain",
   "image": "assets/img/items/crystal-heart.png",
   "recipe": {
    "station": "Forge",
@@ -12644,6 +13050,7 @@
  {
   "name": "Turnip Stew",
   "nameEs": "Cocido de nabos",
+  "biome": "Swamp",
   "image": "assets/img/items/turnip-stew.png",
   "recipe": {
    "station": "Cauldron",
@@ -12669,6 +13076,7 @@
  {
   "name": "Black Metal Missile",
   "nameEs": "Proyectil de metal negro",
+  "biome": "Plains",
   "image": "assets/img/items/black-metal-missile.png",
   "recipe": {
    "station": "Artisan Table",
@@ -12694,6 +13102,7 @@
  {
   "name": "Bloodgold Missile",
   "nameEs": "Proyectil de oro sanguino",
+  "biome": "Deep North",
   "image": "assets/img/items/bloodgold-missile.png",
   "page": false,
   "recipe": {
@@ -12720,6 +13129,7 @@
  {
   "name": "Flametal Missile",
   "nameEs": "Misil de llametal",
+  "biome": "Ashlands",
   "image": "assets/img/items/flametal-missile.png",
   "recipe": {
    "station": "Artisan Table",
@@ -12745,6 +13155,7 @@
  {
   "name": "Wooden Missile",
   "nameEs": "Proyectil de madera",
+  "biome": "Mountain",
   "image": "assets/img/items/wooden-missile.png",
   "recipe": {
    "station": "Artisan Table",
@@ -12770,6 +13181,7 @@
  {
   "name": "Unbaked Sweetbread",
   "nameEs": "Pan dulce sin hornear",
+  "biome": "Plains",
   "image": "assets/img/items/unbaked-sweetbread.png",
   "page": false,
   "recipe": {
@@ -12808,6 +13220,7 @@
  {
   "name": "Wolf Jerky",
   "nameEs": "Cecina de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-jerky.png",
   "recipe": {
    "station": "Cauldron",
@@ -12833,6 +13246,7 @@
  {
   "name": "Wolf Skewer",
   "nameEs": "Pincho de lobo",
+  "biome": "Mountain",
   "image": "assets/img/items/wolf-skewer.png",
   "recipe": {
    "station": "Cauldron",
@@ -12864,6 +13278,7 @@
  {
   "name": "Yggdrasil Porridge",
   "nameEs": "Papilla de Yggdrasil",
+  "biome": "Mistlands",
   "image": "assets/img/items/yggdrasil-porridge.png",
   "recipe": {
    "station": "Cauldron",
