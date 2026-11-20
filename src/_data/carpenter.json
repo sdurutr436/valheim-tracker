@@ -1604,7 +1604,7 @@
  },
  {
   "name": "Darkwood Beam 67°",
-  "nameEs": null,
+  "nameEs": "Viga de madera oscura 67°",
   "image": "assets/img/items/darkwood-beam-67.png",
   "page": false,
   "biome": "Plains"
@@ -9929,19 +9929,19 @@
  },
  {
   "name": "Small Storage Display",
-  "nameEs": null,
+  "nameEs": "Expositor de almacenamiento pequeño",
   "image": "assets/img/items/small-storage-display.png",
   "page": false
  },
  {
   "name": "Medium Storage Display",
-  "nameEs": null,
+  "nameEs": "Expositor de almacenamiento mediano",
   "image": "assets/img/items/medium-storage-display.png",
   "page": false
  },
  {
   "name": "Large Storage Display",
-  "nameEs": null,
+  "nameEs": "Expositor de almacenamiento grande",
   "image": "assets/img/items/large-storage-display.png",
   "page": false
  }

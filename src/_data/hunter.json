@@ -71,7 +71,7 @@
  },
  {
   "name": "Spiritcaller Bjorn",
-  "nameEs": null,
+  "nameEs": "Bjorn invocaespíritus",
   "biome": "Deep North"
  },
  {
@@ -121,7 +121,7 @@
  },
  {
   "name": "Spiritcaller Boar",
-  "nameEs": null,
+  "nameEs": "Jabalí invocaespíritus",
   "biome": "Deep North"
  },
  {
@@ -161,7 +161,7 @@
  },
  {
   "name": "Lord Reto",
-  "nameEs": null,
+  "nameEs": "Lord Reto",
   "biome": "Ashlands"
  },
  {
@@ -201,7 +201,7 @@
  },
  {
   "name": "Draugr Elite",
-  "nameEs": "Draugr Elite",
+  "nameEs": "Draugr de élite",
   "biome": "Swamp"
  },
  {
@@ -261,17 +261,17 @@
  },
  {
   "name": "Geirrhafa",
-  "nameEs": null,
+  "nameEs": "Geirrhafa",
   "biome": "Mountain"
  },
  {
   "name": "Kall Fimbulbringer (Phase 1)",
-  "nameEs": null,
+  "nameEs": "Kall Fimbulbringer (fase 1)",
   "biome": "Deep North"
  },
  {
   "name": "Kall Fimbulbringer (Phase 3)",
-  "nameEs": null,
+  "nameEs": "Kall Fimbulbringer (fase 3)",
   "biome": "Deep North"
  },
  {
@@ -301,7 +301,7 @@
  },
  {
   "name": "Zil & Thungr",
-  "nameEs": null,
+  "nameEs": "Zil y Thungr",
   "biome": "Plains"
  },
  {
@@ -321,7 +321,7 @@
  },
  {
   "name": "Zil",
-  "nameEs": null,
+  "nameEs": "Zil",
   "biome": "Plains"
  },
  {
@@ -396,7 +396,7 @@
  },
  {
   "name": "Spiritcaller Moose",
-  "nameEs": null,
+  "nameEs": "Alce invocaespíritus",
   "biome": "Deep North"
  },
  {
@@ -461,7 +461,7 @@
  },
  {
   "name": "Brenna",
-  "nameEs": null,
+  "nameEs": "Brenna",
   "biome": "Black Forest"
  },
  {
@@ -526,7 +526,7 @@
  },
  {
   "name": "Spiritcaller Wolf",
-  "nameEs": null,
+  "nameEs": "Lobo invocaespíritus",
   "biome": "Deep North"
  },
  {
