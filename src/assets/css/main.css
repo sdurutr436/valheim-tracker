@@ -1,7 +1,7 @@
 /* Noche de niebla y fuego de hogar: lo pendiente es frío, lo completado brilla en ámbar */
 :root{
-  --night:#10181d;--slate:#1c2830;--slate-2:#26353e;--line:#465a66;--line-2:#6a808c;--chk:#8297a2;
-  --bone:#f5f0e6;--lichen:#b3c0ba;--ember:#f5a64f;
+  --night:#10181d;--slate:#1c2830;--slate-2:#233139;--line:#465a66;--line-2:#6a808c;--chk:#afbdc4;
+  --bone:#f5f0e6;--lichen:#b3c0ba;--ember:#f6ab59;
   --display:"Grenze",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
   --r:10px;
 }
@@ -15,9 +15,9 @@ img{display:block}
 .muted{color:var(--lichen)}
 
 /* Biomas: un color por bioma, lo usan chips, insignias, cabeceras y la franja de progreso */
-.b-meadows{--c:#9bd264}.b-black-forest{--c:#6cc295}.b-swamp{--c:#cfbf62}.b-mountain{--c:#9cccec}
-.b-plains{--c:#eacb68}.b-mistlands{--c:#bf9ae6}.b-ashlands{--c:#f58a57}.b-deep-north{--c:#7fdfea}
-.b-ocean{--c:#7aaaf0}.b-console{--c:var(--lichen)}
+.b-meadows{--c:#9bd264}.b-black-forest{--c:#80caa3}.b-swamp{--c:#cfbf62}.b-mountain{--c:#9cccec}
+.b-plains{--c:#eacb68}.b-mistlands{--c:#cdb0ec}.b-ashlands{--c:#f8a882}.b-deep-north{--c:#7fdfea}
+.b-ocean{--c:#98bdf3}.b-console{--c:var(--lichen)}
 
 /* Cabecera */
 header,main{max-width:1240px;margin:0 auto;padding-left:28px;padding-right:28px}
@@ -70,10 +70,10 @@ main{padding-top:24px;padding-bottom:64px}
 .tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:14px}
 .tools input,.tools select{height:40px;background:var(--slate);color:var(--bone);border:1px solid var(--line);border-radius:6px;padding:0 12px;font:inherit;font-size:16px}
 .tools input{flex:1;min-width:200px;max-width:340px;padding-left:36px;
-  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%2395a39d' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") no-repeat 12px center}
+  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23b3c0ba' stroke-width='2'%3E%3Ccircle cx='7' cy='7' r='5'/%3E%3Cpath d='m11 11 4 4'/%3E%3C/svg%3E") no-repeat 12px center}
 .tools input::placeholder{color:var(--lichen)}
 .tools select{appearance:none;padding-right:34px;cursor:pointer;
-  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%2395a39d' stroke-width='2'%3E%3Cpath d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center}
+  background:var(--slate) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23b3c0ba' stroke-width='2'%3E%3Cpath d='m1 1 5 5 5-5'/%3E%3C/svg%3E") no-repeat right 12px center}
 .tools input:hover,.tools select:hover{border-color:var(--line-2)}
 .tools :focus-visible{outline-offset:0;border-color:var(--bone)}
 .count{margin-left:auto;color:var(--lichen);font-size:15px;font-variant-numeric:tabular-nums}
@@ -104,18 +104,17 @@ thead th{position:sticky;top:0;z-index:1;background:var(--slate-2);padding:0;tex
 thead th:first-child{border-top-left-radius:var(--r)}thead th:last-child{border-top-right-radius:var(--r)}
 th button{all:unset;box-sizing:border-box;cursor:pointer;width:100%;padding:10px 14px;font-size:14px;font-weight:700;color:var(--lichen);user-select:none}
 th button:hover,th[aria-sort=ascending] button,th[aria-sort=descending] button{color:var(--bone)}
-th button i{font-style:normal;margin-left:6px;opacity:.7;font-size:10px}
-th[aria-sort=ascending] i,th[aria-sort=descending] i{opacity:1}
+th button i{font-style:normal;margin-left:6px;font-size:10px}
 th button:focus-visible{outline-offset:-2px}
 th.c button{text-align:center}
 td{padding:9px 14px;border-bottom:1px solid #2f3f49}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:not(.grp):hover{background:#ffffff0d}
+tbody tr:not(.grp):hover{background:#ffffff0a}
 td.c{text-align:center;width:110px}
 td.i{color:var(--lichen);width:56px;font-size:14px;font-variant-numeric:tabular-nums}
 td.x{color:var(--lichen);font-size:15px}
 td.bio{width:1%;white-space:nowrap} /* solo lo que ocupen las insignias (vacía al agrupar por bioma) */
-tr.done{background:color-mix(in srgb,var(--ember) 6%,transparent)}
+tr.done{background:color-mix(in srgb,var(--ember) 5%,transparent)}
 tr.done td.name{color:var(--lichen);text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--ember) 70%,transparent)}
 .note{font-size:14px;color:var(--lichen)}
 .empty{padding:48px 24px;text-align:center;color:var(--lichen)}
@@ -151,7 +150,7 @@ h2.grp:first-child{margin-top:0}
 .food-checks{display:flex;gap:6px;flex-wrap:wrap;padding:2px 14px 14px;font-size:15px}
 .food-checks label{cursor:pointer;display:flex;align-items:center;gap:7px;padding:3px 11px 3px 5px;border:1px solid var(--line);border-radius:99px;color:var(--lichen)}
 .food-checks label:hover{border-color:var(--chk);color:var(--bone)}
-.food-checks label:has(:checked){border-color:color-mix(in srgb,var(--ember) 55%,transparent);color:var(--bone);background:color-mix(in srgb,var(--ember) 12%,transparent)}
+.food-checks label:has(:checked){border-color:color-mix(in srgb,var(--ember) 55%,transparent);color:var(--bone)}
 .food-checks input[type=checkbox]{width:18px;height:18px;border-radius:50%;background-size:11px}
 .food-detail{border-top:1px solid var(--line);padding:12px 14px 14px;font-size:16px}
 .food-detail p{margin:0 0 8px}
