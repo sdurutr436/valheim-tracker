@@ -13,7 +13,7 @@ function groupHead(tab, bi) {
 const groupRow = (tab, bi, ncol) => `<tr class="grp b-${slug(BIOMES[bi])}"><th colspan="${ncol}" scope="colgroup" data-grp="${bi}">${groupHead(tab, bi)}</th></tr>`;
 
 function renderTable(el, tab, rows, sort) {
-  if (!rows.length) { el.innerHTML = '<div class="empty">Nada que mostrar con estos filtros.</div>'; return; }
+  if (!rows.length) { el.innerHTML = '<div class="empty">Nada coincide. Prueba otro nombre, otro estado o quita el filtro de bioma.</div>'; return; }
   const th = (k, label, cls = '') => `<th class="${cls}" aria-sort="${sort.k === k ? (sort.dir > 0 ? 'ascending' : 'descending') : 'none'}">
     <button data-sort="${k}">${label}<i>${sort.k === k ? (sort.dir > 0 ? '▲' : '▼') : '↕'}</i></button></th>`;
   const head = (tab.num ? th('i', '#') : '') + (tab.biome ? th('biome', 'Bioma') : '') + th('name', tab.label) +
