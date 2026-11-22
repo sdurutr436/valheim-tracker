@@ -1,4 +1,4 @@
-{#- Título, progreso total (lo rellena app.js) y selector de idioma #}
+{#- Título, progreso total (lo rellena app.js), acceso a la partida y selector de idioma #}
 <header class="top">
   <div class="brand">
     <h1>Valheim</h1>
@@ -8,5 +8,6 @@
     <div class="total-row"><b id="total"></b><span id="total-pct"></span></div>
     <div class="meter"><i id="total-bar"></i></div>
   </div>
+  <a class="hbtn" href="session.html">{% icon "floppy-disk" %}<span data-en="Save / load" data-es="Guardar / cargar">Save / load</span></a>
   {% include "components/lang.njk" %}
 </header>

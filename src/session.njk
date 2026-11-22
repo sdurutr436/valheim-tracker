@@ -1,0 +1,20 @@
+---
+layout: page.njk
+permalink: session.html
+title:
+  en: Start session · Valheim tracker
+  es: Inicio de sesión · Tracker de Valheim
+scripts: [session]
+---
+<h1 data-en="Start session" data-es="Inicio de sesión">Start session</h1>
+<p class="lead" data-en="Your progress is saved in this browser. To pick it up on another browser or PC, download your save file here and load it there." data-es="Tu progreso se guarda en este navegador. Para seguir en otro navegador u otro PC, descarga aquí tu partida y cárgala allí.">Your progress is saved in this browser. To pick it up on another browser or PC, download your save file here and load it there.</p>
+{#- session.js enseña los botones según haya partida (data-if="save") o no (data-if="nosave") #}
+<div class="session">
+  <a class="btn primary" href="index.html" data-if="save" hidden>{% icon "sign-in" %}<span data-en="Continue" data-es="Continuar">Continue</span></a>
+  <button class="btn primary" type="button" id="new" data-if="nosave" hidden>{% icon "plus" %}<span data-en="Start from scratch" data-es="Empezar de cero">Start from scratch</span></button>
+  <label class="btn">{% icon "upload-simple" %}<span data-en="Load save file (.json)" data-es="Cargar partida (.json)">Load save file (.json)</span>
+    <input type="file" id="file" accept=".json,application/json" class="sr-only"></label>
+  <button class="btn" type="button" id="download" data-if="save" hidden>{% icon "download-simple" %}<span data-en="Download save file" data-es="Descargar partida">Download save file</span></button>
+</div>
+<p class="msg" id="msg" role="alert"></p>
+<p class="muted" data-en="Nothing is uploaded: the file is read and written in your browser. Clearing the browser data deletes the progress, so keep a copy of your save file." data-es="No se sube nada: el archivo se lee y se escribe en tu navegador. Si borras los datos del navegador se pierde el progreso, así que guarda una copia de tu partida.">Nothing is uploaded: the file is read and written in your browser. Clearing the browser data deletes the progress, so keep a copy of your save file.</p>

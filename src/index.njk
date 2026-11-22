@@ -5,6 +5,8 @@ title:
   es: Valheim · Tracker de logros
 scripts: [model, app]
 ---
+{#- Sin partida en este navegador se empieza por la pantalla de inicio de sesión #}
+<script>hasSave() || location.replace('session.html');</script>
 {%- from "components/section.njk" import section %}
 <div class="wrap">
   {% include "components/header.njk" %}
