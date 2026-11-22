@@ -204,6 +204,7 @@ td.c{text-align:right;width:1%;white-space:nowrap}
 .page li+li{margin-top:4px}
 .page a:not(.btn){color:var(--accent)}
 .page a:not(.btn):hover{color:var(--cornsilk)}
+.page code{padding:1px 6px;border-radius:4px;background:var(--surface-2);font-size:.9em}
 .lead{font-size:18px;color:var(--muted)}
 html:not([lang=es]) .page [lang=es],html[lang=es] .page [lang=en]{display:none}
 .session{display:grid;gap:10px;max-width:360px;margin:24px 0 12px}
