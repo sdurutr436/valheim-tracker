@@ -218,16 +218,15 @@ html:not([lang=es]) .page [lang=es],html[lang=es] .page [lang=en]{display:none}
 
 /* Pie común */
 .foot{border-top:1px solid var(--line);background:var(--surface)}
-.foot-in{max-width:1180px;margin:0 auto;padding:28px 24px 36px;display:grid;grid-template-columns:1fr auto;gap:10px 32px;font-size:14px;color:var(--muted)}
-.foot p{margin:0;max-width:75ch}
-.foot-ai{color:var(--ink)}
-.foot-nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+.foot-in{max-width:1180px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;gap:8px 28px;font-size:13px;line-height:1.45;color:var(--muted)}
+.foot p{flex:1;margin:0}
+.foot-nav{display:flex;gap:18px;white-space:nowrap}
 .foot-nav a{color:var(--muted)}
 .foot-nav a:hover{color:var(--accent)}
-.social{grid-column:2;grid-row:1/span 3;align-self:center;list-style:none;margin:0;padding:0;display:flex;gap:8px}
-.social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:var(--r);color:var(--ink)}
+.social{list-style:none;margin:0;padding:0;display:flex;gap:6px}
+.social a{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:var(--r);color:var(--ink)}
 .social a:hover{border-color:var(--accent);color:var(--accent)}
-.social .icon{width:22px;height:22px}
+.social .icon{width:18px;height:18px}
 
 @media(max-width:1000px){
   .layout{grid-template-columns:minmax(0,1fr);gap:0}
@@ -238,8 +237,9 @@ html:not([lang=es]) .page [lang=es],html[lang=es] .page [lang=en]{display:none}
 }
 @media(max-width:560px){
   .wrap{padding:0 14px 56px}
-  .foot-in{grid-template-columns:1fr;padding:24px 14px 32px}
-  .social{grid-column:auto;grid-row:auto}
+  .foot-in{flex-wrap:wrap;padding:12px 14px}
+  .foot p{flex-basis:100%}
+  .foot-nav{margin-right:auto}
   h1{font-size:32px}
   .total{flex-basis:100%;order:1} /* EN/ES sube junto al título */
   .tab{grid-template-columns:28px 1fr;padding:10px}
