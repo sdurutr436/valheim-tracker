@@ -1,0 +1,16 @@
+---
+layout: base.njk
+---
+{#- Páginas de texto (inicio de sesión, legales): cabecera con enlace al tracker e idioma #}
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="index.html">
+      <p class="logo">Valheim</p>
+      <p data-en="Achievement tracker" data-es="Tracker de logros">Achievement tracker</p>
+    </a>
+    {% include "components/lang.njk" %}
+  </header>
+  <main class="page">
+    {{ content | safe }}
+  </main>
+</div>

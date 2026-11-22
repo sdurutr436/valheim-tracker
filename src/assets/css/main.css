@@ -27,13 +27,20 @@ img{display:block}
 .b-meadows{--c:#9ed368}.b-black-forest{--c:#8ed0ad}.b-swamp{--c:#d2c36c}.b-mountain{--c:#9cccec}.b-plains{--c:#eacb68}
 .b-mistlands{--c:#d1b6ed}.b-ashlands{--c:#f9b08e}.b-deep-north{--c:#7fdfea}.b-ocean{--c:#a3c4f4}.b-console,.b-other{--c:var(--muted)}
 
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px 120px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 72px}
 
 /* Cabecera */
 .top{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 32px;padding:40px 0 24px}
 .brand{margin-right:auto}
-h1{margin:0;font:800 40px/1 var(--display);letter-spacing:.04em;color:var(--accent)}
+h1,.brand .logo{margin:0;font:800 40px/1 var(--display);letter-spacing:.04em;color:var(--accent)}
 .brand p{margin:6px 0 0;color:var(--muted)}
+a.brand{text-decoration:none}
+a.brand:hover .logo{color:var(--cornsilk)}
+.icon{flex:none}
+.hbtn{display:flex;align-items:center;gap:7px;align-self:flex-start;padding:5px 12px;border:1px solid var(--line);border-radius:var(--r);
+  font-size:14px;font-weight:700;color:var(--muted);text-decoration:none}
+.hbtn .icon{width:18px;height:18px}
+.hbtn:hover{color:var(--ink);border-color:var(--line-2)}
 .total{flex:0 1 380px;min-width:240px}
 .total-row{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
 #total{font:800 30px/1 var(--display);font-variant-numeric:tabular-nums}
@@ -188,6 +195,39 @@ td.c{text-align:right;width:1%;white-space:nowrap}
 
 .empty{padding:80px 0;text-align:center;color:var(--muted)}
 
+/* Páginas de texto: inicio de sesión y legales. Los bloques largos van en los dos idiomas con lang="…" */
+.page{max-width:72ch}
+.page h1{font-size:32px;line-height:1.15;margin-bottom:12px}
+.page h2{margin:32px 0 8px;font:700 20px/1.25 var(--display);letter-spacing:.03em}
+.page p,.page ul{margin:0 0 12px}
+.page ul{padding-left:20px}
+.page li+li{margin-top:4px}
+.page a:not(.btn){color:var(--accent)}
+.page a:not(.btn):hover{color:var(--cornsilk)}
+.lead{font-size:18px;color:var(--muted)}
+html:not([lang=es]) .page [lang=es],html[lang=es] .page [lang=en]{display:none}
+.session{display:grid;gap:10px;max-width:360px;margin:24px 0 12px}
+.btn{display:flex;align-items:center;justify-content:center;gap:9px;min-height:46px;padding:0 18px;border:1px solid var(--line-2);border-radius:var(--r);
+  background:var(--surface-2);color:var(--ink);font:700 16px var(--body);text-decoration:none;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:color-mix(in srgb,var(--accent) 80%,var(--cornsilk))}
+.btn:has(:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.msg{min-height:1.5em;font-weight:700;color:var(--sunlit-clay)}
+
+/* Pie común */
+.foot{border-top:1px solid var(--line);background:var(--surface)}
+.foot-in{max-width:1180px;margin:0 auto;padding:28px 24px 36px;display:grid;grid-template-columns:1fr auto;gap:10px 32px;font-size:14px;color:var(--muted)}
+.foot p{margin:0;max-width:75ch}
+.foot-ai{color:var(--ink)}
+.foot-nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+.foot-nav a{color:var(--muted)}
+.foot-nav a:hover{color:var(--accent)}
+.social{grid-column:2;grid-row:1/span 3;align-self:center;list-style:none;margin:0;padding:0;display:flex;gap:8px}
+.social a{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:var(--r);color:var(--ink)}
+.social a:hover{border-color:var(--accent);color:var(--accent)}
+.social .icon{width:22px;height:22px}
+
 @media(max-width:1000px){
   .layout{grid-template-columns:minmax(0,1fr);gap:0}
   .spy{position:static;margin-bottom:12px}
@@ -196,7 +236,9 @@ td.c{text-align:right;width:1%;white-space:nowrap}
   .tabs{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:560px){
-  .wrap{padding:0 14px 80px}
+  .wrap{padding:0 14px 56px}
+  .foot-in{grid-template-columns:1fr;padding:24px 14px 32px}
+  .social{grid-column:auto;grid-row:auto}
   h1{font-size:32px}
   .total{flex-basis:100%;order:1} /* EN/ES sube junto al título */
   .tab{grid-template-columns:28px 1fr;padding:10px}

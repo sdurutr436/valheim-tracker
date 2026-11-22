@@ -122,22 +122,15 @@ $('main').addEventListener('click', e => {
   card.querySelector('.food-detail').hidden = !open;
 });
 
-// Idioma: textos con data-en/data-es, aria-label con data-en-label/data-es-label, y orden por nombre
+// Idioma: los textos los cambia lang.js; aquí el orden por nombre, el placeholder y los porcentajes
 function renderLang() {
-  document.documentElement.lang = lang;
-  document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
-  document.querySelectorAll('[data-en]').forEach(el => { el.textContent = (lang === 'es' && el.dataset.es) || el.dataset.en; });
-  document.querySelectorAll('[data-en-label]').forEach(el => { el.setAttribute('aria-label', (lang === 'es' && el.dataset.esLabel) || el.dataset.enLabel); });
   for (const box of document.querySelectorAll('.rows')) [...box.children]
     .sort((a, b) => a.querySelector('.nm').textContent.localeCompare(b.querySelector('.nm').textContent, lang))
     .forEach(el => box.append(el));
   $('#q').placeholder = tx({ en: `Search in ${cur.title.en}…`, es: `Buscar en ${cur.title.es}…` });
   renderTabs();
 }
-$('.lang').addEventListener('click', e => {
-  const b = e.target.closest('[data-lang]');
-  if (b) { setLang(b.dataset.lang); renderLang(); }
-});
+document.addEventListener('lang', renderLang);
 
 renderLang();
 selectTab(cur);

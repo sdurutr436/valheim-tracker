@@ -1,0 +1,21 @@
+{#- Pie común: aviso de IA, aviso de proyecto de fans, enlaces legales y redes #}
+<footer class="foot">
+  <div class="foot-in">
+    <p class="foot-ai" data-en="Built with the help of AI. This is a tracker for personal use and may contain mistakes: when in doubt, check the wiki." data-es="Creada con ayuda de IA. Es un tracker para uso personal y puede contener errores: ante la duda, consulta la wiki.">Built with the help of AI. This is a tracker for personal use and may contain mistakes: when in doubt, check the wiki.</p>
+    <p data-en="Free, ad-free, unofficial fan project. Not affiliated with Iron Gate AB or Coffee Stain. Valheim and its images belong to their owners." data-es="Proyecto de fans gratuito, sin anuncios y no oficial. Sin relación con Iron Gate AB ni Coffee Stain. Valheim y sus imágenes pertenecen a sus dueños.">Free, ad-free, unofficial fan project. Not affiliated with Iron Gate AB or Coffee Stain. Valheim and its images belong to their owners.</p>
+    <nav class="foot-nav" aria-label="Footer" data-en-label="Footer" data-es-label="Pie de página">
+      <a href="session.html" data-en="Save / load progress" data-es="Guardar / cargar progreso">Save / load progress</a>
+      <a href="legal.html" data-en="Legal notice" data-es="Aviso legal">Legal notice</a>
+      <a href="privacy.html" data-en="Privacy" data-es="Privacidad">Privacy</a>
+    </nav>
+    <ul class="social">
+      {%- for s in [
+        ['GitHub repository', 'Repositorio en GitHub', 'https://github.com/sdurutr436/valheim-tracker', 'github-logo'],
+        ['X (Twitter)', 'X (Twitter)', 'https://x.com/soyusuardo', 'x-logo'],
+        ['LinkedIn', 'LinkedIn', 'https://www.linkedin.com/in/sergio-duran-utrera/', 'linkedin-logo']
+      ] %}
+      <li><a href="{{ s[2] }}" target="_blank" rel="noopener" aria-label="{{ s[0] }}" data-en-label="{{ s[0] }}" data-es-label="{{ s[1] }}">{% icon s[3] %}</a></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</footer>

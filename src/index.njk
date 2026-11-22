@@ -3,6 +3,7 @@ layout: base.njk
 title:
   en: Valheim · Achievement tracker
   es: Valheim · Tracker de logros
+scripts: [model, app]
 ---
 {%- from "components/section.njk" import section %}
 <div class="wrap">
@@ -47,3 +48,4 @@ title:
     </main>
   </div>
 </div>
+<script type="application/json" id="tracker-data">{{ tracker.client | dump | safe }}</script>

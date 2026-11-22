@@ -7,13 +7,16 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta name="color-scheme" content="dark">
 <link rel="stylesheet" href="assets/css/main.css">
+{#- En el head para saber si hay partida guardada antes de pintar nada #}
+<script src="assets/js/store.js"></script>
 </head>
 <body>
 {{ content | safe }}
-<script type="application/json" id="tracker-data">{{ tracker.client | dump | safe }}</script>
+{% include "components/footer.njk" %}
 {# Scripts clásicos (no módulos) para que también funcione abriendo _site/index.html con doble clic #}
-<script src="assets/js/store.js"></script>
-<script src="assets/js/model.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="assets/js/lang.js"></script>
+{%- for s in scripts %}
+<script src="assets/js/{{ s }}.js"></script>
+{%- endfor %}
 </body>
 </html>

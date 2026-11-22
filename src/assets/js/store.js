@@ -15,11 +15,6 @@ const RENAMED = {
 for (const [ns, m] of Object.entries(RENAMED)) for (const [from, to] of Object.entries(m))
   if (state[ns]?.[from]) { state[ns][to] = state[ns][from]; delete state[ns][from]; }
 
-// Idioma de los nombres (en | es)
-const LANG_KEY = 'valheim-tracker-lang';
-let lang = localStorage.getItem(LANG_KEY) || 'en';
-function setLang(l) { lang = l; localStorage.setItem(LANG_KEY, l); }
-
 const isChecked = (ns, key, col) => !!state[ns]?.[key]?.[col];
 
 function setChecked(ns, key, col, value) {
