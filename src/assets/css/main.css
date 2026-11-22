@@ -8,6 +8,11 @@
   --display:"Cinzel",Georgia,serif;--body:"Alegreya Sans","Segoe UI",system-ui,sans-serif;
   --r:6px;--c:var(--accent);
 }
+/* Fuentes alojadas aquí (subconjunto latin, OFL): sin peticiones a Google, nada que declarar en privacidad */
+@font-face{font-family:"Alegreya Sans";font-weight:400;font-display:swap;src:url(../fonts/alegreya-sans-400.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:500;font-display:swap;src:url(../fonts/alegreya-sans-500.woff2) format("woff2")}
+@font-face{font-family:"Alegreya Sans";font-weight:700;font-display:swap;src:url(../fonts/alegreya-sans-700.woff2) format("woff2")}
+@font-face{font-family:"Cinzel";font-weight:400 900;font-display:swap;src:url(../fonts/cinzel.woff2) format("woff2")}
 *{box-sizing:border-box}
 [hidden]{display:none!important}
 body{margin:0;font:16px/1.5 var(--body);color:var(--ink);min-height:100vh;
