@@ -125,7 +125,6 @@ $('main').addEventListener('click', e => {
 // Idioma: textos con data-en/data-es, aria-label con data-en-label/data-es-label, y orden por nombre
 function renderLang() {
   document.documentElement.lang = lang;
-  document.title = tx({ en: 'Valheim · Achievement tracker', es: 'Valheim · Tracker de logros' });
   document.querySelectorAll('[data-lang]').forEach(b => b.setAttribute('aria-pressed', b.dataset.lang === lang));
   document.querySelectorAll('[data-en]').forEach(el => { el.textContent = (lang === 'es' && el.dataset.es) || el.dataset.en; });
   document.querySelectorAll('[data-en-label]').forEach(el => { el.setAttribute('aria-label', (lang === 'es' && el.dataset.esLabel) || el.dataset.enLabel); });
