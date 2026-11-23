@@ -50,7 +50,8 @@ const tabs = [
     guide: [{ en: 'Craft every weapon on the list once: melee weapons, bows, crossbows, staffs, shields, arrows, bolts and bombs. Upgrading is not needed.',
       es: 'Fabrica una vez cada arma de la lista: cuerpo a cuerpo, arcos, ballestas, bastones, escudos, flechas, virotes y bombas. No hace falta mejorarlas.' },
     { en: "Weapons are grouped by age: the most advanced material in the recipe decides it. The achievement doesn't say exactly what counts, so the list follows the wiki's weapons page.",
-      es: 'Las armas van por edades: la decide el material más avanzado de la receta. El logro no detalla qué cuenta, así que la lista sigue la página de armas de la wiki.' }] },
+      es: 'Las armas van por edades: la decide el material más avanzado de la receta. El logro no detalla qué cuenta, así que la lista sigue la página de armas de la wiki.' },
+    { en: 'Anything you mark here also counts for Artisan, and the other way round.', es: 'Lo que marques aquí también cuenta para Artesano, y al revés.' }] },
   { id: 'carpenter', ns: 'carpenter', icon: 'workbench', view: 'cards', cols: ['done'], title: { en: 'Carpenter', es: 'Carpintero' },
     done: { en: 'Built', es: 'Construido' },
     guide: [{ en: 'Build every structure on the list once.', es: 'Construye una vez cada estructura de la lista.' },
@@ -89,9 +90,14 @@ const raw = ns => ns !== 'blacksmith' ? load(ns) : load(ns).map(e => typeof e !=
   .map(w => ({ ...w, biome: ageOf(w) }));
 const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter', 'blacksmith'].map(ns => [ns, prep(raw(ns), ns)]));
 
-// Comidas que también pide Artesano: cada una apunta a su fila de cocina (app.js la da por creada al cocinarla o prepararla)
-const chefKey = new Map(lists.chef.map(r => [r.name, r.key]));
-lists.artisan.forEach(r => { r.chef = chefKey.get(r.name); });
+// El mismo objeto en dos listas: marcarlo en una (en esas columnas) lo da por hecho en la otra. Lo aplica model.js
+const link = (from, to, cols) => {
+  const key = new Map(lists[to].map(r => [r.name, r.key]));
+  lists[from].forEach(r => { if (key.has(r.name)) (r.links ||= []).push({ ns: to, key: key.get(r.name), cols }); });
+};
+link('artisan', 'chef', ['prep', 'cook']); // comida cocinada o preparada
+link('artisan', 'blacksmith', ['done']);   // arma creada
+link('blacksmith', 'artisan', ['done']);
 
 // Materiales de un bioma: suma de los ingredientes de todas sus recetas (Artisan, Carpenter)
 function materials(rows) {
@@ -113,7 +119,7 @@ const sections = Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [n
     : ['artisan', 'carpenter', 'blacksmith'].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
 
 // Al navegador solo lo necesario para progreso, filtros y búsqueda
-const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, chef }) => ({ key, bi, name, nameEs, cook, eat, intermediate, chef });
+const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, links }) => ({ key, bi, name, nameEs, cook, eat, intermediate, links });
 const client = {
   biomes: biomes.map(({ en, es, slug }) => ({ en, es, slug })),
   cols,
