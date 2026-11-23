@@ -42,7 +42,12 @@ function renderBiomes() {
 function syncChecks() {
   for (const el of panel().querySelectorAll('[data-key]')) {
     const r = ROWS[cur.ns].get(el.dataset.key);
-    el.querySelectorAll('input[data-k]').forEach(i => { i.checked = checked(cur, r, i.dataset.k); });
+    el.querySelectorAll('input[data-k]').forEach(i => {
+      i.checked = checked(cur, r, i.dataset.k);
+      // Marcada porque ya se cocinó o preparó: se cambia desde cocina, no aquí
+      i.disabled = i.dataset.k === 'done' && fromChef(r);
+      i.parentElement.title = i.disabled ? tx({ en: 'Marked from Master Chef', es: 'Marcado desde Maestro chef' }) : '';
+    });
     el.classList.toggle('done', complete(cur, r));
   }
 }
@@ -128,7 +133,7 @@ function renderLang() {
     .sort((a, b) => a.querySelector('.nm').textContent.localeCompare(b.querySelector('.nm').textContent, lang))
     .forEach(el => box.append(el));
   $('#q').placeholder = tx({ en: `Search in ${cur.title.en}…`, es: `Buscar en ${cur.title.es}…` });
-  renderTabs();
+  syncChecks(); renderTabs();
 }
 document.addEventListener('lang', renderLang);
 

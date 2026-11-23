@@ -163,6 +163,7 @@ td.c{text-align:right;width:1%;white-space:nowrap}
 .pill:has(:checked){border-color:var(--c);background:color-mix(in srgb,var(--c) 16%,var(--surface));color:var(--ink)}
 .pill:has(:checked)::before{content:"✓";color:var(--c);font-weight:700}
 .pill:has(:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.pill:has(:disabled){cursor:default} /* Artesano: comida ya marcada desde cocina */
 /* Cada logro de cocina enseña solo sus casillas */
 [data-ach=cook] .pill[data-k=eat],[data-ach=eat] .pill[data-k=prep],[data-ach=eat] .pill[data-k=cook]{display:none}
 

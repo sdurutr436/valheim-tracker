@@ -12,7 +12,9 @@ const TABS = DATA.tabs.map(t => ({
   ...t, cols: t.cols.map(k => DATA.cols[k]), rows: DATA.rows[t.ns].filter(r => !t.filter || r[t.filter]),
 }));
 
-const checked = (tab, r, k) => isChecked(tab.ns, r.key, k);
+// Una comida de Artesano ya cocinada o preparada en cocina cuenta como creada sin volver a marcarla
+const fromChef = r => !!r.chef && (isChecked('chef', r.chef, 'prep') || isChecked('chef', r.chef, 'cook'));
+const checked = (tab, r, k) => isChecked(tab.ns, r.key, k) || (k === 'done' && fromChef(r));
 const complete = (tab, r) => tab.cols.filter(c => applies(c, r)).every(c => checked(tab, r, c.k));
 
 // Casillas marcadas / casillas que cuentan (Preparado no cuenta)

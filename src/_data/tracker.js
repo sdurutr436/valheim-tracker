@@ -67,6 +67,9 @@ function prep(rows, ns) {
   });
 }
 const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter'].map(ns => [ns, prep(load(ns), ns)]));
+// Comidas que también pide Artesano: cada una apunta a su fila de cocina (app.js la da por creada al cocinarla o prepararla)
+const chefKey = new Map(lists.chef.map(r => [r.name, r.key]));
+lists.artisan.forEach(r => { r.chef = chefKey.get(r.name); });
 
 // Materiales de un bioma: suma de los ingredientes de todas sus recetas (Artisan, Carpenter)
 function materials(rows) {
@@ -87,7 +90,7 @@ const sections = Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [n
     : ['artisan', 'carpenter'].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
 
 // Al navegador solo lo necesario para progreso, filtros y búsqueda
-const lite = ({ key, bi, name, nameEs, cook, eat, intermediate }) => ({ key, bi, name, nameEs, cook, eat, intermediate });
+const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, chef }) => ({ key, bi, name, nameEs, cook, eat, intermediate, chef });
 const client = {
   biomes: biomes.map(({ en, es, slug }) => ({ en, es, slug })),
   cols,
