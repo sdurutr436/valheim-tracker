@@ -47,8 +47,9 @@ const todo = [...wanted].filter(([file]) => !existsSync(DIR + file));
 console.log(`${wanted.size} imágenes, ${todo.length} por descargar`);
 
 // En la wiki los iconos se llaman como el objeto ("Fenris Coat.png") o en minúsculas ("Wood wall 1x1.png");
-// las variantes de mayúsculas suelen ser redirecciones, así que se prueban las dos
-const candidates = name => [...new Set([name, name[0] + name.slice(1).toLowerCase()])].map(n => `File:${n}.png`);
+// las variantes de mayúsculas suelen ser redirecciones, así que se prueban las dos. Los dos puntos no valen en un
+// nombre de fichero: "Mead Base: Tasty" es "Mead Base - Tasty.png"
+const candidates = name => [...new Set([name, name[0] + name.slice(1).toLowerCase(), name.replace(/: /g, " - ")])].map(n => `File:${n}.png`);
 
 // título -> url de la imagen (50 títulos por consulta, siguiendo redirecciones)
 async function resolve(titles) {
