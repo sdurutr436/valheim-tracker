@@ -5,7 +5,9 @@
   <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ id }}">
     <span class="food-img">
       <span class="ph" aria-hidden="true">{{ r.name | first }}</span>
-      {% if r.image %}<img src="{{ r.image }}" alt="" width="48" height="48" loading="lazy" onerror="this.remove()">{% endif %}
+      {#- Alquimista: icono de la base hasta marcarla Preparada; después, el de la bebida (lo cambia el CSS) #}
+      {% if r.baseImage %}<img class="img-base" src="{{ r.baseImage }}" alt="" width="48" height="48" loading="lazy" onerror="this.remove()">{% endif %}
+      {% if r.image %}<img{% if r.baseImage %} class="img-made"{% endif %} src="{{ r.image }}" alt="" width="48" height="48" loading="lazy" onerror="this.remove()">{% endif %}
     </span>
     <span class="nm food-name" data-en="{{ r.name }}"{% if r.nameEs %} data-es="{{ r.nameEs }}"{% endif %}>{{ r.name }}</span>
     <span class="chev" aria-hidden="true">▾</span>

@@ -103,7 +103,7 @@ const fromArtisan = (ns, e) => artisanItem.get(e) ?? (() => { throw new Error(`$
 // cambia ninguna (sale de la Forja con bronce, como el caldero de aguamiel)
 const mead = m => {
   const b = fromArtisan('alchemist', m.base);
-  return { ...m, recipe: b.recipe, biome: ageOf(b, ['Fermenter']),
+  return { ...m, recipe: b.recipe, biome: ageOf(b, ['Fermenter']), baseImage: b.image, // la card enseña la base hasta prepararla
     note: `Makes “${b.name}”. Leave it in a Fermenter for 2 in-game days (48 h): it yields ${m.makes}.`,
     noteEs: `Se obtiene «${b.nameEs}». Déjala 2 días del juego (48 h) en un fermentador: rinde ${m.makes}.` };
 };
