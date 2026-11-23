@@ -45,6 +45,12 @@ const tabs = [
     done: { en: 'Crafted', es: 'Creado' },
     guide: [{ en: 'Craft every item on the list once. Upgrading is not needed.', es: 'Fabrica una vez cada objeto de la lista. No hace falta mejorarlos.' },
       { en: 'Under each biome you have every material its items need.', es: 'Bajo cada bioma tienes todos los materiales que piden sus objetos.' }] },
+  { id: 'blacksmith', ns: 'blacksmith', icon: 'forge', view: 'cards', cols: ['done'], title: { en: 'Blacksmith', es: 'Herrero' },
+    done: { en: 'Crafted', es: 'Creado' },
+    guide: [{ en: 'Craft every weapon on the list once: melee weapons, bows, crossbows, staffs, shields, arrows, bolts and bombs. Upgrading is not needed.',
+      es: 'Fabrica una vez cada arma de la lista: cuerpo a cuerpo, arcos, ballestas, bastones, escudos, flechas, virotes y bombas. No hace falta mejorarlas.' },
+    { en: "Weapons are grouped by age: the most advanced material in the recipe decides it. The achievement doesn't say exactly what counts, so the list follows the wiki's weapons page.",
+      es: 'Las armas van por edades: la decide el material más avanzado de la receta. El logro no detalla qué cuenta, así que la lista sigue la página de armas de la wiki.' }] },
   { id: 'carpenter', ns: 'carpenter', icon: 'workbench', view: 'cards', cols: ['done'], title: { en: 'Carpenter', es: 'Carpintero' },
     done: { en: 'Built', es: 'Construido' },
     guide: [{ en: 'Build every structure on the list once.', es: 'Construye una vez cada estructura de la lista.' },
@@ -66,7 +72,23 @@ function prep(rows, ns) {
     return { ...r, key, bi, image };
   });
 }
-const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter'].map(ns => [ns, prep(load(ns), ns)]));
+// Herrero va por edades: cada edad es un bioma, y la de un arma la marca lo más avanzado que pide su receta
+// (materiales y estación: una Forja negra ya es de las Tierras Nubladas).
+// ages.json dice en qué bioma se consigue cada cosa por primera vez; una que falte rompe el build a propósito
+const ages = load('ages');
+const firstBiome = new Map([ages.stations, ages.materials].flatMap(o => Object.entries(o).flatMap(([b, ms]) => ms.map(m => [m, b]))));
+const order = b => biomes.findIndex(x => x.en === b);
+const ageOf = w => [w.recipe.station, ...w.recipe.ingredients.map(i => i.name)].map(n => firstBiome.get(n)
+  ?? (() => { throw new Error(`ages.json: falta "${n}" (receta de ${w.name})`); })())
+  .reduce((a, b) => order(b) > order(a) ? b : a, 'Meadows');
+
+// blacksmith.json nombra objetos de Artesano y solo trae enteros los que Artesano no tiene (los que se hacen a mano…)
+const artisanItem = new Map(load('artisan').map(a => [a.name, a]));
+const raw = ns => ns !== 'blacksmith' ? load(ns) : load(ns).map(e => typeof e !== 'string' ? e
+  : artisanItem.get(e) ?? (() => { throw new Error(`blacksmith.json: "${e}" no está en artisan.json`); })())
+  .map(w => ({ ...w, biome: ageOf(w) }));
+const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter', 'blacksmith'].map(ns => [ns, prep(raw(ns), ns)]));
+
 // Comidas que también pide Artesano: cada una apunta a su fila de cocina (app.js la da por creada al cocinarla o prepararla)
 const chefKey = new Map(lists.chef.map(r => [r.name, r.key]));
 lists.artisan.forEach(r => { r.chef = chefKey.get(r.name); });
@@ -84,10 +106,11 @@ const plan = Object.fromEntries(shopping.map(b => [b.en, b]));
 
 // Secciones por bioma de cada lista, en orden de progresión; dentro, por nombre
 const sections = Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [ns, biomes
-  .map(b => ({ biome: b, rows: rows.filter(r => r.bi === b.i).sort((x, y) => x.name.localeCompare(y.name)) }))
+  .map(b => ({ biome: ns === 'blacksmith' ? { ...b, ...ages.ages[b.en] } : b, // en Herrero la sección lleva el nombre de la edad
+    rows: rows.filter(r => r.bi === b.i).sort((x, y) => x.name.localeCompare(y.name)) }))
   .filter(s => s.rows.length)
   .map(s => ns === 'chef' ? { ...s, items: plan[s.biome.en]?.items ?? [], steps: plan[s.biome.en]?.steps ?? [] }
-    : ['artisan', 'carpenter'].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
+    : ['artisan', 'carpenter', 'blacksmith'].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
 
 // Al navegador solo lo necesario para progreso, filtros y búsqueda
 const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, chef }) => ({ key, bi, name, nameEs, cook, eat, intermediate, chef });

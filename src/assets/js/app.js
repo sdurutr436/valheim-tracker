@@ -34,6 +34,10 @@ function renderBiomes() {
     sec.classList.toggle('complete', rs.length > 0 && d === rs.length);
     sec.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
     li.hidden = !rs.length;
+    // El índice se llama como las secciones del logro actual (biomas, o edades en Herrero)
+    const name = li.querySelector('.spy-name'), h = sec.querySelector('h2');
+    Object.assign(name.dataset, { en: h.dataset.en, es: h.dataset.es });
+    name.textContent = tx(h.dataset);
     li.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
     li.style.setProperty('--p', pct(d, rs.length) + '%');
   }

@@ -55,7 +55,7 @@ a.brand:hover .logo{color:var(--cornsilk)}
 .lang button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
 /* Pestañas de logro */
-.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:28px}
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-bottom:28px}
 .tab{all:unset;box-sizing:border-box;cursor:pointer;position:relative;overflow:hidden;display:grid;grid-template-columns:36px 1fr;column-gap:12px;align-items:center;
   padding:12px 14px 14px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--surface-2),var(--surface)) var(--surface-2);color:var(--muted)}
 .tab img{grid-row:span 2;width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 2px 2px #0009)}
@@ -234,9 +234,10 @@ html:not([lang=es]) .page [lang=es],html[lang=es] .page [lang=en]{display:none}
   .spy{position:static;margin-bottom:12px}
   .spy ul{display:flex;overflow-x:auto;gap:6px;padding-bottom:6px}
   .spy li{flex:none;min-width:140px}
-  .tabs{grid-template-columns:repeat(2,1fr)}
+  .tabs{grid-template-columns:repeat(3,1fr)}
 }
 @media(max-width:560px){
+  .tabs{grid-template-columns:repeat(2,1fr)}
   .wrap{padding:0 14px 56px}
   .foot-in{flex-wrap:wrap;padding:12px 14px}
   .foot p{flex-basis:100%}
