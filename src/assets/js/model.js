@@ -12,9 +12,10 @@ const TABS = DATA.tabs.map(t => ({
   ...t, cols: t.cols.map(k => DATA.cols[k]), rows: DATA.rows[t.ns].filter(r => !t.filter || r[t.filter]),
 }));
 
-// Hecho en otra lista (comida ya cocinada, arma ya creada…): cuenta aquí sin volver a marcarlo. Devuelve ese enlace
-const linkedDone = r => r.links?.find(l => l.cols.some(c => isChecked(l.ns, l.key, c)));
-const checked = (tab, r, k) => isChecked(tab.ns, r.key, k) || (k === 'done' && !!linkedDone(r));
+// Hecho en otra lista (comida ya cocinada, arma ya creada…): cuenta aquí, en la columna k del enlace, sin volver
+// a marcarlo. Devuelve ese enlace
+const linkedDone = (r, k) => r.links?.find(l => l.k === k && l.cols.some(c => isChecked(l.ns, l.key, c)));
+const checked = (tab, r, k) => isChecked(tab.ns, r.key, k) || !!linkedDone(r, k);
 const complete = (tab, r) => tab.cols.filter(c => applies(c, r)).every(c => checked(tab, r, c.k));
 
 // Casillas marcadas / casillas que cuentan (Preparado no cuenta)

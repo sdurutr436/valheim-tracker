@@ -90,10 +90,11 @@ const raw = ns => ns !== 'blacksmith' ? load(ns) : load(ns).map(e => typeof e !=
   .map(w => ({ ...w, biome: ageOf(w) }));
 const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter', 'blacksmith'].map(ns => [ns, prep(raw(ns), ns)]));
 
-// El mismo objeto en dos listas: marcarlo en una (en esas columnas) lo da por hecho en la otra. Lo aplica model.js
-const link = (from, to, cols) => {
+// El mismo objeto en dos listas: marcarlo en la de destino (en esas columnas) lo da por hecho en la de origen,
+// en su columna k (Hecho, si no se dice). Lo aplica model.js
+const link = (from, to, cols, k = 'done') => {
   const key = new Map(lists[to].map(r => [r.name, r.key]));
-  lists[from].forEach(r => { if (key.has(r.name)) (r.links ||= []).push({ ns: to, key: key.get(r.name), cols }); });
+  lists[from].forEach(r => { if (key.has(r.name)) (r.links ||= []).push({ ns: to, key: key.get(r.name), cols, k }); });
 };
 link('artisan', 'chef', ['prep', 'cook']); // comida cocinada o preparada
 link('artisan', 'blacksmith', ['done']);   // arma creada

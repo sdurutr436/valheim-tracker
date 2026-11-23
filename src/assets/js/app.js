@@ -46,9 +46,10 @@ function renderBiomes() {
 function syncRow(el) {
   const r = ROWS[cur.ns].get(el.dataset.key);
   el.querySelectorAll('input[data-k]').forEach(i => {
-    i.checked = checked(cur, r, i.dataset.k);
-    // Hecha solo en otra lista (cocina, Herrero, Artesano): se cambia allí, no aquí
-    const l = i.dataset.k === 'done' && !isChecked(cur.ns, r.key, 'done') && linkedDone(r);
+    const k = i.dataset.k;
+    i.checked = checked(cur, r, k);
+    // Marcada solo en otra lista (cocina, Herrero, Artesano): se cambia allí, no aquí
+    const l = !isChecked(cur.ns, r.key, k) && linkedDone(r, k);
     const t = l && TABS.find(t => t.ns === l.ns);
     i.disabled = !!l;
     i.parentElement.title = t ? tx({ en: `Marked in ${t.title.en}`, es: `Marcado en ${t.title.es}` }) : '';
