@@ -2610,8 +2610,8 @@
   "biome": "Deep North",
   "image": "assets/img/items/unbaked-poteitr.png",
   "recipe": {
-   "station": "Cauldron",
-   "stationEs": "Caldero",
+   "station": "Food Preparation Table",
+   "stationEs": "Mesa para preparación de alimentos",
    "level": 7,
    "ingredients": [
     {
@@ -5493,76 +5493,10 @@
    "level": 1,
    "ingredients": [
     {
-     "name": "Perch",
+     "name": "Any Fish",
      "qty": 1,
-     "image": "assets/img/items/perch.png",
-     "nameEs": "Perca"
-    },
-    {
-     "name": "Pike",
-     "qty": 1,
-     "image": "assets/img/items/pike.png",
-     "nameEs": "Lucio"
-    },
-    {
-     "name": "Tuna",
-     "qty": 1,
-     "image": "assets/img/items/tuna.png",
-     "nameEs": "Atún"
-    },
-    {
-     "name": "Tetra",
-     "qty": 1,
-     "image": "assets/img/items/tetra.png",
-     "nameEs": "Tetra"
-    },
-    {
-     "name": "Trollfish",
-     "qty": 1,
-     "image": "assets/img/items/trollfish.png",
-     "nameEs": "Pez troll"
-    },
-    {
-     "name": "Giant Herring",
-     "qty": 1,
-     "image": "assets/img/items/giant-herring.png",
-     "nameEs": "Arenque gigante"
-    },
-    {
-     "name": "Grouper",
-     "qty": 1,
-     "image": "assets/img/items/grouper.png",
-     "nameEs": "Mero"
-    },
-    {
-     "name": "Coral Cod",
-     "qty": 1,
-     "image": "assets/img/items/coral-cod.png",
-     "nameEs": "Bacalao de coral"
-    },
-    {
-     "name": "Anglerfish",
-     "qty": 1,
-     "image": "assets/img/items/anglerfish.png",
-     "nameEs": "Rape"
-    },
-    {
-     "name": "Northern Salmon",
-     "qty": 1,
-     "image": "assets/img/items/northern-salmon.png",
-     "nameEs": "Salmón norteño"
-    },
-    {
-     "name": "Magmafish",
-     "qty": 1,
-     "image": "assets/img/items/magmafish.png",
-     "nameEs": "Magmapez"
-    },
-    {
-     "name": "Pufferfish",
-     "qty": 1,
-     "image": "assets/img/items/pufferfish.png",
-     "nameEs": "Pez globo"
+     "image": "assets/img/items/any-fish.png",
+     "nameEs": "Cualquier pez"
     }
    ],
    "yield": 1
@@ -7074,8 +7008,8 @@
   "biome": "Deep North",
   "image": "assets/img/items/raw-kale-chips.png",
   "recipe": {
-   "station": "Cauldron",
-   "stationEs": "Caldero",
+   "station": "Food Preparation Table",
+   "stationEs": "Mesa para preparación de alimentos",
    "level": 6,
    "ingredients": [
     {
@@ -8950,8 +8884,8 @@
   "biome": "Deep North",
   "image": "assets/img/items/oven-pancake-batter.png",
   "recipe": {
-   "station": "Cauldron",
-   "stationEs": "Caldero",
+   "station": "Food Preparation Table",
+   "stationEs": "Mesa para preparación de alimentos",
    "level": 6,
    "ingredients": [
     {
