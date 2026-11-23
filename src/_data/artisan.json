@@ -13364,5 +13364,181 @@
    ],
    "yield": 1
   }
+ },
+ {
+  "name": "Tankard",
+  "nameEs": "Jarra",
+  "biome": "Black Forest",
+  "image": "assets/img/items/tankard.png",
+  "recipe": {
+   "station": "Workbench",
+   "stationEs": "Banco de trabajo",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Finewood",
+     "qty": 5,
+     "image": "assets/img/items/finewood.png",
+     "nameEs": "Madera noble"
+    },
+    {
+     "name": "Resin",
+     "qty": 2,
+     "image": "assets/img/items/resin.png",
+     "nameEs": "Resina"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Horn of Celebration",
+  "nameEs": "Cuerno de celebración",
+  "biome": "Swamp",
+  "image": "assets/img/items/horn-of-celebration.png",
+  "recipe": {
+   "station": "Workbench",
+   "stationEs": "Banco de trabajo",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Bronze",
+     "qty": 2,
+     "image": "assets/img/items/bronze.png",
+     "nameEs": "Bronce"
+    },
+    {
+     "name": "Troll Hide",
+     "qty": 2,
+     "image": "assets/img/items/troll-hide.png",
+     "nameEs": "Piel de trol"
+    },
+    {
+     "name": "Iron",
+     "qty": 2,
+     "image": "assets/img/items/iron.png",
+     "nameEs": "Hierro"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Dvergr Lantern",
+  "nameEs": "Linterna dvergr",
+  "biome": "Mistlands",
+  "image": "assets/img/items/dvergr-lantern.png",
+  "recipe": {
+   "station": "Black Forge",
+   "stationEs": "Forja negra",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Bronze",
+     "qty": 2,
+     "image": "assets/img/items/bronze.png",
+     "nameEs": "Bronce"
+    },
+    {
+     "name": "Surtling Core",
+     "qty": 1,
+     "image": "assets/img/items/surtling-core.png",
+     "nameEs": "Corazón de surtling"
+    },
+    {
+     "name": "Crystal",
+     "qty": 1,
+     "image": "assets/img/items/crystal.png",
+     "nameEs": "Cristal"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Basalt Bomb",
+  "nameEs": "Bomba de basalto",
+  "biome": "Ashlands",
+  "image": "assets/img/items/basalt-bomb.png",
+  "recipe": {
+   "station": "Workbench",
+   "stationEs": "Banco de trabajo",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Asksvin Hide",
+     "qty": 1,
+     "image": "assets/img/items/asksvin-hide.png",
+     "nameEs": "Pellejo de cenicerdo"
+    },
+    {
+     "name": "Asksvin Bladder",
+     "qty": 1,
+     "image": "assets/img/items/asksvin-bladder.png",
+     "nameEs": "Vejiga de cenicerdo"
+    },
+    {
+     "name": "Proustite Powder",
+     "qty": 3,
+     "image": "assets/img/items/proustite-powder.png",
+     "nameEs": "Polvo de proustita"
+    }
+   ],
+   "yield": 5
+  }
+ },
+ {
+  "name": "Snowball",
+  "nameEs": "Bola de nieve",
+  "biome": "Deep North",
+  "image": "assets/img/items/snowball.png",
+  "page": false,
+  "recipe": {
+   "station": "By hand",
+   "stationEs": "A mano",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Ice",
+     "qty": 5,
+     "image": "assets/img/items/ice.png",
+     "nameEs": "Hielo"
+    }
+   ],
+   "yield": 10
+  }
+ },
+ {
+  "name": "Snow Shovel",
+  "nameEs": "Pala de nieve",
+  "biome": "Deep North",
+  "image": "assets/img/items/snow-shovel.png",
+  "page": false,
+  "recipe": {
+   "station": "Black Forge",
+   "stationEs": "Forja negra",
+   "level": 3,
+   "ingredients": [
+    {
+     "name": "Finewood",
+     "qty": 5,
+     "image": "assets/img/items/finewood.png",
+     "nameEs": "Madera noble"
+    },
+    {
+     "name": "Flametal",
+     "qty": 4,
+     "image": "assets/img/items/flametal.png",
+     "nameEs": "Llametal"
+    },
+    {
+     "name": "Embers",
+     "qty": 2,
+     "image": "assets/img/items/embers.png",
+     "nameEs": "Brasas"
+    }
+   ],
+   "yield": 1
+  }
  }
 ]
