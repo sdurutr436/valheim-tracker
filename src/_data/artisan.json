@@ -13240,5 +13240,129 @@
    ],
    "yield": 1
   }
+ },
+ {
+  "name": "Club",
+  "nameEs": "Garrote",
+  "biome": "Meadows",
+  "image": "assets/img/items/club.png",
+  "recipe": {
+   "station": "By hand",
+   "stationEs": "A mano",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wood",
+     "qty": 6,
+     "image": "assets/img/items/wood.png",
+     "nameEs": "Madera"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Stone Axe",
+  "nameEs": "Hacha de piedra",
+  "biome": "Meadows",
+  "image": "assets/img/items/stone-axe.png",
+  "recipe": {
+   "station": "By hand",
+   "stationEs": "A mano",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wood",
+     "qty": 5,
+     "image": "assets/img/items/wood.png",
+     "nameEs": "Madera"
+    },
+    {
+     "name": "Stone",
+     "qty": 4,
+     "image": "assets/img/items/stone.png",
+     "nameEs": "Piedra"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Torch",
+  "nameEs": "Antorcha",
+  "biome": "Meadows",
+  "image": "assets/img/items/torch.png",
+  "recipe": {
+   "station": "By hand",
+   "stationEs": "A mano",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wood",
+     "qty": 1,
+     "image": "assets/img/items/wood.png",
+     "nameEs": "Madera"
+    },
+    {
+     "name": "Resin",
+     "qty": 1,
+     "image": "assets/img/items/resin.png",
+     "nameEs": "Resina"
+    }
+   ],
+   "yield": 1
+  }
+ },
+ {
+  "name": "Smoke Bomb",
+  "nameEs": "Bomba de humo",
+  "biome": "Ashlands",
+  "image": "assets/img/items/smoke-bomb.png",
+  "recipe": {
+   "station": "Workbench",
+   "stationEs": "Banco de trabajo",
+   "level": 1,
+   "ingredients": [
+    {
+     "name": "Smoke Puff",
+     "qty": 1,
+     "image": "assets/img/items/smoke-puff.png",
+     "nameEs": "Soplahumo"
+    },
+    {
+     "name": "Asksvin Bladder",
+     "qty": 1,
+     "image": "assets/img/items/asksvin-bladder.png",
+     "nameEs": "Vejiga de cenicerdo"
+    }
+   ],
+   "yield": 10
+  }
+ },
+ {
+  "name": "Hammer",
+  "nameEs": "Martillo",
+  "biome": "Meadows",
+  "image": "assets/img/items/hammer.png",
+  "recipe": {
+   "station": "By hand",
+   "stationEs": "A mano",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Wood",
+     "qty": 3,
+     "image": "assets/img/items/wood.png",
+     "nameEs": "Madera"
+    },
+    {
+     "name": "Stone",
+     "qty": 2,
+     "image": "assets/img/items/stone.png",
+     "nameEs": "Piedra"
+    }
+   ],
+   "yield": 1
+  }
  }
 ]
