@@ -1,0 +1,27 @@
+{
+ "ages": {
+  "Meadows": {"en": "Stone Age", "es": "Edad de piedra"},
+  "Black Forest": {"en": "Bronze Age", "es": "Edad del bronce"},
+  "Swamp": {"en": "Iron Age", "es": "Edad del hierro"},
+  "Mountain": {"en": "Silver Age", "es": "Edad de la plata"},
+  "Plains": {"en": "Black Metal Age", "es": "Edad del metal negro"},
+  "Mistlands": {"en": "Age of Mystery", "es": "Edad del misterio"},
+  "Ashlands": {"en": "Ragnarök Age", "es": "Edad del Ragnarök"},
+  "Deep North": {"en": "Fimbulwinter Age", "es": "Edad del Fimbulwinter"}
+ },
+ "stations": {
+  "Meadows": ["By hand", "Workbench"],
+  "Black Forest": ["Forge"],
+  "Mistlands": ["Black Forge", "Galdr Table"]
+ },
+ "materials": {
+  "Meadows": ["Curious Axe Head", "Deer Hide", "Deer Trophy", "Feathers", "Flint", "Leather Scraps", "Mysterious Axe Head", "Resin", "Stone", "Wood"],
+  "Black Forest": ["Bear Hide", "Bear Paw", "Bone Fragments", "Bronze", "Chitin", "Copper", "Corewood", "Finewood", "Skeleton Trophy", "Surtling Core", "Tin", "Troll Hide", "Troll Trophy"],
+  "Swamp": ["Ancient Bark", "Blob Trophy", "Chain", "Corked Vial", "Draugr Elite Trophy", "Guck", "Iron", "Ooze", "Root", "Serpent Scale", "Writhan Roots", "Ymir Flesh"],
+  "Mountain": ["Crystal", "Drake Trophy", "Fenris Claw", "Fenris Hair", "Freeze Gland", "Obsidian", "Silver", "Wolf Fang"],
+  "Plains": ["Black Metal", "Growth Trophy", "Linen Thread", "Needle", "Tar", "Vile Ribcage"],
+  "Mistlands": ["Bilebag", "Blood Clot", "Carapace", "Hook", "Mandible", "Refined Eitr", "Sap", "Scale Hide", "Wisp", "Yggdrasil Wood"],
+  "Ashlands": ["Ash Fang", "Ashwood", "Asksvin Bladder", "Asksvin Hide", "Berserkir Axes", "Bloodstone", "Bonemaw Tooth", "Celestial Feather", "Charred Bone", "Dyrnwyn Blade Fragment", "Dyrnwyn Hilt Fragment", "Dyrnwyn Tip Fragment", "Fiddlehead", "Flametal", "Flametal Mace", "Iolite", "Jade", "Morgen Sinew", "Nidhögg", "Proustite Powder", "Ripper", "Slayer", "Smoke Puff", "Splitnir", "Sulfur"],
+  "Deep North": ["Bloodgold", "Dead Pulp", "Embers", "Frostfire Essence", "Frozen Branch", "Hexen Trophy", "Ice", "Moose Trophy", "Mould: Nord Atgeir", "Mould: Nord Axe", "Mould: Nord Bow", "Mould: Nord Buckler", "Mould: Nord Crossbow", "Mould: Nord Dagger", "Mould: Nord Greataxe", "Mould: Nord Greatshield", "Mould: Nord Greatsword", "Mould: Nord Knucklechains", "Mould: Nord Mace", "Mould: Nord Shield", "Mould: Nord Sledge", "Mould: Nord Spear", "Mould: Nord Sword", "Nord Atgeir", "Nord Axe", "Nord Bow", "Nord Crossbow", "Nord Dagger", "Nord Greataxe", "Nord Greatsword", "Nord Knucklechains", "Nord Mace", "Nord Sledge", "Nord Spear", "Nord Sword", "Nornathread", "Pulp Trophy", "Seal Pelt", "Thunderblood Essence", "Timberwood"]
+ }
+}
