@@ -63,10 +63,14 @@ function rawFishStep(m) {
   return { kind: 'make', verb: { en: 'Prepare raw fish from', es: 'Prepara pescado crudo con' }, items: [{ ...label(info.get(key(i.name))), qty: i.qty * m.crafts }] };
 }
 
-// Plan de un bioma: ingredientes base + pasos en orden. En el juego solo caben 3 comidas a la vez,
-// así que se come en tandas de 3 y se vomita después de cada una. Se avanza por "niveles" de receta:
-// primero lo que se come tal cual, luego lo que se cocina con ingredientes base (carnes…), se come eso,
-// luego los platos que gastan esos cocinados, se comen, y así hasta el final.
+// ¿Pide algo que haya que cocinar antes, aunque sea dentro de otro preparado? (los festines)
+const needsCooked = k => recipes.get(k).ingredients.some(i => {
+  const r = recipes.get(key(i.name));
+  return !!r && (r.station !== 'Food Preparation Table' || needsCooked(key(i.name)));
+});
+
+// Plan de un bioma: ingredientes base + pasos en tres fases (prepara, cocina, come). En el juego solo caben
+// 3 comidas a la vez, así que al final se come en tandas de 3 y se vomita después de cada una.
 function plan(biome) {
   const targets = chef.filter(c => c.biome === biome && !(c.intermediate && !c.eat));
   const demand = new Map(), made = [];
@@ -85,22 +89,36 @@ function plan(biome) {
     .map(({ name, nameEs, image, qty }) => ({ name, nameEs: nameEs ?? null, image: image ?? null, qty }))
     .sort((a, b) => b.qty - a.qty || a.name.localeCompare(b.name));
 
-  const steps = [];
-  const maxDepth = Math.max(0, ...made.map(m => m.depth));
-  for (let d = 0; d <= maxDepth; d++) {
-    const group = made.filter(m => m.depth === d).sort((a, b) => (chefIndex.get(a.k) ?? 999) - (chefIndex.get(b.k) ?? 999));
-    // Trocear pescado en la mesa de preparación es su propio paso, antes de cocinar nada de ese nivel
-    const fish = group.find(m => m.k === RAW_FISH);
-    if (fish) steps.push(rawFishStep(fish));
-    // Lo que va al horno se separa en su propio paso ("Hornea") y dice qué se obtiene al hornearlo
-    const oven = group.filter(m => recipes.get(m.k).station === 'Stone Oven');
-    [group.filter(m => m !== fish && !oven.includes(m)), oven].filter(g => g.length).forEach(g => steps.push(makeStep(g, g === oven)));
-    const eat = targets.filter(t => depthOf(key(t.name)) === d);
-    for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', verb: { en: 'Eat', es: 'Come' }, items: eat.slice(i, i + 3).map(label) });
-  }
-  // Lo que no se recolecta sino que se pesca va al principio de la guía
+  // Por fases: se prepara todo, se cocina todo y luego se come. Dentro de cada fase, por niveles de receta
+  const isPrep = m => recipes.get(m.k).station === 'Food Preparation Table';
+  const byLevel = list => [...new Set(list.map(m => m.depth))].sort((a, b) => a - b)
+    .map(d => list.filter(m => m.depth === d).sort((a, b) => (chefIndex.get(a.k) ?? 999) - (chefIndex.get(b.k) ?? 999)));
+  const fish = made.find(m => m.k === RAW_FISH);
+  // Los festines se montan con platos ya cocinados: cierran la fase de cocina
+  const feast = made.filter(m => isPrep(m) && needsCooked(m.k));
+
+  const prepare = [];
+  // Lo que no se recolecta sino que se pesca va lo primero
   const fished = items.filter(i => FISHED.has(key(i.name)));
-  if (fished.length) steps.unshift({ kind: 'fish', verb: { en: 'Fish', es: 'Pesca' }, items: fished.map(i => ({ ...label(i), qty: i.qty })) });
+  if (fished.length) prepare.push({ kind: 'fish', verb: { en: 'Fish', es: 'Pesca' }, items: fished.map(i => ({ ...label(i), qty: i.qty })) });
+  if (fish) prepare.push(rawFishStep(fish));
+  byLevel(made.filter(m => isPrep(m) && m !== fish && !feast.includes(m))).forEach(g => prepare.push(makeStep(g)));
+
+  const cook = [];
+  // Lo que va al horno se separa en su propio paso ("Hornea") y dice qué se obtiene al hornearlo
+  byLevel(made.filter(m => !isPrep(m))).forEach(g => {
+    const oven = g.filter(m => recipes.get(m.k).station === 'Stone Oven');
+    [g.filter(m => !oven.includes(m)), oven].filter(x => x.length).forEach(x => cook.push(makeStep(x, x === oven)));
+  });
+  if (feast.length) cook.push({ ...makeStep(feast), verb: { en: 'Then prepare the feast', es: 'Después prepara el festín' } });
+
+  // Con todo hecho, se come en tandas de 3 (no caben más) y se vomita entre tandas
+  const eat = [...targets].sort((a, b) => depthOf(key(a.name)) - depthOf(key(b.name)));
+  const meals = [];
+  for (let i = 0; i < eat.length; i += 3) meals.push({ kind: 'eat', verb: { en: 'Eat', es: 'Come' }, items: eat.slice(i, i + 3).map(label) });
+
+  const steps = [[{ en: 'Prepare', es: 'Prepara' }, prepare], [{ en: 'Cook', es: 'Cocina' }, cook], [{ en: 'Eat', es: 'Come' }, meals]]
+    .filter(([, st]) => st.length).map(([title, st]) => ({ title, steps: st }));
   return { items, steps };
 }
 

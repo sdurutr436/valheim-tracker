@@ -133,7 +133,8 @@ details:not([open])>summary .chev{transform:rotate(-90deg)}
 .steps summary{cursor:pointer;font:700 14px var(--display);color:var(--ink);list-style:none;display:flex;gap:8px;align-items:center}
 .steps summary::before{content:"▸";color:var(--muted);transition:transform .2s}
 .steps[open] summary::before{transform:rotate(90deg)}
-.steps ol{margin:10px 0 0;padding-left:22px;display:grid;gap:6px;max-width:80ch;font-size:15px}
+.steps ol{margin:8px 0 0;padding-left:22px;display:grid;gap:6px;max-width:80ch;font-size:15px}
+.steps-h{max-width:80ch;margin:16px 0 0;padding-bottom:4px;border-bottom:1px solid var(--line);font:700 14px var(--display);letter-spacing:.04em;color:var(--c)}
 .steps b{color:var(--accent)}
 .steps em{color:var(--muted)}
 
