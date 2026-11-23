@@ -56,6 +56,13 @@ function makeStep(group, baking) {
   return step;
 }
 
+// "Prepara pescado crudo con 4× Cualquier pez": se nombra el pescado que se trocea, no el resultado
+const RAW_FISH = key('Raw Fish');
+function rawFishStep(m) {
+  const i = recipes.get(m.k).ingredients[0];
+  return { kind: 'make', verb: { en: 'Prepare raw fish from', es: 'Prepara pescado crudo con' }, items: [{ ...label(info.get(key(i.name))), qty: i.qty * m.crafts }] };
+}
+
 // Plan de un bioma: ingredientes base + pasos en orden. En el juego solo caben 3 comidas a la vez,
 // así que se come en tandas de 3 y se vomita después de cada una. Se avanza por "niveles" de receta:
 // primero lo que se come tal cual, luego lo que se cocina con ingredientes base (carnes…), se come eso,
@@ -82,9 +89,12 @@ function plan(biome) {
   const maxDepth = Math.max(0, ...made.map(m => m.depth));
   for (let d = 0; d <= maxDepth; d++) {
     const group = made.filter(m => m.depth === d).sort((a, b) => (chefIndex.get(a.k) ?? 999) - (chefIndex.get(b.k) ?? 999));
+    // Trocear pescado en la mesa de preparación es su propio paso, antes de cocinar nada de ese nivel
+    const fish = group.find(m => m.k === RAW_FISH);
+    if (fish) steps.push(rawFishStep(fish));
     // Lo que va al horno se separa en su propio paso ("Hornea") y dice qué se obtiene al hornearlo
     const oven = group.filter(m => recipes.get(m.k).station === 'Stone Oven');
-    [group.filter(m => !oven.includes(m)), oven].filter(g => g.length).forEach(g => steps.push(makeStep(g, g === oven)));
+    [group.filter(m => m !== fish && !oven.includes(m)), oven].filter(g => g.length).forEach(g => steps.push(makeStep(g, g === oven)));
     const eat = targets.filter(t => depthOf(key(t.name)) === d);
     for (let i = 0; i < eat.length; i += 3) steps.push({ kind: 'eat', verb: { en: 'Eat', es: 'Come' }, items: eat.slice(i, i + 3).map(label) });
   }
