@@ -21,14 +21,18 @@
   {%- if s.steps.length %}
   <details class="steps">
     <summary>{{ t('Steps in order', 'Pasos en orden') }}</summary>
+    {#- Tres fases: Prepara, Cocina, Come #}
+    {%- for g in s.steps %}
+    <p class="steps-h">{{ t(g.title.en, g.title.es) }}</p>
     <ol>
-      {%- for st in s.steps %}
+      {%- for st in g.steps %}
       <li><b data-en="{{ st.verb.en }}" data-es="{{ st.verb.es }}">{{ st.verb.en }}</b>
         {%- for i in st.items %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} {% if i.qty %}{{ i.qty }}× {% endif %}<span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% if i.hint %} <em>({{ t(i.hint.en, i.hint.es) }})</em>{% endif %}{% endfor %}.
         {%- if st.result %} <em>{{ t('You get', 'Se obtienen') }}{% for i in st.result %}{% if loop.last and not loop.first %} {{ t('and', 'y') }}{% elif not loop.first %},{% endif %} <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>{% endfor %}.</em>{% endif %}
         {%- if st.kind == 'eat' %} <em>{{ t('Vomit.', 'Vomita.') }}</em>{% endif %}</li>
       {%- endfor %}
     </ol>
+    {%- endfor %}
   </details>
   {%- endif %}
 </div>
