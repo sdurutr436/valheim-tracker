@@ -2161,10 +2161,24 @@
   "cook": true,
   "eat": true,
   "intermediate": false,
-  "note": "",
+  "note": "The wiki does not list its station yet; like the other late-game meats, the iron cooking station is assumed.",
   "image": "assets/img/items/cooked-moose-meat.png",
-  "recipe": null,
-  "nameEs": "Carne de alce cocinada"
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Moose Meat",
+     "qty": 1,
+     "image": "assets/img/items/moose-meat.png",
+     "nameEs": "Carne de alce"
+    }
+   ],
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
+  },
+  "nameEs": "Carne de alce cocinada",
+  "noteEs": "La wiki aún no indica su estación; como el resto de carnes avanzadas, se asume la estación de cocina de hierro."
  },
  {
   "name": "Lox Meat Pie",
@@ -2412,10 +2426,24 @@
   "cook": true,
   "eat": true,
   "intermediate": false,
-  "note": "",
+  "note": "The wiki does not list its station yet; like the other late-game meats, the iron cooking station is assumed.",
   "image": "assets/img/items/cooked-seal-blubber.png",
-  "recipe": null,
-  "nameEs": "Grasa de foca cocinada"
+  "recipe": {
+   "station": "Iron Cooking Station",
+   "level": null,
+   "ingredients": [
+    {
+     "name": "Seal Blubber",
+     "qty": 1,
+     "image": "assets/img/items/seal-blubber.png",
+     "nameEs": "Grasa de foca"
+    }
+   ],
+   "yield": 1,
+   "stationEs": "Estación de cocina de hierro"
+  },
+  "nameEs": "Grasa de foca cocinada",
+  "noteEs": "La wiki aún no indica su estación; como el resto de carnes avanzadas, se asume la estación de cocina de hierro."
  },
  {
   "name": "Oven Pancake",
@@ -3030,20 +3058,7 @@
   "intermediate": false,
   "note": "",
   "image": "assets/img/items/oats.png",
-  "recipe": {
-   "station": "Oat Seeds",
-   "level": null,
-   "ingredients": [
-    {
-     "name": "Oat Seeds",
-     "qty": 1,
-     "image": "assets/img/items/oat-seeds.png",
-     "nameEs": "Semillas de avena"
-    }
-   ],
-   "yield": 1,
-   "stationEs": "Semillas de avena"
-  },
+  "recipe": null,
   "nameEs": "Avena"
  },
  {
