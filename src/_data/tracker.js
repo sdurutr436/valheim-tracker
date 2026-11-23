@@ -18,6 +18,9 @@ const cols = {
   prep: { k: 'prep', field: 'intermediate', extra: true, label: { en: 'Prepared', es: 'Preparado' } },
   cook: { k: 'cook', field: 'cook', label: { en: 'Cooked', es: 'Cocinado' } },
   eat: { k: 'eat', field: 'eat', label: { en: 'Eaten', es: 'Comido' } },
+  // Alquimista: la base hecha en el caldero de aguamiel y luego fermentada
+  brew: { k: 'brew', label: { en: 'Prepared', es: 'Preparada' } },
+  ferment: { k: 'ferment', label: { en: 'Fermented', es: 'Fermentada' } },
   done: { k: 'done', label: { en: 'Done', es: 'Hecho' } },
 };
 
@@ -52,6 +55,14 @@ const tabs = [
     { en: "Weapons are grouped by age: the most advanced material in the recipe decides it. The achievement doesn't say exactly what counts, so the list follows the wiki's weapons page.",
       es: 'Las armas van por edades: la decide el material más avanzado de la receta. El logro no detalla qué cuenta, así que la lista sigue la página de armas de la wiki.' },
     { en: 'Anything you mark here also counts for Artisan, and the other way round.', es: 'Lo que marques aquí también cuenta para Artesano, y al revés.' }] },
+  // No es un logro: parte Artesano en un trozo manejable. No suma al total global (las bases ya cuentan en Artesano)
+  { id: 'alchemist', ns: 'alchemist', icon: 'fermenter', view: 'cards', cols: ['brew', 'ferment'], noTotal: true,
+    title: { en: 'Professional Alchemist', es: 'Alquimista profesional' },
+    guide: [{ en: 'Not an achievement: a way to split Artisan. Each base you prepare here counts as crafted there, and the other way round.',
+      es: 'No es un logro: una forma de partir Artesano. Cada base que prepares aquí cuenta como creada allí, y al revés.' },
+    { en: 'Prepared: make the base at the Mead Ketill. Fermented: leave it in a Fermenter for 2 in-game days (48 h) and take the drinks out.',
+      es: 'Preparada: haz la base en el caldero de aguamiel. Fermentada: déjala 2 días del juego (48 h) en un fermentador y saca las bebidas.' },
+    { en: 'Drinks are grouped by age: the most advanced ingredient of the base decides it.', es: 'Las bebidas van por edades: la decide el ingrediente más avanzado de la base.' }] },
   { id: 'carpenter', ns: 'carpenter', icon: 'workbench', view: 'cards', cols: ['done'], title: { en: 'Carpenter', es: 'Carpintero' },
     done: { en: 'Built', es: 'Construido' },
     guide: [{ en: 'Build every structure on the list once.', es: 'Construye una vez cada estructura de la lista.' },
@@ -79,25 +90,40 @@ function prep(rows, ns) {
 const ages = load('ages');
 const firstBiome = new Map([ages.stations, ages.materials].flatMap(o => Object.entries(o).flatMap(([b, ms]) => ms.map(m => [m, b]))));
 const order = b => biomes.findIndex(x => x.en === b);
-const ageOf = w => [w.recipe.station, ...w.recipe.ingredients.map(i => i.name)].map(n => firstBiome.get(n)
+// also = lo que pide además de la receta (el fermentador de Alquimista)
+const ageOf = (w, also = []) => [w.recipe.station, ...also, ...w.recipe.ingredients.map(i => i.name)].map(n => firstBiome.get(n)
   ?? (() => { throw new Error(`ages.json: falta "${n}" (receta de ${w.name})`); })())
   .reduce((a, b) => order(b) > order(a) ? b : a, 'Meadows');
 
-// blacksmith.json nombra objetos de Artesano y solo trae enteros los que Artesano no tiene (los que se hacen a mano…)
+// blacksmith.json nombra objetos de Artesano y solo trae enteros los que Artesano no tiene (los que se hacen a mano…);
+// alchemist.json, la base de Artesano de la que sale cada bebida
 const artisanItem = new Map(load('artisan').map(a => [a.name, a]));
-const raw = ns => ns !== 'blacksmith' ? load(ns) : load(ns).map(e => typeof e !== 'string' ? e
-  : artisanItem.get(e) ?? (() => { throw new Error(`blacksmith.json: "${e}" no está en artisan.json`); })())
-  .map(w => ({ ...w, biome: ageOf(w) }));
-const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter', 'blacksmith'].map(ns => [ns, prep(raw(ns), ns)]));
-
-// El mismo objeto en dos listas: marcarlo en una (en esas columnas) lo da por hecho en la otra. Lo aplica model.js
-const link = (from, to, cols) => {
-  const key = new Map(lists[to].map(r => [r.name, r.key]));
-  lists[from].forEach(r => { if (key.has(r.name)) (r.links ||= []).push({ ns: to, key: key.get(r.name), cols }); });
+const fromArtisan = (ns, e) => artisanItem.get(e) ?? (() => { throw new Error(`${ns}.json: "${e}" no está en artisan.json`); })();
+// Cada bebida lleva la receta de su base y se fermenta: el fermentador también cuenta para la edad, aunque hoy no
+// cambia ninguna (sale de la Forja con bronce, como el caldero de aguamiel)
+const mead = m => {
+  const b = fromArtisan('alchemist', m.base);
+  return { ...m, recipe: b.recipe, biome: ageOf(b, ['Fermenter']),
+    note: `Makes “${b.name}”. Leave it in a Fermenter for 2 in-game days (48 h): it yields ${m.makes}.`,
+    noteEs: `Se obtiene «${b.nameEs}». Déjala 2 días del juego (48 h) en un fermentador: rinde ${m.makes}.` };
 };
-link('artisan', 'chef', ['prep', 'cook']); // comida cocinada o preparada
-link('artisan', 'blacksmith', ['done']);   // arma creada
+const raw = ns => ns === 'blacksmith' ? load(ns).map(e => typeof e !== 'string' ? e : fromArtisan(ns, e)).map(w => ({ ...w, biome: ageOf(w) }))
+  : ns === 'alchemist' ? load(ns).map(mead) : load(ns);
+const lists = Object.fromEntries(['hunter', 'trophy', 'fish', 'chef', 'artisan', 'carpenter', 'blacksmith', 'alchemist']
+  .map(ns => [ns, prep(raw(ns), ns)]));
+
+// El mismo objeto en dos listas: marcarlo en la de destino (en esas columnas) lo da por hecho en la de origen,
+// en su columna k (Hecho, si no se dice). Lo aplica model.js. Se emparejan por nombre; una bebida, por el de su base
+const same = r => r.base ?? r.name;
+const link = (from, to, cols, k = 'done') => {
+  const key = new Map(lists[to].map(r => [same(r), r.key]));
+  lists[from].forEach(r => { if (key.has(same(r))) (r.links ||= []).push({ ns: to, key: key.get(same(r)), cols, k }); });
+};
+link('artisan', 'chef', ['prep', 'cook']);       // comida cocinada o preparada
+link('artisan', 'blacksmith', ['done']);         // arma creada
 link('blacksmith', 'artisan', ['done']);
+link('artisan', 'alchemist', ['brew']);          // base preparada
+link('alchemist', 'artisan', ['done'], 'brew');  // base creada: cuenta como Preparada
 
 // Materiales de un bioma: suma de los ingredientes de todas sus recetas (Artisan, Carpenter)
 function materials(rows) {
@@ -111,12 +137,13 @@ function materials(rows) {
 const plan = Object.fromEntries(shopping.map(b => [b.en, b]));
 
 // Secciones por bioma de cada lista, en orden de progresión; dentro, por nombre
+const byAge = ['blacksmith', 'alchemist'];
 const sections = Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [ns, biomes
-  .map(b => ({ biome: ns === 'blacksmith' ? { ...b, ...ages.ages[b.en] } : b, // en Herrero la sección lleva el nombre de la edad
+  .map(b => ({ biome: byAge.includes(ns) ? { ...b, ...ages.ages[b.en] } : b, // en Herrero y Alquimista la sección lleva el nombre de la edad
     rows: rows.filter(r => r.bi === b.i).sort((x, y) => x.name.localeCompare(y.name)) }))
   .filter(s => s.rows.length)
   .map(s => ns === 'chef' ? { ...s, items: plan[s.biome.en]?.items ?? [], steps: plan[s.biome.en]?.steps ?? [] }
-    : ['artisan', 'carpenter', 'blacksmith'].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
+    : ['artisan', 'carpenter', ...byAge].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
 
 // Al navegador solo lo necesario para progreso, filtros y búsqueda
 const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, links }) => ({ key, bi, name, nameEs, cook, eat, intermediate, links });
@@ -128,6 +155,11 @@ const client = {
 };
 
 // Texto de la casilla "hecho" de cada lista (Cazado, Conseguido, Creado…)
-const done = { chef: cols.done.label, ...Object.fromEntries(tabs.filter(t => t.done).map(t => [t.ns, t.done])) };
+const done = Object.fromEntries(tabs.filter(t => t.done).map(t => [t.ns, t.done]));
+// Casillas de las cards de cada lista: las columnas de sus logros, en el orden de cols
+// (cocina: Preparado, Cocinado y Comido; el CSS esconde las que no son del logro actual)
+const pills = Object.fromEntries(Object.keys(lists).map(ns => [ns, Object.values(cols)
+  .filter(c => tabs.some(t => t.ns === ns && t.cols.includes(c.k)))
+  .map(c => c.k === 'done' ? { ...c, label: done[ns] } : c)]));
 
-export default { biomes, cols, tabs, sections, done, client };
+export default { biomes, cols, tabs, sections, done, pills, client };

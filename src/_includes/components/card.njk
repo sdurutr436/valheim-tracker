@@ -1,7 +1,6 @@
 {#- Card con receta desplegable (cocina, Artisan, Carpenter). Usa r (fila), ns, s (sección) y loop -#}
 {%- set id = ns + '-' + s.biome.slug + '-' + loop.index %}
 {%- set w = r.wiki or r.name %}
-{%- set c = tracker.cols %}
 <article class="food" data-key="{{ r.key }}">
   <button class="food-head" type="button" aria-expanded="false" aria-controls="detail-{{ id }}">
     <span class="food-img">
@@ -12,12 +11,9 @@
     <span class="chev" aria-hidden="true">▾</span>
   </button>
   <div class="checks">
-    {%- for k in ['prep', 'cook', 'eat'] %}{% if r[c[k].field] %}
-    <label class="pill" data-k="{{ k }}"><input type="checkbox" data-k="{{ k }}"><span data-en="{{ c[k].label.en }}" data-es="{{ c[k].label.es }}">{{ c[k].label.en }}</span></label>
+    {%- for p in tracker.pills[ns] %}{% if not p.field or r[p.field] %}
+    <label class="pill" data-k="{{ p.k }}"><input type="checkbox" data-k="{{ p.k }}"><span data-en="{{ p.label.en }}" data-es="{{ p.label.es }}">{{ p.label.en }}</span></label>
     {%- endif %}{% endfor %}
-    {%- if not (r.cook or r.eat) %}
-    <label class="pill" data-k="done"><input type="checkbox" data-k="done"><span data-en="{{ tracker.done[ns].en }}" data-es="{{ tracker.done[ns].es }}">{{ tracker.done[ns].en }}</span></label>
-    {%- endif %}
   </div>
   <div class="food-detail" id="detail-{{ id }}" hidden>
     {% if r.recipe %}

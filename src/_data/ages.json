@@ -11,17 +11,17 @@
  },
  "stations": {
   "Meadows": ["By hand", "Workbench"],
-  "Black Forest": ["Forge"],
+  "Black Forest": ["Fermenter", "Forge", "Mead Ketill"],
   "Mistlands": ["Black Forge", "Galdr Table"]
  },
  "materials": {
-  "Meadows": ["Curious Axe Head", "Deer Hide", "Deer Trophy", "Feathers", "Flint", "Leather Scraps", "Mysterious Axe Head", "Resin", "Stone", "Wood"],
-  "Black Forest": ["Bear Hide", "Bear Paw", "Bone Fragments", "Bronze", "Chitin", "Copper", "Corewood", "Finewood", "Skeleton Trophy", "Surtling Core", "Tin", "Troll Hide", "Troll Trophy"],
-  "Swamp": ["Ancient Bark", "Blob Trophy", "Chain", "Corked Vial", "Draugr Elite Trophy", "Guck", "Iron", "Ooze", "Root", "Serpent Scale", "Writhan Roots", "Ymir Flesh"],
-  "Mountain": ["Crystal", "Drake Trophy", "Fenris Claw", "Fenris Hair", "Freeze Gland", "Obsidian", "Silver", "Wolf Fang"],
-  "Plains": ["Black Metal", "Growth Trophy", "Linen Thread", "Needle", "Tar", "Vile Ribcage"],
-  "Mistlands": ["Bilebag", "Blood Clot", "Carapace", "Hook", "Mandible", "Refined Eitr", "Sap", "Scale Hide", "Wisp", "Yggdrasil Wood"],
-  "Ashlands": ["Ash Fang", "Ashwood", "Asksvin Bladder", "Asksvin Hide", "Berserkir Axes", "Bloodstone", "Bonemaw Tooth", "Celestial Feather", "Charred Bone", "Dyrnwyn Blade Fragment", "Dyrnwyn Hilt Fragment", "Dyrnwyn Tip Fragment", "Fiddlehead", "Flametal", "Flametal Mace", "Iolite", "Jade", "Morgen Sinew", "Nidhögg", "Proustite Powder", "Ripper", "Slayer", "Smoke Puff", "Splitnir", "Sulfur"],
+  "Meadows": ["Coal", "Curious Axe Head", "Dandelion", "Deer Hide", "Deer Trophy", "Feathers", "Flint", "Honey", "Leather Scraps", "Mushroom", "Mysterious Axe Head", "Neck Tail", "Perch", "Raspberries", "Resin", "Stone", "Wood"],
+  "Black Forest": ["Bear Hide", "Bear Paw", "Blueberries", "Bone Fragments", "Bronze", "Carrot", "Chitin", "Copper", "Corewood", "Finewood", "Greydwarf Eye", "Skeleton Trophy", "Surtling Core", "Thistle", "Tin", "Troll Hide", "Troll Trophy", "Trollfish", "Yellow Mushroom"],
+  "Swamp": ["Ancient Bark", "Blob Trophy", "Bloodbag", "Chain", "Corked Vial", "Cured Squirrel Hamstring", "Draugr Elite Trophy", "Fresh Seaweed", "Guck", "Iron", "Ooze", "Powdered Dragon Eggshells", "Pungent Pebbles", "Root", "Serpent Scale", "Writhan Roots", "Ymir Flesh"],
+  "Mountain": ["Crystal", "Drake Trophy", "Fenris Claw", "Fenris Hair", "Fragrant Bundle", "Freeze Gland", "Obsidian", "Onion", "Silver", "Toadstool", "Wolf Fang"],
+  "Plains": ["Barley", "Black Metal", "Cloudberries", "Grouper", "Growth Trophy", "Linen Thread", "Needle", "Tar", "Vile Ribcage"],
+  "Mistlands": ["Bilebag", "Blood Clot", "Carapace", "Hook", "Jotun Puffs", "Magecap", "Mandible", "Refined Eitr", "Royal Jelly", "Sap", "Scale Hide", "Wisp", "Yggdrasil Wood"],
+  "Ashlands": ["Ash Fang", "Ashwood", "Asksvin Bladder", "Asksvin Hide", "Berserkir Axes", "Bloodstone", "Bonemaw Tooth", "Celestial Feather", "Charred Bone", "Dyrnwyn Blade Fragment", "Dyrnwyn Hilt Fragment", "Dyrnwyn Tip Fragment", "Fiddlehead", "Flametal", "Flametal Mace", "Iolite", "Jade", "Morgen Sinew", "Nidhögg", "Proustite Powder", "Ripper", "Slayer", "Smoke Puff", "Splitnir", "Sulfur", "Vineberry Cluster"],
   "Deep North": ["Bloodgold", "Dead Pulp", "Embers", "Frostfire Essence", "Frozen Branch", "Hexen Trophy", "Ice", "Moose Trophy", "Mould: Nord Atgeir", "Mould: Nord Axe", "Mould: Nord Bow", "Mould: Nord Buckler", "Mould: Nord Crossbow", "Mould: Nord Dagger", "Mould: Nord Greataxe", "Mould: Nord Greatshield", "Mould: Nord Greatsword", "Mould: Nord Knucklechains", "Mould: Nord Mace", "Mould: Nord Shield", "Mould: Nord Sledge", "Mould: Nord Spear", "Mould: Nord Sword", "Nord Atgeir", "Nord Axe", "Nord Bow", "Nord Crossbow", "Nord Dagger", "Nord Greataxe", "Nord Greatsword", "Nord Knucklechains", "Nord Mace", "Nord Sledge", "Nord Spear", "Nord Sword", "Nornathread", "Pulp Trophy", "Seal Pelt", "Thunderblood Essence", "Timberwood"]
  }
 }

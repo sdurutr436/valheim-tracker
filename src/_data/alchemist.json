@@ -1,0 +1,142 @@
+[
+ {
+  "name": "Minor Healing Mead",
+  "nameEs": "Hidromiel saludable",
+  "image": "assets/img/items/minor-healing-mead.png",
+  "base": "Mead Base: Minor Healing",
+  "makes": 6
+ },
+ {
+  "name": "Medium Healing Mead",
+  "nameEs": "Hidromiel supersaludable",
+  "image": "assets/img/items/medium-healing-mead.png",
+  "base": "Mead Base: Medium Healing",
+  "makes": 6
+ },
+ {
+  "name": "Minor Stamina Mead",
+  "nameEs": "Hidromiel vigorizante",
+  "image": "assets/img/items/minor-stamina-mead.png",
+  "base": "Mead Base: Minor Stamina",
+  "makes": 6
+ },
+ {
+  "name": "Medium Stamina Mead",
+  "nameEs": "Hidromiel supervigorizante",
+  "image": "assets/img/items/medium-stamina-mead.png",
+  "base": "Mead Base: Medium Stamina",
+  "makes": 6
+ },
+ {
+  "name": "Poison Resistance Mead",
+  "nameEs": "Hidromiel resistente al veneno",
+  "image": "assets/img/items/poison-resistance-mead.png",
+  "base": "Mead Base: Poison Resistance",
+  "makes": 6
+ },
+ {
+  "name": "Frost Resistance Mead",
+  "nameEs": "Hidromiel resistente a la congelación",
+  "image": "assets/img/items/frost-resistance-mead.png",
+  "base": "Mead Base: Frost Resistance",
+  "makes": 6
+ },
+ {
+  "name": "Fire Resistance Barley Wine",
+  "nameEs": "Vino de cebada resistente al fuego",
+  "image": "assets/img/items/fire-resistance-barley-wine.png",
+  "base": "Barley Wine Base: Fire Resistance",
+  "makes": 6
+ },
+ {
+  "name": "Tasty Mead",
+  "nameEs": "Hidromiel sabrosa",
+  "image": "assets/img/items/tasty-mead.png",
+  "base": "Mead Base: Tasty",
+  "makes": 6
+ },
+ {
+  "name": "Major Healing Mead",
+  "nameEs": "Hidromiel extra supersaludable",
+  "image": "assets/img/items/major-healing-mead.png",
+  "base": "Mead Base: Major Healing",
+  "makes": 6
+ },
+ {
+  "name": "Lingering Stamina Mead",
+  "nameEs": "Hidromiel de vigorización constante",
+  "image": "assets/img/items/lingering-stamina-mead.png",
+  "base": "Mead Base: Lingering Stamina",
+  "makes": 6
+ },
+ {
+  "name": "Minor Eitr Mead",
+  "nameEs": "Hidromiel mágico",
+  "image": "assets/img/items/minor-eitr-mead.png",
+  "base": "Mead Base: Minor Eitr",
+  "makes": 6
+ },
+ {
+  "name": "Lingering Eitr Mead",
+  "nameEs": "Hidromiel de Eitr persistente",
+  "image": "assets/img/items/lingering-eitr-mead.png",
+  "base": "Mead Base: Lingering Eitr",
+  "makes": 6
+ },
+ {
+  "name": "Lingering Healing Mead",
+  "nameEs": "Hidromiel curativo persistente",
+  "image": "assets/img/items/lingering-healing-mead.png",
+  "base": "Mead Base: Lingering Health",
+  "makes": 6
+ },
+ {
+  "name": "Berserkir Mead",
+  "nameEs": "Hidromiel berserkir",
+  "image": "assets/img/items/berserkir-mead.png",
+  "base": "Mead base: Berserkir",
+  "makes": 3
+ },
+ {
+  "name": "Mead of Troll Endurance",
+  "nameEs": "Hidromiel de fuerza de trol",
+  "image": "assets/img/items/mead-of-troll-endurance.png",
+  "base": "Mead Base: Troll Endurance",
+  "makes": 6
+ },
+ {
+  "name": "Tonic of Ratatosk",
+  "nameEs": "Tónico de Ratatosk",
+  "image": "assets/img/items/tonic-of-ratatosk.png",
+  "base": "Mead base: Ratatosk",
+  "makes": 6
+ },
+ {
+  "name": "Lightfoot Mead",
+  "nameEs": "Hidromiel de pies ligeros",
+  "image": "assets/img/items/lightfoot-mead.png",
+  "base": "Mead Base: Lightfoot",
+  "makes": 6
+ },
+ {
+  "name": "Draught of Vananidir",
+  "nameEs": "Elixir de Vananidir",
+  "image": "assets/img/items/draught-of-vananidir.png",
+  "base": "Mead Base: Vananidir",
+  "makes": 6
+ },
+ {
+  "name": "Brew of Animal Whispers",
+  "nameEs": "Brebaje de susurros salvajes",
+  "image": "assets/img/items/brew-of-animal-whispers.png",
+  "base": "Mead Base: Animal Whispers",
+  "makes": 6
+ },
+ {
+  "name": "Anti-Sting Concoction",
+  "nameEs": "Brebaje antipicaduras",
+  "image": "assets/img/items/anti-sting-concoction.png",
+  "base": "Mead Base: Anti-Sting",
+  "makes": 6
+ }
+]
