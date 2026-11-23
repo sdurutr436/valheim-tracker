@@ -41,7 +41,7 @@ const walk = o => {
   if (file) [o.wiki, o.name].filter(Boolean).forEach(n => (wanted.get(file) ?? wanted.set(file, new Set()).get(file)).add(n));
   Object.values(o).forEach(walk);
 };
-for (const f of ['chef', 'artisan', 'carpenter']) walk(JSON.parse(readFileSync(`src/_data/${f}.json`, 'utf8')));
+for (const f of ['chef', 'artisan', 'carpenter', 'blacksmith']) walk(JSON.parse(readFileSync(`src/_data/${f}.json`, 'utf8')));
 mkdirSync(DIR, { recursive: true });
 const todo = [...wanted].filter(([file]) => !existsSync(DIR + file));
 console.log(`${wanted.size} imágenes, ${todo.length} por descargar`);

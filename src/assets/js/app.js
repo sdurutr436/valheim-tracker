@@ -34,23 +34,28 @@ function renderBiomes() {
     sec.classList.toggle('complete', rs.length > 0 && d === rs.length);
     sec.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
     li.hidden = !rs.length;
+    // El índice se llama como las secciones del logro actual (biomas, o edades en Herrero)
+    const name = li.querySelector('.spy-name'), h = sec.querySelector('h2');
+    Object.assign(name.dataset, { en: h.dataset.en, es: h.dataset.es });
+    name.textContent = tx(h.dataset);
     li.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
     li.style.setProperty('--p', pct(d, rs.length) + '%');
   }
 }
 
-function syncChecks() {
-  for (const el of panel().querySelectorAll('[data-key]')) {
-    const r = ROWS[cur.ns].get(el.dataset.key);
-    el.querySelectorAll('input[data-k]').forEach(i => {
-      i.checked = checked(cur, r, i.dataset.k);
-      // Marcada porque ya se cocinó o preparó: se cambia desde cocina, no aquí
-      i.disabled = i.dataset.k === 'done' && fromChef(r);
-      i.parentElement.title = i.disabled ? tx({ en: 'Marked from Master Chef', es: 'Marcado desde Maestro chef' }) : '';
-    });
-    el.classList.toggle('done', complete(cur, r));
-  }
+function syncRow(el) {
+  const r = ROWS[cur.ns].get(el.dataset.key);
+  el.querySelectorAll('input[data-k]').forEach(i => {
+    i.checked = checked(cur, r, i.dataset.k);
+    // Hecha solo en otra lista (cocina, Herrero, Artesano): se cambia allí, no aquí
+    const l = i.dataset.k === 'done' && !isChecked(cur.ns, r.key, 'done') && linkedDone(r);
+    const t = l && TABS.find(t => t.ns === l.ns);
+    i.disabled = !!l;
+    i.parentElement.title = t ? tx({ en: `Marked in ${t.title.en}`, es: `Marcado en ${t.title.es}` }) : '';
+  });
+  el.classList.toggle('done', complete(cur, r));
 }
+const syncChecks = () => panel().querySelectorAll('[data-key]').forEach(syncRow);
 
 // Búsqueda y estado. Un bioma sin nada visible se oculta entero
 function renderFilter() {
@@ -114,7 +119,7 @@ document.addEventListener('change', e => {
   if (!i.dataset.k) return;
   const el = i.closest('[data-key]'), r = ROWS[cur.ns].get(el.dataset.key);
   setChecked(cur.ns, r.key, i.dataset.k, i.checked);
-  el.classList.toggle('done', complete(cur, r));
+  syncRow(el); // si sigue hecha por otra lista, la casilla vuelve a marcarse y se bloquea
   renderTabs(); renderBiomes();
 });
 

@@ -4,6 +4,8 @@
 <div class="mats">
   {%- if ns == 'chef' %}
   <p class="mats-h">{{ t('Base ingredients to cook and eat everything once', 'Ingredientes base para cocinar y comer todo una vez') }}</p>
+  {%- elif ns == 'blacksmith' %}
+  <p class="mats-h">{{ t('Materials for every weapon of this age', 'Materiales para todas las armas de esta edad') }}</p>
   {%- else %}
   <p class="mats-h">{{ t('Materials for everything in this biome', 'Materiales para todo lo de este bioma') }}</p>
   {%- endif %}
