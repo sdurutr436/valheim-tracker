@@ -129,6 +129,11 @@ const client = {
 };
 
 // Texto de la casilla "hecho" de cada lista (Cazado, Conseguido, Creado…)
-const done = { chef: cols.done.label, ...Object.fromEntries(tabs.filter(t => t.done).map(t => [t.ns, t.done])) };
+const done = Object.fromEntries(tabs.filter(t => t.done).map(t => [t.ns, t.done]));
+// Casillas de las cards de cada lista: las columnas de sus logros, en el orden de cols
+// (cocina: Preparado, Cocinado y Comido; el CSS esconde las que no son del logro actual)
+const pills = Object.fromEntries(Object.keys(lists).map(ns => [ns, Object.values(cols)
+  .filter(c => tabs.some(t => t.ns === ns && t.cols.includes(c.k)))
+  .map(c => c.k === 'done' ? { ...c, label: done[ns] } : c)]));
 
-export default { biomes, cols, tabs, sections, done, client };
+export default { biomes, cols, tabs, sections, done, pills, client };
