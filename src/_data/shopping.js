@@ -104,12 +104,9 @@ function plan(biome) {
   return { items, steps };
 }
 
-// Las listas de ingredientes están validadas en todos los biomas; los pasos solo en estos.
-// Los demás se añaden aquí conforme se revisen.
-const STEPS_REVIEWED = ['Meadows', 'Black Forest', 'Swamp', 'Mountain', 'Plains', 'Mistlands', 'Ashlands', 'Ocean'];
-
+// Ingredientes y pasos revisados en todos los biomas (Deep North, el último, el 2026-11-23)
 const perBiome = biomes.filter(b => b.en !== 'Console')
-  .map(b => { const p = plan(b.en); return { ...b, items: p.items, steps: STEPS_REVIEWED.includes(b.en) ? p.steps : [] }; })
+  .map(b => ({ ...b, ...plan(b.en) }))
   .filter(b => b.items.length);
 
 export default perBiome;
