@@ -138,20 +138,23 @@ const plan = Object.fromEntries(shopping.map(b => [b.en, b]));
 
 // Secciones por bioma de cada lista, en orden de progresión; dentro, por nombre
 const byAge = ['blacksmith', 'alchemist'];
+const withMats = ['artisan', 'carpenter', ...byAge]; // listas con materiales bajo cada bioma
 const sections = Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [ns, biomes
   .map(b => ({ biome: byAge.includes(ns) ? { ...b, ...ages.ages[b.en] } : b, // en Herrero y Alquimista la sección lleva el nombre de la edad
     rows: rows.filter(r => r.bi === b.i).sort((x, y) => x.name.localeCompare(y.name)) }))
   .filter(s => s.rows.length)
   .map(s => ns === 'chef' ? { ...s, items: plan[s.biome.en]?.items ?? [], steps: plan[s.biome.en]?.steps ?? [] }
-    : ['artisan', 'carpenter', ...byAge].includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
+    : withMats.includes(ns) ? { ...s, items: materials(s.rows), steps: [] } : s)]));
 
 // Al navegador solo lo necesario para progreso, filtros y búsqueda
-const lite = ({ key, bi, name, nameEs, cook, eat, intermediate, links }) => ({ key, bi, name, nameEs, cook, eat, intermediate, links });
+const lite = (ns, { key, bi, name, nameEs, cook, eat, intermediate, links, recipe }) => ({ key, bi, name, nameEs, cook, eat, intermediate, links,
+  // lo que gasta su receta: app.js lo descuenta de los materiales del bioma al marcarla
+  mats: withMats.includes(ns) ? recipe?.ingredients.map(i => [i.name, i.qty]) : undefined });
 const client = {
   biomes: biomes.map(({ en, es, slug }) => ({ en, es, slug })),
   cols,
   tabs: tabs.map(({ guide, ...t }) => t),
-  rows: Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [ns, rows.map(lite)])),
+  rows: Object.fromEntries(Object.entries(lists).map(([ns, rows]) => [ns, rows.map(r => lite(ns, r))])),
 };
 
 // Texto de la casilla "hecho" de cada lista (Cazado, Conseguido, Creado…)
