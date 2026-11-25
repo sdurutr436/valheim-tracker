@@ -40,6 +40,14 @@ function renderBiomes() {
     name.textContent = tx(h.dataset);
     li.querySelector('[data-count]').textContent = `${d}/${rs.length}`;
     li.style.setProperty('--p', pct(d, rs.length) + '%');
+    // Materiales que faltan: los de las recetas aún sin hacer (la primera casilla: Hecho, o Preparada en Alquimista)
+    const left = new Map();
+    for (const r of rs) if (!checked(cur, r, cur.cols[0].k)) for (const [n, q] of r.mats ?? []) left.set(n, (left.get(n) ?? 0) + q);
+    sec.querySelectorAll('[data-mat]').forEach(m => {
+      const q = left.get(m.dataset.mat) ?? 0;
+      m.querySelector('b').textContent = '×' + q;
+      m.classList.toggle('got', !q);
+    });
   }
 }
 
