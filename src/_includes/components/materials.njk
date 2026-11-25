@@ -13,7 +13,7 @@
   {%- endif %}
   <ul class="mats-list">
     {%- for i in s.items %}
-    <li>
+    <li data-mat="{{ i.name }}">
       {% if i.image %}<img src="{{ i.image }}" alt="" width="22" height="22" loading="lazy" onerror="this.remove()">{% endif %}
       <span data-en="{{ i.name }}"{% if i.nameEs %} data-es="{{ i.nameEs }}"{% endif %}>{{ i.name }}</span>
       <b>×{{ i.qty }}</b>

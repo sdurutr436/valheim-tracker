@@ -127,6 +127,7 @@ details:not([open])>summary .chev{transform:rotate(-90deg)}
 .mats-list{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
 .mats-list li{display:flex;align-items:center;gap:7px;padding:3px 12px 3px 5px;border:1px solid var(--line);border-radius:99px;background:var(--surface);font-size:14px}
 .mats-list li:not(:has(img)){padding-left:12px}
+.mats-list li.got{opacity:.45;text-decoration:line-through}
 .mats-list img{width:22px;height:22px;object-fit:contain}
 .mats-list b,.ingredients b{color:var(--c);font-variant-numeric:tabular-nums}
 .steps{margin-top:12px}
